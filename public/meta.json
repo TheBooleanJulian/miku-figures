@@ -1,0 +1,34 @@
+{
+  "last_updated": "2026-02-28T02:30:00+00:00",
+  "total_figures": 12,
+  "new_this_run": 12,
+  "by_type": {
+    "Scale": 6,
+    "Nendoroid": 2,
+    "Figma": 2,
+    "Pop Up Parade": 1
+  },
+  "by_year": {
+    "2015": 1,
+    "2016": 1,
+    "2018": 1,
+    "2019": 1,
+    "2020": 2,
+    "2021": 1,
+    "2022": 1,
+    "2023": 2,
+    "2024": 2
+  },
+  "by_event": {
+    "Symphony": 1,
+    "Snow Miku": 2,
+    "Racing Miku": 2,
+    "Magical Mirai": 1,
+    "Append": 1,
+    "Deep Sea Girl": 1,
+    "World is Mine": 1,
+    "Senbonzakura": 1,
+    "Tell Your World": 1
+  },
+  "scrape_mode": "sample_data"
+}
