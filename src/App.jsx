@@ -687,7 +687,9 @@ export default function MikuFigureArchive() {
 
         <div style={{ position: "relative", maxWidth: 1440, margin: "0 auto" }}>
           <div style={{ display: "flex", alignItems: "flex-end", gap: 16, flexWrap: "wrap", justifyContent: "space-between" }}>
-            <div>
+            <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+              <img src="/logo.png" alt="Miku Figures logo" style={{ width: 64, height: 64, borderRadius: 12, flexShrink: 0 }} />
+              <div>
               <div style={{ fontSize: 11, letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--muted)", marginBottom: 6, fontFamily: "'Zen Kaku Gothic New', sans-serif" }}>
                 初音ミク · Hatsune Miku
               </div>
@@ -704,6 +706,7 @@ export default function MikuFigureArchive() {
               </h1>
               <div style={{ fontSize: 12, color: "var(--muted)", marginTop: 8 }}>
                 The complete catalog · scraped daily from MyFigureCollection.net
+              </div>
               </div>
             </div>
 

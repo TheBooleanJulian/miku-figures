@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/miku-figures-logo.png" alt="Miku Figures logo" width="220" />
+
 # 初音ミク Figure Archive
 
 **A complete, daily-updated Hatsune Miku figure database — scraped from MyFigureCollection.net and browsable in the browser.**
