@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"assets/miku-figures-logo.png\" \"public/logo.png\" && ls -la public)",
+      "Bash(npx vite *)",
+      "Bash(git commit -m ' *)"
+    ],
+    "additionalDirectories": [
+      "I:\\My Drive\\TheBooleanJulian_GD\\miku-figures\\assets"
+    ]
+  }
+}
