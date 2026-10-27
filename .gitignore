@@ -27,3 +27,6 @@ npm-debug.log*
 # Uncomment the following if you want to ignore generated data:
 # public/figures.json
 # public/meta.json
+
+# Local tool state, never commit
+.claude/
