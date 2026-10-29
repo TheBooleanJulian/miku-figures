@@ -1,0 +1,10 @@
+{
+  "name": "miku-figures",
+  "account_id": "c580c4403524273d1bece674117472dd",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  // Built by Cloudflare Workers Builds on every push to main:
+  //   build command  npm run build     deploy command  npx wrangler deploy
+  "assets": { "directory": "./dist", "not_found_handling": "single-page-application" },
+  "routes": [{ "pattern": "miku-figures.thebooleanjulian.dev", "custom_domain": true }]
+}
