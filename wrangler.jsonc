@@ -5,6 +5,8 @@
   "workers_dev": true,
   // Built by Cloudflare Workers Builds on every push to main:
   //   build command  npm run build     deploy command  npx wrangler deploy
+  // Runs on every `wrangler deploy` (Workers Builds included), so the dashboard build command can stay blank.
+  "build": { "command": "npm run build" },
   "assets": { "directory": "./dist", "not_found_handling": "single-page-application" },
   "routes": [{ "pattern": "miku-figures.thebooleanjulian.dev", "custom_domain": true }]
 }
