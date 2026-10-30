@@ -73,7 +73,7 @@ const DEMO_FIGURES = Array.from({ length: 24 }, (_, i) => {
     year,
     type,
     scale:        type === "Scale" ? `1/${[4,6,7,8][i%4]}` : null,
-    price_jpy:    type === "Prize" ? null : [5500,6380,12980,16500,19800,24200][i%6],
+    price_sgd:    type === "Prize" ? null : [55,64,130,165,198,242][i%6],
     image_url:    null,
     events:       event,
     illustrator:  Math.random() > 0.6 ? ILLUSTRATOR_ORDER[i % ILLUSTRATOR_ORDER.length] : null,
@@ -85,9 +85,9 @@ const DEMO_FIGURES = Array.from({ length: 24 }, (_, i) => {
    HELPERS
 ────────────────────────────────────────────────────────────────────── */
 
-function fmtJPY(n) {
+function fmtSGD(n) {
   if (!n) return null;
-  return new Intl.NumberFormat("ja-JP", { style: "currency", currency: "JPY" }).format(n);
+  return new Intl.NumberFormat("en-SG", { style: "currency", currency: "SGD" }).format(n);
 }
 
 function sortFigures(list, mode) {
@@ -98,8 +98,8 @@ function sortFigures(list, mode) {
       case "name-asc":   return a.name.localeCompare(b.name);
       case "name-desc":  return b.name.localeCompare(a.name);
       case "maker-asc":  return (a.manufacturer || "").localeCompare(b.manufacturer || "");
-      case "price-desc": return (b.price_jpy || 0) - (a.price_jpy || 0);
-      case "price-asc":  return (a.price_jpy || Infinity) - (b.price_jpy || Infinity);
+      case "price-desc": return (b.price_sgd || 0) - (a.price_sgd || 0);
+      case "price-asc":  return (a.price_sgd || Infinity) - (b.price_sgd || Infinity);
       default: return 0;
     }
   });
@@ -147,7 +147,7 @@ function Thumbnail({ src, name, type }) {
           <circle cx="8.5" cy="8.5" r="1.5"/>
           <polyline points="21 15 16 10 5 21"/>
         </svg>
-        <span style={{ fontSize: 9, letterSpacing: "0.05em" }}>MFC</span>
+        <span style={{ fontSize: 9, letterSpacing: "0.05em" }}>No image</span>
       </div>
     );
   }
@@ -245,7 +245,7 @@ function FigureCard({ fig, onClick }) {
             {fig.manufacturer || "—"}
           </span>
           <span style={{ fontSize: 11, color: bg, fontWeight: 700 }}>
-            {fig.scale || (fig.price_jpy ? fmtJPY(fig.price_jpy) : "")}
+            {fig.scale || (fig.price_sgd ? fmtSGD(fig.price_sgd) : "")}
           </span>
         </div>
       </div>
@@ -295,7 +295,7 @@ function FigureRow({ fig, onClick }) {
         {fig.scale || ""}
       </div>
       <div style={{ width: 80, fontSize: 11, color: "rgba(255,255,255,0.3)", textAlign: "right" }}>
-        {fig.price_jpy ? fmtJPY(fig.price_jpy) : "—"}
+        {fig.price_sgd ? fmtSGD(fig.price_sgd) : "—"}
       </div>
     </div>
   );
@@ -368,13 +368,12 @@ function DetailModal({ fig, onClose }) {
               { label: "Release Date", value: fig.release_date },
               { label: "Type", value: fig.type },
               { label: "Scale", value: fig.scale },
-              { label: "MSRP", value: fig.price_jpy ? fmtJPY(fig.price_jpy) : null },
+              { label: "Price", value: fig.price_sgd ? fmtSGD(fig.price_sgd) : null },
               { label: "Illustrator", value: fig.illustrator },
               { label: "Dimensions", value: fig.dimensions },
               { label: "Material", value: fig.material },
               { label: "JAN Code", value: fig.barcode },
-              { label: "Owners on MFC", value: fig.mfc_owned_count?.toLocaleString() },
-            ].filter(s => s.value).map(spec => (
+                          ].filter(s => s.value).map(spec => (
               <div key={spec.label} style={{
                 background: "rgba(255,255,255,0.03)",
                 border: "1px solid rgba(255,255,255,0.07)",
@@ -425,7 +424,7 @@ function DetailModal({ fig, onClose }) {
             </p>
           )}
 
-          {/* MFC link */}
+          {/* Source link */}
           {fig.detail_url && (
             <a
               href={fig.detail_url}
@@ -440,7 +439,7 @@ function DetailModal({ fig, onClose }) {
                 transition: "background 0.15s",
               }}
             >
-              View on MyFigureCollection ↗
+              View on HLJ ↗
             </a>
           )}
         </div>
@@ -563,7 +562,7 @@ export default function MikuFigureArchive() {
     });
     if (priceMax !== "") {
       const max = parseInt(priceMax);
-      list = list.filter(f => !f.price_jpy || f.price_jpy <= max);
+      list = list.filter(f => !f.price_sgd || f.price_sgd <= max);
     }
     return sortFigures(list, sortBy);
   }, [figures, search, typeFilter, makerFilter, eventFilters, illustratorFilters, yearFrom, yearTo, priceMax, sortBy]);
@@ -669,7 +668,7 @@ export default function MikuFigureArchive() {
                 Miku Figures Archive
               </h1>
               <div style={{ fontSize: 12, color: "var(--muted)", marginTop: 8 }}>
-                The complete catalog · scraped daily from MyFigureCollection.net
+                The complete catalog · scraped daily from HLJ (hlj.com)
               </div>
               </div>
             </div>
@@ -867,10 +866,10 @@ export default function MikuFigureArchive() {
           </FilterSection>
 
           {/* Max Price */}
-          <FilterSection title="Max Price (JPY)">
+          <FilterSection title="Max Price (SGD)">
             <div style={{ padding: "0 20px" }}>
               <input
-                type="number" placeholder="e.g. 15000" value={priceMax}
+                type="number" placeholder="e.g. 150" value={priceMax}
                 onChange={e => setPriceMax(e.target.value)}
                 style={{
                   width: "100%", background: "#0e1424",

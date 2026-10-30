@@ -1,15 +1,15 @@
 # .github/workflows/daily_scrape.yml
 #
-# Runs the MFC scraper every day at 03:00 Singapore Time (SGT = UTC+8)
+# Runs the HLJ scraper every day at 03:00 Singapore Time (SGT = UTC+8)
 # → 03:00 SGT  =  19:00 UTC (previous day)
 #
 # What it does:
 #   1. Spins up a Python 3.12 runner
 #   2. Installs scraper dependencies
-#   3. Runs mfc_scraper.py --incremental (skips already-cached figures)
+#   3. Runs hlj_scraper.py --incremental (skips already-cached figures)
 #   4. If figures.json changed, commits it back to the repo
 
-name: Daily MFC Scrape
+name: Daily Figure Scrape
 
 on:
   # ── Scheduled: every day at 19:00 UTC = 03:00 SGT ──────────────────
@@ -42,9 +42,9 @@ concurrency:
 
 jobs:
   scrape:
-    name: Scrape MyFigureCollection
+    name: Scrape HLJ
     runs-on: ubuntu-latest
-    timeout-minutes: 120   # MFC can be slow; give it 2 hours max
+    timeout-minutes: 120   # HLJ is scraped slowly on purpose; give it 2 hours max
 
     permissions:
       contents: write    # needed to commit figures.json back
@@ -71,16 +71,16 @@ jobs:
           pip install -r scraper/requirements.txt
 
       # ── 4. Run scraper ─────────────────────────────────────────────
-      - name: Run MFC scraper
+      - name: Run HLJ scraper
         env:
           PYTHONUNBUFFERED: "1"
         run: |
           MODE="${{ github.event.inputs.mode || 'incremental' }}"
           echo "Running in $MODE mode"
           if [ "$MODE" = "full" ]; then
-            python scraper/mfc_scraper.py
+            python scraper/hlj_scraper.py
           else
-            python scraper/mfc_scraper.py --incremental
+            python scraper/hlj_scraper.py --incremental
           fi
 
       # ── 5. Check if data changed ───────────────────────────────────
