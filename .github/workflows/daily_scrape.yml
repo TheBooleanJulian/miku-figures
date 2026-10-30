@@ -27,6 +27,7 @@ on:
         options:
           - incremental
           - full
+          - probe
 
   # ── Also run on push to main (useful for first-time setup) ──────────
   push:
@@ -69,6 +70,7 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r scraper/requirements.txt
+          playwright install --with-deps chromium
 
       # ── 4. Run scraper ─────────────────────────────────────────────
       - name: Run MFC scraper
@@ -77,7 +79,9 @@ jobs:
         run: |
           MODE="${{ github.event.inputs.mode || 'incremental' }}"
           echo "Running in $MODE mode"
-          if [ "$MODE" = "full" ]; then
+          if [ "$MODE" = "probe" ]; then
+            python scraper/mfc_scraper.py --probe
+          elif [ "$MODE" = "full" ]; then
             python scraper/mfc_scraper.py
           else
             python scraper/mfc_scraper.py --incremental

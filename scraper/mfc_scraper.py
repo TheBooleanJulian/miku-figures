@@ -9,6 +9,7 @@ Usage:
     python mfc_scraper.py                   # full scrape → figures.json
     python mfc_scraper.py --incremental     # only fetch pages newer than last run
     python mfc_scraper.py --limit 5         # scrape first 5 pages (dev/test)
+    python mfc_scraper.py --probe           # fetch 1 page, report parse result
 
 Output:
     ../public/figures.json
@@ -26,8 +27,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode, urljoin
 
-import requests
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 # ──────────────────────────────────────────────
 # CONFIG
@@ -202,20 +203,55 @@ def clean_date(text: str) -> str | None:
 # HTTP HELPERS
 # ──────────────────────────────────────────────
 
-session = requests.Session()
-session.headers.update(HEADERS)
+# MFC rejects plain HTTP clients with 403, so pages are fetched with a real
+# headless Chromium (Playwright). One browser is reused for the whole run.
+_pw = None
+_context = None
+
+
+def _get_context():
+    global _pw, _context
+    if _context is None:
+        _pw = sync_playwright().start()
+        browser = _pw.chromium.launch(headless=True)
+        _context = browser.new_context(
+            user_agent=HEADERS["User-Agent"],
+            locale="en-US",
+            viewport={"width": 1366, "height": 900},
+        )
+    return _context
+
+
+def close_browser() -> None:
+    global _pw, _context
+    if _context is not None:
+        _context.browser.close()
+        _pw.stop()
+        _pw = _context = None
 
 
 def get_page(url: str, retries: int = 3) -> BeautifulSoup | None:
     for attempt in range(retries):
+        page = None
         try:
-            resp = session.get(url, timeout=20)
-            resp.raise_for_status()
-            return BeautifulSoup(resp.text, "html.parser")
-        except requests.RequestException as e:
+            page = _get_context().new_page()
+            resp = page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            # Give a Cloudflare "Just a moment..." interstitial time to clear
+            for _ in range(15):
+                if "just a moment" not in page.title().lower():
+                    break
+                page.wait_for_timeout(1000)
+            status = resp.status if resp else 0
+            if status >= 400 or "just a moment" in page.title().lower():
+                raise RuntimeError(f"HTTP {status}, title={page.title()!r}")
+            return BeautifulSoup(page.content(), "html.parser")
+        except Exception as e:
             log.warning(f"Attempt {attempt + 1}/{retries} failed for {url}: {e}")
             if attempt < retries - 1:
                 time.sleep(3 * (attempt + 1))
+        finally:
+            if page:
+                page.close()
     log.error(f"Failed to fetch: {url}")
     return None
 
@@ -559,6 +595,8 @@ if __name__ == "__main__":
                         help="Skip figures already in figures.json (faster daily runs)")
     parser.add_argument("--limit", type=int, default=None,
                         help="Max pages to scrape (for testing)")
+    parser.add_argument("--probe", action="store_true",
+                        help="Fetch the first browse page only and report what was parsed")
     args = parser.parse_args()
 
     log.info("══════════════════════════════════════")
@@ -567,4 +605,17 @@ if __name__ == "__main__":
     log.info(f"  Target char ID: {MFC_CHAR_ID} (Hatsune Miku)")
     log.info("══════════════════════════════════════")
 
-    scrape(incremental=args.incremental, page_limit=args.limit)
+    try:
+        if args.probe:
+            soup = get_page(build_browse_url(offset=0))
+            if not soup:
+                sys.exit(1)
+            stubs, total = parse_browse_page(soup)
+            log.info(f"PROBE title={soup.title.string if soup.title else None!r} "
+                     f"total={total} stubs={len(stubs)}")
+            for st in stubs[:5]:
+                log.info(f"PROBE {st}")
+            sys.exit(0 if stubs else 2)
+        scrape(incremental=args.incremental, page_limit=args.limit)
+    finally:
+        close_browser()
