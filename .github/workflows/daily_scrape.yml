@@ -8,10 +8,6 @@
 #   2. Installs scraper dependencies
 #   3. Runs mfc_scraper.py --incremental (skips already-cached figures)
 #   4. If figures.json changed, commits it back to the repo
-#   5. Optionally triggers a Vercel / Netlify redeploy via webhook
-#
-# Required repo secrets (Settings → Secrets → Actions):
-#   VERCEL_DEPLOY_HOOK  (optional) — webhook URL for redeploy trigger
 
 name: Daily MFC Scrape
 
@@ -106,18 +102,7 @@ jobs:
           git commit -m "🤖 scraper: update figure database (${COUNT} figures) [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           git push
 
-      # ── 7. Trigger Vercel redeploy (optional) ─────────────────────
-      - name: Trigger Vercel redeploy
-        if: >
-          steps.changes.outputs.changed == 'true' &&
-          secrets.VERCEL_DEPLOY_HOOK != ''
-        run: |
-          curl -s -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}" \
-            -H "Content-Type: application/json" \
-            -d '{"reason": "figures.json updated by scraper"}' \
-          | python -m json.tool
-
-      # ── 8. Summary ────────────────────────────────────────────────
+      # ── 7. Summary ────────────────────────────────────────────────
       - name: Print summary
         if: always()
         run: |
