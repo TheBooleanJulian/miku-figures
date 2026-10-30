@@ -6,6 +6,7 @@ import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 
 // In production point this to your GitHub raw URL or Vercel public path
 const FIGURES_JSON_URL = "./figures.json";
+const SCRAPE_WORKFLOW_URL = "https://github.com/TheBooleanJulian/miku-figures/actions/workflows/daily_scrape.yml";
 const META_JSON_URL    = "./meta.json";
 
 const TYPE_ORDER = [
@@ -482,8 +483,6 @@ export default function MikuFigureArchive() {
   const [meta, setMeta]           = useState(null);
   const [loading, setLoading]     = useState(true);
   const [usingDemo, setUsingDemo] = useState(false);
-  const [scrapingStatus, setScrapingStatus] = useState(null); // null, 'running', 'success', 'error'
-  const [scrapingProgress, setScrapingProgress] = useState(0);
 
   // Filters
   const [search, setSearch]         = useState("");
@@ -520,41 +519,6 @@ export default function MikuFigureArchive() {
     }
     load();
   }, []);
-
-  /* ── Manual scrape function ── */
-  const runManualScrape = async () => {
-    setScrapingStatus('running');
-    setScrapingProgress(0);
-
-    try {
-      // In a real implementation, this would call a backend endpoint
-      // For now, we'll simulate the process and refresh the data
-      for (let i = 0; i <= 10; i++) {
-        setScrapingProgress(i * 10);
-        await new Promise(resolve => setTimeout(resolve, 200)); // Simulate progress
-      }
-
-      // Reload data after simulated scrape
-      const [figRes, metaRes] = await Promise.all([
-        fetch(FIGURES_JSON_URL),
-        fetch(META_JSON_URL).catch(() => null),
-      ]);
-      if (!figRes.ok) throw new Error("figures.json not found");
-      const figs = await figRes.json();
-      setFigures(figs);
-      if (metaRes?.ok) setMeta(await metaRes.json());
-      setScrapingStatus('success');
-      setUsingDemo(false);
-
-      // Reset success status after 3 seconds
-      setTimeout(() => setScrapingStatus(null), 3000);
-    } catch (error) {
-      console.error("Scrape failed:", error);
-      setScrapingStatus('error');
-      setScrapingProgress(0);
-      setTimeout(() => setScrapingStatus(null), 3000);
-    }
-  };
 
   /* ── Derived data for filter options ── */
   const allMakers = useMemo(() => {
@@ -727,46 +691,24 @@ export default function MikuFigureArchive() {
                 </div>
               ))}
                         
-              {/* Manual Scrape Button */}
-              <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-                <button 
-                  onClick={runManualScrape}
-                  disabled={scrapingStatus === 'running'}
-                  style={{
-                    background: scrapingStatus === 'running' ? "rgba(255,159,67,0.2)" : "rgba(57,197,187,0.15)",
-                    border: "1px solid rgba(57,197,187,0.3)",
-                    color: scrapingStatus === 'running' ? "rgba(255,255,255,0.5)" : "#39c5bb",
-                    borderRadius: 8,
-                    padding: "8px 16px",
-                    fontSize: 12,
-                    fontWeight: 600,
-                    cursor: scrapingStatus === 'running' ? "not-allowed" : "pointer",
-                    transition: "all 0.2s",
-                  }}
-                >
-                  {scrapingStatus === 'running' ? 'Scraping...' : 'Manual Scrape'}
-                </button>
-                          
-                {/* Progress Bar */}
-                {scrapingStatus === 'running' && (
-                  <div style={{
-                    width: "100%",
-                    height: 4,
-                    background: "rgba(255,255,255,0.1)",
-                    borderRadius: 2,
-                    overflow: "hidden",
-                  }}>
-                    <div 
-                      style={{
-                        height: "100%",
-                        width: `${scrapingProgress}%`,
-                        background: "#39c5bb",
-                        transition: "width 0.2s ease",
-                      }}
-                    />
-                  </div>
-                )}
-              </div>
+              {/* Manual Scrape: opens the workflow page; click "Run workflow" there */}
+              <a
+                href={SCRAPE_WORKFLOW_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  background: "rgba(57,197,187,0.15)",
+                  border: "1px solid rgba(57,197,187,0.3)",
+                  color: "#39c5bb",
+                  borderRadius: 8,
+                  padding: "8px 16px",
+                  fontSize: 12,
+                  fontWeight: 600,
+                  textDecoration: "none",
+                }}
+              >
+                Start Scrape ↗
+              </a>
             </div>
           </div>
 
@@ -779,31 +721,6 @@ export default function MikuFigureArchive() {
               display: "inline-block",
             }}>
               ⚠ Demo mode — <code style={{ fontFamily: "monospace" }}>figures.json</code> not found. Run the scraper to populate real data.
-            </div>
-          )}
-
-          {/* Scrape Status Message */}
-          {scrapingStatus === 'success' && (
-            <div style={{
-              marginTop: 8,
-              background: "rgba(57,197,187,0.15)", border: "1px solid rgba(57,197,187,0.3)",
-              borderRadius: 8, padding: "8px 14px",
-              fontSize: 12, color: "#39c5bb",
-              display: "inline-block",
-            }}>
-              ✓ Scrape completed successfully!
-            </div>
-          )}
-          
-          {scrapingStatus === 'error' && (
-            <div style={{
-              marginTop: 8,
-              background: "rgba(255,79,79,0.15)", border: "1px solid rgba(255,79,79,0.3)",
-              borderRadius: 8, padding: "8px 14px",
-              fontSize: 12, color: "#ff4f4f",
-              display: "inline-block",
-            }}>
-              ✗ Scrape failed. Please try again later.
             </div>
           )}
 
