@@ -134,6 +134,12 @@ MERCH_RE = re.compile(
 # Another Vocaloid is the actual product (e.g. "... Kurumitapinui MEIKO")
 OTHER_CHARACTER_RE = re.compile(
     r"(meiko|kaito|(rin|len) kagamine|kagamine (rin|len)|luka megurine|megurine luka)\)?$", re.I)
+# Project Sekai (PJSK) goods of other characters carry "feat. Hatsune Miku" as a
+# franchise label. For those, Miku must appear once the label is stripped.
+PJSK_RE = re.compile(r"project sekai|colorful stage", re.I)
+PJSK_LABEL_RE = re.compile(
+    r"feat\.?\s*(?:hatsune miku|miku hatsune)|\([^)]*colorful stage[^)]*\)|"
+    r"the broken world and miku who can'?t sing|miku who can'?t sing", re.I)
 PLUSH_RE = re.compile(r"plush|mascot|nui|kurumi|chibigurumi|fluffy|fuwa|yurayura|swaying", re.I)
 PRIZE_RE = re.compile(
     r"amp\+?|noodle stopper|wonderland|exceed creative|trio-try-it|luminasta|espresto|"
@@ -145,6 +151,8 @@ PRIZE_MAKERS = ("taito", "furyu", "sega", "banpresto", "bandai spirits", "bandai
 
 def classify(name: str, maker: str | None) -> str | None:
     """Figure type for a product, or None if it is merchandise / not a Miku figure."""
+    if PJSK_RE.search(name) and "miku" not in PJSK_LABEL_RE.sub("", name).lower():
+        return None
     if "miku" not in name.lower() or MERCH_RE.search(name) or OTHER_CHARACTER_RE.search(name.strip()):
         return None
     low = name.lower()
@@ -379,6 +387,9 @@ def scrape(incremental: bool, page_limit: int | None) -> int:
     for i, (fig_id, stub) in enumerate(stubs.items(), 1):
         if incremental and fig_id in figures:
             skipped += 1
+            continue
+        if classify(stub["name"], None) is None:    # goods: skip without a detail fetch
+            dropped += 1
             continue
         log.info(f"[{i}/{len(stubs)}] {stub['name'][:70]}")
         body = get_html(stub["detail_url"])
