@@ -1,34 +1,24 @@
 {
-  "last_updated": "2026-02-28T02:30:00+00:00",
-  "total_figures": 12,
-  "new_this_run": 12,
+  "total_figures": 22,
+  "new_this_run": 22,
   "by_type": {
-    "Scale": 6,
-    "Nendoroid": 2,
-    "Figma": 2,
-    "Pop Up Parade": 1
+    "Scale": 9,
+    "Other": 6,
+    "Plush / Soft": 5,
+    "Pop Up Parade": 2
   },
   "by_year": {
-    "2015": 1,
-    "2016": 1,
-    "2018": 1,
-    "2019": 1,
-    "2020": 2,
-    "2021": 1,
-    "2022": 1,
-    "2023": 2,
-    "2024": 2
+    "2026": 6,
+    "2027": 15,
+    "2028": 1
   },
   "by_event": {
-    "Symphony": 1,
-    "Snow Miku": 2,
-    "Racing Miku": 2,
-    "Magical Mirai": 1,
-    "Append": 1,
-    "Deep Sea Girl": 1,
-    "World is Mine": 1,
-    "Senbonzakura": 1,
-    "Tell Your World": 1
+    "Symphony": 2,
+    "Snow Miku": 1,
+    "Racing Miku": 1,
+    "EXPO": 1
   },
-  "scrape_mode": "sample_data"
+  "scrape_mode": "full",
+  "source": "hlj.com",
+  "last_updated": "2026-10-30T08:55:08.007964+00:00"
 }
