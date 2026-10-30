@@ -37,8 +37,14 @@ from pathlib import Path
 # ──────────────────────────────────────────────
 
 HLJ_BASE = "https://www.hlj.com"
-LIST_URL = HLJ_BASE + "/search/?Word=hatsune+miku&GenreCode2=Figures&Page={page}"
-MAX_PAGES = 60                  # hard cap; listing has ~38 pages
+# "miku" (not "hatsune miku") also catches Snow Miku / Racing Miku titles; figma
+# action figures sit outside HLJ's "Figures" category, so they get their own query.
+LIST_QUERIES = [
+    "Word=miku&GenreCode2=Figures",
+    "Word=figma+miku",
+]
+LIST_URL = HLJ_BASE + "/search/?{query}&Page={page}"
+MAX_PAGES = 80                  # hard cap per query; "miku" listing has ~57 pages
 OUTPUT_DIR = Path(__file__).parent.parent / "public"
 FIGURES_FILE = OUTPUT_DIR / "figures.json"
 META_FILE = OUTPUT_DIR / "meta.json"
@@ -352,16 +358,17 @@ def scrape(incremental: bool, page_limit: int | None) -> int:
 
     # 1. Listing pages -> stubs
     stubs: dict[str, dict] = {}
-    for page in range(1, (page_limit or MAX_PAGES) + 1):
-        body = get_html(LIST_URL.format(page=page))
-        if body is None:
-            break
-        found = [s for s in parse_listing(body) if s["id"] not in stubs]
-        log.info(f"Listing page {page}: {len(found)} new items")
-        if not found:                       # past the last page
-            break
-        stubs.update({s["id"]: s for s in found})
-        time.sleep(DELAY_BETWEEN_PAGES)
+    for query in LIST_QUERIES:
+        for page in range(1, (page_limit or MAX_PAGES) + 1):
+            body = get_html(LIST_URL.format(query=query, page=page))
+            if body is None:
+                break
+            found = [s for s in parse_listing(body) if s["id"] not in stubs]
+            log.info(f"[{query}] listing page {page}: {len(found)} new items")
+            if not found:                   # past the last page
+                break
+            stubs.update({s["id"]: s for s in found})
+            time.sleep(DELAY_BETWEEN_PAGES)
     log.info(f"Collected {len(stubs)} listing stubs.")
     if not stubs:
         log.error("No listing data fetched. Aborting without touching figures.json.")
