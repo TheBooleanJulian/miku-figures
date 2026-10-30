@@ -117,12 +117,41 @@ ILLUSTRATORS = {
 SCALE_RE = re.compile(r"\b1/(\d+)\b")
 
 
-def normalize_type(name: str) -> str:
-    text = name.lower()
+# Goods that HLJ files under "Figures" but that aren't figures.
+MERCH_RE = re.compile(
+    r"tapestr|towel|t-shirt|\bt shirt|jersey|key ?chain|\bcase\b|code clip|\bplate\b|"
+    r"costume set|\btote\b|sticker|poster|\bmug\b|\bcup\b|\bbags?\b|backpack|hoodie|sweatshirt|"
+    r"parka|acrylic|badge|clear file|blanket|pouch|notebook|cushion|umbrella|wallet|"
+    r"smartphone|\bpins?\b|calendar|luggage|mirror|shikishi|ticket|rubber mat|puzzle|card holder|hanging scroll|amulet|otamatone|\[used item",
+    re.I,
+)
+# Another Vocaloid is the actual product (e.g. "... Kurumitapinui MEIKO")
+OTHER_CHARACTER_RE = re.compile(
+    r"(meiko|kaito|(rin|len) kagamine|kagamine (rin|len)|luka megurine|megurine luka)\)?$", re.I)
+PLUSH_RE = re.compile(r"plush|mascot|nui|kurumi|chibigurumi|fluffy|fuwa|yurayura|swaying", re.I)
+PRIZE_RE = re.compile(
+    r"amp\+?|noodle stopper|wonderland|exceed creative|trio-try-it|luminasta|espresto|"
+    r"sweet sweets|fuwapuchi|figure|^pm|4\.5 chan|look up|artist collaboration",
+    re.I,
+)
+PRIZE_MAKERS = ("taito", "furyu", "sega", "banpresto", "bandai spirits", "bandai namco")
+
+
+def classify(name: str, maker: str | None) -> str | None:
+    """Figure type for a product, or None if it is merchandise / not a Miku figure."""
+    if "miku" not in name.lower() or MERCH_RE.search(name) or OTHER_CHARACTER_RE.search(name.strip()):
+        return None
+    low = name.lower()
     for key, label in TYPE_MAP.items():
-        if key in text:
+        if key in low:
             return label
-    return "Scale" if SCALE_RE.search(name) else "Other"
+    if PLUSH_RE.search(name):
+        return "Plush / Soft"
+    if SCALE_RE.search(name):
+        return "Scale"
+    if (maker or "").lower().startswith(PRIZE_MAKERS) or PRIZE_RE.search(name):
+        return "Prize"
+    return "Other"
 
 
 def extract_events(name: str) -> list[str]:
@@ -218,7 +247,9 @@ def parse_detail(page_html: str, stub: dict) -> dict | None:
         return None
 
     name = html.unescape(ld.get("name") or stub["name"]).strip()
-    if "miku" not in name.lower():
+    maker = ((ld.get("brand") or {}).get("name")) or _li(page_html, "Manufacturer")
+    typ = classify(name, maker)
+    if typ is None:
         return None
 
     release = None
@@ -241,8 +272,6 @@ def parse_detail(page_html: str, stub: dict) -> dict | None:
                      page_html, re.I)
     scale_m = SCALE_RE.search(name)
 
-    maker = ((ld.get("brand") or {}).get("name")) or _li(page_html, "Manufacturer")
-    typ = normalize_type(name)
     events = extract_events(name)
     series = _li(page_html, "Series")
 
@@ -279,7 +308,17 @@ def load_existing() -> dict[str, dict]:
         try:
             data = json.loads(FIGURES_FILE.read_text(encoding="utf-8"))
             # Only keep rows that came from this scraper; drop old sample/MFC rows.
-            return {f["id"]: f for f in data if f.get("id") and f.get("source") == "hlj"}
+            rows = {}
+            for f in data:
+                if not f.get("id") or f.get("source") != "hlj":
+                    continue
+                typ = classify(f.get("name", ""), f.get("manufacturer"))
+                if typ is None:             # rules changed: drop goods saved earlier
+                    continue
+                f["type"] = typ
+                f["tags"] = [typ, *f.get("events", []), *[t for t in f.get("tags", [])[1:] if t not in (typ,)]]
+                rows[f["id"]] = f
+            return rows
         except Exception as e:
             log.warning(f"Could not load existing figures.json: {e}")
     return {}

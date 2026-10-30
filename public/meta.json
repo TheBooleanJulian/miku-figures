@@ -1,24 +1,52 @@
 {
-  "total_figures": 22,
-  "new_this_run": 22,
+  "total_figures": 1025,
+  "new_this_run": 1003,
   "by_type": {
-    "Scale": 9,
-    "Other": 6,
-    "Plush / Soft": 5,
-    "Pop Up Parade": 2
+    "Other": 566,
+    "Plush / Soft": 224,
+    "Scale": 157,
+    "Mini / Petite": 32,
+    "Nendoroid": 24,
+    "Pop Up Parade": 20,
+    "Prize": 2
   },
   "by_year": {
-    "2026": 6,
-    "2027": 15,
+    "2008": 3,
+    "2009": 5,
+    "2010": 4,
+    "2011": 4,
+    "2012": 6,
+    "2013": 5,
+    "2014": 8,
+    "2015": 9,
+    "2016": 9,
+    "2017": 6,
+    "2018": 38,
+    "2019": 35,
+    "2020": 46,
+    "2021": 88,
+    "2022": 94,
+    "2023": 89,
+    "2024": 139,
+    "2025": 207,
+    "2026": 182,
+    "2027": 47,
     "2028": 1
   },
   "by_event": {
-    "Symphony": 2,
-    "Snow Miku": 1,
-    "Racing Miku": 1,
-    "EXPO": 1
+    "Racing Miku": 138,
+    "Cinnamoroll": 82,
+    "Magical Mirai": 20,
+    "Snow Miku": 13,
+    "EXPO": 11,
+    "Symphony": 10,
+    "World is Mine": 6,
+    "Deep Sea Girl": 4,
+    "Senbonzakura": 3,
+    "Append": 1,
+    "Tell Your World": 1
   },
-  "scrape_mode": "full",
+  "scrape_mode": "incremental",
   "source": "hlj.com",
-  "last_updated": "2026-10-30T08:55:08.007964+00:00"
+  "last_updated": "2026-10-30T09:31:17.119723+00:00"
 }
