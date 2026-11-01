@@ -1,12 +1,12 @@
 {
-  "total_figures": 914,
+  "total_figures": 916,
   "new_this_run": 2,
   "by_type": {
     "Plush / Soft": 274,
     "Prize": 263,
-    "Scale": 195,
+    "Scale": 196,
     "Other": 102,
-    "Nendoroid": 30,
+    "Nendoroid": 31,
     "Pop Up Parade": 21,
     "Figma": 18,
     "Mini / Petite": 11
@@ -14,7 +14,7 @@
   "by_year": {
     "2008": 3,
     "2009": 10,
-    "2010": 4,
+    "2010": 5,
     "2011": 5,
     "2012": 11,
     "2013": 8,
@@ -30,12 +30,12 @@
     "2023": 95,
     "2024": 170,
     "2025": 157,
-    "2026": 126,
+    "2026": 127,
     "2027": 45,
     "2028": 1
   },
   "by_event": {
-    "Racing Miku": 104,
+    "Racing Miku": 105,
     "Cinnamoroll": 77,
     "Snow Miku": 76,
     "Magical Mirai": 16,
@@ -49,5 +49,5 @@
   },
   "scrape_mode": "incremental",
   "source": "hlj.com",
-  "last_updated": "2026-10-31T22:19:27.906534+00:00"
+  "last_updated": "2026-11-01T22:40:29.770595+00:00"
 }
