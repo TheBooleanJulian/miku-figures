@@ -255,6 +255,44 @@ def _li(page_html: str, label: str) -> str | None:
     return re.sub(r"\s+", " ", text).strip() or None
 
 
+# ──────────────────────────────────────────────
+# DESCRIPTION CLEANING
+# ──────────────────────────────────────────────
+
+SIZE_RE = re.compile(r"\[\s*(?:figure\s+)?size\s*\]\s*:?\s*([^\[]+)", re.I)
+# Sentences that are a call to action rather than a description
+SALES_RE = re.compile(
+    r"\b(?:pre-?)?order\b[^.!?]*\b(?:today|now|yours|soon)\b|don'?t miss|do not miss|"
+    r"be sure to|make sure (?:to|you)|add (?:her|him|it|this) to your|bring (?:her|him|it|this) home|"
+    r"get (?:yours|your|her|him)|grab (?:yours|her|him|one)|check (?:it|her|him) out|"
+    r"won'?t want to miss|in your (?:own )?collection|on display in your|"
+    r"to (?:any|every|a) (?:fan'?s )?collection|placing your order|manufacturer'?s defects|"
+    r"touch-up work|sizes tend to run|please (?:note|keep this in mind)|"
+    r"^(?:bring|add|reserve|secure|snag|pick up|take home|welcome)\b",
+    re.I,
+)
+
+
+def clean_description(raw: str | None) -> tuple[str, str | None]:
+    """Return (clean description, figure size).
+
+    Decodes HTML entities (twice: the text is often double-escaped), strips tags
+    and sales sentences, and moves the "[Figure Size]: ..." note out of the prose.
+    """
+    text = raw or ""
+    for _ in range(2):
+        text = html.unescape(text)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    size = None
+    m = SIZE_RE.search(text)
+    if m:
+        size = m.group(1).strip().rstrip(".") or None
+        text = (text[:m.start()] + text[m.end():]).strip()
+    sentences = re.split(r"(?<=[.!?])\s+", text)
+    return " ".join(s for s in sentences if s and not SALES_RE.search(s)).strip(), size
+
+
 def parse_detail(page_html: str, stub: dict) -> dict | None:
     """Enrich a listing stub with detail-page data. None = not a figure (skip)."""
     ld = {}
@@ -297,8 +335,7 @@ def parse_detail(page_html: str, stub: dict) -> dict | None:
     if pm:
         price_sgd = float(pm.group(1).replace(",", ""))
 
-    size = re.search(r"(?:Figure Size|Size)[:\s]*(?:Approximately|Approx\.?)?\s*([\d.]+\s?(?:cm|mm)[^<\n]{0,20})",
-                     page_html, re.I)
+    desc, desc_size = clean_description(ld.get("description"))
     scale_m = SCALE_RE.search(name)
 
     events = extract_events(name)
@@ -320,8 +357,8 @@ def parse_detail(page_html: str, stub: dict) -> dict | None:
         "events": events,
         "illustrator": extract_illustrator(name),
         "tags": [t for t in [typ, *events, maker, series] if t],
-        "description": (ld.get("description") or "").strip(),
-        "dimensions": size.group(1).strip() if size else None,
+        "description": desc,
+        "dimensions": desc_size,
         "material": None,
         "barcode": ld.get("gtin13") or _li(page_html, "JAN Code"),
         "mfc_owned_count": None,
@@ -349,6 +386,8 @@ def load_existing() -> dict[str, dict]:
                 if typ is None:             # rules changed: drop goods saved earlier
                     continue
                 f["type"] = typ
+                f["description"], size = clean_description(f.get("description"))
+                f["dimensions"] = f.get("dimensions") or size
                 f["tags"] = [typ, *f.get("events", []), *[t for t in f.get("tags", [])[1:] if t not in (typ,)]]
                 rows[f["id"]] = f
             return rows
