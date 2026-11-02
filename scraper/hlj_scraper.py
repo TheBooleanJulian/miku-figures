@@ -50,6 +50,7 @@ FIGURES_FILE = OUTPUT_DIR / "figures.json"
 META_FILE = OUTPUT_DIR / "meta.json"
 DELAY_BETWEEN_PAGES = 1.5       # seconds — be polite
 DELAY_BETWEEN_ITEMS = 0.8
+FIGURE_CATEGORIES = ("Figures", "Action Figures")
 MAX_CONSECUTIVE_FAILURES = 8    # stop instead of hammering a site that blocks us
 
 # HLJ picks the display currency from this cookie (default is GeoIP-based).
@@ -140,6 +141,12 @@ PJSK_RE = re.compile(r"project sekai|colorful stage", re.I)
 PJSK_LABEL_RE = re.compile(
     r"feat\.?\s*(?:hatsune miku|miku hatsune)|\([^)]*colorful stage[^)]*\)|"
     r"the broken world and miku who can'?t sing|miku who can'?t sing", re.I)
+# Other characters who happen to be called Miku (Nakano Miku, Miku Maekawa, ...)
+NOT_VOCALOID_RE = re.compile(
+    r"quintessential|nakano|maekawa|izayoi|miku ogawa|date a live|idolm@?ster|love live", re.I)
+# Name signals that an item is the Vocaloid even if HLJ files it under another series
+VOCALOID_NAME_RE = re.compile(
+    r"hatsune|hastune|sakura miku|snow miku|yuki miku|racing miku|mikuzukin|miku with you", re.I)
 PLUSH_RE = re.compile(r"plush|mascot|nui|kurumi|chibigurumi|fluffy|fuwa|yurayura|swaying", re.I)
 PRIZE_RE = re.compile(
     r"amp\+?|noodle stopper|wonderland|exceed creative|trio-try-it|luminasta|espresto|"
@@ -152,6 +159,8 @@ PRIZE_MAKERS = ("taito", "furyu", "sega", "banpresto", "bandai spirits", "bandai
 def classify(name: str, maker: str | None) -> str | None:
     """Figure type for a product, or None if it is merchandise / not a Miku figure."""
     if PJSK_RE.search(name) and "miku" not in PJSK_LABEL_RE.sub("", name).lower():
+        return None
+    if NOT_VOCALOID_RE.search(name) and not VOCALOID_NAME_RE.search(name):
         return None
     if "miku" not in name.lower() or MERCH_RE.search(name) or OTHER_CHARACTER_RE.search(name.strip()):
         return None
@@ -257,8 +266,14 @@ def parse_detail(page_html: str, stub: dict) -> dict | None:
             pass
 
     item_type = _li(page_html, "Item Type") or ""
+    category = _li(page_html, "Category") or ""
+    series = _li(page_html, "Series")
     if "kit" in item_type.lower():          # model kits (e.g. Nendoroid Plamo) aren't figures
         return None
+    if category not in FIGURE_CATEGORIES:   # apparel, fun goods, cosmetics, ...
+        return None
+    if series and series.lower() != "vocaloid" and not VOCALOID_NAME_RE.search(stub["name"]):
+        return None                         # a different franchise's Miku
 
     name = html.unescape(ld.get("name") or stub["name"]).strip()
     maker = ((ld.get("brand") or {}).get("name")) or _li(page_html, "Manufacturer")
@@ -287,7 +302,8 @@ def parse_detail(page_html: str, stub: dict) -> dict | None:
     scale_m = SCALE_RE.search(name)
 
     events = extract_events(name)
-    series = _li(page_html, "Series")
+    if "stuffed animals" in item_type.lower() and typ not in ("Nendoroid", "Figma"):
+        typ = "Plush / Soft"                # HLJ files plush and dolls under this item type
 
     return {
         "id": stub["id"],
@@ -309,6 +325,9 @@ def parse_detail(page_html: str, stub: dict) -> dict | None:
         "material": None,
         "barcode": ld.get("gtin13") or _li(page_html, "JAN Code"),
         "mfc_owned_count": None,
+        "series": series,
+        "category": category,
+        "item_type": item_type,
         "source": "hlj",
     }
 
@@ -390,6 +409,7 @@ def scrape(incremental: bool, page_limit: int | None) -> int:
             continue
         if classify(stub["name"], None) is None:    # goods: skip without a detail fetch
             dropped += 1
+            figures.pop(fig_id, None)
             continue
         log.info(f"[{i}/{len(stubs)}] {stub['name'][:70]}")
         body = get_html(stub["detail_url"])
@@ -398,6 +418,7 @@ def scrape(incremental: bool, page_limit: int | None) -> int:
         fig = parse_detail(body, stub)
         if fig is None:
             dropped += 1
+            figures.pop(fig_id, None)
         else:
             figures[fig_id] = fig
             new += 1
