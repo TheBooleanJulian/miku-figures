@@ -1,15 +1,15 @@
 {
-  "total_figures": 1185,
-  "new_this_run": 190,
+  "total_figures": 1211,
+  "new_this_run": 26,
   "by_type": {
-    "Prize": 435,
-    "Plush / Soft": 285,
-    "Scale": 197,
-    "Nendoroid": 113,
-    "Other": 95,
-    "Figma": 32,
+    "Prize": 452,
+    "Plush / Soft": 265,
+    "Scale": 202,
+    "Nendoroid": 120,
+    "Other": 110,
+    "Figma": 33,
     "Pop Up Parade": 20,
-    "Mini / Petite": 8
+    "Mini / Petite": 9
   },
   "by_year": {
     "2008": 3,
@@ -35,8 +35,8 @@
     "2028": 1
   },
   "by_event": {
-    "Racing Miku": 110,
-    "Snow Miku": 87,
+    "Racing Miku": 117,
+    "Snow Miku": 90,
     "Cinnamoroll": 80,
     "Magical Mirai": 28,
     "Symphony": 14,
@@ -45,13 +45,14 @@
     "Deep Sea Girl": 4,
     "Senbonzakura": 4,
     "Append": 4,
+    "Mikudayo": 3,
     "Live Stage": 2,
     "Tell Your World": 1
   },
   "by_source": {
     "hlj": 813,
-    "solaris": 372
+    "solaris": 398
   },
   "scrape_mode": "solaris",
-  "last_updated": "2026-11-02T07:39:07.847478+00:00"
+  "last_updated": "2026-11-02T11:18:44.562752+00:00"
 }
