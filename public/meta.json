@@ -1,14 +1,14 @@
 {
-  "total_figures": 852,
-  "new_this_run": 0,
+  "total_figures": 1034,
+  "new_this_run": 182,
   "by_type": {
+    "Prize": 355,
     "Plush / Soft": 265,
-    "Prize": 245,
-    "Scale": 185,
-    "Other": 79,
-    "Nendoroid": 30,
+    "Scale": 195,
+    "Other": 85,
+    "Nendoroid": 76,
+    "Figma": 28,
     "Pop Up Parade": 20,
-    "Figma": 18,
     "Mini / Petite": 10
   },
   "by_year": {
@@ -35,19 +35,23 @@
     "2028": 1
   },
   "by_event": {
-    "Racing Miku": 105,
+    "Racing Miku": 108,
+    "Snow Miku": 82,
     "Cinnamoroll": 77,
-    "Snow Miku": 76,
-    "Magical Mirai": 16,
-    "Symphony": 12,
-    "EXPO": 11,
+    "Magical Mirai": 26,
+    "Symphony": 13,
+    "EXPO": 12,
     "World is Mine": 6,
     "Deep Sea Girl": 4,
-    "Senbonzakura": 3,
+    "Senbonzakura": 4,
     "Append": 3,
-    "Tell Your World": 1
+    "Tell Your World": 1,
+    "Live Stage": 1
   },
-  "scrape_mode": "incremental",
-  "source": "hlj.com",
-  "last_updated": "2026-11-02T05:49:39.243173+00:00"
+  "by_source": {
+    "hlj": 852,
+    "solaris": 182
+  },
+  "scrape_mode": "solaris",
+  "last_updated": "2026-11-02T06:40:31.101129+00:00"
 }
