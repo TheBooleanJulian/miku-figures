@@ -897,32 +897,6 @@
     "source": "hlj"
   },
   {
-    "id": "CAV15005",
-    "name": "Hatsune Miku: Tensogibashi / Hatsune Miku",
-    "manufacturer": "CARAVAN",
-    "release_date": "2027-02",
-    "year": 2027,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 1500,
-    "price_sgd": 14.54,
-    "image_url": "https://www.hlj.com/productimages/cav/cav15005_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-tensogibashi-hatsune-miku-cav15005",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "CARAVAN",
-      "Vocaloid"
-    ],
-    "description": "",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4570140150058",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "SEG57395",
     "name": "Hatsune Miku: Snow Miku Fluffy Face Mascot",
     "manufacturer": "Sega",
@@ -1109,43 +1083,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC58584",
-    "name": "1/64 Good Smile Hatsune Miku AMG 2021 SUPER GT Round 5 Ver. (Hatsune Miku GT Project) (Rerelease)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2027-02",
-    "year": 2027,
-    "type": "Scale",
-    "scale": "1/64",
-    "price_jpy": 3818,
-    "price_sgd": 37.01,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc58584_0.jpg",
-    "detail_url": "https://www.hlj.com/1-64-scale-good-smile-hatsune-miku-amg-2021-super-gt-round-5-ver-hatsune-miku-gt-project-rerelease-gsc58584",
-    "events": [
-      "Racing Miku"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Good Smile Company's 1/64-scale die-cast display model of the Good Smile Hatsune Miku AMG that raced in the Super GT GT300 class in 2021 is back! The body has been recreated using die-cast materials. [Materials]: Die-cast",
-    "dimensions": "Approximately 7cm long, 2cm high",
-    "material": null,
-    "barcode": "4570232585843",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "B",
     "name": "Snow Miku Yukine Kigurumi Plush Mascot Wink",
     "manufacturer": "Taito",
@@ -1253,7 +1190,7 @@
     "type": "Nendoroid",
     "scale": null,
     "price_jpy": 5545,
-    "price_sgd": 53.79,
+    "price_sgd": 53.73,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc58416_0.jpg",
     "detail_url": "https://www.hlj.com/nendoroid-doll-outfit-set-sakura-miku-hirohako-2025-ver-hakodate-gsc58416",
     "events": [],
@@ -1268,6 +1205,9 @@
     "material": null,
     "barcode": "4570232584167",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Action Figures",
+    "item_type": "Action Figure Accessories",
     "source": "hlj"
   },
   {
@@ -1482,32 +1422,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC58942",
-    "name": "Nendoroid Hatsune Miku: M@GICAL CURE! LOVE SHOT!",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-12",
-    "year": 2026,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 7273,
-    "price_sgd": 70.51,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc58942_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-m-gical-cure-love-shot-gsc58942",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Hatsune Miku gets a new Nendoroid figure from Good Smile Company, in her look from the music video from Sawtowne's M@gical Cure! Love Shot! This super-cute nurse Miku comes with three interchangeable faces: a beam face, an energetic look, and a wink. She's also got a syringe and a cell phone, and a base is included too.",
-    "dimensions": "Approximately 10cm tall",
-    "material": null,
-    "barcode": "4570232589421",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "MDF16021",
     "name": "Hatsune Miku x Maneki Neko: Hatsune Miku White Cat Plush Toy Standard Art by Rassu",
     "manufacturer": "Kadokawa Media Factory",
@@ -1534,58 +1448,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Stuffed Animals and Plush Toys",
-    "source": "hlj"
-  },
-  {
-    "id": "KNF10464",
-    "name": "Hatsune Miku Room Socks (Women's)",
-    "manufacturer": "knit Factory",
-    "release_date": "2026-12",
-    "year": 2026,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 2000,
-    "price_sgd": 19.39,
-    "image_url": "https://www.hlj.com/productimages/knf/knf10464_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-room-socks-women-s-knf10464",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "knit Factory",
-      "Vocaloid"
-    ],
-    "description": "Due to restrictions on this item by the manufacturer, we are unable to ship this product to China. Knit Factory collaborates with Hatsune Miku to bring us a pair of super-snuggly room socks! They've got an embroidered accent inspired by Miku's tie, and the fluffy material they're made from is comfortable and perfect for relaxing. You'll love wearing them around the house on a cold winter's day -- and they're the best thing ever for naps, too!",
-    "dimensions": "Approximately 22-25cm Please note that Japanese sizes tend to run a half size to a full size smaller than their western counterparts. Please keep this in mind and check the measurements above before placing your order.Pants, hoodie, and plushie are sold separately",
-    "material": null,
-    "barcode": "4571646104644",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "KNF10465",
-    "name": "Hatsune Miku Room Socks (Men's)",
-    "manufacturer": "knit Factory",
-    "release_date": "2026-12",
-    "year": 2026,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 2000,
-    "price_sgd": 19.39,
-    "image_url": "https://www.hlj.com/productimages/knf/knf10465_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-room-socks-men-s-knf10465",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "knit Factory",
-      "Vocaloid"
-    ],
-    "description": "Due to restrictions on this item by the manufacturer, we are unable to ship this product to China. Knit Factory collaborates with Hatsune Miku to bring us a pair of super-snuggly room socks! They've got an embroidered accent inspired by Miku's tie, and the fluffy material they're made from is comfortable and perfect for relaxing. You'll love wearing them around the house on a cold winter's day -- and they're the best thing ever for naps, too!",
-    "dimensions": "Approximately 25-28cm Please note that Japanese sizes tend to run a half size to a full size smaller than their western counterparts. Please keep this in mind and check the measurements above before placing your order.Pants, hoodie, and plushie are sold separately",
-    "material": null,
-    "barcode": "4571646104651",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -1739,32 +1601,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC58951",
-    "name": "Nendoroid Hatsune Miku: Happy 16th Birthday Ver. (Rerelease)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-11",
-    "year": 2026,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 8636,
-    "price_sgd": 83.72,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc58951_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-happy-16th-birthday-ver-rerelease-gsc58951",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Good Smile Company's adorable Nendoroid figure celebrating Miku Hatsune's 16th birthday is back! Based on an illustration created by the artist Rella, this figure features Miku with dramatic white wings and softly flowing twin tails! She comes with three interchangeable expressions: an open-mouthed wondering look, a shy smile with her mouth closed, and a tearful smiling face with her eyes closed. Her Wings of Creation are included, as is a Hatsune Miku package and a birthday cake! Her base is included too.",
-    "dimensions": "Approximately 10cm tall",
-    "material": null,
-    "barcode": "4570232589513",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -1930,16 +1766,16 @@
     "manufacturer": "Good Smile Company",
     "release_date": "2026-11",
     "year": 2026,
-    "type": "Other",
+    "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 3500,
-    "price_sgd": 33.93,
+    "price_sgd": 33.92,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc59007_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-huggy-doll-gsc59007",
     "events": [],
     "illustrator": null,
     "tags": [
-      "Other",
+      "Plush / Soft",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -1948,6 +1784,9 @@
     "material": null,
     "barcode": "4570232590076",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -2137,45 +1976,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC58419",
-    "name": "Nendoroid Hatsune Miku: World Is Mine 2024 Ver. (Rerelease)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-10",
-    "year": 2026,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 6818,
-    "price_sgd": 66.1,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc58419_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-world-is-mine-2024-ver-rerelease-gsc58419",
-    "events": [
-      "World is Mine"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Hatsune Miku returns to Good Smile Company's Nendoroid figure lineup, based on the World is Mine 2024 illustration by Redjuice! This spoiled-princess version of Miku comes with three interchangeable faces: a smile, a sidelong-glancing smile, and a blushing expression. She also has a crown, a slice of strawberry shortcake on a plate, and a base for display.",
-    "dimensions": "Approximately 10cm tall",
-    "material": null,
-    "barcode": "4570232584198",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "GSC58507",
     "name": "Nendoroid Hatsune Miku: Mesmerizer Ver.",
     "manufacturer": "Good Smile Company",
@@ -2202,32 +2002,6 @@
     "series": "Vocaloid",
     "category": "Action Figures",
     "item_type": "Nendoroid",
-    "source": "hlj"
-  },
-  {
-    "id": "BANC698629",
-    "name": "Metal Build Hatsune Miku",
-    "manufacturer": "Bandai",
-    "release_date": "2026-10",
-    "year": 2026,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 33000,
-    "price_sgd": 319.93,
-    "image_url": "https://www.hlj.com/productimages/ban/banc698629_0.jpg",
-    "detail_url": "https://www.hlj.com/metal-build-hatsune-miku-banc698629",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Bandai",
-      "Vocaloid"
-    ],
-    "description": "The beloved virtual singer Hatsune Miku joins Bandai's Metal Build series! Building upon the alloy action figure design expertise honed within the Metal Build series, this figure features composite materials -- such as fabric costume pieces and twin-tails crafted from wire-embedded PVC sheets -- along with design arrangements that accentuate its metallic nature, and exquisite coloring that further highlights its aesthetic appeal. Thanks to its extensive and thoughtful jointing, the figure remains capable of performing a wide variety of dynamic actions even while wearing her fabric costume. An interchangeable smiling face with the eyes looking right is included; when combined with poses that take full advantage of the figure's exceptional articulation, this allows for the creation of a spirited, confident expression. An additional interchangeable face with a shouting expression, with the eyes looking left, is included too. Pair it with her acoustic gadgets to capture the high-energy atmosphere of a live concert performance! She also comes with a singing expression with her eyes closed; combined with her flexibly articulated PVC twin tails, it creates a scene as if a specific moment of her performance has been captured in time. You can extend specific sections of her heels to expand the ground contact area to enhance stability during action poses. The main body features a design arrangement refined through Metal Build technology. The strategic use of alloy joints with a metallic sheen throughout the figure highlights its unique appeal as the first-ever female character to join the Metal Build series!The figure's back features a mechanical design optimized for articulation, ensuring that even poses involving a deep backward arch of the torso look stunningly natural and precise. Thanks to hip joints constructed with multiple axes of rotation, the figure allows for extensive forward and backward bending movements centered around the waist.A dedicated display stand featuring holographic foil accents is included. [Materials]: ABS, die-cast, PVC, fabric [Set Contents]:Main figureInterchangeable faces (x4)Interchangeable hands (x4 each, left and right)Interchangeable front hair part with headdressInterchangeable twin-tail parts (left and right)Sound gadgetComplete fabric outfit setBackpack ABackpack BRight hand armorDisplay stand set",
-    "dimensions": "Approximately 18cm tall",
-    "material": null,
-    "barcode": "4573102698629",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -2425,7 +2199,7 @@
     "type": "Scale",
     "scale": "1/7",
     "price_jpy": 25273,
-    "price_sgd": 245.02,
+    "price_sgd": 244.9,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc18976_0.jpg",
     "detail_url": "https://www.hlj.com/1-7-scale-hatsune-miku-world-is-mine-2024-ver-gsc18976",
     "events": [
@@ -2435,16 +2209,6 @@
     "tags": [
       "Scale",
       "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -2453,6 +2217,9 @@
     "material": null,
     "barcode": "4571697189768",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -2833,38 +2600,12 @@
     "manufacturer": "eye up",
     "release_date": "2026-08",
     "year": 2026,
-    "type": "Mini / Petite",
+    "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 1500,
     "price_sgd": 14.54,
     "image_url": "https://www.hlj.com/productimages/eyp/eyp56190_0.jpg",
     "detail_url": "https://www.hlj.com/piapro-characters-petit-bear-mascot-hatsune-miku-eyp56190",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Mini / Petite",
-      "eye up",
-      "Vocaloid"
-    ],
-    "description": "",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4546598561906",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "EYP56197",
-    "name": "Piapro Characters: Nui Colon (Hatsune Miku)",
-    "manufacturer": "eye up",
-    "release_date": "2026-08",
-    "year": 2026,
-    "type": "Plush / Soft",
-    "scale": null,
-    "price_jpy": 1400,
-    "price_sgd": 13.57,
-    "image_url": "https://www.hlj.com/productimages/eyp/eyp56197_0.jpg",
-    "detail_url": "https://www.hlj.com/piapro-characters-nui-colon-hatsune-miku-eyp56197",
     "events": [],
     "illustrator": null,
     "tags": [
@@ -2875,34 +2616,11 @@
     "description": "",
     "dimensions": null,
     "material": null,
-    "barcode": "4546598561975",
+    "barcode": "4546598561906",
     "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "GSC67526",
-    "name": "Nendoroid Hatsune Miku: DecoMiku (Darkness)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-08",
-    "year": 2026,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 7091,
-    "price_sgd": 68.78,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc67526_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-decomiku-darkness-gsc67526",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "DECO*27's DecoMiku (Darkness) is joining the Nendoroid figure family from Good Smile Company! She comes with three interchangeable faces: a standard expression, a wink, and an face with half-closed eyes. She also has her guitar, a base, and a part that allows her to hold hands with DecoMiku (Lightness), as well as a base for display.",
-    "dimensions": "Approximately 10cm tall",
-    "material": null,
-    "barcode": "4580828675261",
-    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -3088,7 +2806,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2900,
-    "price_sgd": 28.11,
+    "price_sgd": 28.1,
     "image_url": "https://www.hlj.com/media/original_images/noImage.png",
     "detail_url": "https://www.hlj.com/hatsune-miku-t-most-figure-tat452072400",
     "events": [],
@@ -3103,6 +2821,9 @@
     "material": null,
     "barcode": "2204520724004",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -3259,7 +2980,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 2000,
-    "price_sgd": 19.39,
+    "price_sgd": 19.38,
     "image_url": "https://www.hlj.com/productimages/seg/seg56063_0.jpg",
     "detail_url": "https://www.hlj.com/project-sekai-colorful-stage-feat-hatsune-miku-my-sekai-plush-toy-hatsune-miku-plush-toy-s-seg56063",
     "events": [],
@@ -3274,6 +2995,9 @@
     "material": null,
     "barcode": "4573628560639",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -3307,32 +3031,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Stuffed Animals and Plush Toys",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC67623",
-    "name": "Nendoroid Hatsune Miku: The Vampire Ver. (Rerelease)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-07",
-    "year": 2026,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 6818,
-    "price_sgd": 66.1,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc67623_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-the-vampire-ver-rerelease-gsc67623",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "As seen in the music video for the song The Vampire by DECO*27, the devilishly adorable Miku Hatsune returns to the Nendoroid figure series from Good Smile Company! She comes with three interchangeable faces: a sly wink, an expression with her tongue stuck out, and a crying face. She also has a face mask plus a pulled-down version, and bat-wing clear plates! A base is included too.",
-    "dimensions": "Approximately 10cm tall",
-    "material": null,
-    "barcode": "4580828676237",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -3402,7 +3100,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 12000,
-    "price_sgd": 116.34,
+    "price_sgd": 116.28,
     "image_url": "https://www.hlj.com/productimages/seg/seg46931_0.png",
     "detail_url": "https://www.hlj.com/hatsune-miku-snow-miku-2026-fuwapuchi-huge-jumbo-plush-toy-seg46931",
     "events": [
@@ -3412,16 +3110,6 @@
     "tags": [
       "Plush / Soft",
       "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
       "Sega",
       "Vocaloid"
     ],
@@ -3430,32 +3118,9 @@
     "material": null,
     "barcode": "4582733469317",
     "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "GSC67398",
-    "name": "Hatsune Miku Pinback Button: Han Gong Qiu Yue Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-07",
-    "year": 2026,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 550,
-    "price_sgd": 5.33,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc67398_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-pinback-button-han-gong-qiu-yue-ver-gsc67398",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "This pinback button from Good Smile Company captures Rella's gorgeous illustration of the Han Gong Qiu Yue version of Hatsune Miku for your own collection! [Materials]: Tinplate",
-    "dimensions": "Approximately 5.8cm in diameter",
-    "material": null,
-    "barcode": "4580828673984",
-    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -3467,7 +3132,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 4000,
-    "price_sgd": 38.78,
+    "price_sgd": 38.76,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc67588_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-gt-project-2026-chocopuni-plushie-racing-miku-2026-ver-gsc67588",
     "events": [
@@ -3477,16 +3142,6 @@
     "tags": [
       "Plush / Soft",
       "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -3495,6 +3150,9 @@
     "material": null,
     "barcode": "4580828675889",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -3539,7 +3197,7 @@
     "type": "Scale",
     "scale": "1/7",
     "price_jpy": 20000,
-    "price_sgd": 193.9,
+    "price_sgd": 193.8,
     "image_url": "https://www.hlj.com/productimages/fru/fruamu-fnx1169_0.jpg",
     "detail_url": "https://www.hlj.com/1-7-scale-hatsune-miku-x-amashiro-natsuki-fruamu-fnx1169",
     "events": [],
@@ -3554,6 +3212,9 @@
     "material": null,
     "barcode": "4582655078802",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -3616,45 +3277,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Stuffed Animals and Plush Toys",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC66823",
-    "name": "Nendoroid Hatsune Miku: Deep Sea Girl Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-06",
-    "year": 2026,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 7273,
-    "price_sgd": 70.51,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc66823_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-deep-sea-girl-ver-gsc66823",
-    "events": [
-      "Deep Sea Girl"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "Deep Sea Girl",
-      "Deep Sea Girl",
-      "Deep Sea Girl",
-      "Deep Sea Girl",
-      "Deep Sea Girl",
-      "Deep Sea Girl",
-      "Deep Sea Girl",
-      "Deep Sea Girl",
-      "Deep Sea Girl",
-      "Deep Sea Girl",
-      "Deep Sea Girl",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Hatsune Miku gets a new Nendoroid figure from Good Smile Company, as she was seen in the music video for Yuuyu's song Deep Sea Girl ! She comes with three interchangeable faces: an innocent expression, a crying face, and a smile. A piece of coral is also included, as is a coral chair for her to sit in, plus a sitting lower-body part; a base is also included.",
-    "dimensions": "Approximately 10cm tall",
-    "material": null,
-    "barcode": "4580828668232",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -3803,32 +3425,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC66647",
-    "name": "Nendoroid Hatsune Miku: Unshuttered Sekai Ver. (Colorful Stage! The Movie: A Miku Who Can't Sing)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-05",
-    "year": 2026,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 6545,
-    "price_sgd": 63.45,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc66647_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-unshuttered-sekai-ver-colorful-stage-the-movie-a-miku-who-can-t-sing-gsc66647",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "The Unshuttered Sekai version of Hatsune Miku from Colorful Stage! The Movie: A Miku Who Can't Sing is now part of the Nendoroid figure series from Good Smile Company! Three interchangeable faces are included: a cheerful expression, a smile, and a singing face. Interchangeable hands are also included, as is a base for display, and the inner paperboard packaging includes a stunning background to display her with!",
-    "dimensions": "Approximately 10cm tallOther figure shown is not included",
-    "material": null,
-    "barcode": "4580828666474",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "FNX1242",
     "name": "Mochipiko Super BIG Plush Hatsune Miku Japan Live Tour 2025 -Blooming-",
     "manufacturer": "FuRyu",
@@ -3884,45 +3480,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Stuffed Animals and Plush Toys",
-    "source": "hlj"
-  },
-  {
-    "id": "CAV13307",
-    "name": "Hatsune Miku GT Project Racing Miku 2025 Ver. Folding Container",
-    "manufacturer": "CARAVAN",
-    "release_date": "2026-05",
-    "year": 2026,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 6500,
-    "price_sgd": 63.02,
-    "image_url": "https://www.hlj.com/productimages/cav/cav13307_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-gt-project-racing-miku-2025-ver-folding-container-cav13307",
-    "events": [
-      "Racing Miku"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "CARAVAN",
-      "Vocaloid"
-    ],
-    "description": "You'll find all kinds of ways to use this folding container from Caravan, which comes with an assortment of Hatsune Miku GT Project clear stickers to decorate it with! It collapses when not in use, too, so it doesn't take up too much room when stored. [Materials]: PP, LDPE",
-    "dimensions": "Approximately 53cm x 33.6cm x 33.4cm",
-    "material": null,
-    "barcode": "4570140133075",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -4084,10 +3641,10 @@
     "manufacturer": "Good Smile Company",
     "release_date": "2026-04",
     "year": 2026,
-    "type": "Other",
+    "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 2800,
-    "price_sgd": 27.15,
+    "price_sgd": 27.13,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc66131_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-gt-project-hatsune-miku-racing-ver-2025-huggy-doll-gsc66131",
     "events": [
@@ -4095,16 +3652,7 @@
     ],
     "illustrator": null,
     "tags": [
-      "Other",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
+      "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -4115,45 +3663,9 @@
     "material": null,
     "barcode": "4580828661318",
     "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "GSC66098",
-    "name": "Hatsune Miku GT Project Hatsune Miku: Racing Ver. 2025 Collectible Pinback Button: 1Box (7pcs)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-04",
-    "year": 2026,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 4620,
-    "price_sgd": 44.79,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc66098_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-gt-project-hatsune-miku-racing-ver-2025-collectible-pinback-button-1box-7pcs-gsc66098",
-    "events": [
-      "Racing Miku"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Good Smile Company brings us a lineup of pinback buttons featuring Racing Miku 2025 from the Hatsune Miku GT Project! Each button has a glittery finish for a beautiful glow when it reflects light! There are seven different buttons to collect and trade, randomly packed in boxes of seven. [Materials]: Tinplate Important note about the variation of this product: These items are marked as trading kits ala trading cards. The packages are sealed and the items are randomly packed. Because of this, it is impossible for HobbyLink Japan to handle requests for specific items, and we cannot promise which item you will receive in a box. Please place your order for this item only if you are willing to receive any one of the different types.",
-    "dimensions": "Approximately 7cm x 4.4cm",
-    "material": null,
-    "barcode": "4580828660984",
-    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -4223,7 +3735,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2900,
-    "price_sgd": 28.11,
+    "price_sgd": 28.1,
     "image_url": "https://www.hlj.com/media/original_images/noImage.png",
     "detail_url": "https://www.hlj.com/sakura-miku-amp-figure-sakura-dress-ver-tat452000900",
     "events": [],
@@ -4238,6 +3750,9 @@
     "material": null,
     "barcode": "2204520009002",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -4659,32 +4174,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC18861",
-    "name": "Nendoroid Hatsune Miku: Miku With You 2024 Ver. (Character Vocal Series 01)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-02",
-    "year": 2026,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 7273,
-    "price_sgd": 70.51,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc18861_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-miku-with-you-2024-ver-character-vocal-series-01-gsc18861",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "This Nendoroid figure of Hatsune Miku is based on the key visual for Miku With You 2024, a concert event held in China! Three interchangeable faces are included: a smile, a sparkly-eyed expression, and a cheerful look with her eyes closed! Her panda friend Takene is also along for the fun, and a small planet is included too, as is a base for display.",
-    "dimensions": "Approximately 10cm tall",
-    "material": null,
-    "barcode": "4571697188617",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "PRZ20427",
     "name": "Hatsune Miku x Tirol-Choco Trio-Try-iT Figure -Hatsune Miku x Tirol-Choco Milk ver.-",
     "manufacturer": "FuRyu",
@@ -4693,7 +4182,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2900,
-    "price_sgd": 28.11,
+    "price_sgd": 28.1,
     "image_url": "https://www.hlj.com/media/original_images/noImage.png",
     "detail_url": "https://www.hlj.com/hatsune-miku-x-tirol-choco-trio-try-it-figure-hatsune-miku-x-tirol-choco-milk-ver-fruamu-prz20427",
     "events": [],
@@ -4708,6 +4197,9 @@
     "material": null,
     "barcode": "2001211204278",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -4947,32 +4439,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC66081",
-    "name": "Nendoroid Hatsune Miku: 15th Anniversary Ver. (Rerelease)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-01",
-    "year": 2026,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 8545,
-    "price_sgd": 82.84,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc66081_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-15th-anniversary-ver-rerelease-gsc66081",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Good Smile Company's super-cute Nendoroid figure of Hatsune Miku, specially created to observe her 15th anniversary, is back! The original illustration by En Morikura has been perfectly transformed into Nendoroid form, capturing every adorable detail. She comes with three interchangeable faces: a standard face, a smile, and a blissful, contented expression. A strawberry-themed fork, a delicious-looking macaron, and a special base made to look like a dessert plate are also included!",
-    "dimensions": "Approximately 10cm tall",
-    "material": null,
-    "barcode": "4580828660816",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "SEG45757",
     "name": "Hatsune Miku: Magical Mirai 2025 Fluffy Plush Toy (L)",
     "manufacturer": "Sega",
@@ -5032,32 +4498,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC66065",
-    "name": "Hatsune Miku Pinback Button: Gao Shan Liu Shui Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2026-01",
-    "year": 2026,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 550,
-    "price_sgd": 5.33,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc66065_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-pinback-button-gao-shan-liu-shui-ver-gsc66065",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "This graceful illustration of Hatsune Miku in her Gao Shan Liu Shui appearance was provided by the artist YYB! [Materials]: Tinplate",
-    "dimensions": "Approximately 5.8cm in diameter",
-    "material": null,
-    "barcode": "4580828660656",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -5272,32 +4712,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC188686",
-    "name": "Nendoroid Hatsune Miku: Shuttered SEKAI Ver. (COLORFUL STAGE! The Movie: A Miku Who Can't Sing)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2025-12",
-    "year": 2025,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 6545,
-    "price_sgd": 63.45,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc188686_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-shuttered-sekai-ver-colorful-stage-the-movie-a-miku-who-can-t-sing-gsc188686",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "The Shuttered SEKAI version of Hatsune Miku, as seen in Colorful Stage! The Movie: A Miku Who Can't Sing, is now joining the Nendoroid figure lineup from Good Smile Company! She comes with three interchangeable faces: an innocent look, an anxious face, and a singing expression. She also has interchangeable hands, plus a base for display.",
-    "dimensions": "Approximately 10cm tall",
-    "material": null,
-    "barcode": "4571697188686",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "GSC18643",
     "name": "Nendoroid Doll Outfit Set: Hatsune Miku NT (Piapro Characters)",
     "manufacturer": "Good Smile Company",
@@ -5509,7 +4923,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2800,
-    "price_sgd": 27.15,
+    "price_sgd": 27.13,
     "image_url": "https://www.hlj.com/media/original_images/noImage.png",
     "detail_url": "https://www.hlj.com/hatsune-miku-noodle-stopper-figure-vintage-dolls-fruamu-prz19737",
     "events": [],
@@ -5524,6 +4938,9 @@
     "material": null,
     "barcode": "2001211197372",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -5535,7 +4952,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2800,
-    "price_sgd": 27.15,
+    "price_sgd": 27.13,
     "image_url": "https://www.hlj.com/media/original_images/noImage.png",
     "detail_url": "https://www.hlj.com/hatsune-miku-noodle-stopper-figure-snow-miku-sky-town-10th-ver-fruamu-prz19727",
     "events": [
@@ -5545,16 +4962,6 @@
     "tags": [
       "Prize",
       "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
       "FuRyu",
       "Vocaloid"
     ],
@@ -5563,6 +4970,9 @@
     "material": null,
     "barcode": "2001211197273",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -5574,7 +4984,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2900,
-    "price_sgd": 28.11,
+    "price_sgd": 28.1,
     "image_url": "https://www.hlj.com/media/original_images/noImage.png",
     "detail_url": "https://www.hlj.com/hatsune-miku-fashion-figure-fancy-tat451950400",
     "events": [],
@@ -5589,6 +4999,9 @@
     "material": null,
     "barcode": "2204519504006",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -5708,32 +5121,6 @@
     "source": "hlj"
   },
   {
-    "id": "PRZ19728",
-    "name": "BiCute Bunnies Figure -Hatsune Miku- (Reissue)",
-    "manufacturer": "FuRyu",
-    "release_date": "2025-12",
-    "year": 2025,
-    "type": "Prize",
-    "scale": null,
-    "price_jpy": 2900,
-    "price_sgd": 28.11,
-    "image_url": "https://www.hlj.com/media/original_images/noImage.png",
-    "detail_url": "https://www.hlj.com/bicute-bunnies-figure-hatsune-miku-reissue-fruamu-prz19728",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Prize",
-      "FuRyu",
-      "Vocaloid"
-    ],
-    "description": "In such an event, we will close orders for the product as well.",
-    "dimensions": null,
-    "material": null,
-    "barcode": "2001211197280",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "GSC66096",
     "name": "Artist Collaboration Figure Hatsune Miku x Maho Takahashi Miku-chan!!",
     "manufacturer": "Good Smile Company",
@@ -5829,7 +5216,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2046,
-    "price_sgd": 19.84,
+    "price_sgd": 19.83,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc181274_0.jpg",
     "detail_url": "https://www.hlj.com/artist-collaboration-figure-hatsune-miku-x-face-gsc181274",
     "events": [],
@@ -5844,6 +5231,9 @@
     "material": null,
     "barcode": "4571697181274",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -5884,7 +5274,7 @@
     "type": "Scale",
     "scale": "1/7",
     "price_jpy": 27091,
-    "price_sgd": 262.64,
+    "price_sgd": 262.52,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc20114_0.jpg",
     "detail_url": "https://www.hlj.com/1-7-scale-character-vocal-series-01-hatsune-miku-hatsune-miku-symphony-2023-ver-gsc20114",
     "events": [
@@ -5894,16 +5284,6 @@
     "tags": [
       "Scale",
       "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -5912,6 +5292,9 @@
     "material": null,
     "barcode": "4580590201149",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -5923,7 +5306,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 5600,
-    "price_sgd": 54.29,
+    "price_sgd": 54.27,
     "image_url": "https://www.hlj.com/productimages/fru/fruamu-tnl0152_0.jpg",
     "detail_url": "https://www.hlj.com/tenitol-hatsune-miku-yumekawa-princess-lavender-ver-fruamu-tnl0152",
     "events": [],
@@ -5938,32 +5321,9 @@
     "material": null,
     "barcode": "4580736407510",
     "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "GSC18390",
-    "name": "Hatsune Miku feat. Yoneyama Mai Wood Postcard",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2025-11",
-    "year": 2025,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 900,
-    "price_sgd": 8.73,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc18390_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-feat-yoneyama-mai-wood-postcard-gsc18390",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "The illustrator Yoneyama Mai has designed an incredibly beautiful image of Hatsune Miku -- and now the image is available on a wide variety of items from Good Smile Company! Miku wears a gentle smile and a goddess-like outfit with a beautiful background, very evocative of the art of Alphonse Mucha. [Materials]: Wood",
-    "dimensions": "Approximately 18.5cm x 6.8cm",
-    "material": null,
-    "barcode": "4571697183902",
-    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -5975,7 +5335,7 @@
     "type": "Scale",
     "scale": "1/4",
     "price_jpy": 34545,
-    "price_sgd": 334.91,
+    "price_sgd": 334.75,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc92915_0.jpg",
     "detail_url": "https://www.hlj.com/1-4-scale-character-vocal-series-01-hatsune-miku-hatsune-miku-0x27-eternal-stream-gsc92915",
     "events": [],
@@ -5990,6 +5350,9 @@
     "material": null,
     "barcode": "4580416929158",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -6121,7 +5484,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 4500,
-    "price_sgd": 43.63,
+    "price_sgd": 43.61,
     "image_url": "https://www.hlj.com/productimages/mlt/mlt07439_0.jpg",
     "detail_url": "https://www.hlj.com/mc-25-hatsune-miku-x-cinnamoroll-potekoro-mascot-big3e-hatsune-miku-scarf-mlt07439",
     "events": [
@@ -6131,16 +5494,6 @@
     "tags": [
       "Plush / Soft",
       "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6149,6 +5502,9 @@
     "material": null,
     "barcode": "4571617074396",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -6878,32 +6234,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC181373",
-    "name": "Hatsune Miku Glitter Decorative Art: Meihua Sannong Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2025-10",
-    "year": 2025,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 2500,
-    "price_sgd": 24.24,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc181373_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-glitter-decorative-art-meihua-sannong-ver-gsc181373",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "This glitter decorative art display piece from Good Smile Company features the Meihua Sannong version of Miku Hatsune, in a beautiful illustration by ASK. This elegant and graceful design is reminiscent of an ink painting -- you'll love it! [Materials]: Acrylic, oil",
-    "dimensions": "Approximately 15cm high, 10cm wide",
-    "material": null,
-    "barcode": "4571697181373",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "WWS75031",
     "name": "1/7 Racing Miku 2021: Vacation Style Ver. (Hatsune Miku GT Project)",
     "manufacturer": "Wonderful Works",
@@ -7036,7 +6366,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2900,
-    "price_sgd": 28.11,
+    "price_sgd": 28.1,
     "image_url": "https://www.hlj.com/productimages/tat/tat451922800_0.jpg",
     "detail_url": "https://www.hlj.com/miku-hatsune-wonderland-figure-sleeping-beauty-tat451922800",
     "events": [],
@@ -7047,10 +6377,13 @@
       "Vocaloid"
     ],
     "description": "Size: Approx. 18cm",
-    "dimensions": "18cm\" />",
+    "dimensions": null,
     "material": null,
     "barcode": "2004519228007",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -7170,84 +6503,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC183841",
-    "name": "Hatsune Miku feat. Yoneyama Mai Translucent Card",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2025-09",
-    "year": 2025,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 900,
-    "price_sgd": 8.73,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc183841_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-feat-yoneyama-mai-translucent-card-gsc183841",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "The illustrator Yoneyama Mai has designed an incredibly beautiful image of Hatsune Miku -- and now the image is available on a wide variety of items from Good Smile Company! Miku wears a gentle smile and a goddess-like outfit with a beautiful background, very evocative of the art of Alphonse Mucha. [Materials]: Acrylic",
-    "dimensions": "Approximately 12.1cm x 12.1cm",
-    "material": null,
-    "barcode": "4571697183841",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "GSC183803",
-    "name": "Hatsune Miku feat. Yoneyama Mai Pinback Button",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2025-09",
-    "year": 2025,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 600,
-    "price_sgd": 5.82,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc183803_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-feat-yoneyama-mai-pinback-button-gsc183803",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "The illustrator Yoneyama Mai has designed an incredibly beautiful image of Hatsune Miku -- and now the image is available on a wide variety of items from Good Smile Company! Miku wears a gentle smile and a goddess-like outfit with a beautiful background, very evocative of the art of Alphonse Mucha. [Materials]: Iron",
-    "dimensions": "Approximately 5.8cm in diameter",
-    "material": null,
-    "barcode": "4571697183803",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "SEG44575",
-    "name": "Hatsune Miku Series Fluffy Petit Deformed Figure Marshmallow Hot Cocoa",
-    "manufacturer": "Sega",
-    "release_date": "2025-09",
-    "year": 2025,
-    "type": "Mini / Petite",
-    "scale": null,
-    "price_jpy": 2800,
-    "price_sgd": 27.15,
-    "image_url": "https://www.hlj.com/productimages/seg/seg44575_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-series-fluffy-petit-deformed-figure-marshmallow-hot-cocoa-seg44575",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Mini / Petite",
-      "Sega",
-      "Vocaloid"
-    ],
-    "description": "Sega brings us an almost unbearably cute chibi-style figure of Hatsune Miku in a cozy wintertime outfit that's inspired by a steaming cup of hot cocoa with marshmallows! An interchangeable face with an uncertain expression is included.",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4582733445755",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "FNX1131",
     "name": "1/7 Hatsune Miku Wa-Bunny",
     "manufacturer": "FuRyu",
@@ -7318,7 +6573,7 @@
     "type": "Pop Up Parade",
     "scale": null,
     "price_jpy": 7440,
-    "price_sgd": 72.13,
+    "price_sgd": 72.1,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc20717_0.jpg",
     "detail_url": "https://www.hlj.com/pop-up-parade-hatsune-miku-psi-ver-l-size-character-vocal-series-01-hatsune-miku-gsc20717",
     "events": [],
@@ -7333,6 +6588,9 @@
     "material": null,
     "barcode": "4580590207172",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -7534,7 +6792,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2900,
-    "price_sgd": 28.11,
+    "price_sgd": 28.1,
     "image_url": "https://www.hlj.com/productimages/tat/tat451916600_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-birthday2025-amp-figure-party-ver-tat451916600",
     "events": [],
@@ -7549,32 +6807,9 @@
     "material": null,
     "barcode": "2204519166006",
     "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "BNP2796255",
-    "name": "Gundam 45th Anniversary x Hatsune Miku Genki na Haro Speaker Miku Ver.",
-    "manufacturer": "Banpresto",
-    "release_date": "2025-08",
-    "year": 2025,
-    "type": "Prize",
-    "scale": null,
-    "price_jpy": 2800,
-    "price_sgd": 27.15,
-    "image_url": "https://www.hlj.com/productimages/bnp/bnp2796255_0.jpg",
-    "detail_url": "https://www.hlj.com/gundam-45th-anniversary-x-hatsune-miku-genki-na-haro-speaker-miku-ver-bnp2796255",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Prize",
-      "Banpresto",
-      "Gundam"
-    ],
-    "description": "A Haro speaker celebrating Gundam's 45th anniversary in collaboration with Hatsune Miku is here!Switch it on to light up Haro's eyes, and connect it to your PC or smartphone to play sound from the mouth speaker.Size: approx. 11 cm",
-    "dimensions": "11 cm\" />",
-    "material": null,
-    "barcode": "4983164278163",
-    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -7640,32 +6875,6 @@
     "source": "hlj"
   },
   {
-    "id": "TKT95087",
-    "name": "Tomica Premium Racing Good Smile Hatsune Miku AMG 2024Ver.",
-    "manufacturer": "Takara Tomy",
-    "release_date": "2025-07",
-    "year": 2025,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 1800,
-    "price_sgd": 17.45,
-    "image_url": "https://www.hlj.com/productimages/tkt/tkt95087_0.jpg",
-    "detail_url": "https://www.hlj.com/tomica-premium-racing-good-smile-hatsune-miku-amg-2024ver-tkt95087",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Takara Tomy",
-      "Tomica"
-    ],
-    "description": "Good Smile Hatsune Miku AMG 2024 Ver. is now available from Tomica Premium Racing![Action]Left and right doors open and closePackage size: W120 x H78 x D39mmRecommended age: 6 and upContents:Tomica Premium Racing (1)",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4904810950875",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "SEG43778",
     "name": "Snow Miku 2025 Fuwapuchi Dodeka Jumbo Plush Toy",
     "manufacturer": "Sega",
@@ -7707,7 +6916,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 1600,
-    "price_sgd": 15.51,
+    "price_sgd": 15.5,
     "image_url": "https://www.hlj.com/productimages/mlt/mlt07211_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-yr-75s-swaying-head-hatsune-miku-nt-reissue-mlt07211",
     "events": [],
@@ -7722,6 +6931,9 @@
     "material": null,
     "barcode": "4571617072118",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -7849,7 +7061,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 6800,
-    "price_sgd": 65.92,
+    "price_sgd": 65.89,
     "image_url": "https://www.hlj.com/productimages/seg/seg43759_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-miku-with-you-2024-fuwapuchi-plush-toy-ll-seg43759",
     "events": [],
@@ -7864,6 +7076,9 @@
     "material": null,
     "barcode": "4582733437590",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -7996,32 +7211,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Stuffed Animals and Plush Toys",
-    "source": "hlj"
-  },
-  {
-    "id": "TAT451877300",
-    "name": "Hatsune Miku Fashion Figure Preppy",
-    "manufacturer": "Taito",
-    "release_date": "2025-07",
-    "year": 2025,
-    "type": "Prize",
-    "scale": null,
-    "price_jpy": 2900,
-    "price_sgd": 28.11,
-    "image_url": "https://www.hlj.com/productimages/tat/tat451877300_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-fashion-figure-preppy-tat451877300",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Prize",
-      "Taito",
-      "Vocaloid"
-    ],
-    "description": "In such an event, we will close orders for the product as well.",
-    "dimensions": null,
-    "material": null,
-    "barcode": "2204518773007",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -8211,7 +7400,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 4950,
-    "price_sgd": 47.99,
+    "price_sgd": 47.97,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc92795_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-digital-stars-2023-ver-plushie-gsc92795",
     "events": [],
@@ -8226,6 +7415,9 @@
     "material": null,
     "barcode": "4580416927956",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -8284,32 +7476,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Stuffed Animals and Plush Toys",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC92975",
-    "name": "Character Vocal Series 01: Hatsune Miku Character Cap",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2025-06",
-    "year": 2025,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 2700,
-    "price_sgd": 26.18,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc92975_0.jpg",
-    "detail_url": "https://www.hlj.com/character-vocal-series-01-hatsune-miku-character-cap-gsc92975",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "This fun winter cap from Good Smile Company was inspired by Hatsune Miku! Both embroidery and digital printing techniques are used for the markings; it's made from a super-soft fabric that's nice to touch! You can even wrap the twin tails around your neck like a scarf! [Materials]: Polyester",
-    "dimensions": "Approximately 65cm wide",
-    "material": null,
-    "barcode": "4580416929752",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -8458,32 +7624,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC92797",
-    "name": "Character Vocal Series 01: Hatsune Miku Plushie Hatsune Miku: Loungewear Outfit Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2025-05",
-    "year": 2025,
-    "type": "Plush / Soft",
-    "scale": null,
-    "price_jpy": 4950,
-    "price_sgd": 47.99,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc92797_0.jpg",
-    "detail_url": "https://www.hlj.com/character-vocal-series-01-hatsune-miku-plushie-hatsune-miku-loungewear-outfit-ver-gsc92797",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Plush / Soft",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Hatsune Miku gets a new stuffed plush toy from Good Smile Company, wearing her comfortable loungewear outfit! The outfit features a ruffled cap, fluffy accents, and ribbon bows in her hair! Her expression and big pink glasses are oh-so-cute, too! [Materials]: Cotton, polyester",
-    "dimensions": "Approximately 17cm tall",
-    "material": null,
-    "barcode": "4580416927970",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "GSC19478",
     "name": "1/7 Hatsune Miku: Beauty Looking Back Miku Ver. (Character Vocal Series)",
     "manufacturer": "Good Smile Company",
@@ -8612,7 +7752,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2900,
-    "price_sgd": 28.11,
+    "price_sgd": 28.1,
     "image_url": "https://www.hlj.com/productimages/tat/tat451859100_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-x-rody-amp-figure-39-thank-you-ver-tat451859100",
     "events": [],
@@ -8623,10 +7763,13 @@
       "Vocaloid"
     ],
     "description": "Size: approx. In such an event, we will close orders for the product as well.",
-    "dimensions": "20 cmNotice: Regarding pr",
+    "dimensions": null,
     "material": null,
     "barcode": "2204518591007",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -9077,32 +8220,6 @@
     "source": "hlj"
   },
   {
-    "id": "CAV11669",
-    "name": "Hatsune Miku Akihabara Festival 2024: Trading Bromide (2 Pieces) Tanabata Ver.",
-    "manufacturer": "CARAVAN",
-    "release_date": "2025-03",
-    "year": 2025,
-    "type": "Mini / Petite",
-    "scale": null,
-    "price_jpy": 400,
-    "price_sgd": 3.88,
-    "image_url": "https://www.hlj.com/productimages/cav/cav11669_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-akihabara-festival-2024-trading-bromide-2-pieces-tanabata-ver-cav11669",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Mini / Petite",
-      "CARAVAN",
-      "Vocaloid"
-    ],
-    "description": "From Hatsune Miku Akihabara Festival 2024, trading bromide photos (2 per set) are now available![Product Specifications]Size: L size (approx. W89 x H127mm)Material: Paper",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4570140116696",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "GSC20081",
     "name": "HELLO! GOOD SMILE Sakura Miku (Character Vocal Series 01: Hatsune Miku)",
     "manufacturer": "Good Smile Company",
@@ -9198,7 +8315,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2800,
-    "price_sgd": 27.15,
+    "price_sgd": 27.13,
     "image_url": "https://www.hlj.com/productimages/fru/fruamu-prz18157_0.jpg",
     "detail_url": "https://www.hlj.com/miku-hatsune-noodle-stopper-figure-fruamu-prz18157",
     "events": [],
@@ -9209,10 +8326,13 @@
       "Vocaloid"
     ],
     "description": "Size: approx. In such an event, we will close orders for the product as well.",
-    "dimensions": "14 cmNotice: Regarding pr",
+    "dimensions": null,
     "material": null,
     "barcode": "2001211181579",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -9257,7 +8377,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 10000,
-    "price_sgd": 96.95,
+    "price_sgd": 96.9,
     "image_url": "https://www.hlj.com/productimages/seg/seg43991_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-series-hatsune-miku-fuwapuchi-dodeka-jumbo-plush-toy-seg43991",
     "events": [],
@@ -9272,6 +8392,9 @@
     "material": null,
     "barcode": "4582733439914",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -9345,7 +8468,7 @@
     "type": "Scale",
     "scale": "1/7",
     "price_jpy": 25000,
-    "price_sgd": 242.37,
+    "price_sgd": 242.26,
     "image_url": "https://www.hlj.com/productimages/fru/fruamu-fnx913_0.jpg",
     "detail_url": "https://www.hlj.com/1-7-scale-hatsune-miku-x-mtv-figure-fruamu-fnx913",
     "events": [],
@@ -9360,6 +8483,9 @@
     "material": null,
     "barcode": "4580736409132",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -9371,7 +8497,7 @@
     "type": "Pop Up Parade",
     "scale": null,
     "price_jpy": 5000,
-    "price_sgd": 48.47,
+    "price_sgd": 48.45,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc19979_0.jpg",
     "detail_url": "https://www.hlj.com/pop-up-parade-hatsune-miku-little-missing-stars-ver-character-vocal-series-01-hatsune-miku-gsc19979",
     "events": [],
@@ -9386,84 +8512,9 @@
     "material": null,
     "barcode": "4580590199798",
     "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "CAV12020",
-    "name": "Hatsune Miku Gt Project: Racing Miku 2024 Summer Holiday Ver. Shower Sandals (XL)",
-    "manufacturer": "CARAVAN",
-    "release_date": "2025-01",
-    "year": 2025,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 3500,
-    "price_sgd": 33.93,
-    "image_url": "https://www.hlj.com/productimages/cav/cav12020_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-gt-project-racing-miku-2024-summer-holiday-ver-shower-sandals-xl-cav12020",
-    "events": [
-      "Racing Miku"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "CARAVAN",
-      "Vocaloid"
-    ],
-    "description": "These lightweight sandals feature a vividly colorful image of Racing Miku 2024, the official mascot of the Hatsune Miku GT Project, in her Summer Holiday swimsuit outfit!",
-    "dimensions": "Approximately 27-28cm",
-    "material": null,
-    "barcode": "None",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "CAV12011",
-    "name": "Hatsune Miku GT Project: Racing Miku 2024 Summer Holiday Ver. Shower Sandals (M)",
-    "manufacturer": "CARAVAN",
-    "release_date": "2025-01",
-    "year": 2025,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 3500,
-    "price_sgd": 33.93,
-    "image_url": "https://www.hlj.com/productimages/cav/cav12011_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-gt-project-racing-miku-2024-summer-holiday-ver-shower-sandals-m-cav12011",
-    "events": [
-      "Racing Miku"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "CARAVAN",
-      "Vocaloid"
-    ],
-    "description": "These lightweight sandals feature a vividly colorful image of Racing Miku 2024, the official mascot of the Hatsune Miku GT Project, in her Summer Holiday swimsuit outfit!",
-    "dimensions": "Approximately 23-24cm",
-    "material": null,
-    "barcode": "None",
-    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -9533,7 +8584,7 @@
     "type": "Pop Up Parade",
     "scale": null,
     "price_jpy": 5000,
-    "price_sgd": 48.47,
+    "price_sgd": 48.45,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc92759_0.jpg",
     "detail_url": "https://www.hlj.com/pop-up-parade-racing-miku-2023-ver-hatsune-miku-gt-project-gsc92759",
     "events": [
@@ -9543,16 +8594,6 @@
     "tags": [
       "Pop Up Parade",
       "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -9561,6 +8602,9 @@
     "material": null,
     "barcode": "4580416927598",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -10439,45 +9483,6 @@
     "source": "hlj"
   },
   {
-    "id": "MLT62595",
-    "name": "MC-13 Hatsune Miku x Cinnamoroll Fuwakororin Msize2 A: Hatsune Miku (Osumashi)",
-    "manufacturer": "Max Limited",
-    "release_date": "2024-12",
-    "year": 2024,
-    "type": "Plush / Soft",
-    "scale": null,
-    "price_jpy": 1700,
-    "price_sgd": 16.48,
-    "image_url": "https://www.hlj.com/productimages/mlt/mlt62595_0.jpg",
-    "detail_url": "https://www.hlj.com/mc-13-hatsune-miku-x-cinnamoroll-fuwakororin-msize2-a-hatsune-miku-osumashi-mlt62595",
-    "events": [
-      "Cinnamoroll"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Plush / Soft",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Max Limited",
-      "Vocaloid"
-    ],
-    "description": "Hatsune Miku, inspired by her friend Cinnamoroll, is happy to see you, and greets you with a big smile!",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4580683625951",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "GSC84976",
     "name": "Hatsune Miku GT Project 2024 Plushie Racing Miku: 2024 Ver.",
     "manufacturer": "Good Smile Company",
@@ -10808,44 +9813,6 @@
     "source": "hlj"
   },
   {
-    "id": "DSC11208",
-    "name": "1/7 Hatsune Miku MAGICAL MIRAI 2023 Ver.",
-    "manufacturer": "Design COCO",
-    "release_date": "2024-12",
-    "year": 2024,
-    "type": "Scale",
-    "scale": "1/7",
-    "price_jpy": 24800,
-    "price_sgd": 240.43,
-    "image_url": "https://www.hlj.com/productimages/dsc/dsc11208_0.jpg",
-    "detail_url": "https://www.hlj.com/1-7-scale-hatsune-miku-magical-mirai-2023-ver-dsc11208",
-    "events": [
-      "Magical Mirai"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Magical Mirai",
-      "Magical Mirai",
-      "Magical Mirai",
-      "Magical Mirai",
-      "Magical Mirai",
-      "Magical Mirai",
-      "Magical Mirai",
-      "Magical Mirai",
-      "Magical Mirai",
-      "Magical Mirai",
-      "Design COCO",
-      "Vocaloid"
-    ],
-    "description": "Hatsune Miku Magical Mirai 2023 Ver. 1/7th Scale Figure.Step into the world of Hatsune Miku's Magical Mirai 2023 with Design COCO's latest addition - a 1/7 scale figure capturing the essence of the main visual. In this 11th iteration of Magical Mirai, the theme is HERO, and the spotlight is on the star of the event, Hatsune Miku.In a vibrant crimson costume illustrated by artist LAM, this rendition faithfully captures Miku's expression brimming with hope, and the contrast of light and shadow that make LAM's work so distinctive. Every detail, from her intense presence to the meticulously recreated shades, has been fully sculpted and painted for fans to enjoy.Adding to her allure is the inclusion of a massive speaker, with parts cleverly crafted from clear material to seamlessly incorporate optional LED lights (sold separately), granting it a cool, luminescent quality.The precision craftsmanship extends to her megaphone microphone - not only in its intricacy but also in capturing the unique color gradations akin to screen tones.Own the embodiment of a poised and cool hero Miku that appears in the nick of time!Fully Supported by the Production Committee:The main visual of Hatsune Miku Magical Mirai 2023, illustrated by LAM, was brought to life in full collaboration with the Magical Mirai Production Committee. Craftsmen at Design COCO breathed life into the life-sized statue exhibited at the event, paying homage to LAM's creation. In the same spirit, Design COCO, in collaboration with the Magical Mirai Production Committee, scaled down the life-sized Hatsune Miku to a 1/7 figure size. The transformation didn't involve mere scaling; meticulous adjustments were made to the 3D model to harmonize with the figure's scale, proportions, sculpting, and coloring.The Theme of Magical Mirai 2023 - HERO :The vivid red costume exudes its texture, while the embodiment of Miku's full power is expressed through precise sculpting. The distinct touch of LAM's illustration is faithfully replicated through meticulous coloring. Her gaze and expression, brimming with strength and hope, are painstakingly rendered. The result is a Miku that seems to leap out of LAM's artwork - an ultra-cool and charming representation.Precise Craftsmanship for the Megaphone Mic and Speaker:The megaphone microphone's precision craftsmanship extends to its coloring, emulating the appearance of affixed screen tones. Some parts of the giant speaker are constructed using clear material, allowing integration with separately available LED lights for a captivating cool luminosity.Cool from Every Angle:From her bright gaze, powerful costume, and stylish red and green intertwined twin tails, every angle offers an impressive view.Experience the captivating allure of Miku - the poised and cool savior who emerges when the going gets tough.Figure Size: Approximately 200mm tall (Including Base)Materials (Tentative): PVC, ABSSculptor: Design COCO (Producer: A2C)Coloring: Design COCO (Producer: A2C)Due to restrictions on this item by the manufacturer, we are unable to ship this product to China (Macau, Hong Kong and Taiwan are OK).",
-    "dimensions": "200mm tall (Including Bas",
-    "material": null,
-    "barcode": "4595643112082",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "MOV62348",
     "name": "Snow Miku: PC-24 Potekoro Mascot BIG2 G Snow Miku 2023",
     "manufacturer": "Movic",
@@ -11085,7 +10052,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 2000,
-    "price_sgd": 19.39,
+    "price_sgd": 19.38,
     "image_url": "https://www.hlj.com/productimages/mov/mov62341_0.jpg",
     "detail_url": "https://www.hlj.com/snow-miku-pc-23-potekoro-mascot-msize2-i-rabbit-yukine-mov62341",
     "events": [
@@ -11095,22 +10062,17 @@
     "tags": [
       "Plush / Soft",
       "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
     "description": "The Yuki Miku Pote Coro Mascot Msize2 is here! This deformed character rolls around in a cute way, making it an adorable mascot! The M size is 20cm in length, about twice the volume of the regular size.Size: Approximately 200mmMaterial: Polyester",
-    "dimensions": "200mmMaterial: Polyester\"",
+    "dimensions": null,
     "material": null,
     "barcode": "4580683623414",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -11419,7 +10381,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 4500,
-    "price_sgd": 43.63,
+    "price_sgd": 43.61,
     "image_url": "https://www.hlj.com/productimages/mov/mov62328_0.jpg",
     "detail_url": "https://www.hlj.com/snow-miku-pc-22-fuwa-kororin-big2-e-snow-miku-2021-mov62328",
     "events": [
@@ -11429,22 +10391,17 @@
     "tags": [
       "Plush / Soft",
       "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
     "description": "The Yuki Miku, a character supporting Hokkaido, presents the Fuwa Cororin BIG2! This round, fluffy, and deformed mascot is absolutely adorable! The BIG size has a large volume with a length of 30cm!Size: Approximately 300mmMaterial: Polyester",
-    "dimensions": "300mmMaterial: Polyester\"",
+    "dimensions": null,
     "material": null,
     "barcode": "4580683623285",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -11654,7 +10611,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 2000,
-    "price_sgd": 19.39,
+    "price_sgd": 19.38,
     "image_url": "https://www.hlj.com/productimages/mov/mov62320_0.jpg",
     "detail_url": "https://www.hlj.com/snow-miku-pc-21-fuwa-kororin-msize2-f-snow-miku-2022-mov62320",
     "events": [
@@ -11664,22 +10621,17 @@
     "tags": [
       "Plush / Soft",
       "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
     "description": "The character Yuki Miku, who supports Hokkaido, introduces the Fuwa Cororin Msize2! This round and fluffy deformed mascot rolls around in a cute way! The M size is 20cm in length, about twice the volume of the regular size.Size: Approximately 200mmMaterial: Polyester",
-    "dimensions": "200mmMaterial: Polyester\"",
+    "dimensions": null,
     "material": null,
     "barcode": "4580683623209",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -11964,32 +10916,6 @@
     "source": "hlj"
   },
   {
-    "id": "FNX945",
-    "name": "1/7 Hatsune Miku Techno-Magic Ver. Figure",
-    "manufacturer": "FuRyu",
-    "release_date": "2024-11",
-    "year": 2024,
-    "type": "Scale",
-    "scale": "1/7",
-    "price_jpy": 29800,
-    "price_sgd": 288.9,
-    "image_url": "https://www.hlj.com/productimages/fru/fruamu-fnx945_0.jpg",
-    "detail_url": "https://www.hlj.com/1-7-scale-hatsune-miku-techno-magic-ver-figure-fruamu-fnx945",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "FuRyu",
-      "Vocaloid"
-    ],
-    "description": "Author Arthur C. Clarke once said, Any sufficiently advanced technology is indistinguishable from magic, and digital songstress Miku Hatsune may be the ultimate personification of that idea! This new figure of Miku from FuRyu brings her digital origins to the forefront while also showcasing the undisputed magic of her music, which unites people worldwide. She smiles and holds a microphone, ready to perform for you; she's held aloft by her incredibly long hair, which flows under her to support her and lift her into the spotlight. Transparent parts are used for her sleeves and skirt for a unique texture. [Materials]: PVC, ABS, iron, etc.",
-    "dimensions": "Approximately 25cm tall",
-    "material": null,
-    "barcode": "4580736409453",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "BNU66530",
     "name": "Piapro Characters Purinuittachi Dream : Hatsune Miku",
     "manufacturer": "Bandai Namco Nui",
@@ -12219,45 +11145,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC19138",
-    "name": "Nendoroid Hatsune Miku: World Is Mine 2024 Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2024-09",
-    "year": 2024,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 6818,
-    "price_sgd": 66.1,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc19138_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-world-is-mine-2024-ver-gsc19138",
-    "events": [
-      "World is Mine"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "World is Mine",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Hatsune Miku joins the Nendoroid figure lineup from Good Smile Company, based on the World is Mine 2024 illustration by Redjuice! This spoiled-princess version of Miku comes with three interchangeable faces: a smile, a sidelong-glancing smile, and a blushing expression. She also has a crown, a slice of strawberry shortcake on a plate, and a base for display.",
-    "dimensions": "Approximately 10cm tall",
-    "material": null,
-    "barcode": "4580590191389",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -12596,7 +11483,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 5400,
-    "price_sgd": 52.35,
+    "price_sgd": 52.33,
     "image_url": "https://www.hlj.com/productimages/fru/fru40654_0.jpg",
     "detail_url": "https://www.hlj.com/tenitol-neo-tokyo-series-idol-hatsune-miku-fru40654",
     "events": [],
@@ -12611,6 +11498,9 @@
     "material": null,
     "barcode": "4580736406544",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -12862,7 +11752,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2800,
-    "price_sgd": 27.15,
+    "price_sgd": 27.13,
     "image_url": "https://www.hlj.com/productimages/tat/tat451734500_0.jpg",
     "detail_url": "https://www.hlj.com/miku-hatsune-fashion-figure-lolita-tat451734500",
     "events": [],
@@ -12877,6 +11767,9 @@
     "material": null,
     "barcode": "2004517345003",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -12993,32 +11886,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "CAV57464",
-    "name": "Hatsune Miku New Year SHOP 2024 Trading Wooden Tag Strap: 1Box (6pcs)",
-    "manufacturer": "CARAVAN",
-    "release_date": "2024-05",
-    "year": 2024,
-    "type": "Mini / Petite",
-    "scale": null,
-    "price_jpy": 4320,
-    "price_sgd": 41.88,
-    "image_url": "https://www.hlj.com/productimages/cav/cav57464_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-new-year-shop-2024-trading-wooden-tag-strap-1box-6pcs-cav57464",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Mini / Petite",
-      "CARAVAN",
-      "Vocaloid"
-    ],
-    "description": "These trading wooden tag straps feature Hatsune Miku and friends all wearing their elegant Hatsune Miku New Year Shop 2024 outfits! There are six different designs to collect and trade, and you'll get one of each. [Materials]: Wood, rayon One box of this item contains a complete set of the possible types.",
-    "dimensions": "Approximately 5.5cm x 3.2cm",
-    "material": null,
-    "barcode": "4582660574641",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -13204,7 +12071,7 @@
     "type": "Nendoroid",
     "scale": null,
     "price_jpy": 6818,
-    "price_sgd": 66.1,
+    "price_sgd": 66.07,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc17711_0.jpg",
     "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-the-vampire-ver-gsc17711",
     "events": [],
@@ -13219,6 +12086,9 @@
     "material": null,
     "barcode": "4580590177116",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Action Figures",
+    "item_type": "Nendoroid",
     "source": "hlj"
   },
   {
@@ -13553,7 +12423,7 @@
     "type": "Mini / Petite",
     "scale": null,
     "price_jpy": 5264,
-    "price_sgd": 51.03,
+    "price_sgd": 51.01,
     "image_url": "https://www.hlj.com/productimages/emt/emt49075_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-piapro-characters-trading-minifigure-series-meiko-miku-hatsune-emt49075",
     "events": [],
@@ -13568,6 +12438,9 @@
     "material": null,
     "barcode": "4589619490755",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -14212,16 +13085,6 @@
     "tags": [
       "Plush / Soft",
       "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
-      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -14230,6 +13093,9 @@
     "material": null,
     "barcode": "4580683617482",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -14580,7 +13446,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 16830,
-    "price_sgd": 163.16,
+    "price_sgd": 163.09,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc18317_0.jpg",
     "detail_url": "https://www.hlj.com/miku-with-you-2021-large-plushie-gsc18317",
     "events": [],
@@ -14595,6 +13461,9 @@
     "material": null,
     "barcode": "4580590183179",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -14606,7 +13475,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 3240,
-    "price_sgd": 31.41,
+    "price_sgd": 31.4,
     "image_url": "https://www.hlj.com/productimages/crx/crx17884_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-plush-toy-red-crx17884",
     "events": [],
@@ -14621,6 +13490,9 @@
     "material": null,
     "barcode": "4550451178842",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -14715,32 +13587,6 @@
     "source": "hlj"
   },
   {
-    "id": "DSC11204",
-    "name": "PrimoArt Hatsune Miku JAPAN TOUR 2023 -THUNDERBOLT-",
-    "manufacturer": "Design COCO",
-    "release_date": "2023-11",
-    "year": 2023,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 35000,
-    "price_sgd": 339.32,
-    "image_url": "https://www.hlj.com/productimages/dsc/dsc11204_0.jpg",
-    "detail_url": "https://www.hlj.com/primoart-hatsune-miku-japan-tour-2023-thunderbolt-dsc11204",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Design COCO",
-      "Vocaloid"
-    ],
-    "description": "Due to restrictions on this item by the manufacturer, we are unable to ship this product to China. The popular illustrator Akane Aki has created a dynamic new image for Hatsune Miku's live tour, Hatsune Miku Japan Tour 2023 -- THUNDERBOLT ! This fantastically colorful poster is printed with Dan Nippon Printing's high-definition printing technology, enabling colors that are incredibly faithful to the original illustration, down to the brushstrokes! It comes with a frame, a transparent panel to protect the poster, and a plate with a serial number. [Materials]: Frame: ABS, acrylic; poster: domestic art paper",
-    "dimensions": "Approximately 52.6cm x 41.1cm",
-    "material": null,
-    "barcode": "4595643112044",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "TAT451662200",
     "name": "Miku Hatsune Figure Costumes China Dress Ver.",
     "manufacturer": "Taito",
@@ -14778,7 +13624,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2900,
-    "price_sgd": 28.11,
+    "price_sgd": 28.1,
     "image_url": "https://www.hlj.com/productimages/fru/fruamu-prz15957_0.jpg",
     "detail_url": "https://www.hlj.com/miku-hatsune-excood-creative-figure-sweetsweet-noel-fruamu-prz15957",
     "events": [],
@@ -14793,6 +13639,9 @@
     "material": null,
     "barcode": "2001211159578",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -14895,7 +13744,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2900,
-    "price_sgd": 28.11,
+    "price_sgd": 28.1,
     "image_url": "https://www.hlj.com/productimages/tat/tat451662100_0.jpg",
     "detail_url": "https://www.hlj.com/miku-hatsune-princess-amp-figure-mermaid-ver-tat451662100",
     "events": [],
@@ -14910,6 +13759,9 @@
     "material": null,
     "barcode": "2004516621009",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -15008,7 +13860,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2800,
-    "price_sgd": 27.15,
+    "price_sgd": 27.13,
     "image_url": "https://www.hlj.com/media/original_images/noImage.png",
     "detail_url": "https://www.hlj.com/miku-hatsune-fashion-figure-sporty-tat451626900",
     "events": [],
@@ -15023,6 +13875,9 @@
     "material": null,
     "barcode": "2004516269003",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -15084,32 +13939,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC18137",
-    "name": "Hatsune Miku: 15th Anniversary Plushie",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2023-09",
-    "year": 2023,
-    "type": "Plush / Soft",
-    "scale": null,
-    "price_jpy": 6305,
-    "price_sgd": 61.13,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc18137_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-15th-anniversary-plushie-gsc18137",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Plush / Soft",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "It's Miku Hatsune's 15th anniversary, and she's gotten all dressed up to commemorate the occasion! [Materials]: Cotton, polyester",
-    "dimensions": "Approximately 20cm tall",
-    "material": null,
-    "barcode": "None",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "GSC18125",
     "name": "Hatsune Miku Large Plush Hatsune Miku Symphony 2020 5th Anniversary",
     "manufacturer": "Good Smile Company",
@@ -15118,7 +13947,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 17000,
-    "price_sgd": 164.81,
+    "price_sgd": 164.73,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc18125_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-large-plush-hatsune-miku-symphony-2020-5th-anniversary-gsc18125",
     "events": [
@@ -15128,16 +13957,6 @@
     "tags": [
       "Plush / Soft",
       "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
-      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -15146,6 +13965,9 @@
     "material": null,
     "barcode": "4580590181250",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -15244,7 +14066,7 @@
     "type": "Other",
     "scale": null,
     "price_jpy": 2091,
-    "price_sgd": 20.27,
+    "price_sgd": 20.26,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc18081_0.jpg",
     "detail_url": "https://www.hlj.com/marshmalloid-hatsune-miku-gsc18081",
     "events": [],
@@ -15259,6 +14081,9 @@
     "material": null,
     "barcode": "4580590180819",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -15622,7 +14447,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2300,
-    "price_sgd": 22.3,
+    "price_sgd": 22.29,
     "image_url": "https://www.hlj.com/media/original_images/noImage.png",
     "detail_url": "https://www.hlj.com/miku-hatsune-excood-creative-figure-yumekawa-prince-fruamu-prz15034",
     "events": [],
@@ -15637,6 +14462,9 @@
     "material": null,
     "barcode": "2001211150346",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -16045,7 +14873,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2200,
-    "price_sgd": 21.33,
+    "price_sgd": 21.32,
     "image_url": "https://www.hlj.com/productimages/tat/tat451587400_0.jpg",
     "detail_url": "https://www.hlj.com/sakura-miku-drawn-by-figure-2021-ver-tat451587400",
     "events": [],
@@ -16060,6 +14888,9 @@
     "material": null,
     "barcode": "2204515874004",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -16253,7 +15084,7 @@
     "type": "Scale",
     "scale": "1/7",
     "price_jpy": 27091,
-    "price_sgd": 262.64,
+    "price_sgd": 262.52,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc94392_0.jpg",
     "detail_url": "https://www.hlj.com/1-7-scale-hatsune-miku-land-of-the-eternal-gsc94392",
     "events": [],
@@ -16268,6 +15099,9 @@
     "material": null,
     "barcode": "4580416943925",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -16279,7 +15113,7 @@
     "type": "Scale",
     "scale": "1/7",
     "price_jpy": 21420,
-    "price_sgd": 207.66,
+    "price_sgd": 207.56,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc94494_0.jpg",
     "detail_url": "https://www.hlj.com/1-7-scale-character-vocal-series-01-hatsune-miku-with-solwa-gsc94494",
     "events": [],
@@ -16294,6 +15128,9 @@
     "material": null,
     "barcode": "4580416944946",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -16454,7 +15291,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 2000,
-    "price_sgd": 19.39,
+    "price_sgd": 19.38,
     "image_url": "https://www.hlj.com/productimages/tat/tat451558400_0.jpg",
     "detail_url": "https://www.hlj.com/miku-hatsune-wonderland-figure-puss-in-boots-tat451558400",
     "events": [],
@@ -16469,6 +15306,9 @@
     "material": null,
     "barcode": "2204515584002",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -16531,32 +15371,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC84684",
-    "name": "1/18 Good Smile Hatsune Miku AMG 2022 Season Opening Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2023-03",
-    "year": 2023,
-    "type": "Scale",
-    "scale": "1/18",
-    "price_jpy": 35451,
-    "price_sgd": 343.69,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84684_0.jpg",
-    "detail_url": "https://www.hlj.com/1-18-scale-good-smile-hatsune-miku-amg-2022-season-opening-ver-gsc84684",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Adapted from the GoodSmile website:The Good Smile Hatsune Mikuy AMG that raced in the Super GT GT300 class in 2022 is now a 1/18-scale miniature car! neco's Racing Miku 2022 Ver. illustration and the innovative color scheme have been faithfully included in the design; the body of the car is made of resin. An acrylic case is included. [Materials]: PU resin",
-    "dimensions": "Approximately 26cm long, 7cm high",
-    "material": null,
-    "barcode": "4560392846847",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -16673,67 +15487,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC84296",
-    "name": "1/43 Good Smile Hatsune Miku AMG 2022 SUPER GT Rd.5 Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2023-02",
-    "year": 2023,
-    "type": "Scale",
-    "scale": "1/43",
-    "price_jpy": 12545,
-    "price_sgd": 121.62,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84296_0.jpg",
-    "detail_url": "https://www.hlj.com/1-43-scale-good-smile-hatsune-miku-amg-2022-super-gt-rd-5-ver-gsc84296",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "The Good Smile Hatsune Miku AMG that took first place in Round 5 of the Super GT GT300 class in 2022 is now a miniature for your collection! Neco's Racing Miku 2022 illustration and the innovative color scheme are faitfhlly reproduced on this highly detailed resin vehicle. [Materials]: PU resin",
-    "dimensions": "Approximately 11cm long, 2.8cm high",
-    "material": null,
-    "barcode": "4560392842962",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "FUJ91036",
-    "name": "1/150 Yuki Miku Train 2023 Version (with 3300 type for Standard Color) 2-car Set",
-    "manufacturer": "Fujimi",
-    "release_date": "2023-02",
-    "year": 2023,
-    "type": "Scale",
-    "scale": "1/150",
-    "price_jpy": 4080,
-    "price_sgd": 39.6,
-    "image_url": "https://www.hlj.com/productimages/fuj/fuj91036_0.jpg",
-    "detail_url": "https://www.hlj.com/1-150-scale-yuki-miku-train-2023-version-with-3300-type-for-standard-color-2-car-set-fuj91036",
-    "events": [
-      "Snow Miku"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Fujimi",
-      "Vocaloid"
-    ],
-    "description": "Yuki Miku Train 2023 Version (with 3300 type for Standard Color) 2-car SetIncludes stickers and decals to recreate the Snow Miku 2023 version appearance!",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4968728910369",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -16858,84 +15611,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Stuffed Animals and Plush Toys",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC15886",
-    "name": "Harmonia humming Hatsune Miku (Character Vocal Series 01)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2023-01",
-    "year": 2023,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 27273,
-    "price_sgd": 264.41,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc15886_0.jpg",
-    "detail_url": "https://www.hlj.com/harmonia-humming-hatsune-miku-character-vocal-series-01-gsc15886",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Adapted from Good Smile Company:Hatsune Miku is joining Good Smile Company's Harmonia humming doll series! Her classic outfit has been replicated in detail, a long twin-tail wig and original eyes that all work to bring out Miku's charm combine to make for the perfect representation of Miku. The eyes and body are articulated, allowing you to change the direction she is looking along with her pose.",
-    "dimensions": "Approximately 23cm",
-    "material": null,
-    "barcode": "4580590158863",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "GSC84687",
-    "name": "1/64 Good Smile Hatsune Miku AMG 2022 Season Opening Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2023-01",
-    "year": 2023,
-    "type": "Scale",
-    "scale": "1/64",
-    "price_jpy": 3000,
-    "price_sgd": 29.08,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84687_0.jpg",
-    "detail_url": "https://www.hlj.com/1-64-scale-good-smile-hatsune-miku-amg-2022-season-opening-ver-gsc84687",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Adapted from the GoodSmile website:The Good Smile Hatsune Mikuy AMG that raced in the Super GT GT300 class in 2022 is now a 1/18-scale miniature car! neco's Racing Miku 2022 Ver. illustration and the innovative color scheme have been faithfully included in the design; the body of the car is made of resin. An acrylic case is included. [Materials]: PU resin",
-    "dimensions": "Approximately 7cm long, 2cm high",
-    "material": null,
-    "barcode": "4560392846878",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "GSC84686",
-    "name": "1/43 Good Smile Hatsune Miku AMG 2022 Season Opening Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2023-01",
-    "year": 2023,
-    "type": "Scale",
-    "scale": "1/43",
-    "price_jpy": 12545,
-    "price_sgd": 121.62,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84686_0.jpg",
-    "detail_url": "https://www.hlj.com/1-43-scale-good-smile-hatsune-miku-amg-2022-season-opening-ver-gsc84686",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Adapted from the GoodSmile website:The Good Smile Hatsune Mikuy AMG that raced in the Super GT GT300 class in 2022 is now a 1/18-scale miniature car! neco's Racing Miku 2022 Ver. illustration and the innovative color scheme have been faithfully included in the design; the body of the car is made of resin. An acrylic case is included. [Materials]: PU resin",
-    "dimensions": "Approximately 11cm long, 2.8cm high",
-    "material": null,
-    "barcode": "4560392846861",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -17216,7 +15891,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1800,
-    "price_sgd": 17.45,
+    "price_sgd": 17.44,
     "image_url": "https://www.hlj.com/productimages/tat/tat451501900_0.jpg",
     "detail_url": "https://www.hlj.com/miku-hatsune-figure-3rd-season-autumn-ver-tat451501900",
     "events": [],
@@ -17231,6 +15906,9 @@
     "material": null,
     "barcode": "2004515019005",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -17329,7 +16007,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1800,
-    "price_sgd": 17.45,
+    "price_sgd": 17.44,
     "image_url": "https://www.hlj.com/productimages/tat/tat451499400_0.jpg",
     "detail_url": "https://www.hlj.com/miku-hatsune-aqua-float-girls-figure-tat451499400",
     "events": [],
@@ -17344,6 +16022,9 @@
     "material": null,
     "barcode": "2004514994006",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -17479,7 +16160,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1800,
-    "price_sgd": 17.45,
+    "price_sgd": 17.44,
     "image_url": "https://www.hlj.com/productimages/tat/tat451478800_0.jpg",
     "detail_url": "https://www.hlj.com/miku-hatsune-wonderland-figure-sleeping-beauty-tat451478800",
     "events": [],
@@ -17494,6 +16175,9 @@
     "material": null,
     "barcode": "2204514788005",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -17505,7 +16189,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 5800,
-    "price_sgd": 56.23,
+    "price_sgd": 56.2,
     "image_url": "https://www.hlj.com/productimages/seg/seg96693_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-miku-with-you-2021-fluffy-plush-toy-ll-seg96693",
     "events": [],
@@ -17520,6 +16204,9 @@
     "material": null,
     "barcode": "4570001966934",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -17792,32 +16479,6 @@
     "source": "hlj"
   },
   {
-    "id": "PRZ13282",
-    "name": "BiCuteBunnies Hatsune Miku Figure Street Ver.",
-    "manufacturer": "FuRyu",
-    "release_date": "2022-05",
-    "year": 2022,
-    "type": "Prize",
-    "scale": null,
-    "price_jpy": 1800,
-    "price_sgd": 17.45,
-    "image_url": "https://www.hlj.com/productimages/fru/fruamu-prz13282_0.jpg",
-    "detail_url": "https://www.hlj.com/bicutebunnies-hatsune-miku-figure-street-ver-fruamu-prz13282",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Prize",
-      "FuRyu",
-      "Vocaloid"
-    ],
-    "description": "",
-    "dimensions": null,
-    "material": null,
-    "barcode": "2001211132823",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "321",
     "name": "1/7 Hatsune Miku feat. My Little Pony Bishoujo Statue",
     "manufacturer": "Kotobukiya",
@@ -17967,32 +16628,6 @@
     "source": "hlj"
   },
   {
-    "id": "TAT451419100",
-    "name": "Hatsune Miku Wonderland Figure Cinderella",
-    "manufacturer": "Taito",
-    "release_date": "2022-03",
-    "year": 2022,
-    "type": "Prize",
-    "scale": null,
-    "price_jpy": 1800,
-    "price_sgd": 17.45,
-    "image_url": "https://www.hlj.com/productimages/tat/tat451419100_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-wonderland-figure-cinderella-tat451419100",
-    "events": [],
-    "illustrator": "Rella",
-    "tags": [
-      "Prize",
-      "Taito",
-      "Vocaloid"
-    ],
-    "description": "",
-    "dimensions": null,
-    "material": null,
-    "barcode": "2004514191009",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "TAT451425600",
     "name": "Hatsune Miku Princess AMP Figure Alice Ver.",
     "manufacturer": "Taito",
@@ -18001,7 +16636,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1800,
-    "price_sgd": 17.45,
+    "price_sgd": 17.44,
     "image_url": "https://www.hlj.com/productimages/tat/tat451425600_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-princess-amp-figure-alice-ver-tat451425600",
     "events": [],
@@ -18016,6 +16651,9 @@
     "material": null,
     "barcode": "2204514256009",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -18085,7 +16723,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1800,
-    "price_sgd": 17.45,
+    "price_sgd": 17.44,
     "image_url": "https://www.hlj.com/productimages/tat/tat451422300_0.jpg",
     "detail_url": "https://www.hlj.com/sakura-miku-figure-illustration-ver-tat451422300",
     "events": [],
@@ -18100,6 +16738,9 @@
     "material": null,
     "barcode": "2204514223001",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -18231,7 +16872,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 2500,
-    "price_sgd": 24.24,
+    "price_sgd": 24.23,
     "image_url": "https://www.hlj.com/productimages/seg/seg96050_0.jpg",
     "detail_url": "https://www.hlj.com/project-sekai-colorful-stage-feat-hatsune-miku-lying-down-plush-toy-stage-sekai-s-miku-hatsune-s-seg96050",
     "events": [],
@@ -18246,6 +16887,9 @@
     "material": null,
     "barcode": "4570001960505",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -18336,32 +16980,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC12495",
-    "name": "Nendoroid Hatsune Miku: SEKAI of the Stage Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2021-12",
-    "year": 2021,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 5009,
-    "price_sgd": 48.56,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc12495_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-hatsune-miku-sekai-of-the-stage-ver-gsc12495",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "From Good Smile Company:From the smartphone game project Project SEKAI Colorful Stage! feat.Hatsune Miku comes a Nendoroid of Hatsune Miku from the SEKAI of the Stage! She comes with three face plates including a winking expression, a gently smiling singing expression and an adorable smiling expression. Optional parts include her microphone, a three-leaf clover effect part and an uchiwa cheering fan for cheering on other idols! Miku's outfit from the game has been carefully recreated in Nendoroid form! [Materials]: PVC, ABS",
-    "dimensions": "About 10cm tall",
-    "material": null,
-    "barcode": "4580590124950",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "PRZ12582",
     "name": "Hatsune Miku Sweet Sweets Series Figure Chocolate Mint",
     "manufacturer": "FuRyu",
@@ -18370,7 +16988,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1800,
-    "price_sgd": 17.45,
+    "price_sgd": 17.44,
     "image_url": "https://www.hlj.com/productimages/fru/fruamu-prz12582_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-sweet-sweets-series-figure-chocolate-mint-fruamu-prz12582",
     "events": [],
@@ -18385,6 +17003,9 @@
     "material": null,
     "barcode": "2001211125825",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -18595,32 +17216,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC84284",
-    "name": "1/64 Good Smile Hatsune Miku AMG 2021 SUPER GT Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2021-11",
-    "year": 2021,
-    "type": "Scale",
-    "scale": "1/64",
-    "price_jpy": 2850,
-    "price_sgd": 27.63,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84284_0.jpg",
-    "detail_url": "https://www.hlj.com/1-64-scale-good-smile-hatsune-miku-amg-2021-super-gt-ver-gsc84284",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Adapted from the GoodSmile website:The long-awaited new machine!The GoodSmile Hatsune Miku AMG that raced in the SUPER GT GT300 class in 2021 is now a 1/64th scale miniature car! The body of the car is made of die-cast materials. [Materials]: Die-cast",
-    "dimensions": "Approximately 7cm long, 2cm high",
-    "material": null,
-    "barcode": "4560392842849",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "SEG95141",
     "name": "Project Sekai: Colorful Stage! Feat. Miku Hatsune Lying Down Plush Miku Hatsune (S)",
     "manufacturer": "Sega",
@@ -18647,32 +17242,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Stuffed Animals and Plush Toys",
-    "source": "hlj"
-  },
-  {
-    "id": "CAD11197",
-    "name": "Miku Hatsune: Logic Paint S Cleaner Cloth",
-    "manufacturer": "Character and Anime",
-    "release_date": "2021-10",
-    "year": 2021,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 600,
-    "price_sgd": 5.82,
-    "image_url": "https://www.hlj.com/productimages/cad/cad11197_0.jpg",
-    "detail_url": "https://www.hlj.com/miku-hatsune-logic-paint-s-cleaner-cloth-cad11197",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Character and Anime",
-      "Vocaloid"
-    ],
-    "description": "Vividly colorful graphics from the new puzzle game Logic Paint S, featuring Miku Hatsune, are now available on a variety of fun items, and here's a cleaner cloth! It's just what you need to keep your glasses, phone screen, portable game system screen and other items clean and dust-free; it folds up small, too, so you can take it with you everywhere.",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4546098111977",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -19255,7 +17824,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1800,
-    "price_sgd": 17.45,
+    "price_sgd": 17.44,
     "image_url": "https://www.hlj.com/productimages/tat/tat451311400_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-princess-amp-figure-mermaid-ver-tat451311400",
     "events": [],
@@ -19270,6 +17839,9 @@
     "material": null,
     "barcode": "2004513114009",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -19467,7 +18039,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1800,
-    "price_sgd": 17.45,
+    "price_sgd": 17.44,
     "image_url": "https://www.hlj.com/productimages/tat/tat451288100_0.jpg",
     "detail_url": "https://www.hlj.com/sakura-miku-newly-drawn-illustration-figure-2021-ver-tat451288100",
     "events": [],
@@ -19482,6 +18054,9 @@
     "material": null,
     "barcode": "2004512881001",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -19511,32 +18086,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "PRZ11810",
-    "name": "Hatsune Miku: BiCuteBunnies Figure -White Ver.-",
-    "manufacturer": "FuRyu",
-    "release_date": "2021-02",
-    "year": 2021,
-    "type": "Prize",
-    "scale": null,
-    "price_jpy": 1800,
-    "price_sgd": 17.45,
-    "image_url": "https://www.hlj.com/productimages/fru/fruamu-prz11810_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-bicutebunnies-figure-white-ver-fruamu-prz11810",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Prize",
-      "FuRyu",
-      "Vocaloid"
-    ],
-    "description": "",
-    "dimensions": null,
-    "material": null,
-    "barcode": "2200121004866",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -19747,32 +18296,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC84239",
-    "name": "1/64 Good Smile Hatsune Miku AMG 2017 SPA24H Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2020-11",
-    "year": 2020,
-    "type": "Scale",
-    "scale": "1/64",
-    "price_jpy": 2850,
-    "price_sgd": 27.63,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84239_0.jpg",
-    "detail_url": "https://www.hlj.com/1-64-scale-good-smile-hatsune-miku-amg-2017-spa24h-ver-gsc84239",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "From the GoodSmile website:The Good Smile Hatsune Miku AMG that raced in the 2017 edition of Spa 24 Hours at the Circuit of Spa-Francorchamps is now a highly collectible 1/64 scale miniature car! The illustrations of Racing Miku by popular illustrator Tony and innovative color scheme of the car have been faithfully included on the design. The body has been recreated using die-cast materials. Collect all of the GOODSMILE RACING race cars from throughout the years! [Materials]: Die-cast",
-    "dimensions": "Approximately 7cm long, 2cm high",
-    "material": null,
-    "barcode": "4560392842399",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "GSC94174",
     "name": "POP UP PARADE Hatsune Miku PVC (Reissue)",
     "manufacturer": "Good Smile Company",
@@ -19839,7 +18362,7 @@
     "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 4275,
-    "price_sgd": 41.45,
+    "price_sgd": 41.43,
     "image_url": "https://www.hlj.com/productimages/mov/mov41155_0.jpg",
     "detail_url": "https://www.hlj.com/hatsune-miku-series-plush-toy-souno-cat-party-hatsune-miku-mov41155",
     "events": [],
@@ -19854,6 +18377,9 @@
     "material": null,
     "barcode": "4549743411552",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -20444,7 +18970,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1800,
-    "price_sgd": 17.45,
+    "price_sgd": 17.44,
     "image_url": "https://www.hlj.com/media/original_images/noImage.png",
     "detail_url": "https://www.hlj.com/sakura-miku-doll-crystal-figure-tat451201500",
     "events": [],
@@ -20459,6 +18985,9 @@
     "material": null,
     "barcode": "2200074006900",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -20607,40 +19136,6 @@
     "source": "hlj"
   },
   {
-    "id": "PEL88609",
-    "name": "Dioramansion 150: Racing Miku Pit 2019 Optional Panel Haregi Ver.",
-    "manufacturer": "PLM",
-    "release_date": "2019-12",
-    "year": 2019,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 1500,
-    "price_sgd": 14.55,
-    "image_url": "https://www.hlj.com/productimages/pel/pel88609_0.jpg",
-    "detail_url": "https://www.hlj.com/dioramansion-150-racing-miku-pit-2019-optional-panel-haregi-ver-pel88609",
-    "events": [
-      "Racing Miku"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "PLM",
-      "Vocaloid"
-    ],
-    "description": "Adapted from the GoodSmile website:Presenting more Dioramansion 150: Racing Miku 2019 optional panels! These special optional panels are designed to connect to the Dioramansion 150 Racing Miku Pit series for more display opportunities than before! The panel illustrations feature the key visual illustrations of Racing Miku 2019 by Annindoufu! The panels make a great display background when put together with the Dioramansion set, and an acrylic stand is also included to put just the illustration on display as well - plus it also makes for a great item to get signatures on during pit lane walks! A set of Dioramansion clips is also included allowing you to connect the panels in various different ways - make your very own custom display space or storage space! [Materials]: ABS with UV inkjet print, PMMA [Set Contents]:Main panelAcrylic standClips A/B",
-    "dimensions": "Approximately 15cm x 15cm",
-    "material": null,
-    "barcode": "4562292886091",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "FRE29877",
     "name": "1/8 Hatsune Miku GT Project: Racing Miku 2018 Thailand Ver. PVC",
     "manufacturer": "Freeing",
@@ -20715,7 +19210,7 @@
     "type": "Scale",
     "scale": "1/1",
     "price_jpy": 16150,
-    "price_sgd": 156.57,
+    "price_sgd": 156.5,
     "image_url": "https://www.hlj.com/productimages/fre/fre29876_0.jpg",
     "detail_url": "https://www.hlj.com/1-1-scale-hatsune-miku-gt-project-racing-miku-2017-thailand-ver-pvc-fre29876",
     "events": [
@@ -20725,16 +19220,6 @@
     "tags": [
       "Scale",
       "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -20743,6 +19228,9 @@
     "material": null,
     "barcode": "4571245298768",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -20787,7 +19275,7 @@
     "type": "Scale",
     "scale": "1/7",
     "price_jpy": 14778,
-    "price_sgd": 143.27,
+    "price_sgd": 143.2,
     "image_url": "https://www.hlj.com/productimages/max/max04265_0.jpg",
     "detail_url": "https://www.hlj.com/1-7-scale-hatsune-miku-project-diva-f-2nd-hatsune-miku-vintage-dress-ver-pvc-max04265",
     "events": [],
@@ -20802,6 +19290,9 @@
     "material": null,
     "barcode": "4545784042656",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -20896,32 +19387,6 @@
     "source": "hlj"
   },
   {
-    "id": "PRZ10309",
-    "name": "Hatsune Miku: Noodle Stopper Figure",
-    "manufacturer": "FuRyu",
-    "release_date": "2019-09",
-    "year": 2019,
-    "type": "Prize",
-    "scale": null,
-    "price_jpy": 1800,
-    "price_sgd": 17.45,
-    "image_url": "https://www.hlj.com/productimages/fru/fruamu-prz10309_0.jpg",
-    "detail_url": "https://www.hlj.com/hatsune-miku-noodle-stopper-figure-fruamu-prz10309",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Prize",
-      "FuRyu",
-      "Vocaloid"
-    ],
-    "description": "Hatsune Miku joins FuRyu's popular Noodle Stopper figure lineup! This fun figure is posed perfectly to sit on the edge of a shelf or other item. She can be used to hold down the lid of your cup noodles as they cook (hence the name!), or simply for decoration.",
-    "dimensions": "About 14cm tall",
-    "material": null,
-    "barcode": "2200121004033",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "TAT451156200",
     "name": "Hatsune Miku Birthday Figure 2019 Ver.",
     "manufacturer": "Taito",
@@ -20948,32 +19413,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC84415",
-    "name": "1/32 Hatsune Miku:GT Project Good Smile Hatsune Miku AMG 2018 Opening Game Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2019-08",
-    "year": 2019,
-    "type": "Scale",
-    "scale": "1/32",
-    "price_jpy": 12139,
-    "price_sgd": 117.68,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84415_0.jpg",
-    "detail_url": "https://www.hlj.com/1-32-scale-hatsune-miku-gt-project-good-smile-hatsune-miku-amg-2018-opening-game-ver-gsc84415",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "From Good Smile Company:A 1/32 miniature car of the Good Smile Hatsune Miku AMG that took part in the 2018 SUPER GT300 Class series!The cute illustrations of Racing Miku by Hiro Kanzaki, innovative color scheme and all of the sponsor logos that were on the car during the first race have been faithfully included on the design. The chassis makes use of ABS resin for a faithful rendition of the original. [Car Size]: About 4cm tall, 14cm long [Materials]: ABS",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4560392844157",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -21076,7 +19515,7 @@
     "type": "Scale",
     "scale": "1/7",
     "price_jpy": 17593,
-    "price_sgd": 170.56,
+    "price_sgd": 170.48,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc94044_0.jpg",
     "detail_url": "https://www.hlj.com/1-7-scale-hatsune-miku-10th-anniversary-ver-pvc-gsc94044",
     "events": [],
@@ -21091,6 +19530,9 @@
     "material": null,
     "barcode": "4580416940443",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -21182,32 +19624,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC84210",
-    "name": "1/43 Good Smile Hatsune Miku AMG: 2017 SPA24H Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2019-03",
-    "year": 2019,
-    "type": "Scale",
-    "scale": "1/43",
-    "price_jpy": 12139,
-    "price_sgd": 117.68,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84210_0.jpg",
-    "detail_url": "https://www.hlj.com/1-43-scale-good-smile-hatsune-miku-amg-2017-spa24h-ver-gsc84210",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "From Good Smile Company:A 1/43 miniature car of the Good Smile Hatsune Miku AMG that took part in the 24 Hours Spa race that took place in Belgium in July 2017.The illustrations of Racing Miku by illustrator Tony feature Racing Miku dressed up in a Japanese-style outfit and were made specially for the event, and the design has been captured in careful detail for fans to enjoy in their collection. The chassis makes is made from resin.[Specifications]Painted 1/43 scale resin miniature car.Approximately 110mm in length and 38mm in height (including antenna)",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4560392842108",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -21542,105 +19958,6 @@
     "source": "hlj"
   },
   {
-    "id": "PEL88407",
-    "name": "Dioramansion 150: Racing Miku 2018 Pit B",
-    "manufacturer": "PLM",
-    "release_date": "2018-08",
-    "year": 2018,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 3610,
-    "price_sgd": 35.0,
-    "image_url": "https://www.hlj.com/productimages/pel/pel88407_0.jpg",
-    "detail_url": "https://www.hlj.com/dioramansion-150-racing-miku-2018-pit-b-pel88407",
-    "events": [
-      "Racing Miku"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "PLM",
-      "Vocaloid"
-    ],
-    "description": "From the Good Smile Company website:Displaying figures with a special display often makes a collection look more appealing, but at the same time preparing a special display case is a huge amount of effort. We heard the cries for an easier display option and created this Dioramansion series of display backgrounds! They are simple to use and can be used as a photography kit or simply as a complete display background!There are various different ways to connect the plates together allowing you to easily create your own customized display space for your figures! These new additions to the Dioramansion series are 150mm x 150mm in size which works great with Nendoroid figures! These Racing Miku 2018 designs capture the look of the actual Good Smile Racing Pit! The 2018 ver. features the cute Racing Miku design by illustrator Hiro Kanzaki! [Specifications]Material: ABS (UV Inkjet Print)/PMMA (Acrylic Stand) Contents: 5x Main Panels + 4 Clips A/B (With Runners) + Acrylic StandSize: Approx. 150mm x 300mm x 150mm (Each Panel Approx. 150mm)",
-    "dimensions": "150mm x 300mm x 150mm (Ea",
-    "material": null,
-    "barcode": "4562292884073",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "PEL88406",
-    "name": "Dioramansion 150: Racing Miku 2018 Pit A",
-    "manufacturer": "PLM",
-    "release_date": "2018-08",
-    "year": 2018,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 3610,
-    "price_sgd": 35.0,
-    "image_url": "https://www.hlj.com/productimages/pel/pel88406_0.jpg",
-    "detail_url": "https://www.hlj.com/dioramansion-150-racing-miku-2018-pit-a-pel88406",
-    "events": [
-      "Racing Miku"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "PLM",
-      "Vocaloid"
-    ],
-    "description": "From the Good Smile Company website:Displaying figures with a special display often makes a collection look more appealing, but at the same time preparing a special display case is a huge amount of effort. We heard the cries for an easier display option and created this Dioramansion series of display backgrounds! They are simple to use and can be used as a photography kit or simply as a complete display background!There are various different ways to connect the plates together allowing you to easily create your own customized display space for your figures! These new additions to the Dioramansion series are 150mm x 150mm in size which works great with Nendoroid figures! These Racing Miku 2018 designs capture the look of the actual Good Smile Racing Pit! The 2018 ver. features the cute Racing Miku design by illustrator Hiro Kanzaki! [Specifications]Material: ABS (UV Inkjet Print)/PMMA (Acrylic Stand) Contents: 5x Main Panels + 4 Clips A/B (With Runners) + Acrylic StandSize: Approx. 150mm x 300mm x 150mm (Each Panel Approx. 150mm)",
-    "dimensions": "150mm x 300mm x 150mm (Ea",
-    "material": null,
-    "barcode": "4562292884066",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "GSC84413",
-    "name": "1/32 Good Smile Hatsune Miku AMG: 2017 Season Series Champion Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2018-07",
-    "year": 2018,
-    "type": "Scale",
-    "scale": "1/32",
-    "price_jpy": 11259,
-    "price_sgd": 109.15,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84413_0.jpg",
-    "detail_url": "https://www.hlj.com/1-32-scale-good-smile-hatsune-miku-amg-2017-season-series-champion-ver-gsc84413",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Reverently crafted in ABS resin, here's a gorgeously finished display model of the Good Smile Hatsune Miku AMG, the 2017 Autobacs Super GT GT300 Class Series Champion car! This 1/32-scale stunner comes mounted on a custom display base, in a hard plastic case that will help keep it free of dust and fingerprints.",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4560392844133",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "MAX04238",
     "name": "1/7 Hatsune Miku GT Project: Racing Miku 2016: TeamUKYO Ver. PVC",
     "manufacturer": "Max Factory",
@@ -21791,45 +20108,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "GSC84412",
-    "name": "1/32 Good Smile Hatsune Miku AMG 2017 SPA24H Finals Ver. (Hatsune Miku GT Project)",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2018-04",
-    "year": 2018,
-    "type": "Scale",
-    "scale": "1/32",
-    "price_jpy": 11259,
-    "price_sgd": 109.15,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84412_0.png",
-    "detail_url": "https://www.hlj.com/1-32-scale-good-smile-hatsune-miku-amg-2017-spa24h-finals-ver-hatsune-miku-gt-project-gsc84412",
-    "events": [
-      "Racing Miku"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "From the GoodSmile website:The car that made a miraculous comeback for the SPA24H Finals!To commemorate the Hatsune Miku GT Project's SUPER GT 10th season race, the team took part in the Spa 24 Hours that took place in Belgium in July 2017. The AMG GT3 car was involved in a huge crash during the preliminaries but managed to make a comeback the next day! The details of the AMG design that was used for the comeback and in the final race have all been preserved on this miniature car! The chassis makes use of ABS resin for a faithful rendition of the original.[Materials]: ABS",
-    "dimensions": "Approximately 14cm long",
-    "material": null,
-    "barcode": "4560392844126",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -22259,32 +20537,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC90149",
-    "name": "Nendoroid Co-de Hatsune Miku CCCJ 70th Co-de",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2016-10",
-    "year": 2016,
-    "type": "Nendoroid",
-    "scale": null,
-    "price_jpy": 3079,
-    "price_sgd": 29.85,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc90149_0.jpg",
-    "detail_url": "https://www.hlj.com/nendoroid-co-de-hatsune-miku-cccj-70th-co-de-gsc90149",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Nendoroid",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "From the Good Smile Company website:A Hatsune Miku Nendoroid Co-de figure made in commemoration of the 70th anniversary of the establishment of the Red Feather Community Chest Movement. She holds a red feather in her hands with an gentle smile on her face and wings on her back creating a truly angelic Miku to add to your collection.",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4580416901499",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "GSC44265",
     "name": "1/8 Racing Miku 2015 Ver. PVC",
     "manufacturer": "Good Smile Company",
@@ -22293,7 +20545,7 @@
     "type": "Scale",
     "scale": "1/8",
     "price_jpy": 12139,
-    "price_sgd": 117.68,
+    "price_sgd": 117.63,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc44265_0.jpg",
     "detail_url": "https://www.hlj.com/1-8-scale-racing-miku-2015-ver-pvc-gsc44265",
     "events": [
@@ -22303,16 +20555,6 @@
     "tags": [
       "Scale",
       "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -22321,6 +20563,9 @@
     "material": null,
     "barcode": "4571368442659",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -22332,7 +20577,7 @@
     "type": "Scale",
     "scale": "1/4",
     "price_jpy": 24454,
-    "price_sgd": 237.08,
+    "price_sgd": 236.96,
     "image_url": "https://www.hlj.com/productimages/fre/fre29584_0.jpg",
     "detail_url": "https://www.hlj.com/1-4-scale-snow-miku-pvc-fre29584",
     "events": [
@@ -22342,16 +20587,6 @@
     "tags": [
       "Scale",
       "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -22360,6 +20595,9 @@
     "material": null,
     "barcode": "4571245295842",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -22368,10 +20606,10 @@
     "manufacturer": "Sega",
     "release_date": "2016-06",
     "year": 2016,
-    "type": "Prize",
+    "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 2500,
-    "price_sgd": 24.24,
+    "price_sgd": 24.23,
     "image_url": "https://www.hlj.com/productimages/seg/seg50269_0.jpg",
     "detail_url": "https://www.hlj.com/love-live-snow-miku-2016-stuffed-umi-sonoda-seg50269",
     "events": [
@@ -22379,14 +20617,7 @@
     ],
     "illustrator": null,
     "tags": [
-      "Prize",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
+      "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
       "Sega",
@@ -22397,6 +20628,9 @@
     "material": null,
     "barcode": "4573253502691",
     "mfc_owned_count": null,
+    "series": "Love Live!",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -22636,10 +20870,10 @@
     "manufacturer": "Sega",
     "release_date": "2016-06",
     "year": 2016,
-    "type": "Prize",
+    "type": "Plush / Soft",
     "scale": null,
     "price_jpy": 2500,
-    "price_sgd": 24.24,
+    "price_sgd": 24.23,
     "image_url": "https://www.hlj.com/productimages/seg/seg50273_0.jpg",
     "detail_url": "https://www.hlj.com/love-live-snow-miku-2016-stuffed-hanayo-koizumi-seg50273",
     "events": [
@@ -22647,14 +20881,7 @@
     ],
     "illustrator": null,
     "tags": [
-      "Prize",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
-      "Snow Miku",
+      "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
       "Sega",
@@ -22665,6 +20892,9 @@
     "material": null,
     "barcode": "4573253502738",
     "mfc_owned_count": null,
+    "series": "Love Live!",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -22821,32 +21051,6 @@
     "source": "hlj"
   },
   {
-    "id": "SEG50001",
-    "name": "RAH Hatsune Miku Project DIVA F Honey Whip Standard ver",
-    "manufacturer": "Sega",
-    "release_date": "2016-03",
-    "year": 2016,
-    "type": "Prize",
-    "scale": null,
-    "price_jpy": 25800,
-    "price_sgd": 250.13,
-    "image_url": "https://www.hlj.com/productimages/seg/seg50001_0.jpg",
-    "detail_url": "https://www.hlj.com/rah-hatsune-miku-project-diva-f-honey-whip-standard-ver-seg50001",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Prize",
-      "Sega",
-      "Vocaloid"
-    ],
-    "description": "Hatune Miku returns to the Real Action Heroes line wearing her Honey Whip Module from the rhythm game Project Diva F ! Miku measures about 30cm tall and her charming black and pink outfit has been carefully recreated down to her garterbelt and lingerie!",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4573253500017",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "SEG50002",
     "name": "RAH Hatsune Miku Project DIVA F Honey Whip Deluxe ver.",
     "manufacturer": "Sega",
@@ -22855,7 +21059,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 35800,
-    "price_sgd": 347.07,
+    "price_sgd": 346.91,
     "image_url": "https://www.hlj.com/productimages/seg/seg50002_0.jpg",
     "detail_url": "https://www.hlj.com/rah-hatsune-miku-project-diva-f-honey-whip-deluxe-ver-seg50002",
     "events": [],
@@ -22870,6 +21074,9 @@
     "material": null,
     "barcode": "4573253500024",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Action Figures",
+    "item_type": "Action Figures",
     "source": "hlj"
   },
   {
@@ -23100,7 +21307,7 @@
     "type": "Scale",
     "scale": "1/8",
     "price_jpy": 8796,
-    "price_sgd": 85.28,
+    "price_sgd": 85.24,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc44227_1.jpg",
     "detail_url": "https://www.hlj.com/1-8-scale-hatsune-miku-tell-your-world-ver-pvc-gsc44227",
     "events": [
@@ -23110,16 +21317,6 @@
     "tags": [
       "Scale",
       "Tell Your World",
-      "Tell Your World",
-      "Tell Your World",
-      "Tell Your World",
-      "Tell Your World",
-      "Tell Your World",
-      "Tell Your World",
-      "Tell Your World",
-      "Tell Your World",
-      "Tell Your World",
-      "Tell Your World",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -23128,6 +21325,9 @@
     "material": null,
     "barcode": "4571368442277",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -23201,7 +21401,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1800,
-    "price_sgd": 17.45,
+    "price_sgd": 17.44,
     "image_url": "https://www.hlj.com/productimages/bnp/bnp49386box.jpg?v=1422598505",
     "detail_url": "https://www.hlj.com/racing-miku-2014-bnp49386",
     "events": [
@@ -23211,16 +21411,6 @@
     "tags": [
       "Prize",
       "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
       "Banpresto",
       "Vocaloid"
     ],
@@ -23229,6 +21419,9 @@
     "material": null,
     "barcode": "2000003026487",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -23265,58 +21458,6 @@
     "source": "hlj"
   },
   {
-    "id": "GSC84406",
-    "name": "1/32 Good Smile Hatsune Miku Z4 2014 Second Race Champion Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2014-12",
-    "year": 2014,
-    "type": "Scale",
-    "scale": "1/32",
-    "price_jpy": 7333,
-    "price_sgd": 71.09,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84406_0.jpg?v=1409104895",
-    "detail_url": "https://www.hlj.com/1-32-scale-good-smile-hatsune-miku-z4-2014-second-race-champion-ver-gsc84406",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Good Smile Company",
-      "GSR Cars"
-    ],
-    "description": "This highly-detailed, accurate model car is perfect for auto enthusiasts and collectors! Vocaloid fans are sure to enjoy the Hatsune Miku design on this beautiful little model. This collectible comes mounted on a display base encased in a hard plastic case for dust-free display or storage.",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4560392844065",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "GSC84404",
-    "name": "1/32 GSR Hatsune Miku BMW 2013 Final Race Ver.",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2014-10",
-    "year": 2014,
-    "type": "Scale",
-    "scale": "1/32",
-    "price_jpy": 7333,
-    "price_sgd": 71.09,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc84404_0.jpg?v=",
-    "detail_url": "https://www.hlj.com/1-32-scale-gsr-hatsune-miku-bmw-2013-final-race-ver-gsc84404",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Good Smile Company",
-      "GSR Cars"
-    ],
-    "description": "From the Good Smile website: A model of the Miku BMW from its final race in the 2013 season! The GSR Hatsune Miku BMW 2013 racing car that achieved 3rd place in the yearly ranking of the 2013 season is joining the miniature car series!The colorful, speedy-looking design as well as each of the sponsors logos have all been faithfully preserved on the miniature version. The chassis makes use of ABS resin for a faithful rendition of the original.",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4560392844041",
-    "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
     "id": "FUN61562",
     "name": "POP! Rock Series: Vocaloid Hatsune Miku",
     "manufacturer": "Funko",
@@ -23343,45 +21484,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "FRE29473",
-    "name": "1/8 Senbonzakura feat. Miku Hatsune PVC",
-    "manufacturer": "Freeing",
-    "release_date": "2014-07",
-    "year": 2014,
-    "type": "Scale",
-    "scale": "1/8",
-    "price_jpy": 9074,
-    "price_sgd": 87.97,
-    "image_url": "https://www.hlj.com/productimages/fre/fre29473_0.jpg?v=",
-    "detail_url": "https://www.hlj.com/1-8-scale-senbonzakura-feat-miku-hatsune-pvc-fre29473",
-    "events": [
-      "Senbonzakura"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Senbonzakura",
-      "Senbonzakura",
-      "Senbonzakura",
-      "Senbonzakura",
-      "Senbonzakura",
-      "Senbonzakura",
-      "Senbonzakura",
-      "Senbonzakura",
-      "Senbonzakura",
-      "Senbonzakura",
-      "Senbonzakura",
-      "Freeing",
-      "Vocaloid"
-    ],
-    "description": "Senbonzakura, as performed by Miku Hatsune, is one of the most popular downloadable songs ever in Japan. This figure by Freeing depicts the Vocaloid sensation as she appears in the video for the song, wearing a stylized uniform and pointing playfully behind her as the wind swirls her twin tails and long sleeves around her. The muted colors and traditional styling of her outfit is quite a change from what we usually see Miku wearing! A base is included (which may be different from the one seen in the prototype photos), and she can be displayed with or without her hat, too. She'll be about 20cm tall.",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4571245294739",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -23448,32 +21550,6 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Completed Models",
-    "source": "hlj"
-  },
-  {
-    "id": "AMD18190",
-    "name": "Hatsune Miku/ Hatsune Miku 150pcs",
-    "manufacturer": "ensky",
-    "release_date": "2014-04",
-    "year": 2014,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 540,
-    "price_sgd": 5.24,
-    "image_url": "https://www.hlj.com/productimages/amd/amd18190_0.jpg?v=",
-    "detail_url": "https://www.hlj.com/hatsune-miku-hatsune-miku-150pcs-amd18190",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "ensky",
-      "Vocaloid"
-    ],
-    "description": "",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4970381181901",
-    "mfc_owned_count": null,
     "source": "hlj"
   },
   {
@@ -23634,7 +21710,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1800,
-    "price_sgd": 17.45,
+    "price_sgd": 17.44,
     "image_url": "https://www.hlj.com/productimages/seg/segh3456_0.jpg?v=",
     "detail_url": "https://www.hlj.com/pm-hatsune-miku-polka-dot-swim-wear-ver-segh3456",
     "events": [],
@@ -23649,6 +21725,9 @@
     "material": null,
     "barcode": "2000004010461",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -23722,7 +21801,7 @@
     "type": "Scale",
     "scale": "1/7",
     "price_jpy": 10971,
-    "price_sgd": 106.36,
+    "price_sgd": 106.31,
     "image_url": "https://www.hlj.com/productimages/fre/fre29436_0.jpg?v=",
     "detail_url": "https://www.hlj.com/1-7-scale-racing-miku-2012-ver-pvc-fre29436",
     "events": [
@@ -23732,16 +21811,6 @@
     "tags": [
       "Scale",
       "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -23750,6 +21819,9 @@
     "material": null,
     "barcode": "4571245294364",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -23943,7 +22015,7 @@
     "type": "Other",
     "scale": null,
     "price_jpy": 3376,
-    "price_sgd": 32.73,
+    "price_sgd": 32.71,
     "image_url": "https://www.hlj.com/productimages/hsk/hsk00014_0.jpg?v=",
     "detail_url": "https://www.hlj.com/mikumo-04-romeo-cinderella-miku-hatsune-hsk00014",
     "events": [],
@@ -23958,6 +22030,9 @@
     "material": null,
     "barcode": "4582225000141",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -24184,7 +22259,7 @@
     "type": "Scale",
     "scale": "1/8",
     "price_jpy": 4714,
-    "price_sgd": 45.7,
+    "price_sgd": 45.68,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc96557_0.jpg?v=",
     "detail_url": "https://www.hlj.com/1-8-scale-miku-hatsune-lat-type-ver-pvc-gsc96557",
     "events": [],
@@ -24199,6 +22274,9 @@
     "material": null,
     "barcode": "4582191965574",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -24272,7 +22350,7 @@
     "type": "Scale",
     "scale": "1/8",
     "price_jpy": 10971,
-    "price_sgd": 106.36,
+    "price_sgd": 106.31,
     "image_url": "https://www.hlj.com/productimages/max/max04120_0.jpg?v=",
     "detail_url": "https://www.hlj.com/1-8-scale-miku-hatsune-vn02-mix-pvc-max04120",
     "events": [],
@@ -24287,39 +22365,9 @@
     "material": null,
     "barcode": "4545784041208",
     "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "GSC85106",
-    "name": "1/10 GSR Character Customize Series Decals 09: Racing Miku",
-    "manufacturer": "Good Smile Company",
-    "release_date": "2010-05",
-    "year": 2010,
-    "type": "Scale",
-    "scale": "1/10",
-    "price_jpy": 1714,
-    "price_sgd": 16.63,
-    "image_url": "https://www.hlj.com/productimages/gsc/gsc85106.jpg?v=",
-    "detail_url": "https://www.hlj.com/1-10-scale-gsr-character-customize-series-decals-09-racing-miku-gsc85106",
-    "events": [
-      "Racing Miku"
-    ],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Racing Miku",
-      "Good Smile Company",
-      "Vocaloid"
-    ],
-    "description": "Here comes Miku! With her impact wrench at the ready and wearing a too-cute version of a pit-crew uniform, she's ready to make your 1/10-scale racer look stunning. Two sheets of decals are included, as shown.",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4560392851063",
-    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -24331,7 +22379,7 @@
     "type": "Prize",
     "scale": null,
     "price_jpy": 1550,
-    "price_sgd": 15.03,
+    "price_sgd": 15.02,
     "image_url": "https://www.hlj.com/productimages/seg/segh2327_0.jpg?v=",
     "detail_url": "https://www.hlj.com/vocaloid-miku-hatsune-premium-figure-segh2327",
     "events": [],
@@ -24346,6 +22394,9 @@
     "material": null,
     "barcode": "2000004005450",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -24452,7 +22503,7 @@
     "type": "Scale",
     "scale": "1/7",
     "price_jpy": 7543,
-    "price_sgd": 73.13,
+    "price_sgd": 73.09,
     "image_url": "https://www.hlj.com/productimages/max/max04118_0.jpg?v=",
     "detail_url": "https://www.hlj.com/1-7-scale-miku-hatsune-pvc-max04118",
     "events": [],
@@ -24467,32 +22518,9 @@
     "material": null,
     "barcode": "4545784041185",
     "mfc_owned_count": null,
-    "source": "hlj"
-  },
-  {
-    "id": "DIC96063",
-    "name": "D'mix Miku Hatsune Silhouette Strap Pink",
-    "manufacturer": "Dicokick",
-    "release_date": "2009-11",
-    "year": 2009,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 1143,
-    "price_sgd": 11.08,
-    "image_url": "https://www.hlj.com/productimages/dic/dic96063_0.jpg?v=",
-    "detail_url": "https://www.hlj.com/d-mix-miku-hatsune-silhouette-strap-pink-dic96063",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Other",
-      "Dicokick",
-      "Vocaloid"
-    ],
-    "description": "By now, everyone recognizes her silhouette--those twin tails that sweep to the floor can only mean it's Vocaloid idol Miku Hatsune! Here she is in see-through pink, dressed up with a sparkly stone set into her sleeve and a silvery disk (with a silvery metal lobster-claw attachment), and hung on a fabric-cord loop. She's 7cm tall, and she's glad to help keep your cell phone, portable game console, keys, or anything else easy to find!",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4582191960630",
-    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -24533,7 +22561,7 @@
     "type": "Nendoroid",
     "scale": null,
     "price_jpy": 3500,
-    "price_sgd": 33.93,
+    "price_sgd": 33.92,
     "image_url": "https://www.hlj.com/productimages/gif/gif82023_0.jpg?v=",
     "detail_url": "https://www.hlj.com/nendoroid-plus-stuffed-miku-hachune-gif82023",
     "events": [],
@@ -24548,6 +22576,9 @@
     "material": null,
     "barcode": "4562200820230",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
     "source": "hlj"
   },
   {
@@ -24588,7 +22619,7 @@
     "type": "Scale",
     "scale": "1/8",
     "price_jpy": 4714,
-    "price_sgd": 45.7,
+    "price_sgd": 45.68,
     "image_url": "https://www.hlj.com/productimages/gsc/gsc96506_0.jpg?v=",
     "detail_url": "https://www.hlj.com/1-8-scale-miku-hatsune-pvc-gsc96506",
     "events": [],
@@ -24603,33 +22634,40 @@
     "material": null,
     "barcode": "4582191965062",
     "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
-    "id": "YMM82817",
-    "name": "Miku Hatsune Vocaloid 2 Official Guide Book with DVD-ROM",
-    "manufacturer": "Yamaha Music Media Corporation",
-    "release_date": "2008-05",
-    "year": 2008,
-    "type": "Other",
-    "scale": null,
-    "price_jpy": 2500,
-    "price_sgd": 24.24,
-    "image_url": "https://www.hlj.com/productimages/ymm/ymm82817_0.jpg?v=",
-    "detail_url": "https://www.hlj.com/miku-hatsune-vocaloid-2-official-guide-book-with-dvd-rom-ymm82817",
+    "id": "SJ349437157",
+    "name": "Vocaloid Project Mirai Hatsune Miku Itasha 2012 ProjectMirai GOOD SMILE Racing BMW Z4 GT3 1/43 BMW Z4 GT3 2012 Season Opening Version",
+    "manufacturer": "Max Factory",
+    "release_date": null,
+    "year": null,
+    "type": "Scale",
+    "scale": "1/43",
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 99.83,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/products/51S6N76mOmL.jpg?v=1600413043",
+    "detail_url": "https://solarisjapan.com/products/good-smile-racing-vocaloid-project-mirai-hatsune-miku-itasha-2012-projectmirai-good-smile-racing-bmw-z4-gt3-1-43-bmw-z4-gt3-2012-season-opening-version-max-factory",
     "events": [],
     "illustrator": null,
     "tags": [
-      "Other",
-      "Yamaha Music Media Corporation",
-      "Vocaloid"
+      "Scale",
+      "Max Factory"
     ],
-    "description": "From developer Yamaha Corporation comes this official how-to guide for their Vocaloid 2 Miku Hatsune computer music program for Windows XP and Windows Vista OS. Includes basic information on how to set up and use the program, input lyrics and music, create your own music, and more! Also includes a DVD-ROM that contains a 14-day trial for the Vocaloid 2 Miku Hatsune program, completed movie sample, a movie on how to use the program, and six karaoke songs in Wave format. In order to run the trial program, a computer with Windows XP/Vista OS (a Japanese version OS may be required), Pentium 4 2GHz / Athlon XP 2000+ or better CPU with 512MB or bigger RAM are required; not guaranteed to be usable outside Japan. All text is in Japanese. Softcover with dust jacket. 128 pages (64 in color).",
+    "description": "",
     "dimensions": null,
     "material": null,
-    "barcode": "9784636828177",
+    "barcode": "4560392842085",
     "mfc_owned_count": null,
-    "source": "hlj"
+    "series": null,
+    "category": null,
+    "item_type": "Figure",
+    "source": "solaris",
+    "handle": "good-smile-racing-vocaloid-project-mirai-hatsune-miku-itasha-2012-projectmirai-good-smile-racing-bmw-z4-gt3-1-43-bmw-z4-gt3-2012-season-opening-version-max-factory"
   },
   {
     "id": "SJ349437157",
@@ -31920,6 +29958,39 @@
     "item_type": "Video",
     "source": "solaris",
     "handle": "hatsune-miku-live-party-2011-mikupa"
+  },
+  {
+    "id": "SJ435698264",
+    "name": "Hatsune Miku Keyholder Append",
+    "manufacturer": "Cospa",
+    "release_date": null,
+    "year": null,
+    "type": "Other",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 27.08,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/products/41xGAPnEJuL.jpeg?v=1571441933",
+    "detail_url": "https://solarisjapan.com/products/vocaloid-hatsune-miku-keyholder-append-cospa",
+    "events": [
+      "Append"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Other",
+      "Append",
+      "Cospa"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4531894427988",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Merchandise",
+    "source": "solaris",
+    "handle": "vocaloid-hatsune-miku-keyholder-append-cospa"
   },
   {
     "id": "SJ4377990725675",
