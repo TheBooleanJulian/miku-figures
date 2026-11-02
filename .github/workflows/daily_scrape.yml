@@ -54,7 +54,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0   # full history so the commit step can rebase onto a newer main
 
       # ── 2. Python setup ────────────────────────────────────────────
       - name: Set up Python 3.12
@@ -107,7 +107,15 @@ jobs:
           git add public/figures.json public/meta.json scraper/solaris_skip.json
           COUNT=$(python -c "import json; d=json.load(open('public/figures.json')); print(len(d))")
           git commit -m "🤖 scraper: update figure database (${COUNT} figures) [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-          git push
+          # A merge to main during the (long) scrape makes the push a non-fast-forward.
+          # Rebase onto the latest main; on a conflict in the data files, keep our
+          # freshly scraped copy (-X theirs = the commit being replayed), then retry.
+          for attempt in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            echo "push attempt $attempt failed, retrying"
+            sleep 5
+          done
+          exit 1
 
       # ── 7. Summary ────────────────────────────────────────────────
       - name: Print summary
