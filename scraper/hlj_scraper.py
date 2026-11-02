@@ -357,6 +357,31 @@ def load_existing() -> dict[str, dict]:
     return {}
 
 
+def other_source_rows(own_rows: list[dict], own_source: str) -> list[dict]:
+    """Rows saved by the other scrapers, minus any whose JAN barcode `own_rows` already has."""
+    if not FIGURES_FILE.exists():
+        return []
+    try:
+        saved = json.loads(FIGURES_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    own_codes = {f["barcode"] for f in own_rows if f.get("barcode")}
+    return [f for f in saved
+            if f.get("source") not in (own_source, None) and f.get("barcode") not in own_codes]
+
+
+def write_outputs(final: list[dict], new: int, mode: str) -> None:
+    save(final, {
+        "total_figures": len(final),
+        "new_this_run": new,
+        "by_type": dict(sorted(count_by(final, lambda f: f.get("type")).items(), key=lambda x: -x[1])),
+        "by_year": dict(sorted(count_by(final, lambda f: f.get("year")).items())),
+        "by_event": dict(sorted(count_by(final, lambda f: f.get("events", [])).items(), key=lambda x: -x[1])),
+        "by_source": count_by(final, lambda f: f.get("source")),
+        "scrape_mode": mode,
+    })
+
+
 def save(figures: list[dict], stats: dict) -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     figures.sort(key=lambda f: (f.get("release_date") or "0000-00", f.get("name", "")), reverse=True)
@@ -426,16 +451,9 @@ def scrape(incremental: bool, page_limit: int | None) -> int:
 
     log.info(f"Done. New/updated: {new} | Skipped: {skipped} | Not figures: {dropped}")
 
-    final = list(figures.values())
-    save(final, {
-        "total_figures": len(final),
-        "new_this_run": new,
-        "by_type": dict(sorted(count_by(final, lambda f: f.get("type")).items(), key=lambda x: -x[1])),
-        "by_year": dict(sorted(count_by(final, lambda f: f.get("year")).items())),
-        "by_event": dict(sorted(count_by(final, lambda f: f.get("events", [])).items(), key=lambda x: -x[1])),
-        "scrape_mode": "incremental" if incremental else "full",
-        "source": "hlj.com",
-    })
+    hlj_rows = list(figures.values())
+    final = hlj_rows + other_source_rows(hlj_rows, "hlj")
+    write_outputs(final, new, "incremental" if incremental else "full")
     return 0
 
 
