@@ -6,6 +6,8 @@ import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 
 // In production point this to your GitHub raw URL or Vercel public path
 const FIGURES_JSON_URL = "./figures.json";
+// Upper bound of the year filter; leaves room for announced pre-orders.
+const YEAR_MAX = new Date().getFullYear() + 2;
 const SCRAPE_WORKFLOW_URL = "https://github.com/TheBooleanJulian/miku-figures/actions/workflows/daily_scrape.yml";
 const META_JSON_URL    = "./meta.json";
 
@@ -90,6 +92,17 @@ function fmtSGD(n) {
   return new Intl.NumberFormat("en-SG", { style: "currency", currency: "SGD" }).format(n);
 }
 
+// Approximate rate, used only to sort/filter USD-priced rows alongside SGD ones.
+const USD_TO_SGD = 1.3;
+const priceSGD = f => f.price_sgd || (f.price_usd ? f.price_usd * USD_TO_SGD : null);
+
+// Price for display: SGD when the source gave one (HLJ), else USD (Solaris).
+function fmtPrice(fig) {
+  if (fig.price_sgd) return fmtSGD(fig.price_sgd);
+  if (fig.price_usd) return "US" + new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(fig.price_usd);
+  return null;
+}
+
 function sortFigures(list, mode) {
   return [...list].sort((a, b) => {
     switch (mode) {
@@ -98,8 +111,8 @@ function sortFigures(list, mode) {
       case "name-asc":   return a.name.localeCompare(b.name);
       case "name-desc":  return b.name.localeCompare(a.name);
       case "maker-asc":  return (a.manufacturer || "").localeCompare(b.manufacturer || "");
-      case "price-desc": return (b.price_sgd || 0) - (a.price_sgd || 0);
-      case "price-asc":  return (a.price_sgd || Infinity) - (b.price_sgd || Infinity);
+      case "price-desc": return (priceSGD(b) || 0) - (priceSGD(a) || 0);
+      case "price-asc":  return (priceSGD(a) || Infinity) - (priceSGD(b) || Infinity);
       default: return 0;
     }
   });
@@ -245,7 +258,7 @@ function FigureCard({ fig, onClick }) {
             {fig.manufacturer || "—"}
           </span>
           <span style={{ fontSize: 11, color: bg, fontWeight: 700 }}>
-            {fig.scale || (fig.price_sgd ? fmtSGD(fig.price_sgd) : "")}
+            {fig.scale || (fmtPrice(fig) || "")}
           </span>
         </div>
       </div>
@@ -295,7 +308,7 @@ function FigureRow({ fig, onClick }) {
         {fig.scale || ""}
       </div>
       <div style={{ width: 80, fontSize: 11, color: "rgba(255,255,255,0.3)", textAlign: "right" }}>
-        {fig.price_sgd ? fmtSGD(fig.price_sgd) : "—"}
+        {fmtPrice(fig) || "—"}
       </div>
     </div>
   );
@@ -368,7 +381,7 @@ function DetailModal({ fig, onClose }) {
               { label: "Release Date", value: fig.release_date },
               { label: "Type", value: fig.type },
               { label: "Scale", value: fig.scale },
-              { label: "Price", value: fig.price_sgd ? fmtSGD(fig.price_sgd) : null },
+              { label: "Price", value: fmtPrice(fig) },
               { label: "Illustrator", value: fig.illustrator },
               { label: "Dimensions", value: fig.dimensions },
               { label: "Material", value: fig.material },
@@ -439,7 +452,7 @@ function DetailModal({ fig, onClose }) {
                 transition: "background 0.15s",
               }}
             >
-              View on HLJ ↗
+              {fig.source === "solaris" ? "View on Solaris Japan ↗" : "View on HLJ ↗"}
             </a>
           )}
         </div>
@@ -490,7 +503,7 @@ export default function MikuFigureArchive() {
   const [illustratorFilters, setIllFilters]   = useState([]);
   const [makerFilter, setMakerFilter]         = useState("All");
   const [yearFrom, setYearFrom]     = useState(2007);
-  const [yearTo, setYearTo]         = useState(new Date().getFullYear());
+  const [yearTo, setYearTo]         = useState(YEAR_MAX);
   const [priceMax, setPriceMax]     = useState("");
   const [sortBy, setSortBy]         = useState("date-desc");
   const [viewMode, setViewMode]     = useState("grid");
@@ -557,12 +570,12 @@ export default function MikuFigureArchive() {
     if (eventFilters.length)  list = list.filter(f => eventFilters.some(ev => f.events?.includes(ev)));
     if (illustratorFilters.length) list = list.filter(f => illustratorFilters.includes(f.illustrator));
     list = list.filter(f => {
-      const y = f.year || 0;
-      return y >= yearFrom && y <= yearTo;
+      if (!f.year) return true;          // unknown release year: never hide
+      return f.year >= yearFrom && f.year <= yearTo;
     });
     if (priceMax !== "") {
       const max = parseInt(priceMax);
-      list = list.filter(f => !f.price_sgd || f.price_sgd <= max);
+      list = list.filter(f => !priceSGD(f) || priceSGD(f) <= max);
     }
     return sortFigures(list, sortBy);
   }, [figures, search, typeFilter, makerFilter, eventFilters, illustratorFilters, yearFrom, yearTo, priceMax, sortBy]);
@@ -572,11 +585,11 @@ export default function MikuFigureArchive() {
 
   const clearAll = useCallback(() => {
     setSearch(""); setTypeFilter("All"); setEventFilters([]); setIllFilters([]);
-    setMakerFilter("All"); setYearFrom(2007); setYearTo(new Date().getFullYear()); setPriceMax("");
+    setMakerFilter("All"); setYearFrom(2007); setYearTo(YEAR_MAX); setPriceMax("");
   }, []);
 
   const hasFilters = search || typeFilter !== "All" || eventFilters.length || illustratorFilters.length ||
-    makerFilter !== "All" || yearFrom > 2007 || yearTo < new Date().getFullYear() || priceMax !== "";
+    makerFilter !== "All" || yearFrom > 2007 || yearTo < YEAR_MAX || priceMax !== "";
 
   /* ── CSS ── */
   const css = `

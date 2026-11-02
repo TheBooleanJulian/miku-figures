@@ -117,6 +117,8 @@ Each figure in `figures.json`:
 }
 ```
 
+> **Second source:** `scraper/solaris_scraper.py` adds figures HLJ does not carry from Solaris Japan (a Shopify store; its `agents.md` allows read-only browsing). It is slow on purpose (3.5 s between requests, honours 429 `Retry-After`) and fetches at most 300 new products per run, so the backlog fills over a few daily runs. Rows carry `source` (`hlj` / `solaris`); a Solaris item whose JAN barcode HLJ already has is skipped. Solaris prices are USD (`price_usd`) and have no release date.
+
 > **Why HLJ:** MyFigureCollection blocks automated clients (403 / security check, including headless browsers from GitHub runners), so it can't be scraped. HLJ serves plain HTML. Prices are stored as `price_jpy` and `price_sgd` (HLJ's SGD display price); the UI shows SGD. HLJ has no illustrator or owner counts, so those fields are mostly empty.
 
 ## Manual scrape
