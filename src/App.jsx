@@ -143,7 +143,7 @@ function TypeBadge({ type, small }) {
   );
 }
 
-function Thumbnail({ src, name, type }) {
+function Thumbnail({ src, name, type, fit = "cover" }) {
   const [err, setErr] = useState(false);
   const { bg } = tc(type);
   if (!src || err) {
@@ -170,7 +170,7 @@ function Thumbnail({ src, name, type }) {
       alt={name}
       loading="lazy"
       onError={() => setErr(true)}
-      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+      style={{ width: "100%", height: "100%", objectFit: fit }}
     />
   );
 }
@@ -314,8 +314,22 @@ function FigureRow({ fig, onClick }) {
   );
 }
 
+// True below `px` wide; the detail modal stacks (image on top) on narrow screens.
+function useNarrow(px = 720) {
+  const query = `(max-width: ${px}px)`;
+  const [narrow, setNarrow] = useState(() => window.matchMedia(query).matches);
+  useEffect(() => {
+    const m = window.matchMedia(query);
+    const onChange = e => setNarrow(e.matches);
+    m.addEventListener("change", onChange);
+    return () => m.removeEventListener("change", onChange);
+  }, [query]);
+  return narrow;
+}
+
 function DetailModal({ fig, onClose }) {
   const { bg, glow } = tc(fig.type);
+  const narrow = useNarrow();
   useEffect(() => {
     const handler = (e) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", handler);
@@ -339,34 +353,47 @@ function DetailModal({ fig, onClose }) {
           border: `1px solid ${bg}40`,
           borderRadius: 18,
           boxShadow: `0 0 80px ${glow}`,
-          maxWidth: 680, width: "100%",
-          maxHeight: "90vh", overflow: "auto",
-          display: "flex", flexDirection: "column",
+          position: "relative",
+          maxWidth: narrow ? 560 : 960, width: "100%",
+          maxHeight: "90vh", overflow: narrow ? "auto" : "hidden",
+          display: "flex", flexDirection: narrow ? "column" : "row",
         }}
       >
-        {/* Header image */}
-        <div style={{ position: "relative", height: 240, background: "#060a12", flexShrink: 0 }}>
-          <Thumbnail src={fig.image_url} name={fig.name} type={fig.type} />
-          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(transparent 40%, #0d1322)" }} />
-          <button
-            onClick={onClose}
-            style={{
-              position: "absolute", top: 12, right: 12,
-              background: "rgba(0,0,0,0.6)", border: "1px solid rgba(255,255,255,0.15)",
-              color: "white", borderRadius: 8, padding: "5px 10px", cursor: "pointer",
-              fontSize: 12,
-            }}
-          >✕ Close</button>
-          <div style={{ position: "absolute", bottom: 12, left: 20 }}>
+        <button
+          onClick={onClose}
+          style={{
+            position: "absolute", top: 12, right: 12, zIndex: 2,
+            background: "rgba(0,0,0,0.6)", border: "1px solid rgba(255,255,255,0.15)",
+            color: "white", borderRadius: 8, padding: "5px 10px", cursor: "pointer",
+            fontSize: 12,
+          }}
+        >✕ Close</button>
+
+        {/* Image: portrait panel at the side (top on mobile); contained so the figure is never cropped */}
+        <div style={{
+          position: "relative", flexShrink: 0,
+          background: fig.image_url ? "#ffffff" : "#060a12",   // retailer product photos are on white
+          width: narrow ? "100%" : 360,
+          height: narrow ? "min(80vw, 380px)" : "auto",
+          minHeight: narrow ? undefined : 480,
+        }}>
+          <div style={{ position: "absolute", inset: 10 }}>
+            <Thumbnail src={fig.image_url} name={fig.name} type={fig.type} fit="contain" />
+          </div>
+          <div style={{ position: "absolute", bottom: 14, left: 14 }}>
             <TypeBadge type={fig.type} />
           </div>
         </div>
 
         {/* Content */}
-        <div style={{ padding: "20px 24px 28px" }}>
+        <div style={{
+          padding: "20px 24px 28px", flex: 1, minWidth: 0,
+          overflowY: narrow ? "visible" : "auto",
+        }}>
           <h2 style={{
             fontSize: 20, fontWeight: 800,
             color: "#e8f4f8", lineHeight: 1.3, marginBottom: 8,
+            paddingRight: narrow ? 0 : 70,
           }}>
             {fig.name}
           </h2>

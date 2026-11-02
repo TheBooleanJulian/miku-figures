@@ -122,7 +122,7 @@ def to_row(p: dict) -> dict | None:
     cur = new.get("price_currency") or "USD"
     scale_m = h.SCALE_RE.search(name)
     events = h.extract_events(name)
-    body = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", p.get("body_html") or "")).strip()
+    body, size = h.clean_description(p.get("body_html"))
     return {
         "id": f"SJ{p['id']}",
         "name": name,
@@ -140,7 +140,7 @@ def to_row(p: dict) -> dict | None:
         "illustrator": h.extract_illustrator(name),
         "tags": [t for t in [typ, *events, vendor] if t],
         "description": body[:600],
-        "dimensions": None,
+        "dimensions": size,
         "material": None,
         "barcode": (new.get("barcode") or "").strip() or None,
         "mfc_owned_count": None,
@@ -155,6 +155,9 @@ def to_row(p: dict) -> dict | None:
 def main(page_limit: int) -> int:
     saved = json.loads(h.FIGURES_FILE.read_text(encoding="utf-8")) if h.FIGURES_FILE.exists() else []
     mine = {f["handle"]: f for f in saved if f.get("source") == "solaris" and f.get("handle")}
+    for f in mine.values():                       # re-clean rows saved by an older version
+        f["description"], size = h.clean_description(f.get("description"))
+        f["dimensions"] = f.get("dimensions") or size
     others = [f for f in saved if f.get("source") != "solaris"]
     other_codes = {f["barcode"] for f in others if f.get("barcode")}
     skip = set(json.loads(SKIP_FILE.read_text())) if SKIP_FILE.exists() else set()
