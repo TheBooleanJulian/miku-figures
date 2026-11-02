@@ -129,7 +129,7 @@ MERCH_RE = re.compile(
     r"tapestr|towel|t-shirt|\bt shirt|jersey|key ?chain|\bcase\b|code clip|\bplate\b|"
     r"costume set|\btote\b|sticker|poster|\bmug\b|\bcup\b|\bbags?\b|backpack|hoodie|sweatshirt|"
     r"parka|acrylic|badge|clear file|blanket|pouch|notebook|cushion|umbrella|wallet|"
-    r"smartphone|\bpins?\b|calendar|luggage|mirror|shikishi|ticket|rubber mat|puzzle|card holder|hanging scroll|amulet|otamatone|\[used item",
+    r"smartphone|\bpins?\b|\bsocks?\b|pinback|\bbutton\b|postcard|decorative art|calendar|luggage|mirror|shikishi|ticket|rubber mat|puzzle|card holder|hanging scroll|amulet|otamatone|\[used item",
     re.I,
 )
 # Another Vocaloid is the actual product (e.g. "... Kurumitapinui MEIKO")
@@ -381,6 +381,8 @@ def load_existing() -> dict[str, dict]:
             rows = {}
             for f in data:
                 if not f.get("id") or f.get("source") != "hlj":
+                    continue
+                if "category" not in f:     # saved before HLJ Category filtering: refetch and re-judge
                     continue
                 typ = classify(f.get("name", ""), f.get("manufacturer"))
                 if typ is None:             # rules changed: drop goods saved earlier
