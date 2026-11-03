@@ -19,6 +19,7 @@
       "Scale",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -110,6 +111,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -143,6 +145,7 @@
       "Scale",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -174,6 +177,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Design COCO",
@@ -265,6 +269,7 @@
     "illustrator": null,
     "tags": [
       "Pop Up Parade",
+      "Symphony",
       "Symphony",
       "Symphony",
       "Good Smile Company",
@@ -503,6 +508,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -536,6 +542,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -567,6 +574,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Taito",
@@ -689,6 +697,7 @@
       "Scale",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -720,6 +729,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Max Factory",
@@ -784,6 +794,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -815,6 +826,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Taito",
@@ -850,6 +862,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -883,6 +896,7 @@
       "Pop Up Parade",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -914,6 +928,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Sega",
@@ -1007,6 +1022,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1038,6 +1054,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -1102,6 +1119,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1135,6 +1153,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1166,6 +1185,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Taito",
@@ -1228,6 +1248,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Sega",
@@ -1408,6 +1429,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1557,6 +1579,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1588,6 +1611,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Taito",
@@ -1652,6 +1676,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -1685,6 +1710,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -1716,6 +1742,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "ANICRAFT",
@@ -1766,7 +1793,7 @@
     "manufacturer": "Good Smile Company",
     "release_date": "2026-11",
     "year": 2026,
-    "type": "Plush / Soft",
+    "type": "Other",
     "scale": null,
     "price_jpy": 3500,
     "price_sgd": 33.92,
@@ -1775,7 +1802,7 @@
     "events": [],
     "illustrator": null,
     "tags": [
-      "Plush / Soft",
+      "Other",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -1867,6 +1894,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1900,6 +1928,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1931,6 +1960,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Taito",
@@ -2082,6 +2112,7 @@
       "Mini / Petite",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -2144,6 +2175,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -2177,6 +2209,7 @@
       "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -2208,6 +2241,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "World is Mine",
       "World is Mine",
       "Good Smile Company",
       "Vocaloid"
@@ -2271,6 +2305,7 @@
       "Scale",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Design COCO",
       "Vocaloid"
     ],
@@ -2304,6 +2339,7 @@
       "Prize",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -2335,6 +2371,7 @@
     "illustrator": null,
     "tags": [
       "Pop Up Parade",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Good Smile Company",
@@ -2399,6 +2436,7 @@
       "Plush / Soft",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -2461,6 +2499,7 @@
       "Figma",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -2492,6 +2531,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -2600,12 +2640,41 @@
     "manufacturer": "eye up",
     "release_date": "2026-08",
     "year": 2026,
-    "type": "Plush / Soft",
+    "type": "Mini / Petite",
     "scale": null,
     "price_jpy": 1500,
     "price_sgd": 14.54,
     "image_url": "https://www.hlj.com/productimages/eyp/eyp56190_0.jpg",
     "detail_url": "https://www.hlj.com/piapro-characters-petit-bear-mascot-hatsune-miku-eyp56190",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Mini / Petite",
+      "eye up",
+      "Vocaloid"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4546598561906",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
+    "source": "hlj"
+  },
+  {
+    "id": "EYP56197",
+    "name": "Piapro Characters: Nui Colon (Hatsune Miku)",
+    "manufacturer": "eye up",
+    "release_date": "2026-08",
+    "year": 2026,
+    "type": "Plush / Soft",
+    "scale": null,
+    "price_jpy": 1400,
+    "price_sgd": 13.56,
+    "image_url": "https://www.hlj.com/productimages/eyp/eyp56197_0.jpg",
+    "detail_url": "https://www.hlj.com/piapro-characters-nui-colon-hatsune-miku-eyp56197",
     "events": [],
     "illustrator": null,
     "tags": [
@@ -2616,7 +2685,7 @@
     "description": "",
     "dimensions": null,
     "material": null,
-    "barcode": "4546598561906",
+    "barcode": "4546598561975",
     "mfc_owned_count": null,
     "series": "Vocaloid",
     "category": "Figures",
@@ -3020,6 +3089,7 @@
       "Plush / Soft",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -3110,6 +3180,7 @@
     "tags": [
       "Plush / Soft",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Vocaloid"
     ],
@@ -3142,6 +3213,7 @@
     "tags": [
       "Plush / Soft",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -3173,6 +3245,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "EXPO",
       "EXPO",
       "EXPO",
       "Hobby Stock",
@@ -3264,6 +3337,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Symphony",
       "Symphony",
       "Symphony",
       "Good Smile Company",
@@ -3531,6 +3605,7 @@
       "Scale",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Design COCO",
       "Vocaloid"
     ],
@@ -3622,6 +3697,7 @@
       "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -3641,7 +3717,7 @@
     "manufacturer": "Good Smile Company",
     "release_date": "2026-04",
     "year": 2026,
-    "type": "Plush / Soft",
+    "type": "Other",
     "scale": null,
     "price_jpy": 2800,
     "price_sgd": 27.13,
@@ -3652,7 +3728,8 @@
     ],
     "illustrator": null,
     "tags": [
-      "Plush / Soft",
+      "Other",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -4065,6 +4142,7 @@
       "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -4127,6 +4205,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "FuRyu",
       "Vocaloid"
     ],
@@ -4158,6 +4237,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "FuRyu",
@@ -4396,6 +4476,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -4456,6 +4537,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Sega",
@@ -4607,6 +4689,7 @@
       "Scale",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -4638,6 +4721,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -4962,6 +5046,7 @@
     "tags": [
       "Prize",
       "Snow Miku",
+      "Snow Miku",
       "FuRyu",
       "Vocaloid"
     ],
@@ -5118,6 +5203,35 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Stuffed Animals and Plush Toys",
+    "source": "hlj"
+  },
+  {
+    "id": "PRZ19728",
+    "name": "BiCute Bunnies Figure -Hatsune Miku- (Reissue)",
+    "manufacturer": "FuRyu",
+    "release_date": "2025-12",
+    "year": 2025,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": 2900,
+    "price_sgd": 28.09,
+    "image_url": "https://www.hlj.com/media/original_images/noImage.png",
+    "detail_url": "https://www.hlj.com/bicute-bunnies-figure-hatsune-miku-reissue-fruamu-prz19728",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "FuRyu",
+      "Vocaloid"
+    ],
+    "description": "In such an event, we will close orders for the product as well.",
+    "dimensions": null,
+    "material": null,
+    "barcode": "2001211197280",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -5283,6 +5397,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Symphony",
       "Symphony",
       "Good Smile Company",
       "Vocaloid"
@@ -5462,6 +5577,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5494,6 +5610,7 @@
     "tags": [
       "Plush / Soft",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5525,6 +5642,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -5560,6 +5678,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5591,6 +5710,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -5626,6 +5746,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5657,6 +5778,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -5692,6 +5814,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5723,6 +5846,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -5758,6 +5882,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5789,6 +5914,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -5824,6 +5950,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5855,6 +5982,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -5890,6 +6018,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5921,6 +6050,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -5956,6 +6086,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5987,6 +6118,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -6022,6 +6154,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6053,6 +6186,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -6088,6 +6222,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6119,6 +6254,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -6154,6 +6290,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6185,6 +6322,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -6220,6 +6358,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6251,6 +6390,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Wonderful Works",
@@ -6313,6 +6453,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "FuRyu",
@@ -6551,6 +6692,7 @@
       "Scale",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Design COCO",
       "Vocaloid"
     ],
@@ -6671,6 +6813,7 @@
       "Prize",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "FuRyu",
       "Vocaloid"
     ],
@@ -6702,6 +6845,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -6737,6 +6881,7 @@
       "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -6768,6 +6913,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -6832,6 +6978,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -6892,6 +7039,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Sega",
@@ -7101,6 +7249,7 @@
       "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -7132,6 +7281,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -7167,6 +7317,7 @@
       "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -7200,6 +7351,7 @@
       "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -7211,6 +7363,35 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Stuffed Animals and Plush Toys",
+    "source": "hlj"
+  },
+  {
+    "id": "TAT451877300",
+    "name": "Hatsune Miku Fashion Figure Preppy",
+    "manufacturer": "Taito",
+    "release_date": "2025-07",
+    "year": 2025,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": 2900,
+    "price_sgd": 28.09,
+    "image_url": "https://www.hlj.com/productimages/tat/tat451877300_0.jpg",
+    "detail_url": "https://www.hlj.com/hatsune-miku-fashion-figure-preppy-tat451877300",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "Taito",
+      "Vocaloid"
+    ],
+    "description": "In such an event, we will close orders for the product as well.",
+    "dimensions": null,
+    "material": null,
+    "barcode": "2204518773007",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -7231,6 +7412,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "EXPO",
       "EXPO",
       "EXPO",
       "Good Smile Company",
@@ -7624,6 +7806,35 @@
     "source": "hlj"
   },
   {
+    "id": "GSC92797",
+    "name": "Character Vocal Series 01: Hatsune Miku Plushie Hatsune Miku: Loungewear Outfit Ver.",
+    "manufacturer": "Good Smile Company",
+    "release_date": "2025-05",
+    "year": 2025,
+    "type": "Plush / Soft",
+    "scale": null,
+    "price_jpy": 4950,
+    "price_sgd": 47.94,
+    "image_url": "https://www.hlj.com/productimages/gsc/gsc92797_0.jpg",
+    "detail_url": "https://www.hlj.com/character-vocal-series-01-hatsune-miku-plushie-hatsune-miku-loungewear-outfit-ver-gsc92797",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Plush / Soft",
+      "Good Smile Company",
+      "Vocaloid"
+    ],
+    "description": "Hatsune Miku gets a new stuffed plush toy from Good Smile Company, wearing her comfortable loungewear outfit! The outfit features a ruffled cap, fluffy accents, and ribbon bows in her hair! Her expression and big pink glasses are oh-so-cute, too! [Materials]: Cotton, polyester",
+    "dimensions": "Approximately 17cm tall",
+    "material": null,
+    "barcode": "4580416927970",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
+    "source": "hlj"
+  },
+  {
     "id": "GSC19478",
     "name": "1/7 Hatsune Miku: Beauty Looking Back Miku Ver. (Character Vocal Series)",
     "manufacturer": "Good Smile Company",
@@ -7728,6 +7939,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Symphony",
       "Symphony",
       "Symphony",
       "Good Smile Company",
@@ -7850,6 +8062,7 @@
       "Scale",
       "Senbonzakura",
       "Senbonzakura",
+      "Senbonzakura",
       "Design COCO",
       "Vocaloid"
     ],
@@ -7883,6 +8096,7 @@
       "Prize",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Design COCO",
       "Vocaloid"
     ],
@@ -7914,6 +8128,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -8355,6 +8570,7 @@
       "Plush / Soft",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Kadokawa Media Factory",
       "Vocaloid"
     ],
@@ -8444,6 +8660,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "EXPO",
       "EXPO",
       "EXPO",
       "Hobby Stock",
@@ -8594,6 +8811,7 @@
     "tags": [
       "Pop Up Parade",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -8743,6 +8961,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -8774,6 +8993,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -8809,6 +9029,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -8840,6 +9061,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -8875,6 +9097,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -8906,6 +9129,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -8941,6 +9165,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -8972,6 +9197,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -9007,6 +9233,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9038,6 +9265,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -9073,6 +9301,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9104,6 +9333,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -9139,6 +9369,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9170,6 +9401,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -9205,6 +9437,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9236,6 +9469,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -9271,6 +9505,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9302,6 +9537,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -9337,6 +9573,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9368,6 +9605,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -9403,6 +9641,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9434,6 +9673,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -9469,6 +9709,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9476,6 +9717,38 @@
     "dimensions": null,
     "material": null,
     "barcode": "4580683625968",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
+    "source": "hlj"
+  },
+  {
+    "id": "MLT62595",
+    "name": "MC-13 Hatsune Miku x Cinnamoroll Fuwakororin Msize2 A: Hatsune Miku (Osumashi)",
+    "manufacturer": "Max Limited",
+    "release_date": "2024-12",
+    "year": 2024,
+    "type": "Plush / Soft",
+    "scale": null,
+    "price_jpy": 1700,
+    "price_sgd": 16.47,
+    "image_url": "https://www.hlj.com/productimages/mlt/mlt62595_0.jpg",
+    "detail_url": "https://www.hlj.com/mc-13-hatsune-miku-x-cinnamoroll-fuwakororin-msize2-a-hatsune-miku-osumashi-mlt62595",
+    "events": [
+      "Cinnamoroll"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Plush / Soft",
+      "Cinnamoroll",
+      "Max Limited",
+      "Vocaloid"
+    ],
+    "description": "Hatsune Miku, inspired by her friend Cinnamoroll, is happy to see you, and greets you with a big smile!",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4580683625951",
     "mfc_owned_count": null,
     "series": "Vocaloid",
     "category": "Figures",
@@ -9500,6 +9773,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -9535,6 +9809,7 @@
       "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -9566,6 +9841,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -9601,6 +9877,7 @@
       "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -9632,6 +9909,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -9667,6 +9945,7 @@
       "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -9698,6 +9977,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -9733,6 +10013,7 @@
       "Plush / Soft",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -9764,6 +10045,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -9799,6 +10081,7 @@
       "Other",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -9806,6 +10089,38 @@
     "dimensions": "Approximately 10cm tall",
     "material": null,
     "barcode": "4580416928588",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
+    "source": "hlj"
+  },
+  {
+    "id": "DSC11208",
+    "name": "1/7 Hatsune Miku MAGICAL MIRAI 2023 Ver.",
+    "manufacturer": "Design COCO",
+    "release_date": "2024-12",
+    "year": 2024,
+    "type": "Scale",
+    "scale": "1/7",
+    "price_jpy": 24800,
+    "price_sgd": 240.2,
+    "image_url": "https://www.hlj.com/productimages/dsc/dsc11208_0.jpg",
+    "detail_url": "https://www.hlj.com/1-7-scale-hatsune-miku-magical-mirai-2023-ver-dsc11208",
+    "events": [
+      "Magical Mirai"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Scale",
+      "Magical Mirai",
+      "Design COCO",
+      "Vocaloid"
+    ],
+    "description": "Hatsune Miku Magical Mirai 2023 Ver. 1/7th Scale Figure.Step into the world of Hatsune Miku's Magical Mirai 2023 with Design COCO's latest addition - a 1/7 scale figure capturing the essence of the main visual. In this 11th iteration of Magical Mirai, the theme is HERO, and the spotlight is on the star of the event, Hatsune Miku.In a vibrant crimson costume illustrated by artist LAM, this rendition faithfully captures Miku's expression brimming with hope, and the contrast of light and shadow that make LAM's work so distinctive. Every detail, from her intense presence to the meticulously recreated shades, has been fully sculpted and painted for fans to enjoy.Adding to her allure is the inclusion of a massive speaker, with parts cleverly crafted from clear material to seamlessly incorporate optional LED lights (sold separately), granting it a cool, luminescent quality.The precision craftsmanship extends to her megaphone microphone - not only in its intricacy but also in capturing the unique color gradations akin to screen tones.Own the embodiment of a poised and cool hero Miku that appears in the nick of time!Fully Supported by the Production Committee:The main visual of Hatsune Miku Magical Mirai 2023, illustrated by LAM, was brought to life in full collaboration with the Magical Mirai Production Committee. Craftsmen at Design COCO breathed life into the life-sized statue exhibited at the event, paying homage to LAM's creation. In the same spirit, Design COCO, in collaboration with the Magical Mirai Production Committee, scaled down the life-sized Hatsune Miku to a 1/7 figure size. The transformation didn't involve mere scaling; meticulous adjustments were made to the 3D model to harmonize with the figure's scale, proportions, sculpting, and coloring.The Theme of Magical Mirai 2023 - HERO :The vivid red costume exudes its texture, while the embodiment of Miku's full power is expressed through precise sculpting. The distinct touch of LAM's illustration is faithfully replicated through meticulous coloring. Her gaze and expression, brimming with strength and hope, are painstakingly rendered. The result is a Miku that seems to leap out of LAM's artwork - an ultra-cool and charming representation.Precise Craftsmanship for the Megaphone Mic and Speaker:The megaphone microphone's precision craftsmanship extends to its coloring, emulating the appearance of affixed screen tones. Some parts of the giant speaker are constructed using clear material, allowing integration with separately available LED lights for a captivating cool luminosity.Cool from Every Angle:From her bright gaze, powerful costume, and stylish red and green intertwined twin tails, every angle offers an impressive view.Experience the captivating allure of Miku - the poised and cool savior who emerges when the going gets tough.Figure Size: Approximately 200mm tall (Including Base)Materials (Tentative): PVC, ABSSculptor: Design COCO (Producer: A2C)Coloring: Design COCO (Producer: A2C)Due to restrictions on this item by the manufacturer, we are unable to ship this product to China (Macau, Hong Kong and Taiwan are OK).",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4595643112082",
     "mfc_owned_count": null,
     "series": "Vocaloid",
     "category": "Figures",
@@ -9830,6 +10145,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -9865,6 +10181,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -9896,6 +10213,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -9931,6 +10249,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -9962,6 +10281,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -9997,6 +10317,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10028,6 +10349,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10062,6 +10384,7 @@
     "tags": [
       "Plush / Soft",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10093,6 +10416,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10128,6 +10452,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10159,6 +10484,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10194,6 +10520,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10225,6 +10552,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10260,6 +10588,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10291,6 +10620,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10326,6 +10656,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10357,6 +10688,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10391,6 +10723,7 @@
     "tags": [
       "Plush / Soft",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10422,6 +10755,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10457,6 +10791,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10488,6 +10823,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10523,6 +10859,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10554,6 +10891,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10589,6 +10927,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10621,6 +10960,7 @@
     "tags": [
       "Plush / Soft",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10652,6 +10992,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10687,6 +11028,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10718,6 +11060,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10753,6 +11096,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10784,6 +11128,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Movic",
@@ -10909,6 +11254,35 @@
     "dimensions": "30 cm\" />",
     "material": null,
     "barcode": "2001211182484",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
+    "source": "hlj"
+  },
+  {
+    "id": "FNX945",
+    "name": "1/7 Hatsune Miku Techno-Magic Ver. Figure",
+    "manufacturer": "FuRyu",
+    "release_date": "2024-11",
+    "year": 2024,
+    "type": "Scale",
+    "scale": "1/7",
+    "price_jpy": 29800,
+    "price_sgd": 288.63,
+    "image_url": "https://www.hlj.com/productimages/fru/fruamu-fnx945_0.jpg",
+    "detail_url": "https://www.hlj.com/1-7-scale-hatsune-miku-techno-magic-ver-figure-fruamu-fnx945",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Scale",
+      "FuRyu",
+      "Vocaloid"
+    ],
+    "description": "Author Arthur C. Clarke once said, Any sufficiently advanced technology is indistinguishable from magic, and digital songstress Miku Hatsune may be the ultimate personification of that idea! This new figure of Miku from FuRyu brings her digital origins to the forefront while also showcasing the undisputed magic of her music, which unites people worldwide. She smiles and holds a microphone, ready to perform for you; she's held aloft by her incredibly long hair, which flows under her to support her and lift her into the spotlight. Transparent parts are used for her sleeves and skirt for a unique texture. [Materials]: PVC, ABS, iron, etc.",
+    "dimensions": "Approximately 25cm tall",
+    "material": null,
+    "barcode": "4580736409453",
     "mfc_owned_count": null,
     "series": "Vocaloid",
     "category": "Figures",
@@ -11312,6 +11686,7 @@
       "Scale",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -11343,6 +11718,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -11610,6 +11986,7 @@
       "Scale",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -11641,6 +12018,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Sega",
@@ -12169,6 +12547,7 @@
       "Plush / Soft",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -12492,6 +12871,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -12523,6 +12903,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -12558,6 +12939,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -12589,6 +12971,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -12624,6 +13007,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -12655,6 +13039,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -12690,6 +13075,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -12721,6 +13107,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -12756,6 +13143,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -12787,6 +13175,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -12822,6 +13211,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -12853,6 +13243,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -12888,6 +13279,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -12919,6 +13311,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -12954,6 +13347,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -12985,6 +13379,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -13020,6 +13415,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13051,6 +13447,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -13085,6 +13482,7 @@
     "tags": [
       "Plush / Soft",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13116,6 +13514,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -13151,6 +13550,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13182,6 +13582,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -13217,6 +13618,7 @@
       "Plush / Soft",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13248,6 +13650,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Max Limited",
@@ -13544,6 +13947,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -13720,6 +14124,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -13939,6 +14344,35 @@
     "source": "hlj"
   },
   {
+    "id": "GSC18137",
+    "name": "Hatsune Miku: 15th Anniversary Plushie",
+    "manufacturer": "Good Smile Company",
+    "release_date": "2023-09",
+    "year": 2023,
+    "type": "Plush / Soft",
+    "scale": null,
+    "price_jpy": 6305,
+    "price_sgd": 61.07,
+    "image_url": "https://www.hlj.com/productimages/gsc/gsc18137_0.jpg",
+    "detail_url": "https://www.hlj.com/hatsune-miku-15th-anniversary-plushie-gsc18137",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Plush / Soft",
+      "Good Smile Company",
+      "Vocaloid"
+    ],
+    "description": "It's Miku Hatsune's 15th anniversary, and she's gotten all dressed up to commemorate the occasion! [Materials]: Cotton, polyester",
+    "dimensions": "Approximately 20cm tall",
+    "material": null,
+    "barcode": "None",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
+    "source": "hlj"
+  },
+  {
     "id": "GSC18125",
     "name": "Hatsune Miku Large Plush Hatsune Miku Symphony 2020 5th Anniversary",
     "manufacturer": "Good Smile Company",
@@ -13956,6 +14390,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Symphony",
       "Symphony",
       "Good Smile Company",
       "Vocaloid"
@@ -14133,6 +14568,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "EXPO",
       "EXPO",
       "EXPO",
       "Alpha Max",
@@ -14545,6 +14981,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Vocaloid"
     ],
@@ -14634,6 +15071,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -14727,6 +15165,7 @@
       "Plush / Soft",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Sega",
       "Vocaloid"
     ],
@@ -14760,6 +15199,7 @@
       "Plush / Soft",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Sega",
       "Vocaloid"
     ],
@@ -14791,6 +15231,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Sega",
@@ -15029,6 +15470,7 @@
       "Plush / Soft",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Sega",
       "Vocaloid"
     ],
@@ -15060,6 +15502,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Sega",
@@ -15151,6 +15594,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Symphony",
       "Symphony",
       "Symphony",
       "Good Smile Company",
@@ -15360,6 +15804,7 @@
       "Prize",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Banpresto",
       "Vocaloid"
     ],
@@ -15538,6 +15983,7 @@
       "Plush / Soft",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Sega",
       "Vocaloid"
     ],
@@ -15569,6 +16015,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Sega",
@@ -15689,6 +16136,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Sega",
@@ -15838,6 +16286,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "EXPO",
       "EXPO",
       "EXPO",
       "Good Smile Company",
@@ -16076,6 +16525,7 @@
       "Plush / Soft",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Vocaloid"
     ],
@@ -16107,6 +16557,7 @@
     "illustrator": null,
     "tags": [
       "Other",
+      "World is Mine",
       "World is Mine",
       "World is Mine",
       "Good Smile Company",
@@ -16287,6 +16738,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -16376,6 +16828,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -16472,6 +16925,35 @@
     "dimensions": null,
     "material": null,
     "barcode": "2204514360003",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
+    "source": "hlj"
+  },
+  {
+    "id": "PRZ13282",
+    "name": "BiCuteBunnies Hatsune Miku Figure Street Ver.",
+    "manufacturer": "FuRyu",
+    "release_date": "2022-05",
+    "year": 2022,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": 1800,
+    "price_sgd": 17.43,
+    "image_url": "https://www.hlj.com/productimages/fru/fruamu-prz13282_0.jpg",
+    "detail_url": "https://www.hlj.com/bicutebunnies-hatsune-miku-figure-street-ver-fruamu-prz13282",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "FuRyu",
+      "Vocaloid"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "2001211132823",
     "mfc_owned_count": null,
     "series": "Vocaloid",
     "category": "Figures",
@@ -16614,6 +17096,7 @@
       "Plush / Soft",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Sega",
       "Vocaloid"
     ],
@@ -16625,6 +17108,35 @@
     "series": "Vocaloid",
     "category": "Figures",
     "item_type": "Stuffed Animals and Plush Toys",
+    "source": "hlj"
+  },
+  {
+    "id": "TAT451419100",
+    "name": "Hatsune Miku Wonderland Figure Cinderella",
+    "manufacturer": "Taito",
+    "release_date": "2022-03",
+    "year": 2022,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": 1800,
+    "price_sgd": 17.43,
+    "image_url": "https://www.hlj.com/productimages/tat/tat451419100_0.jpg",
+    "detail_url": "https://www.hlj.com/hatsune-miku-wonderland-figure-cinderella-tat451419100",
+    "events": [],
+    "illustrator": "Rella",
+    "tags": [
+      "Prize",
+      "Taito",
+      "Vocaloid"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "2004514191009",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
     "source": "hlj"
   },
   {
@@ -16848,6 +17360,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Max Factory",
@@ -17202,6 +17715,7 @@
       "Scale",
       "Deep Sea Girl",
       "Deep Sea Girl",
+      "Deep Sea Girl",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -17264,6 +17778,7 @@
       "Prize",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Banpresto",
       "Vocaloid"
     ],
@@ -17324,6 +17839,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Symphony",
       "Symphony",
       "Symphony",
       "Good Smile Company",
@@ -17533,6 +18049,7 @@
       "Other",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -17595,6 +18112,7 @@
       "Scale",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -17626,6 +18144,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Banpresto",
@@ -17864,6 +18383,7 @@
       "Scale",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Hobby Stock",
       "Vocaloid"
     ],
@@ -17895,6 +18415,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Shine",
@@ -18017,6 +18538,7 @@
       "Scale",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Alpha Max",
       "Vocaloid"
     ],
@@ -18089,6 +18611,35 @@
     "source": "hlj"
   },
   {
+    "id": "PRZ11810",
+    "name": "Hatsune Miku: BiCuteBunnies Figure -White Ver.-",
+    "manufacturer": "FuRyu",
+    "release_date": "2021-02",
+    "year": 2021,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": 1800,
+    "price_sgd": 17.43,
+    "image_url": "https://www.hlj.com/productimages/fru/fruamu-prz11810_0.jpg",
+    "detail_url": "https://www.hlj.com/hatsune-miku-bicutebunnies-figure-white-ver-fruamu-prz11810",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "FuRyu",
+      "Vocaloid"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "2200121004866",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
+    "source": "hlj"
+  },
+  {
     "id": "GSC06672",
     "name": "figma Racing Miku 2020 ver. (Hatsune Miku GT Project)",
     "manufacturer": "Good Smile Company",
@@ -18106,6 +18657,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -18402,6 +18954,7 @@
       "Scale",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -18522,6 +19075,7 @@
       "Prize",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Banpresto",
       "Vocaloid"
     ],
@@ -18555,6 +19109,7 @@
       "Other",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "PLM",
       "Vocaloid"
     ],
@@ -18586,6 +19141,7 @@
     "illustrator": null,
     "tags": [
       "Other",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "PLM",
@@ -18677,6 +19233,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Banpresto",
@@ -18828,6 +19385,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -18946,6 +19504,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -19155,6 +19714,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -19186,6 +19746,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Aquamarine",
@@ -19220,6 +19781,7 @@
     "tags": [
       "Scale",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -19251,6 +19813,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -19344,6 +19907,7 @@
       "Pop Up Parade",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -19380,6 +19944,35 @@
     "dimensions": "About 12cm tallNote: This figure is based on an illustration, and the description above is tentative based on Taito's planned design",
     "material": null,
     "barcode": "2200074006771",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
+    "source": "hlj"
+  },
+  {
+    "id": "PRZ10309",
+    "name": "Hatsune Miku: Noodle Stopper Figure",
+    "manufacturer": "FuRyu",
+    "release_date": "2019-09",
+    "year": 2019,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": 1800,
+    "price_sgd": 17.43,
+    "image_url": "https://www.hlj.com/productimages/fru/fruamu-prz10309_0.jpg",
+    "detail_url": "https://www.hlj.com/hatsune-miku-noodle-stopper-figure-fruamu-prz10309",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "FuRyu",
+      "Vocaloid"
+    ],
+    "description": "Hatsune Miku joins FuRyu's popular Noodle Stopper figure lineup! This fun figure is posed perfectly to sit on the edge of a shelf or other item. She can be used to hold down the lid of your cup noodles as they cook (hence the name!), or simply for decoration.",
+    "dimensions": "About 14cm tall",
+    "material": null,
+    "barcode": "2200121004033",
     "mfc_owned_count": null,
     "series": "Vocaloid",
     "category": "Figures",
@@ -19462,6 +20055,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Max Factory",
@@ -19613,6 +20207,7 @@
       "Prize",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Banpresto",
       "Vocaloid"
     ],
@@ -19702,6 +20297,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -19853,6 +20449,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -19944,6 +20541,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -19975,6 +20573,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Max Factory",
@@ -20097,6 +20696,7 @@
       "Scale",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -20128,6 +20728,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Max Factory",
@@ -20250,6 +20851,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -20281,6 +20883,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Deep Sea Girl",
       "Deep Sea Girl",
       "Deep Sea Girl",
       "Good Smile Company",
@@ -20374,6 +20977,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -20405,6 +21009,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Max Factory",
@@ -20555,6 +21160,7 @@
     "tags": [
       "Scale",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -20587,6 +21193,7 @@
     "tags": [
       "Scale",
       "Snow Miku",
+      "Snow Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -20606,7 +21213,7 @@
     "manufacturer": "Sega",
     "release_date": "2016-06",
     "year": 2016,
-    "type": "Plush / Soft",
+    "type": "Prize",
     "scale": null,
     "price_jpy": 2500,
     "price_sgd": 24.23,
@@ -20617,7 +21224,8 @@
     ],
     "illustrator": null,
     "tags": [
-      "Plush / Soft",
+      "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Sega",
@@ -20653,6 +21261,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Vocaloid"
     ],
@@ -20684,6 +21293,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Sega",
@@ -20719,6 +21329,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Love Live!"
     ],
@@ -20750,6 +21361,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Sega",
@@ -20785,6 +21397,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Love Live!"
     ],
@@ -20816,6 +21429,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Sega",
@@ -20851,6 +21465,7 @@
       "Prize",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Love Live!"
     ],
@@ -20870,7 +21485,7 @@
     "manufacturer": "Sega",
     "release_date": "2016-06",
     "year": 2016,
-    "type": "Plush / Soft",
+    "type": "Prize",
     "scale": null,
     "price_jpy": 2500,
     "price_sgd": 24.23,
@@ -20881,7 +21496,8 @@
     ],
     "illustrator": null,
     "tags": [
-      "Plush / Soft",
+      "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Sega",
@@ -20915,6 +21531,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Sega",
@@ -21037,6 +21654,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -21097,6 +21715,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Max Factory",
@@ -21161,6 +21780,7 @@
       "Figma",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Max Factory",
       "GSR Cars"
     ],
@@ -21221,6 +21841,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -21285,6 +21906,7 @@
       "Nendoroid",
       "Senbonzakura",
       "Senbonzakura",
+      "Senbonzakura",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -21316,6 +21938,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Tell Your World",
       "Tell Your World",
       "Good Smile Company",
       "Vocaloid"
@@ -21379,6 +22002,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "GSR Cars"
     ],
@@ -21411,6 +22035,7 @@
     "tags": [
       "Prize",
       "Racing Miku",
+      "Racing Miku",
       "Banpresto",
       "Vocaloid"
     ],
@@ -21442,6 +22067,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Max Factory",
@@ -21487,6 +22113,38 @@
     "source": "hlj"
   },
   {
+    "id": "FRE29473",
+    "name": "1/8 Senbonzakura feat. Miku Hatsune PVC",
+    "manufacturer": "Freeing",
+    "release_date": "2014-07",
+    "year": 2014,
+    "type": "Scale",
+    "scale": "1/8",
+    "price_jpy": 9074,
+    "price_sgd": 87.89,
+    "image_url": "https://www.hlj.com/productimages/fre/fre29473_0.jpg?v=",
+    "detail_url": "https://www.hlj.com/1-8-scale-senbonzakura-feat-miku-hatsune-pvc-fre29473",
+    "events": [
+      "Senbonzakura"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Scale",
+      "Senbonzakura",
+      "Freeing",
+      "Vocaloid"
+    ],
+    "description": "Senbonzakura, as performed by Miku Hatsune, is one of the most popular downloadable songs ever in Japan. This figure by Freeing depicts the Vocaloid sensation as she appears in the video for the song, wearing a stylized uniform and pointing playfully behind her as the wind swirls her twin tails and long sleeves around her. The muted colors and traditional styling of her outfit is quite a change from what we usually see Miku wearing! A base is included (which may be different from the one seen in the prototype photos), and she can be displayed with or without her hat, too. She'll be about 20cm tall.",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4571245294739",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
+    "source": "hlj"
+  },
+  {
     "id": "GSC85914",
     "name": "1/8 Racing Miku 2013 Ver. PVC",
     "manufacturer": "Good Smile Company",
@@ -21504,6 +22162,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -21537,6 +22196,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Deep Sea Girl",
       "Deep Sea Girl",
       "Deep Sea Girl",
       "Good Smile Company",
@@ -21628,6 +22288,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Sega",
@@ -21779,6 +22440,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -21810,6 +22472,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Freeing",
       "Vocaloid"
@@ -21873,6 +22536,7 @@
       "Scale",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -21904,6 +22568,7 @@
     "illustrator": null,
     "tags": [
       "Nendoroid",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -22084,6 +22749,7 @@
       "Nendoroid",
       "Append",
       "Append",
+      "Append",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -22204,6 +22870,7 @@
       "Scale",
       "Append",
       "Append",
+      "Append",
       "Max Factory",
       "Vocaloid"
     ],
@@ -22235,6 +22902,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Append",
       "Append",
       "Append",
       "Max Factory",
@@ -22297,6 +22965,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Good Smile Company",
@@ -22448,6 +23117,7 @@
       "Scale",
       "World is Mine",
       "World is Mine",
+      "World is Mine",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -22479,6 +23149,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "World is Mine",
       "World is Mine",
       "World is Mine",
       "Good Smile Company",
@@ -22638,36 +23309,6 @@
     "category": "Figures",
     "item_type": "Completed Models",
     "source": "hlj"
-  },
-  {
-    "id": "SJ349437157",
-    "name": "Vocaloid Project Mirai Hatsune Miku Itasha 2012 ProjectMirai GOOD SMILE Racing BMW Z4 GT3 1/43 BMW Z4 GT3 2012 Season Opening Version",
-    "manufacturer": "Max Factory",
-    "release_date": null,
-    "year": null,
-    "type": "Scale",
-    "scale": "1/43",
-    "price_jpy": null,
-    "price_sgd": null,
-    "price_usd": 99.83,
-    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/products/51S6N76mOmL.jpg?v=1600413043",
-    "detail_url": "https://solarisjapan.com/products/good-smile-racing-vocaloid-project-mirai-hatsune-miku-itasha-2012-projectmirai-good-smile-racing-bmw-z4-gt3-1-43-bmw-z4-gt3-2012-season-opening-version-max-factory",
-    "events": [],
-    "illustrator": null,
-    "tags": [
-      "Scale",
-      "Max Factory"
-    ],
-    "description": "",
-    "dimensions": null,
-    "material": null,
-    "barcode": "4560392842085",
-    "mfc_owned_count": null,
-    "series": null,
-    "category": null,
-    "item_type": "Figure",
-    "source": "solaris",
-    "handle": "good-smile-racing-vocaloid-project-mirai-hatsune-miku-itasha-2012-projectmirai-good-smile-racing-bmw-z4-gt3-1-43-bmw-z4-gt3-2012-season-opening-version-max-factory"
   },
   {
     "id": "SJ349437157",
@@ -23646,6 +24287,96 @@
     "item_type": "Figure",
     "source": "solaris",
     "handle": "nendoroid-more-piapro-characters-design-container-hatsune-miku-ver"
+  },
+  {
+    "id": "SJ583045218361",
+    "name": "Mikumo Guynemer SQ Walküre ver.",
+    "manufacturer": "Banpresto",
+    "release_date": null,
+    "year": null,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 28.85,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/products/41YFM6yqBBL.jpg?v=1571443752",
+    "detail_url": "https://solarisjapan.com/products/macross-delta-mikumo-guynemer-sq-walkure-ver",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "Banpresto"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4983164367577",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Figure",
+    "source": "solaris",
+    "handle": "macross-delta-mikumo-guynemer-sq-walkure-ver"
+  },
+  {
+    "id": "SJ589002571833",
+    "name": "Mikumo Guynemer SQ",
+    "manufacturer": "Banpresto",
+    "release_date": null,
+    "year": null,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 21.89,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/products/418D4z-PdmL_96ed4c48-1b97-4b83-885b-b9dc24fa6add.jpg?v=1569123972",
+    "detail_url": "https://solarisjapan.com/products/macross-delta-mikumo-guynemer-sq-1",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "Banpresto"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "NOEAN17425365",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Figure",
+    "source": "solaris",
+    "handle": "macross-delta-mikumo-guynemer-sq-1"
+  },
+  {
+    "id": "SJ556328681529",
+    "name": "Mikumo Guynemer Nendoroid Co-de",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 127.46,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/products/51qAF8COlFL.jpg?v=1571443671",
+    "detail_url": "https://solarisjapan.com/products/macross-delta-mikumo-guynemer-nendoroid-co-de-good-smile-company",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Good Smile Company"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4580416902465",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Figure",
+    "source": "solaris",
+    "handle": "macross-delta-mikumo-guynemer-nendoroid-co-de-good-smile-company"
   },
   {
     "id": "SJ585939025977",
@@ -34646,6 +35377,36 @@
     "handle": "vocaloid-good-smile-racing-hatsune-miku-nendoroid-petit-rq-ver"
   },
   {
+    "id": "SJ4198679937067",
+    "name": "Fraulein Revoltech The Melancholy of Haruhi Suzumiya School Festival SPECIAL No.3 \"Mikuru Asahina\" Mikuru's Adventure ver.",
+    "manufacturer": "Kaiyodo",
+    "release_date": null,
+    "year": null,
+    "type": "Other",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 55.56,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/products/FIG-MOE-0539_01_fa119efa-4a54-4ec1-be44-018847b5054b.jpg?v=1570712230",
+    "detail_url": "https://solarisjapan.com/products/fraulein-revoltech-the-melancholy-of-haruhi-suzumiya-school-festival-special-no-3-mikuru-asahina-mikurus-adventure-ver-1",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Other",
+      "Kaiyodo"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4537807020147",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Figure",
+    "source": "solaris",
+    "handle": "fraulein-revoltech-the-melancholy-of-haruhi-suzumiya-school-festival-special-no-3-mikuru-asahina-mikurus-adventure-ver-1"
+  },
+  {
     "id": "SJ4527983689771",
     "name": "Frame Arms Girl Frame Music Girl Snow Miku Plastic Model",
     "manufacturer": "Kotobukiya",
@@ -34800,6 +35561,36 @@
     "item_type": "Figure",
     "source": "solaris",
     "handle": "character-vocal-series-01-hatsune-miku-virtual-popstar-ver-1-7-figure"
+  },
+  {
+    "id": "SJ7343825911851",
+    "name": "Asahina Mikuru BiCute Bunnies",
+    "manufacturer": "FuRyu",
+    "release_date": null,
+    "year": null,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 34.25,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/files/91c082b8-7539-4acd-82fa-eb8d42033c8f.jpg?v=1757389723",
+    "detail_url": "https://solarisjapan.com/products/suzumiya-haruhi-no-yuuutsu-asahina-mikuru-bicute-bunnies-furyu",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "FuRyu"
+    ],
+    "description": "Meet Asahina Mikuru, transformed into a delightful BiCute Bunny figure that equals sheer adorableness! Her vibrant red outfit hugs her curves just right, while those enchanting long legs are adorned with sultry fishnet stockings that make her look ready for a night on stage. Her expression beams with innocence, framed by her gorgeous flowing hair and playful bunny ears that add a dash of whimsy. With this figure gracing your collection, every glance will remind you of the magical world of Suzumiya Haruhi. Who needs a magic portal when you've got this show-stopping piece?",
+    "dimensions": null,
+    "material": null,
+    "barcode": "NOEAN6764878907",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Figure",
+    "source": "solaris",
+    "handle": "suzumiya-haruhi-no-yuuutsu-asahina-mikuru-bicute-bunnies-furyu"
   },
   {
     "id": "SJ7524016488491",

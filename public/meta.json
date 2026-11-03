@@ -1,15 +1,15 @@
 {
-  "total_figures": 1141,
-  "new_this_run": 27,
+  "total_figures": 1159,
+  "new_this_run": 5,
   "by_type": {
-    "Prize": 442,
-    "Plush / Soft": 266,
-    "Scale": 184,
-    "Nendoroid": 107,
-    "Other": 84,
+    "Prize": 453,
+    "Plush / Soft": 265,
+    "Scale": 187,
+    "Nendoroid": 108,
+    "Other": 87,
     "Figma": 33,
     "Pop Up Parade": 20,
-    "Mini / Petite": 5
+    "Mini / Petite": 6
   },
   "by_year": {
     "2008": 2,
@@ -18,41 +18,41 @@
     "2011": 5,
     "2012": 11,
     "2013": 8,
-    "2014": 6,
+    "2014": 7,
     "2015": 11,
     "2016": 18,
     "2017": 8,
     "2018": 19,
-    "2019": 19,
+    "2019": 20,
     "2020": 32,
-    "2021": 40,
-    "2022": 45,
-    "2023": 76,
-    "2024": 153,
-    "2025": 129,
-    "2026": 107,
+    "2021": 41,
+    "2022": 47,
+    "2023": 77,
+    "2024": 156,
+    "2025": 132,
+    "2026": 108,
     "2027": 44,
     "2028": 1
   },
   "by_event": {
     "Racing Miku": 107,
     "Snow Miku": 89,
-    "Cinnamoroll": 79,
-    "Magical Mirai": 27,
+    "Cinnamoroll": 80,
+    "Magical Mirai": 28,
     "Symphony": 14,
     "EXPO": 12,
     "Append": 5,
     "World is Mine": 4,
-    "Senbonzakura": 3,
+    "Senbonzakura": 4,
     "Deep Sea Girl": 3,
     "Mikudayo": 3,
     "Live Stage": 2,
     "Tell Your World": 1
   },
   "by_source": {
-    "hlj": 742,
-    "solaris": 399
+    "hlj": 755,
+    "solaris": 404
   },
   "scrape_mode": "solaris",
-  "last_updated": "2026-11-02T11:47:03.443566+00:00"
+  "last_updated": "2026-11-03T01:43:17.271802+00:00"
 }
