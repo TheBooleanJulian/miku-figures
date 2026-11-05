@@ -1,11 +1,11 @@
 {
-  "total_figures": 1181,
-  "new_this_run": 22,
+  "total_figures": 1183,
+  "new_this_run": 2,
   "by_type": {
-    "Prize": 467,
+    "Prize": 468,
     "Plush / Soft": 265,
     "Scale": 189,
-    "Nendoroid": 113,
+    "Nendoroid": 114,
     "Other": 87,
     "Figma": 33,
     "Pop Up Parade": 20,
@@ -39,7 +39,7 @@
     "Racing Miku": 107,
     "Snow Miku": 89,
     "Cinnamoroll": 83,
-    "Magical Mirai": 28,
+    "Magical Mirai": 29,
     "Symphony": 14,
     "EXPO": 12,
     "Append": 5,
@@ -52,8 +52,8 @@
   },
   "by_source": {
     "hlj": 755,
-    "solaris": 426
+    "solaris": 428
   },
   "scrape_mode": "solaris",
-  "last_updated": "2026-11-04T00:05:58.369282+00:00"
+  "last_updated": "2026-11-05T00:20:54.248171+00:00"
 }
