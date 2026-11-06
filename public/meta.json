@@ -1,11 +1,11 @@
 {
-  "total_figures": 1183,
-  "new_this_run": 2,
+  "total_figures": 1189,
+  "new_this_run": 3,
   "by_type": {
-    "Prize": 468,
-    "Plush / Soft": 265,
+    "Prize": 470,
+    "Plush / Soft": 268,
     "Scale": 189,
-    "Nendoroid": 114,
+    "Nendoroid": 115,
     "Other": 87,
     "Figma": 33,
     "Pop Up Parade": 20,
@@ -32,13 +32,13 @@
     "2024": 156,
     "2025": 132,
     "2026": 108,
-    "2027": 44,
+    "2027": 47,
     "2028": 1
   },
   "by_event": {
     "Racing Miku": 107,
     "Snow Miku": 89,
-    "Cinnamoroll": 83,
+    "Cinnamoroll": 85,
     "Magical Mirai": 29,
     "Symphony": 14,
     "EXPO": 12,
@@ -51,9 +51,9 @@
     "Tell Your World": 1
   },
   "by_source": {
-    "hlj": 755,
-    "solaris": 428
+    "hlj": 758,
+    "solaris": 431
   },
   "scrape_mode": "solaris",
-  "last_updated": "2026-11-05T00:20:54.248171+00:00"
+  "last_updated": "2026-11-06T00:06:10.100139+00:00"
 }

@@ -22,6 +22,7 @@
       "Symphony",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -116,6 +117,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -152,6 +154,7 @@
       "Symphony",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -183,6 +186,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
@@ -277,6 +281,7 @@
     "illustrator": null,
     "tags": [
       "Pop Up Parade",
+      "Symphony",
       "Symphony",
       "Symphony",
       "Symphony",
@@ -521,6 +526,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -557,6 +563,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -588,6 +595,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -694,6 +702,99 @@
     "source": "hlj"
   },
   {
+    "id": "MLT08486",
+    "name": "Hatsune Miku x RODY: Happy Fluffy 1 Box (6 pieces)",
+    "manufacturer": "Max Limited",
+    "release_date": "2027-03",
+    "year": 2027,
+    "type": "Plush / Soft",
+    "scale": null,
+    "price_jpy": 12000,
+    "price_sgd": 116.36,
+    "image_url": "https://www.hlj.com/productimages/mlt/mlt08486_0.jpg",
+    "detail_url": "https://www.hlj.com/hatsune-miku-x-rody-happy-fluffy-1-box-6-pieces-mlt08486",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Plush / Soft",
+      "Max Limited",
+      "Vocaloid"
+    ],
+    "description": "Important note about the variation of this product: These items are marked as trading kits ala trading cards. The Packages are sealed and the items are randomly packed. Because of this, it is impossible for HobbyLink Japan to handle request which specific figures and we cannot promise which figure you will receive in a box. Please place your order for this item only if you are willing to receive any one of the different types.",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4571617084869",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
+    "source": "hlj"
+  },
+  {
+    "id": "MLT08607",
+    "name": "Hatsune Miku x Cinnamoroll: Potekoro Mascot 5 (1 Box of 6pcs)",
+    "manufacturer": "Max Limited",
+    "release_date": "2027-03",
+    "year": 2027,
+    "type": "Plush / Soft",
+    "scale": null,
+    "price_jpy": 6600,
+    "price_sgd": 64.0,
+    "image_url": "https://www.hlj.com/productimages/mlt/mlt08607_0.jpg",
+    "detail_url": "https://www.hlj.com/hatsune-miku-x-cinnamoroll-potekoro-mascot-5-1-box-of-6pcs-mlt08607",
+    "events": [
+      "Cinnamoroll"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Plush / Soft",
+      "Cinnamoroll",
+      "Max Limited",
+      "Vocaloid"
+    ],
+    "description": "Important note about the variation of this product: These items are marked as trading kits ala trading cards. The Packages are sealed and the items are randomly packed. Because of this, it is impossible for HobbyLink Japan to handle request which specific figures and we cannot promise which figure you will receive in a box. Please place your order for this item only if you are willing to receive any one of the different types.",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4571617086078",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
+    "source": "hlj"
+  },
+  {
+    "id": "MLT08606",
+    "name": "Hatsune Miku x Cinnamoroll: Fuwa Kororin 5 (1 Box of 6pcs)",
+    "manufacturer": "Max Limited",
+    "release_date": "2027-03",
+    "year": 2027,
+    "type": "Plush / Soft",
+    "scale": null,
+    "price_jpy": 6600,
+    "price_sgd": 64.0,
+    "image_url": "https://www.hlj.com/productimages/mlt/mlt08606_0.jpg",
+    "detail_url": "https://www.hlj.com/hatsune-miku-x-cinnamoroll-fuwa-kororin-5-1-box-of-6pcs-mlt08606",
+    "events": [
+      "Cinnamoroll"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Plush / Soft",
+      "Cinnamoroll",
+      "Max Limited",
+      "Vocaloid"
+    ],
+    "description": "Important note about the variation of this product: These items are marked as trading kits ala trading cards. The Packages are sealed and the items are randomly packed. Because of this, it is impossible for HobbyLink Japan to handle request which specific figures and we cannot promise which figure you will receive in a box. Please place your order for this item only if you are willing to receive any one of the different types.",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4571617086061",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Stuffed Animals and Plush Toys",
+    "source": "hlj"
+  },
+  {
     "id": "GSC67368",
     "name": "1/7 Snow Miku: Yukiiro Pop Ver.",
     "manufacturer": "Good Smile Company",
@@ -711,6 +812,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -747,6 +849,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -817,6 +920,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -848,6 +952,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -889,6 +994,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -925,6 +1031,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -956,6 +1063,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -1055,6 +1163,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1086,6 +1195,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -1156,6 +1266,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1192,6 +1303,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1223,6 +1335,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -1288,6 +1401,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
@@ -1474,6 +1588,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1626,6 +1741,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1657,6 +1773,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -1727,6 +1844,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -1763,6 +1881,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -1794,6 +1913,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -1951,6 +2071,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -1987,6 +2108,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Taito",
       "Vocaloid"
     ],
@@ -2018,6 +2140,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -2175,6 +2298,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -2240,6 +2364,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -2276,6 +2401,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -2307,6 +2433,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "World is Mine",
       "World is Mine",
       "World is Mine",
       "World is Mine",
@@ -2376,6 +2503,7 @@
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Design COCO",
       "Vocaloid"
     ],
@@ -2412,6 +2540,7 @@
       "EXPO",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -2443,6 +2572,7 @@
     "illustrator": null,
     "tags": [
       "Pop Up Parade",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -2513,6 +2643,7 @@
       "Symphony",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -2578,6 +2709,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -2609,6 +2741,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -3172,6 +3305,7 @@
       "EXPO",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -3265,6 +3399,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Vocaloid"
     ],
@@ -3300,6 +3435,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -3331,6 +3467,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "EXPO",
       "EXPO",
       "EXPO",
       "EXPO",
@@ -3425,6 +3562,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Symphony",
       "Symphony",
       "Symphony",
       "Symphony",
@@ -3698,6 +3836,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Design COCO",
       "Vocaloid"
     ],
@@ -3792,6 +3931,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -3823,6 +3963,7 @@
     "illustrator": null,
     "tags": [
       "Other",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -4241,6 +4382,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -4306,6 +4448,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "FuRyu",
       "Vocaloid"
     ],
@@ -4337,6 +4480,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -4581,6 +4725,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -4641,6 +4786,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
@@ -4798,6 +4944,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -4829,6 +4976,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -5155,6 +5303,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -5513,6 +5662,7 @@
       "Symphony",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -5694,6 +5844,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5729,6 +5880,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5760,6 +5912,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -5801,6 +5954,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5832,6 +5986,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -5873,6 +6028,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5904,6 +6060,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -5945,6 +6102,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -5976,6 +6134,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -6017,6 +6176,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6048,6 +6208,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -6089,6 +6250,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6120,6 +6282,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -6161,6 +6324,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6192,6 +6356,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -6233,6 +6398,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6264,6 +6430,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -6305,6 +6472,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6336,6 +6504,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -6377,6 +6546,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6408,6 +6578,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -6449,6 +6620,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6480,6 +6652,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -6521,6 +6694,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -6552,6 +6726,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -6617,6 +6792,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -6861,6 +7037,7 @@
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Design COCO",
       "Vocaloid"
     ],
@@ -6984,6 +7161,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "FuRyu",
       "Vocaloid"
     ],
@@ -7015,6 +7193,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -7056,6 +7235,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -7087,6 +7267,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -7157,6 +7338,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -7217,6 +7399,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -7432,6 +7615,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -7463,6 +7647,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -7504,6 +7689,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -7535,6 +7721,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -7600,6 +7787,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "EXPO",
       "EXPO",
       "EXPO",
       "EXPO",
@@ -8134,6 +8322,7 @@
       "Symphony",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -8257,6 +8446,7 @@
       "Senbonzakura",
       "Senbonzakura",
       "Senbonzakura",
+      "Senbonzakura",
       "Design COCO",
       "Vocaloid"
     ],
@@ -8293,6 +8483,7 @@
       "EXPO",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Design COCO",
       "Vocaloid"
     ],
@@ -8324,6 +8515,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -8771,6 +8963,7 @@
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Kadokawa Media Factory",
       "Vocaloid"
     ],
@@ -8860,6 +9053,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "EXPO",
       "EXPO",
       "EXPO",
       "EXPO",
@@ -9016,6 +9210,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -9168,6 +9363,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9199,6 +9395,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -9240,6 +9437,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9271,6 +9469,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -9312,6 +9511,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9343,6 +9543,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -9384,6 +9585,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9415,6 +9617,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -9456,6 +9659,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9487,6 +9691,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -9528,6 +9733,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9559,6 +9765,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -9600,6 +9807,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9631,6 +9839,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -9672,6 +9881,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9703,6 +9913,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -9744,6 +9955,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9775,6 +9987,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -9816,6 +10029,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9847,6 +10061,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -9888,6 +10103,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9919,6 +10135,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -9960,6 +10177,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -9994,6 +10212,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -10025,6 +10244,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -10066,6 +10286,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -10097,6 +10318,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -10138,6 +10360,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -10169,6 +10392,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -10210,6 +10434,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -10241,6 +10466,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -10282,6 +10508,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -10313,6 +10540,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -10354,6 +10582,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -10388,6 +10617,7 @@
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Design COCO",
       "Vocaloid"
     ],
@@ -10419,6 +10649,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -10460,6 +10691,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10491,6 +10723,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -10532,6 +10765,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10563,6 +10797,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -10604,6 +10839,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10635,6 +10871,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -10675,6 +10912,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10706,6 +10944,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -10747,6 +10986,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10778,6 +11018,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -10819,6 +11060,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10850,6 +11092,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -10891,6 +11134,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10922,6 +11166,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -10963,6 +11208,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -10994,6 +11240,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -11034,6 +11281,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -11065,6 +11313,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -11106,6 +11355,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -11137,6 +11387,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -11178,6 +11429,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -11209,6 +11461,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -11250,6 +11503,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -11285,6 +11539,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -11316,6 +11571,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -11357,6 +11613,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -11388,6 +11645,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -11429,6 +11687,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Movic",
       "Vocaloid"
     ],
@@ -11460,6 +11719,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -12023,6 +12283,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -12054,6 +12315,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -12327,6 +12589,7 @@
       "Symphony",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -12358,6 +12621,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -12892,6 +13156,7 @@
       "EXPO",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -13218,6 +13483,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13249,6 +13515,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -13290,6 +13557,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13321,6 +13589,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -13362,6 +13631,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13393,6 +13663,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -13434,6 +13705,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13465,6 +13737,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -13506,6 +13779,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13537,6 +13811,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -13578,6 +13853,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13609,6 +13885,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -13650,6 +13927,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13681,6 +13959,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -13722,6 +14001,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13753,6 +14033,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -13794,6 +14075,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13825,6 +14107,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -13865,6 +14148,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13896,6 +14180,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -13937,6 +14222,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -13968,6 +14254,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -14009,6 +14296,7 @@
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
+      "Cinnamoroll",
       "Max Limited",
       "Vocaloid"
     ],
@@ -14040,6 +14328,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
       "Cinnamoroll",
@@ -14342,6 +14631,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -14518,6 +14808,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -14790,6 +15081,7 @@
       "Symphony",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -14966,6 +15258,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "EXPO",
       "EXPO",
       "EXPO",
       "EXPO",
@@ -15384,6 +15677,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Vocaloid"
     ],
@@ -15473,6 +15767,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -15572,6 +15867,7 @@
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Sega",
       "Vocaloid"
     ],
@@ -15608,6 +15904,7 @@
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Sega",
       "Vocaloid"
     ],
@@ -15639,6 +15936,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
@@ -15883,6 +16181,7 @@
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Sega",
       "Vocaloid"
     ],
@@ -15914,6 +16213,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
@@ -16008,6 +16308,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Symphony",
       "Symphony",
       "Symphony",
       "Symphony",
@@ -16223,6 +16524,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Banpresto",
       "Vocaloid"
     ],
@@ -16404,6 +16706,7 @@
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Sega",
       "Vocaloid"
     ],
@@ -16435,6 +16738,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
@@ -16558,6 +16862,7 @@
     "illustrator": null,
     "tags": [
       "Plush / Soft",
+      "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
@@ -16710,6 +17015,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "EXPO",
       "EXPO",
       "EXPO",
       "EXPO",
@@ -16954,6 +17260,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Vocaloid"
     ],
@@ -16985,6 +17292,7 @@
     "illustrator": null,
     "tags": [
       "Other",
+      "World is Mine",
       "World is Mine",
       "World is Mine",
       "World is Mine",
@@ -17171,6 +17479,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -17260,6 +17569,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -17533,6 +17843,7 @@
       "Magical Mirai",
       "Magical Mirai",
       "Magical Mirai",
+      "Magical Mirai",
       "Sega",
       "Vocaloid"
     ],
@@ -17796,6 +18107,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -18156,6 +18468,7 @@
       "Deep Sea Girl",
       "Deep Sea Girl",
       "Deep Sea Girl",
+      "Deep Sea Girl",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -18221,6 +18534,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Banpresto",
       "Vocaloid"
     ],
@@ -18281,6 +18595,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Symphony",
       "Symphony",
       "Symphony",
       "Symphony",
@@ -18496,6 +18811,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -18561,6 +18877,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -18592,6 +18909,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -18836,6 +19154,7 @@
       "EXPO",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Hobby Stock",
       "Vocaloid"
     ],
@@ -18867,6 +19186,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -18995,6 +19315,7 @@
       "EXPO",
       "EXPO",
       "EXPO",
+      "EXPO",
       "Alpha Max",
       "Vocaloid"
     ],
@@ -19113,6 +19434,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -19415,6 +19737,7 @@
       "Symphony",
       "Symphony",
       "Symphony",
+      "Symphony",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -19538,6 +19861,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Banpresto",
       "Vocaloid"
     ],
@@ -19574,6 +19898,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "PLM",
       "Vocaloid"
     ],
@@ -19605,6 +19930,7 @@
     "illustrator": null,
     "tags": [
       "Other",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -19699,6 +20025,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -19856,6 +20183,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -19974,6 +20302,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -20189,6 +20518,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -20220,6 +20550,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -20260,6 +20591,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -20291,6 +20623,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -20385,6 +20718,7 @@
     "illustrator": null,
     "tags": [
       "Pop Up Parade",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -20542,6 +20876,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Max Factory",
       "Super Sonico"
     ],
@@ -20694,6 +21029,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Banpresto",
       "Vocaloid"
     ],
@@ -20783,6 +21119,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -20940,6 +21277,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -21034,6 +21372,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -21065,6 +21404,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -21193,6 +21533,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -21224,6 +21565,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -21352,6 +21694,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -21383,6 +21726,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Deep Sea Girl",
       "Deep Sea Girl",
       "Deep Sea Girl",
       "Deep Sea Girl",
@@ -21482,6 +21826,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -21513,6 +21858,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -21669,6 +22015,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -21704,6 +22051,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -21735,6 +22083,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -21776,6 +22125,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Vocaloid"
     ],
@@ -21807,6 +22157,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -21848,6 +22199,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Love Live!"
     ],
@@ -21879,6 +22231,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -21920,6 +22273,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Love Live!"
     ],
@@ -21951,6 +22305,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -21992,6 +22347,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Love Live!"
     ],
@@ -22028,6 +22384,7 @@
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
+      "Snow Miku",
       "Sega",
       "Love Live!"
     ],
@@ -22059,6 +22416,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Snow Miku",
       "Snow Miku",
       "Snow Miku",
       "Snow Miku",
@@ -22187,6 +22545,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "Vocaloid"
     ],
@@ -22247,6 +22606,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -22317,6 +22677,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Max Factory",
       "GSR Cars"
     ],
@@ -22377,6 +22738,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -22447,6 +22809,7 @@
       "Senbonzakura",
       "Senbonzakura",
       "Senbonzakura",
+      "Senbonzakura",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -22478,6 +22841,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Tell Your World",
       "Tell Your World",
       "Tell Your World",
       "Tell Your World",
@@ -22547,6 +22911,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Freeing",
       "GSR Cars"
     ],
@@ -22582,6 +22947,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Banpresto",
       "Vocaloid"
     ],
@@ -22613,6 +22979,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -22681,6 +23048,7 @@
       "Senbonzakura",
       "Senbonzakura",
       "Senbonzakura",
+      "Senbonzakura",
       "Freeing",
       "Vocaloid"
     ],
@@ -22717,6 +23085,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -22748,6 +23117,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Deep Sea Girl",
       "Deep Sea Girl",
       "Deep Sea Girl",
       "Deep Sea Girl",
@@ -22842,6 +23212,7 @@
     "illustrator": null,
     "tags": [
       "Prize",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -22999,6 +23370,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -23030,6 +23402,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -23099,6 +23472,7 @@
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
+      "Racing Miku",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -23130,6 +23504,7 @@
     "illustrator": null,
     "tags": [
       "Nendoroid",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -23316,6 +23691,7 @@
       "Append",
       "Append",
       "Append",
+      "Append",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -23439,6 +23815,7 @@
       "Append",
       "Append",
       "Append",
+      "Append",
       "Max Factory",
       "Vocaloid"
     ],
@@ -23470,6 +23847,7 @@
     "illustrator": null,
     "tags": [
       "Figma",
+      "Append",
       "Append",
       "Append",
       "Append",
@@ -23535,6 +23913,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "Racing Miku",
       "Racing Miku",
       "Racing Miku",
       "Racing Miku",
@@ -23692,6 +24071,7 @@
       "World is Mine",
       "World is Mine",
       "World is Mine",
+      "World is Mine",
       "Good Smile Company",
       "Vocaloid"
     ],
@@ -23723,6 +24103,7 @@
     "illustrator": null,
     "tags": [
       "Scale",
+      "World is Mine",
       "World is Mine",
       "World is Mine",
       "World is Mine",
@@ -27688,6 +28069,36 @@
     "handle": "vocaloid-hatsune-miku-pm-figure-angel-breeze"
   },
   {
+    "id": "SJ6606166032427",
+    "name": "Hatsune Miku Original Shifuku Ver.",
+    "manufacturer": "Taito",
+    "release_date": null,
+    "year": null,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 26.8,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/products/810199.jpg?v=1629348623",
+    "detail_url": "https://solarisjapan.com/products/vocaloid-hatsune-miku-original-shifuku-ver-taito",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "Taito"
+    ],
+    "description": "Introducing the delightful Vocaloid Hatsune Miku Original Shifuku Ver. by Taito. This enchanting figure features Miku in an adorable casual outfit, perfect for a cozy day in. Seated comfortably on a fluffy yellow cushion, Miku holds a steaming cup of tea, embodying relaxation and warmth. Her pastel pink cardigan, light blue and white striped socks, and frilly shorts add a charming and soft aesthetic. The detailed sculpting of her iconic turquoise twin tails flows gracefully around her, adding to the serene ambiance.",
+    "dimensions": null,
+    "material": null,
+    "barcode": "NOEAN12780654",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Figure",
+    "source": "solaris",
+    "handle": "vocaloid-hatsune-miku-original-shifuku-ver-taito"
+  },
+  {
     "id": "SJ6942161240107",
     "name": "Hatsune Miku Original Akifuku ver., ~Renewal~",
     "manufacturer": "Taito",
@@ -29923,6 +30334,36 @@
     "handle": "vocaloid-hatsune-miku-nendoroid-2730-rabbit-hole-ver-good-smile-company"
   },
   {
+    "id": "SJ9587318600",
+    "name": "Hatsune Miku Nendoroid #261 Yukata ver.",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 33.13,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/products/41f58Xv5_2BzL.jpg?v=1571443517",
+    "detail_url": "https://solarisjapan.com/products/vocaloid-hatsune-miku-nendoroid-261-yukata-ver",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Good Smile Company"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4582191969459",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Figure",
+    "source": "solaris",
+    "handle": "vocaloid-hatsune-miku-nendoroid-261-yukata-ver"
+  },
+  {
     "id": "SJ7253840789547",
     "name": "Hatsune Miku Nendoroid #2534 ∞ Ver.",
     "manufacturer": "Good Smile Company",
@@ -31274,6 +31715,36 @@
     "item_type": "Figure",
     "source": "solaris",
     "handle": "piapro-characters-hatsune-miku-luminasta-sakura-miku-omutatsu-ver-sega"
+  },
+  {
+    "id": "SJ7270555123755",
+    "name": "Hatsune Miku Luminasta Project Diva 15th Ver.",
+    "manufacturer": "SEGA",
+    "release_date": null,
+    "year": null,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 40.2,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/files/5e7126c4-6f26-11ef-b9ca-0242ac120003.jpg?v=1725939631",
+    "detail_url": "https://solarisjapan.com/products/hatsune-miku-project-diva-mega-39s-hatsune-miku-luminasta-project-diva-15th-ver-sega",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "SEGA"
+    ],
+    "description": "Get ready to groove with Hatsune Miku in her dazzling Project Diva 15th Ver. figure from SEGA! This vibrant representation of our favorite virtual idol is a celebration of her iconic style. Miku strikes a playful pose, one leg elegantly raised, as she holds onto her microphone stand, ready to steal the stage. Dressed in a stylish ensemble that showcases her signature teal and black color palette, Miku's outfit features accents that captivate the eye. Her flowing hair, complete with enchanting twin tails, dances around her, adding a dynamic touch to this stunning piece. This figure is an irresi",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4582733431352",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Figure",
+    "source": "solaris",
+    "handle": "hatsune-miku-project-diva-mega-39s-hatsune-miku-luminasta-project-diva-15th-ver-sega"
   },
   {
     "id": "SJ7219800801323",
