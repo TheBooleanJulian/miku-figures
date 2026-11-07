@@ -1,11 +1,11 @@
 {
-  "total_figures": 1191,
-  "new_this_run": 1,
+  "total_figures": 1194,
+  "new_this_run": 0,
   "by_type": {
-    "Prize": 470,
-    "Plush / Soft": 268,
+    "Prize": 471,
+    "Plush / Soft": 269,
     "Scale": 190,
-    "Nendoroid": 116,
+    "Nendoroid": 117,
     "Other": 87,
     "Figma": 33,
     "Pop Up Parade": 20,
@@ -26,12 +26,12 @@
     "2018": 19,
     "2019": 20,
     "2020": 32,
-    "2021": 41,
+    "2021": 42,
     "2022": 47,
     "2023": 77,
     "2024": 156,
     "2025": 132,
-    "2026": 109,
+    "2026": 111,
     "2027": 48,
     "2028": 1
   },
@@ -51,9 +51,9 @@
     "Tell Your World": 1
   },
   "by_source": {
-    "hlj": 760,
+    "hlj": 763,
     "solaris": 431
   },
   "scrape_mode": "solaris",
-  "last_updated": "2026-11-06T23:48:50.211041+00:00"
+  "last_updated": "2026-11-07T22:38:43.410399+00:00"
 }
