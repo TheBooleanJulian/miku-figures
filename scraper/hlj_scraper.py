@@ -95,31 +95,80 @@ TYPE_MAP = {
     "statue":        "Other",
 }
 
+# Series, events, songs and collaborations, matched as substrings of the
+# lower-cased name. The site builds its filter chips from whatever appears here.
 EVENT_KEYWORDS = {
-    "Snow Miku":       ["snow miku", "snow ver", "yuki miku"],
-    "Racing Miku":     ["racing miku", "hatsune miku gt", "racing ver"],
-    "Magical Mirai":   ["magical mirai", "magic mirai"],
-    "Symphony":        ["symphony"],
-    "Append":          ["append"],
-    "EXPO":            ["expo", "miku expo"],
-    "Deep Sea Girl":   ["deep sea girl", "kaizokunyan"],
-    "Dreamy Vocal":    ["dreamy vocal"],
-    "Live Stage":      ["live stage", "live concert"],
-    "Mikudayo":        ["mikudayo"],
-    "BEAST RINGER":    ["beast ringer"],
-    "Cinnamoroll":     ["cinnamoroll"],
-    "Sand Planet":     ["sand planet"],
-    "World is Mine":   ["world is mine", "worldismine"],
-    "Tell Your World": ["tell your world"],
-    "Senbonzakura":    ["senbonzakura"],
+    "Snow Miku":            ["snow miku", "snow ver", "yuki miku"],
+    "Racing Miku":          ["racing miku", "hatsune miku gt", "racing ver"],
+    "Sakura Miku":          ["sakura miku"],
+    "Magical Mirai":        ["magical mirai", "magic mirai"],
+    "Miku Expo":            ["expo"],
+    "Symphony":             ["symphony"],
+    "Miku with You":        ["miku with you"],
+    "Project DIVA":         ["project diva"],
+    "Project SEKAI":        ["project sekai", "colorful stage"],
+    "Digital Stars":        ["digital stars"],
+    "39Culture":            ["39culture", "39 culture"],
+    "Anniversary / Birthday": ["anniversary", "birthday"],
+    "Append":               ["append"],
+    "Live Stage":           ["live stage", "live concert"],
+    "Dreamy Vocal":         ["dreamy vocal"],
+    "Halloween":            ["halloween", "trick or miku", "trick or treat"],
+    "Christmas":            ["christmas", "xmas"],
+    "New Year":             ["new year"],
+    "Hokusai":              ["hokusai"],
+    "Cinnamoroll":          ["cinnamoroll"],
+    "Sanrio":               ["kuromi", "my melody", "hello kitty", "pompompurin", "pochacco", "sanrio"],
+    "Rascal":               ["rascal"],
+    "Rody":                 ["rody"],
+    "Gundam":               ["gundam"],
+    "World is Mine":        ["world is mine", "worldismine"],
+    "Senbonzakura":         ["senbonzakura"],
+    "Tell Your World":      ["tell your world"],
+    "Deep Sea Girl":        ["deep sea girl", "kaizokunyan"],
+    "Rabbit Hole":          ["rabbit hole"],
+    "Vampire":              ["vampire"],
+    "Love is War":          ["love is war"],
+    "Sand Planet":          ["sand planet"],
+    "BEAST RINGER":         ["beast ringer"],
+    "Mikudayo":             ["mikudayo"],
 }
 
+# Illustrators / artists credited in product names ("Art by X", "X Ver.",
+# "feat. X", "Hatsune Miku x X"). Regexes on the lower-cased name, word-bounded
+# so short names (KEI, neco, Lack) don't match inside other words.
 ILLUSTRATORS = {
-    "KEI": ["art by kei", "(kei)"], "Rella": ["rella"], "iXima": ["ixima"],
-    "Fuzichoco": ["fuzichoco"], "Saine": ["saine"], "GEMI": ["gemi"],
-    "Ontama": ["ontama"], "Yunomachi": ["yunomachi"], "raemz": ["raemz"],
-    "azurite": ["azurite"], "Mikatan": ["mikatan"],
+    "KEI":              r"\bkei\b",
+    "Rella":            r"\brella\b",
+    "iXima":            r"\bixima\b",
+    "Fuzichoco":        r"\bfuzichoco\b",
+    "Saine":            r"\bsaine\b",
+    "GEMI":             r"\bgemi\b",
+    "Ontama":           r"\bontama\b",
+    "Yunomachi":        r"\byunomachi\b",
+    "raemz":            r"\braemz\b",
+    "azurite":          r"\bazurite\b",
+    "Mikatan":          r"\bmikatan\b",
+    "Mai Yoneyama":     r"\byoneyama\b",
+    "Maho Takahashi":   r"maho takahashi|takahashi maho",
+    "Natsuki Amashiro": r"\bamashiro\b",
+    "Rosuuri":          r"\brosuuri\b",
+    "rurudo":           r"\brurudo\b",
+    "SanMuYYB":         r"\bsanmuyyb\b",
+    "neco":             r"by neco\b",
+    "Lack":             r"by lack\b",
+    "Hidari":           r"\bhidari\b",
+    "Tony Taka":        r"\btony\b",
+    "Rassu":            r"\brassu\b",
+    "Coalowl":          r"\bcoalowl\b",
+    "Suou":             r"\bsuou\b",
+    "Omutatsu":         r"\bomutatsu\b",
+    "Kentaro Yabuki":   r"\byabuki\b",
+    "Nekozakana":       r"\bnekozakana\b",
+    "Annindoufu":       r"\bannindoufu\b",
+    "Mika Pikazo":      r"\bmika pikazo\b",
 }
+ILLUSTRATOR_RES = {name: re.compile(p) for name, p in ILLUSTRATORS.items()}
 
 SCALE_RE = re.compile(r"\b1/(\d+)\b")
 
@@ -184,10 +233,20 @@ def extract_events(name: str) -> list[str]:
 
 def extract_illustrator(name: str) -> str | None:
     low = name.lower()
-    for artist, kws in ILLUSTRATORS.items():
-        if any(k in low for k in kws):
+    for artist, rx in ILLUSTRATOR_RES.items():
+        if rx.search(low):
             return artist
     return None
+
+
+def retag(f: dict) -> dict:
+    """Recompute events, illustrator and tags from the name, so rows saved by an
+    older version (or another scraper) pick up keyword-list changes."""
+    f["events"] = extract_events(f.get("name", ""))
+    f["illustrator"] = extract_illustrator(f.get("name", ""))
+    tags = [f.get("type"), *f["events"], f.get("manufacturer"), f.get("series")]
+    f["tags"] = list(dict.fromkeys(t for t in tags if t))
+    return f
 
 
 # ──────────────────────────────────────────────
@@ -390,8 +449,7 @@ def load_existing() -> dict[str, dict]:
                 f["type"] = typ
                 f["description"], size = clean_description(f.get("description"))
                 f["dimensions"] = f.get("dimensions") or size
-                f["tags"] = [typ, *f.get("events", []), *[t for t in f.get("tags", [])[1:] if t not in (typ,)]]
-                rows[f["id"]] = f
+                rows[f["id"]] = f            # events/illustrator/tags: retag() in write_outputs
             return rows
         except Exception as e:
             log.warning(f"Could not load existing figures.json: {e}")
@@ -412,6 +470,8 @@ def other_source_rows(own_rows: list[dict], own_source: str) -> list[dict]:
 
 
 def write_outputs(final: list[dict], new: int, mode: str) -> None:
+    for f in final:
+        retag(f)
     save(final, {
         "total_figures": len(final),
         "new_this_run": new,
