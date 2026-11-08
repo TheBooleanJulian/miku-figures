@@ -181,18 +181,39 @@ MERCH_RE = re.compile(
     r"smartphone|\bpins?\b|\bsocks?\b|pinback|\bbutton\b|postcard|decorative art|calendar|luggage|mirror|shikishi|ticket|rubber mat|puzzle|card holder|hanging scroll|amulet|otamatone|\[used item",
     re.I,
 )
+# "Miku" as a name, not inside Mikuru (Haruhi) or Mikuro (Shiino); Mikudayo,
+# DecoMiku and Mikuzukin still count.
+MIKU_RE = re.compile(r"miku(?!r[uo])", re.I)
 # Another Vocaloid is the actual product (e.g. "... Kurumitapinui MEIKO")
 OTHER_CHARACTER_RE = re.compile(
     r"(meiko|kaito|(rin|len) kagamine|kagamine (rin|len)|luka megurine|megurine luka)\)?$", re.I)
-# Project Sekai (PJSK) goods of other characters carry "feat. Hatsune Miku" as a
-# franchise label. For those, Miku must appear once the label is stripped.
+# Characters other than Miku who are sold under a Miku franchise label
+OTHER_CHAR_RE = re.compile(
+    r"\b(?:kagamine|rin|len|megurine|luka|meiko|kaito|gumi|kasane|teto|akita|neru|yowane|haku|"
+    r"sonico)\b", re.I)
+# Franchise labels that put "Hatsune Miku" in a name without the product being
+# Miku: "Hatsune Miku Series: Kagamine Rin ...", "Hatsune Miku -Project DIVA- F 2nd:
+# Megurine Luka ...", "Hatsune Miku GT Project: Super Sonico ...", lottery names.
+FRANCHISE_LABEL_RE = re.compile(
+    r"(?:hatsune miku|miku hatsune)\s+series\b|"
+    r"(?:hatsune miku|miku hatsune)\s*-?\s*project diva\s*-?(?:\s*(?:f\s*2nd|f|x|arcade|future tone|"
+    r"mega\s*39'?s|2nd|extend|dreamy theater))*|"
+    r"(?:hatsune miku|miku hatsune)\s+gt project|"
+    r"(?:happy\s*kuji\s*)+(?:hatsune miku|miku hatsune)|"
+    r"piapro characters?|character vocal series\s*0?\d", re.I)
+# Project Sekai (PJSK) goods of other characters carry "feat. Hatsune Miku" or
+# "Hatsune Miku: Colorful Stage!" as a franchise label. For those, Miku must
+# appear once the label is stripped.
 PJSK_RE = re.compile(r"project sekai|colorful stage", re.I)
 PJSK_LABEL_RE = re.compile(
     r"feat\.?\s*(?:hatsune miku|miku hatsune)|\([^)]*colorful stage[^)]*\)|"
-    r"the broken world and miku who can'?t sing|miku who can'?t sing", re.I)
+    r"(?:hatsune miku|miku hatsune)\s*:?\s*colorful stage!?|"
+    r"the broken world and miku who can'?\s?t sing|miku who can'?\s?t sing", re.I)
 # Other characters who happen to be called Miku (Nakano Miku, Miku Maekawa, ...)
 NOT_VOCALOID_RE = re.compile(
-    r"quintessential|nakano|maekawa|izayoi|miku ogawa|date a live|idolm@?ster|love live", re.I)
+    r"quintessential|nakano|maekawa|izayoi|miku ogawa|date a live|idolm@?ster|love live|"
+    r"mikuru|mikuro|haruhi|shiino", re.I)
+HATSUNE_RE = re.compile(r"hatsune|hastune", re.I)
 # Name signals that an item is the Vocaloid even if HLJ files it under another series
 VOCALOID_NAME_RE = re.compile(
     r"hatsune|hastune|sakura miku|snow miku|yuki miku|racing miku|mikuzukin|miku with you", re.I)
@@ -207,12 +228,19 @@ PRIZE_MAKERS = ("taito", "furyu", "sega", "banpresto", "bandai spirits", "bandai
 
 def classify(name: str, maker: str | None) -> str | None:
     """Figure type for a product, or None if it is merchandise / not a Miku figure."""
-    if PJSK_RE.search(name) and "miku" not in PJSK_LABEL_RE.sub("", name).lower():
+    if PJSK_RE.search(name) and not MIKU_RE.search(PJSK_LABEL_RE.sub(" ", name)):
         return None
-    if NOT_VOCALOID_RE.search(name) and not VOCALOID_NAME_RE.search(name):
+    # Another franchise's "Miku", or a crossover like "Love Live SNOW MIKU 2016 Stuffed
+    # Rin Hoshizora": keep only if Hatsune Miku is named, or Miku is named a second
+    # time after the crossover label ("... Stuffed SNOW MIKU 2016")
+    if NOT_VOCALOID_RE.search(name) and not HATSUNE_RE.search(name) \
+            and len(VOCALOID_NAME_RE.findall(name)) < 2:
         return None
-    if "miku" not in name.lower() or MERCH_RE.search(name) or OTHER_CHARACTER_RE.search(name.strip()):
+    if not MIKU_RE.search(name) or MERCH_RE.search(name) or OTHER_CHARACTER_RE.search(name.strip()):
         return None
+    core = FRANCHISE_LABEL_RE.sub(" ", PJSK_LABEL_RE.sub(" ", name))
+    if OTHER_CHAR_RE.search(core) and not MIKU_RE.search(core):
+        return None                         # Rin/Len/Luka/... sold under a Miku label
     low = name.lower()
     for key, label in TYPE_MAP.items():
         if key in low:
@@ -470,6 +498,11 @@ def other_source_rows(own_rows: list[dict], own_source: str) -> list[dict]:
 
 
 def write_outputs(final: list[dict], new: int, mode: str) -> None:
+    # Re-judge every source's rows, so classifier fixes also remove rows saved earlier
+    kept = [f for f in final if classify(f.get("name", ""), f.get("manufacturer")) is not None]
+    if len(kept) < len(final):
+        log.info(f"Dropped {len(final) - len(kept)} saved rows the classifier now rejects.")
+    final = kept
     for f in final:
         retag(f)
     save(final, {

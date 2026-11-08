@@ -28,7 +28,10 @@ import hlj_scraper as h
 from hlj_scraper import log
 
 BASE = "https://solarisjapan.com"
-SEARCH_URL = BASE + "/search?q=hatsune+miku&type=product&page={page}"
+SEARCH_URL = BASE + "/search?q={query}&type=product&page={page}"
+# "hatsune miku" is capped at 1000 results, which cuts off many Project SEKAI
+# listings; their own query reaches them.
+SEARCH_QUERIES = ["hatsune+miku", "project+sekai"]
 PRODUCT_JSON = BASE + "/products/{handle}.json"
 MAX_PAGES = 45                   # search is capped at 1000 results (~42 pages)
 MAX_NEW = 300                    # products fetched per run; the backlog clears over a few daily runs
@@ -82,16 +85,18 @@ def fetch(url: str) -> str | None:
 
 def collect_handles(page_limit: int) -> list[str]:
     handles: list[str] = []
-    for page in range(1, page_limit + 1):
-        body = fetch(SEARCH_URL.format(page=page))
-        if body is None:
-            break
-        found = [x for x in dict.fromkeys(HANDLE_RE.findall(body)) if x not in handles]
-        log.info(f"Search page {page}: {len(found)} new handles")
-        if not found:
-            break
-        handles += found
-        time.sleep(DELAY)
+    for query in SEARCH_QUERIES:
+        for page in range(1, page_limit + 1):
+            body = fetch(SEARCH_URL.format(query=query, page=page))
+            if body is None:
+                break
+            on_page = list(dict.fromkeys(HANDLE_RE.findall(body)))
+            found = [x for x in on_page if x not in handles]
+            log.info(f"[{query}] search page {page}: {len(found)} new handles")
+            time.sleep(DELAY)
+            if not on_page:                 # past the last page
+                break
+            handles += found
     return handles
 
 
@@ -196,5 +201,5 @@ def main(page_limit: int) -> int:
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Solaris Japan -> Hatsune Miku Figure Scraper")
-    ap.add_argument("--limit", type=int, default=MAX_PAGES, help="Max search pages (testing)")
+    ap.add_argument("--limit", type=int, default=MAX_PAGES, help="Max search pages per query (testing)")
     sys.exit(main(ap.parse_args().limit))

@@ -13,6 +13,39 @@ def key(name, scale=None, typ=None):
     return L.match_key({"name": name, "scale": scale, "type": typ or h.classify(name, None)})
 
 
+class Classifier(unittest.TestCase):
+    NOT_MIKU = [
+        "Hatsune Miku Series: Kagamine Rin Fuwapuchi Dodeka Jumbo Plush Toy",
+        "Hatsune Miku Series Chibigurumi D: Luka",
+        "1/7 Hatsune Miku -Project DIVA- F 2nd: Megurine Luka: Temptation Ver. PVC",
+        "1/7 Hatsune Miku -Project DIVA- F 2nd: Kagamine Len Stylish Energy L Ver. PVC",
+        "1/6 Hatsune Miku GT Project: Super Sonico Racing Ver. 2016 PVC",
+        "Kagamine Len HappyKuji HappyKuji Hatsune Miku 2013 Summer ver. Nendoroid #341",
+        "Asahina Mikuru 1/4 Bunny Ver.",
+        "Shiino Mikuro 1/6 Nurse Ver.",
+        "Love Live SNOW MIKU 2016 Stuffed Rin Hoshizora",
+        "Nendoroid 2911 Hatsune Miku: Colorful Stage! Kohane Azusawa",
+        "POP UP PARADE Kanade Yoisaki (HATSUNE MIKU: COLORFUL STAGE!)",
+    ]
+    MIKU = [
+        "Piapro Characters Trading Minifigure Series MEIKO & Miku Hatsune",
+        "Love Live SNOW MIKU 2016 Stuffed SNOW MIKU 2016",
+        "1/7 HATSUNE MIKU: COLORFUL STAGE! Hatsune Miku: Rose Cage Ver.",
+        "Nendoroid 2089 Project SEKAI Colorful Stage! feat. Hatsune Miku Hatsune Miku: Street SEKAI Ver.",
+        "Nendoroid 2904 Colorful Stage! The Movie: A Miku Who Can't Sing Hatsune Miku: Unshuttered Sekai Ver.",
+        "1/7 Hatsune Miku GT Project: Racing Miku 2025 Ver.",
+        "Nendoroid Mikudayo",
+    ]
+
+    def test_other_characters_dropped(self):
+        for name in self.NOT_MIKU:
+            self.assertIsNone(h.classify(name, None), name)
+
+    def test_miku_kept(self):
+        for name in self.MIKU:
+            self.assertIsNotNone(h.classify(name, None), name)
+
+
 class Tagging(unittest.TestCase):
     def test_illustrator_word_bounded(self):
         self.assertIsNone(h.extract_illustrator("Hatsune Miku Wonderland Figure Cinderella"))
