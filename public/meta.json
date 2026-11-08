@@ -1,15 +1,15 @@
 {
-  "total_figures": 1194,
-  "new_this_run": 0,
+  "total_figures": 1196,
+  "new_this_run": 2,
   "by_type": {
-    "Prize": 471,
-    "Plush / Soft": 269,
-    "Scale": 190,
+    "Prize": 472,
+    "Plush / Soft": 268,
+    "Scale": 191,
     "Nendoroid": 117,
     "Other": 87,
     "Figma": 33,
     "Pop Up Parade": 20,
-    "Mini / Petite": 6,
+    "Mini / Petite": 7,
     "Bust": 1
   },
   "by_year": {
@@ -52,8 +52,8 @@
   },
   "by_source": {
     "hlj": 763,
-    "solaris": 431
+    "solaris": 433
   },
   "scrape_mode": "solaris",
-  "last_updated": "2026-11-07T22:38:43.410399+00:00"
+  "last_updated": "2026-11-08T22:48:25.414078+00:00"
 }
