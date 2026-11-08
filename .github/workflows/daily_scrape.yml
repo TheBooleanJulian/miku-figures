@@ -1,12 +1,13 @@
 # .github/workflows/daily_scrape.yml
 #
-# Runs the HLJ scraper every day at 03:00 Singapore Time (SGT = UTC+8)
+# Runs the vendor scrapers every day at 03:00 Singapore Time (SGT = UTC+8)
 # → 03:00 SGT  =  19:00 UTC (previous day)
 #
 # What it does:
 #   1. Spins up a Python 3.12 runner
 #   2. Installs scraper dependencies
-#   3. Runs hlj_scraper.py --incremental (skips already-cached figures)
+#   3. Runs hlj_scraper.py --incremental (skips already-cached figures),
+#      then solaris_scraper.py and latendo_scraper.py (slow, capped per run)
 #   4. If figures.json changed, commits it back to the repo
 
 name: Daily Figure Scrape
@@ -42,7 +43,7 @@ concurrency:
 
 jobs:
   scrape:
-    name: Scrape HLJ
+    name: Scrape vendors
     runs-on: ubuntu-latest
     timeout-minutes: 120   # HLJ is scraped slowly on purpose; give it 2 hours max
 
@@ -90,11 +91,18 @@ jobs:
           PYTHONUNBUFFERED: "1"
         run: python scraper/solaris_scraper.py
 
+      # ── 4c. Latendo (sitemap + product pages only, per its robots.txt) ──
+      - name: Run Latendo scraper
+        if: always()
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python scraper/latendo_scraper.py
+
       # ── 5. Check if data changed ───────────────────────────────────
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet public/figures.json public/meta.json scraper/solaris_skip.json \
+          git diff --quiet public/figures.json public/meta.json scraper/solaris_skip.json scraper/latendo_skip.json \
             && echo "changed=false" >> $GITHUB_OUTPUT \
             || echo "changed=true" >> $GITHUB_OUTPUT
 
@@ -104,7 +112,7 @@ jobs:
         run: |
           git config user.name  "miku-scraper-bot[bot]"
           git config user.email "miku-scraper-bot@users.noreply.github.com"
-          git add public/figures.json public/meta.json scraper/solaris_skip.json
+          git add public/figures.json public/meta.json scraper/solaris_skip.json scraper/latendo_skip.json
           COUNT=$(python -c "import json; d=json.load(open('public/figures.json')); print(len(d))")
           git commit -m "🤖 scraper: update figure database (${COUNT} figures) [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           # A merge to main during the (long) scrape makes the push a non-fast-forward.
