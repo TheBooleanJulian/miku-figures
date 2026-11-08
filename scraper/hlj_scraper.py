@@ -95,31 +95,80 @@ TYPE_MAP = {
     "statue":        "Other",
 }
 
+# Series, events, songs and collaborations, matched as substrings of the
+# lower-cased name. The site builds its filter chips from whatever appears here.
 EVENT_KEYWORDS = {
-    "Snow Miku":       ["snow miku", "snow ver", "yuki miku"],
-    "Racing Miku":     ["racing miku", "hatsune miku gt", "racing ver"],
-    "Magical Mirai":   ["magical mirai", "magic mirai"],
-    "Symphony":        ["symphony"],
-    "Append":          ["append"],
-    "EXPO":            ["expo", "miku expo"],
-    "Deep Sea Girl":   ["deep sea girl", "kaizokunyan"],
-    "Dreamy Vocal":    ["dreamy vocal"],
-    "Live Stage":      ["live stage", "live concert"],
-    "Mikudayo":        ["mikudayo"],
-    "BEAST RINGER":    ["beast ringer"],
-    "Cinnamoroll":     ["cinnamoroll"],
-    "Sand Planet":     ["sand planet"],
-    "World is Mine":   ["world is mine", "worldismine"],
-    "Tell Your World": ["tell your world"],
-    "Senbonzakura":    ["senbonzakura"],
+    "Snow Miku":            ["snow miku", "snow ver", "yuki miku"],
+    "Racing Miku":          ["racing miku", "hatsune miku gt", "racing ver"],
+    "Sakura Miku":          ["sakura miku"],
+    "Magical Mirai":        ["magical mirai", "magic mirai"],
+    "Miku Expo":            ["expo"],
+    "Symphony":             ["symphony"],
+    "Miku with You":        ["miku with you"],
+    "Project DIVA":         ["project diva"],
+    "Project SEKAI":        ["project sekai", "colorful stage"],
+    "Digital Stars":        ["digital stars"],
+    "39Culture":            ["39culture", "39 culture"],
+    "Anniversary / Birthday": ["anniversary", "birthday"],
+    "Append":               ["append"],
+    "Live Stage":           ["live stage", "live concert"],
+    "Dreamy Vocal":         ["dreamy vocal"],
+    "Halloween":            ["halloween", "trick or miku", "trick or treat"],
+    "Christmas":            ["christmas", "xmas"],
+    "New Year":             ["new year"],
+    "Hokusai":              ["hokusai"],
+    "Cinnamoroll":          ["cinnamoroll"],
+    "Sanrio":               ["kuromi", "my melody", "hello kitty", "pompompurin", "pochacco", "sanrio"],
+    "Rascal":               ["rascal"],
+    "Rody":                 ["rody"],
+    "Gundam":               ["gundam"],
+    "World is Mine":        ["world is mine", "worldismine"],
+    "Senbonzakura":         ["senbonzakura"],
+    "Tell Your World":      ["tell your world"],
+    "Deep Sea Girl":        ["deep sea girl", "kaizokunyan"],
+    "Rabbit Hole":          ["rabbit hole"],
+    "Vampire":              ["vampire"],
+    "Love is War":          ["love is war"],
+    "Sand Planet":          ["sand planet"],
+    "BEAST RINGER":         ["beast ringer"],
+    "Mikudayo":             ["mikudayo"],
 }
 
+# Illustrators / artists credited in product names ("Art by X", "X Ver.",
+# "feat. X", "Hatsune Miku x X"). Regexes on the lower-cased name, word-bounded
+# so short names (KEI, neco, Lack) don't match inside other words.
 ILLUSTRATORS = {
-    "KEI": ["art by kei", "(kei)"], "Rella": ["rella"], "iXima": ["ixima"],
-    "Fuzichoco": ["fuzichoco"], "Saine": ["saine"], "GEMI": ["gemi"],
-    "Ontama": ["ontama"], "Yunomachi": ["yunomachi"], "raemz": ["raemz"],
-    "azurite": ["azurite"], "Mikatan": ["mikatan"],
+    "KEI":              r"\bkei\b",
+    "Rella":            r"\brella\b",
+    "iXima":            r"\bixima\b",
+    "Fuzichoco":        r"\bfuzichoco\b",
+    "Saine":            r"\bsaine\b",
+    "GEMI":             r"\bgemi\b",
+    "Ontama":           r"\bontama\b",
+    "Yunomachi":        r"\byunomachi\b",
+    "raemz":            r"\braemz\b",
+    "azurite":          r"\bazurite\b",
+    "Mikatan":          r"\bmikatan\b",
+    "Mai Yoneyama":     r"\byoneyama\b",
+    "Maho Takahashi":   r"maho takahashi|takahashi maho",
+    "Natsuki Amashiro": r"\bamashiro\b",
+    "Rosuuri":          r"\brosuuri\b",
+    "rurudo":           r"\brurudo\b",
+    "SanMuYYB":         r"\bsanmuyyb\b",
+    "neco":             r"by neco\b",
+    "Lack":             r"by lack\b",
+    "Hidari":           r"\bhidari\b",
+    "Tony Taka":        r"\btony\b",
+    "Rassu":            r"\brassu\b",
+    "Coalowl":          r"\bcoalowl\b",
+    "Suou":             r"\bsuou\b",
+    "Omutatsu":         r"\bomutatsu\b",
+    "Kentaro Yabuki":   r"\byabuki\b",
+    "Nekozakana":       r"\bnekozakana\b",
+    "Annindoufu":       r"\bannindoufu\b",
+    "Mika Pikazo":      r"\bmika pikazo\b",
 }
+ILLUSTRATOR_RES = {name: re.compile(p) for name, p in ILLUSTRATORS.items()}
 
 SCALE_RE = re.compile(r"\b1/(\d+)\b")
 
@@ -132,18 +181,39 @@ MERCH_RE = re.compile(
     r"smartphone|\bpins?\b|\bsocks?\b|pinback|\bbutton\b|postcard|decorative art|calendar|luggage|mirror|shikishi|ticket|rubber mat|puzzle|card holder|hanging scroll|amulet|otamatone|\[used item",
     re.I,
 )
+# "Miku" as a name, not inside Mikuru (Haruhi) or Mikuro (Shiino); Mikudayo,
+# DecoMiku and Mikuzukin still count.
+MIKU_RE = re.compile(r"miku(?!r[uo])", re.I)
 # Another Vocaloid is the actual product (e.g. "... Kurumitapinui MEIKO")
 OTHER_CHARACTER_RE = re.compile(
     r"(meiko|kaito|(rin|len) kagamine|kagamine (rin|len)|luka megurine|megurine luka)\)?$", re.I)
-# Project Sekai (PJSK) goods of other characters carry "feat. Hatsune Miku" as a
-# franchise label. For those, Miku must appear once the label is stripped.
+# Characters other than Miku who are sold under a Miku franchise label
+OTHER_CHAR_RE = re.compile(
+    r"\b(?:kagamine|rin|len|megurine|luka|meiko|kaito|gumi|kasane|teto|akita|neru|yowane|haku|"
+    r"sonico)\b", re.I)
+# Franchise labels that put "Hatsune Miku" in a name without the product being
+# Miku: "Hatsune Miku Series: Kagamine Rin ...", "Hatsune Miku -Project DIVA- F 2nd:
+# Megurine Luka ...", "Hatsune Miku GT Project: Super Sonico ...", lottery names.
+FRANCHISE_LABEL_RE = re.compile(
+    r"(?:hatsune miku|miku hatsune)\s+series\b|"
+    r"(?:hatsune miku|miku hatsune)\s*-?\s*project diva\s*-?(?:\s*(?:f\s*2nd|f|x|arcade|future tone|"
+    r"mega\s*39'?s|2nd|extend|dreamy theater))*|"
+    r"(?:hatsune miku|miku hatsune)\s+gt project|"
+    r"(?:happy\s*kuji\s*)+(?:hatsune miku|miku hatsune)|"
+    r"piapro characters?|character vocal series\s*0?\d", re.I)
+# Project Sekai (PJSK) goods of other characters carry "feat. Hatsune Miku" or
+# "Hatsune Miku: Colorful Stage!" as a franchise label. For those, Miku must
+# appear once the label is stripped.
 PJSK_RE = re.compile(r"project sekai|colorful stage", re.I)
 PJSK_LABEL_RE = re.compile(
     r"feat\.?\s*(?:hatsune miku|miku hatsune)|\([^)]*colorful stage[^)]*\)|"
-    r"the broken world and miku who can'?t sing|miku who can'?t sing", re.I)
+    r"(?:hatsune miku|miku hatsune)\s*:?\s*colorful stage!?|"
+    r"the broken world and miku who can'?\s?t sing|miku who can'?\s?t sing", re.I)
 # Other characters who happen to be called Miku (Nakano Miku, Miku Maekawa, ...)
 NOT_VOCALOID_RE = re.compile(
-    r"quintessential|nakano|maekawa|izayoi|miku ogawa|date a live|idolm@?ster|love live", re.I)
+    r"quintessential|nakano|maekawa|izayoi|miku ogawa|date a live|idolm@?ster|love live|"
+    r"mikuru|mikuro|haruhi|shiino", re.I)
+HATSUNE_RE = re.compile(r"hatsune|hastune", re.I)
 # Name signals that an item is the Vocaloid even if HLJ files it under another series
 VOCALOID_NAME_RE = re.compile(
     r"hatsune|hastune|sakura miku|snow miku|yuki miku|racing miku|mikuzukin|miku with you", re.I)
@@ -158,12 +228,19 @@ PRIZE_MAKERS = ("taito", "furyu", "sega", "banpresto", "bandai spirits", "bandai
 
 def classify(name: str, maker: str | None) -> str | None:
     """Figure type for a product, or None if it is merchandise / not a Miku figure."""
-    if PJSK_RE.search(name) and "miku" not in PJSK_LABEL_RE.sub("", name).lower():
+    if PJSK_RE.search(name) and not MIKU_RE.search(PJSK_LABEL_RE.sub(" ", name)):
         return None
-    if NOT_VOCALOID_RE.search(name) and not VOCALOID_NAME_RE.search(name):
+    # Another franchise's "Miku", or a crossover like "Love Live SNOW MIKU 2016 Stuffed
+    # Rin Hoshizora": keep only if Hatsune Miku is named, or Miku is named a second
+    # time after the crossover label ("... Stuffed SNOW MIKU 2016")
+    if NOT_VOCALOID_RE.search(name) and not HATSUNE_RE.search(name) \
+            and len(VOCALOID_NAME_RE.findall(name)) < 2:
         return None
-    if "miku" not in name.lower() or MERCH_RE.search(name) or OTHER_CHARACTER_RE.search(name.strip()):
+    if not MIKU_RE.search(name) or MERCH_RE.search(name) or OTHER_CHARACTER_RE.search(name.strip()):
         return None
+    core = FRANCHISE_LABEL_RE.sub(" ", PJSK_LABEL_RE.sub(" ", name))
+    if OTHER_CHAR_RE.search(core) and not MIKU_RE.search(core):
+        return None                         # Rin/Len/Luka/... sold under a Miku label
     low = name.lower()
     for key, label in TYPE_MAP.items():
         if key in low:
@@ -184,10 +261,20 @@ def extract_events(name: str) -> list[str]:
 
 def extract_illustrator(name: str) -> str | None:
     low = name.lower()
-    for artist, kws in ILLUSTRATORS.items():
-        if any(k in low for k in kws):
+    for artist, rx in ILLUSTRATOR_RES.items():
+        if rx.search(low):
             return artist
     return None
+
+
+def retag(f: dict) -> dict:
+    """Recompute events, illustrator and tags from the name, so rows saved by an
+    older version (or another scraper) pick up keyword-list changes."""
+    f["events"] = extract_events(f.get("name", ""))
+    f["illustrator"] = extract_illustrator(f.get("name", ""))
+    tags = [f.get("type"), *f["events"], f.get("manufacturer"), f.get("series")]
+    f["tags"] = list(dict.fromkeys(t for t in tags if t))
+    return f
 
 
 # ──────────────────────────────────────────────
@@ -390,8 +477,7 @@ def load_existing() -> dict[str, dict]:
                 f["type"] = typ
                 f["description"], size = clean_description(f.get("description"))
                 f["dimensions"] = f.get("dimensions") or size
-                f["tags"] = [typ, *f.get("events", []), *[t for t in f.get("tags", [])[1:] if t not in (typ,)]]
-                rows[f["id"]] = f
+                rows[f["id"]] = f            # events/illustrator/tags: retag() in write_outputs
             return rows
         except Exception as e:
             log.warning(f"Could not load existing figures.json: {e}")
@@ -412,6 +498,13 @@ def other_source_rows(own_rows: list[dict], own_source: str) -> list[dict]:
 
 
 def write_outputs(final: list[dict], new: int, mode: str) -> None:
+    # Re-judge every source's rows, so classifier fixes also remove rows saved earlier
+    kept = [f for f in final if classify(f.get("name", ""), f.get("manufacturer")) is not None]
+    if len(kept) < len(final):
+        log.info(f"Dropped {len(final) - len(kept)} saved rows the classifier now rejects.")
+    final = kept
+    for f in final:
+        retag(f)
     save(final, {
         "total_figures": len(final),
         "new_this_run": new,
