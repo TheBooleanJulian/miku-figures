@@ -1,16 +1,16 @@
 {
-  "total_figures": 1171,
+  "total_figures": 1277,
   "new_this_run": 0,
   "by_type": {
-    "Prize": 462,
-    "Plush / Soft": 264,
-    "Scale": 184,
-    "Nendoroid": 116,
-    "Other": 86,
-    "Figma": 33,
+    "Prize": 507,
+    "Plush / Soft": 269,
+    "Scale": 202,
+    "Nendoroid": 142,
+    "Other": 96,
+    "Figma": 34,
     "Pop Up Parade": 20,
     "Mini / Petite": 5,
-    "Bust": 1
+    "Bust": 2
   },
   "by_year": {
     "2008": 2,
@@ -32,23 +32,23 @@
     "2024": 156,
     "2025": 131,
     "2026": 110,
-    "2027": 48,
+    "2027": 50,
     "2028": 1
   },
   "by_event": {
     "Racing Miku": 106,
-    "Cinnamoroll": 85,
-    "Snow Miku": 80,
-    "Anniversary / Birthday": 60,
-    "Sakura Miku": 33,
-    "Magical Mirai": 30,
-    "Symphony": 14,
-    "Miku with You": 12,
-    "Miku Expo": 12,
+    "Snow Miku": 87,
+    "Cinnamoroll": 86,
+    "Anniversary / Birthday": 68,
+    "Sakura Miku": 37,
+    "Magical Mirai": 37,
+    "Symphony": 17,
+    "Miku with You": 14,
+    "Miku Expo": 13,
+    "Project SEKAI": 12,
     "Gundam": 12,
-    "Project SEKAI": 11,
-    "Project DIVA": 9,
-    "Christmas": 9,
+    "Christmas": 11,
+    "Project DIVA": 10,
     "Digital Stars": 8,
     "Rascal": 8,
     "Rody": 7,
@@ -56,21 +56,21 @@
     "World is Mine": 4,
     "Sanrio": 4,
     "Senbonzakura": 4,
+    "Love is War": 4,
     "Mikudayo": 4,
     "Rabbit Hole": 3,
     "Hokusai": 3,
+    "New Year": 3,
     "Vampire": 3,
     "Halloween": 3,
-    "Love is War": 3,
     "Deep Sea Girl": 3,
-    "New Year": 2,
     "Live Stage": 2,
     "Tell Your World": 1
   },
   "by_source": {
-    "hlj": 744,
-    "solaris": 427
+    "hlj": 746,
+    "solaris": 531
   },
   "scrape_mode": "latendo",
-  "last_updated": "2026-11-08T23:40:35.819213+00:00"
+  "last_updated": "2026-11-10T02:22:17.992764+00:00"
 }
