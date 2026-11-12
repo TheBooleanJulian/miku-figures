@@ -26,6 +26,11 @@ class Classifier(unittest.TestCase):
         "Love Live SNOW MIKU 2016 Stuffed Rin Hoshizora",
         "Nendoroid 2911 Hatsune Miku: Colorful Stage! Kohane Azusawa",
         "POP UP PARADE Kanade Yoisaki (HATSUNE MIKU: COLORFUL STAGE!)",
+        "Hatsune Miku - Kaito Mochipiko Plush (3 designs available)",
+        "Hatsune Miku BiCute Bunnies Figure Megurin Luka",
+        "Hatsune Miku Face Hugging Pillow",
+        "Hatsune Miku Relax Life Plush Eye Mask",
+        "Hatsune Miku Squinty Eyes Plush Card Binder",
     ]
     MIKU = [
         "Piapro Characters Trading Minifigure Series MEIKO & Miku Hatsune",
@@ -35,6 +40,10 @@ class Classifier(unittest.TestCase):
         "Nendoroid 2904 Colorful Stage! The Movie: A Miku Who Can't Sing Hatsune Miku: Unshuttered Sekai Ver.",
         "1/7 Hatsune Miku GT Project: Racing Miku 2025 Ver.",
         "Nendoroid Mikudayo",
+        "Hatsune Miku Play Plush Hatsune Miku",
+        "Hatsune Miku MIKU WITH YOU 2018 Ver.",
+        "Hatsune Miku x Cinnamoroll Chibi Figure",
+        "MC-22 Hatsune Miku x Cinnamoroll: Fluffy M Size 3E Hatsune Miku (Scarf)",
     ]
 
     def test_other_characters_dropped(self):
