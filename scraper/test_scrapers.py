@@ -93,6 +93,17 @@ class Matching(unittest.TestCase):
                                    key("Hatsune Miku Blind Box Series: Snow Miku All Stars Figure Collection Vol. 2")))
         self.assertFalse(self.same(key("Racing Miku 2023 Ver."), key("Racing Miku 2024 Ver.")))
 
+    def test_catalogue_number_and_form_decide(self):
+        self.assertFalse(self.same(
+            key("Nendoroid 2193 Project SEKAI Colorful Stage! feat. Hatsune Miku - Hatsune Miku School SEKAI Ver."),
+            key("Nendoroid 2089 Project SEKAI Colorful Stage! feat. Hatsune Miku - Hatsune Miku Street SEKAI Ver.")))
+        self.assertTrue(self.same(
+            key("Nendoroid 2193 Project SEKAI Colorful Stage! feat. Hatsune Miku - Hatsune Miku School SEKAI Ver."),
+            key("Hatsune Miku Nendoroid #2193 School SEKAI Ver.")))
+        self.assertFalse(self.same(
+            key("Nendoroid Doll SEGA feat. HATSUNE MIKU Project Hatsune Miku: Infinity Ver."),
+            key("Nendoroid Doll Outfit Set SEGA feat. HATSUNE MIKU Project Hatsune Miku: Infinity Ver.")))
+
     def test_product_lines_differ(self):
         self.assertFalse(self.same(key("Character Vocal Series 01 Hatsune Miku Happy 16th Birthday Ver.", typ="Other"),
                                    key("Nendoroid Hatsune Miku: Happy 16th Birthday Ver. (Rerelease)")))
