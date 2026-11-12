@@ -7891,7 +7891,7 @@
     "manufacturer": "Bandai Namco Nui",
     "release_date": "2025-05",
     "year": 2025,
-    "type": "Plush / Soft",
+    "type": "Prize",
     "scale": null,
     "price_jpy": 1870,
     "price_sgd": 18.06,
@@ -7900,7 +7900,7 @@
     "events": [],
     "illustrator": null,
     "tags": [
-      "Plush / Soft",
+      "Prize",
       "Bandai Namco Nui",
       "Vocaloid"
     ],
@@ -24062,6 +24062,41 @@
     "handle": "oshare-majo-love-and-berry-piapro-characters-hatsune-miku-desktopxdecorate-collections-hatsune-miku-x-oshare-majo-love-and-berry-berry-ishou-ver-sega"
   },
   {
+    "id": "SJ7708013625387",
+    "name": "Piapro Characters Haro Hatsune Miku Gundam x Miku Anniversary Special Project Lucrea 1/7 (MegaHouse) [Shop Exclusive]",
+    "manufacturer": "MegaHouse",
+    "release_date": null,
+    "year": null,
+    "type": "Scale",
+    "scale": "1/7",
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 189.94,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/files/f4ef4c31-b130-42e4-b1ac-27e78dcf9fb0.jpg?v=1759467330",
+    "detail_url": "https://solarisjapan.com/products/kidou-senshi-gundam-00-piapro-characters-haro-hatsune-miku-gundam-x-miku-anniversary-special-project-lucrea-1-7-megahouse-shop-exclusive",
+    "events": [
+      "Anniversary / Birthday",
+      "Gundam"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Scale",
+      "Anniversary / Birthday",
+      "Gundam",
+      "MegaHouse"
+    ],
+    "description": "Have you ever dreamed of a galaxy where mecha meets melody? Say hello to the enchanting fusion of robotics and rhythm with this dazzling Hatsune Miku figure! Capturing the essence of both the Gundam universe and the vibrant world of Piapro characters, Miku is ready to strike a pose atop a delightful Haro-themed base—complete with her playful pastel hues and that signature twinkle in her eye. Every little detail, from her meticulously sculpted hair flowing like a comet's tail to the gentle smile that'll steal your heart, encapsulates the magic of this collaboration. This figure isn’t just a col",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4535123847608",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Figure",
+    "source": "solaris",
+    "handle": "kidou-senshi-gundam-00-piapro-characters-haro-hatsune-miku-gundam-x-miku-anniversary-special-project-lucrea-1-7-megahouse-shop-exclusive"
+  },
+  {
     "id": "SJ7203498328107",
     "name": "Nendoroid More Piapro Characters Design Container Hatsune Miku Ver.",
     "manufacturer": "Good Smile Company",
@@ -33969,6 +34004,36 @@
     "item_type": "Figure",
     "source": "solaris",
     "handle": "piapro-characters-hatsune-miku-hatsune-miku-fashion-series-preppy-taito-online-crane-limited-taito"
+  },
+  {
+    "id": "SJ7798976151595",
+    "name": "Hatsune Miku Hatsune Miku Fashion Series Outdoor",
+    "manufacturer": "Taito",
+    "release_date": null,
+    "year": null,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 38.77,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/files/3645d4a6-c7ed-46e1-84b0-19b008ede673.jpg?v=1769490210",
+    "detail_url": "https://solarisjapan.com/products/piapro-characters-hatsune-miku-hatsune-miku-fashion-series-outdoor-taito",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "Taito"
+    ],
+    "description": "Check out this Hatsune Miku from Taito's Fashion Series, perfectly capturing that outdoor spirit! With her striking turquoise hair cascading in twin braids, Miku’s adorably mischievous look is accentuated by playful accessories and that heart-shaped detail that just makes you swoon. Sporting a casual yet stylish hoodie and shorts combo, she embodies the ultimate blend of comfort and trendy flair. The dynamic pose and vibrant colors bring her to life, making her a delightful companion for any shelf or display. Unleash the charm of Miku and let her sweet personality brighten your day!",
+    "dimensions": null,
+    "material": null,
+    "barcode": "NOEAN0639097136",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Figure",
+    "source": "solaris",
+    "handle": "piapro-characters-hatsune-miku-hatsune-miku-fashion-series-outdoor-taito"
   },
   {
     "id": "SJ7721347416107",

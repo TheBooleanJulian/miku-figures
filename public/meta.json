@@ -1,10 +1,10 @@
 {
-  "total_figures": 1282,
+  "total_figures": 1284,
   "new_this_run": 0,
   "by_type": {
-    "Prize": 508,
-    "Plush / Soft": 273,
-    "Scale": 202,
+    "Prize": 510,
+    "Plush / Soft": 272,
+    "Scale": 203,
     "Nendoroid": 142,
     "Other": 96,
     "Figma": 34,
@@ -39,14 +39,14 @@
     "Racing Miku": 106,
     "Snow Miku": 87,
     "Cinnamoroll": 86,
-    "Anniversary / Birthday": 68,
+    "Anniversary / Birthday": 69,
     "Sakura Miku": 37,
     "Magical Mirai": 37,
     "Symphony": 17,
     "Miku with You": 14,
     "Miku Expo": 13,
+    "Gundam": 13,
     "Project SEKAI": 12,
-    "Gundam": 12,
     "Christmas": 11,
     "Project DIVA": 10,
     "Digital Stars": 8,
@@ -69,8 +69,8 @@
   },
   "by_source": {
     "hlj": 747,
-    "solaris": 535
+    "solaris": 537
   },
   "scrape_mode": "latendo",
-  "last_updated": "2026-11-11T00:15:07.660512+00:00"
+  "last_updated": "2026-11-12T01:30:55.341169+00:00"
 }
