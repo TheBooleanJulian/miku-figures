@@ -7,7 +7,8 @@
 #   1. Spins up a Python 3.12 runner
 #   2. Installs scraper dependencies
 #   3. Runs hlj_scraper.py --incremental (skips already-cached figures),
-#      then solaris_scraper.py and latendo_scraper.py (slow, capped per run)
+#      then solaris_scraper.py (slow, capped per run), then merges Latendo's rows
+#      (fetched from a home PC: Latendo's Cloudflare blocks GitHub's IPs)
 #   4. If figures.json changed, commits it back to the repo
 
 name: Daily Figure Scrape
@@ -34,6 +35,8 @@ on:
     branches: [main]
     paths:
       - "scraper/**"
+      - "!scraper/latendo_rows.json"   # daily home-PC data push; merged by the next scheduled run
+      - "!scraper/latendo_skip.json"
       - ".github/workflows/daily_scrape.yml"
 
 # Only allow one scrape to run at a time
@@ -91,8 +94,9 @@ jobs:
           PYTHONUNBUFFERED: "1"
         run: python scraper/solaris_scraper.py
 
-      # ── 4c. Latendo (sitemap + product pages only, per its robots.txt) ──
-      - name: Run Latendo scraper
+      # ── 4c. Latendo: no network here. scraper/latendo_local.ps1 fetches at home
+      #        and pushes scraper/latendo_rows.json; this merges it in. ──
+      - name: Merge Latendo rows
         if: always()
         env:
           PYTHONUNBUFFERED: "1"
@@ -102,7 +106,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet public/figures.json public/meta.json scraper/solaris_skip.json scraper/latendo_skip.json \
+          git diff --quiet public/figures.json public/meta.json scraper/solaris_skip.json \
             && echo "changed=false" >> $GITHUB_OUTPUT \
             || echo "changed=true" >> $GITHUB_OUTPUT
 
@@ -112,7 +116,7 @@ jobs:
         run: |
           git config user.name  "miku-scraper-bot[bot]"
           git config user.email "miku-scraper-bot@users.noreply.github.com"
-          git add public/figures.json public/meta.json scraper/solaris_skip.json scraper/latendo_skip.json
+          git add public/figures.json public/meta.json scraper/solaris_skip.json
           COUNT=$(python -c "import json; d=json.load(open('public/figures.json')); print(len(d))")
           git commit -m "🤖 scraper: update figure database (${COUNT} figures) [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           # A merge to main during the (long) scrape makes the push a non-fast-forward.
