@@ -127,32 +127,52 @@ def name_tokens(name: str) -> tuple[frozenset[str], frozenset[str]]:
     for w in re.findall(r"[a-z]+|\d+", low):
         if w not in NOISE:
             words.append(str(int(w)) if w.isdigit() else w)
-    ids = frozenset(w for w in words if w.isdigit() or len(w) == 1)
+    ids = frozenset(w for w in words if w.isdigit() or len(w) == 1 or w in FORM_WORDS)
     return frozenset(words), ids
+
+
+# Words that make a different product of the same name ("Nendoroid Doll" vs its
+# "Outfit Set"): they must appear on both sides or neither
+FORM_WORDS = {"outfit"}
+CATALOGUE_RE = re.compile(r"\b(?:nendoroid|figma)\s+(?:sp-?|ex-?)?\s*#?(\d+)\b|#(\d+)", re.I)
+
+
+def catalogue_no(name: str) -> str | None:
+    """Nendoroid / figma catalogue number ("Nendoroid 2193", "#2193", "figma SP-161")."""
+    m = CATALOGUE_RE.search(name)
+    return str(int(m.group(1) or m.group(2))) if m else None
 
 
 def match_key(f: dict) -> tuple:
     name = f.get("name", "")
     words, ids = name_tokens(name)
     ids |= frozenset(h.extract_events(name))         # "Snow Miku" vs "Racing Miku" blind boxes
-    return words, ids, f.get("scale"), f.get("type")
+    return words, ids, f.get("scale"), f.get("type"), catalogue_no(name)
 
 
-def same_figure(a: tuple, b: tuple) -> bool:
+def same_figure(a: tuple, b: tuple, threshold: float = MATCH_THRESHOLD) -> bool:
     """True when two match_key()s very probably name the same product."""
-    (wa, ia, sa, ya), (wb, ib, sb, yb) = a, b
+    (wa, ia, sa, ya, ca), (wb, ib, sb, yb, cb) = a, b
+    if ca and cb:                                    # both name a catalogue number: it decides
+        return ca == cb and ya == yb
     if not wa or not wb or ia != ib:
         return False
     if sa and sb and sa != sb:
         return False
     if ya != yb and (ya in DISTINCT_TYPES or yb in DISTINCT_TYPES):
         return False
-    return len(wa & wb) / len(wa | wb) >= MATCH_THRESHOLD
+    return len(wa & wb) / len(wa | wb) >= threshold
 
 
-def find_duplicate(row: dict, others: list[tuple]) -> bool:
+def find_duplicate(row: dict, others: list[tuple], threshold: float = MATCH_THRESHOLD) -> bool:
     key = match_key(row)
-    return any(same_figure(key, k) for k in others)
+    return any(same_figure(key, k, threshold) for k in others)
+
+
+def latendo_duplicate(row: dict, rows: list[dict]) -> bool:
+    """Latendo listing the same product twice: it titles them alike, so the word
+    sets must be identical (Zaku Costume vs Char's Zaku Costume are two figures)."""
+    return find_duplicate(row, [match_key(f) for f in rows], threshold=1.0)
 
 
 # ──────────────────────────────────────────────
@@ -280,7 +300,7 @@ def fetch_rows(max_new: int) -> int:
     kept: dict[str, dict] = {}
     for slug, f in mine.items():
         if h.classify(f.get("name", ""), f.get("manufacturer")) is None \
-                or find_duplicate(f, other_keys) or find_duplicate(f, [match_key(k) for k in kept.values()]):
+                or find_duplicate(f, other_keys) or latendo_duplicate(f, list(kept.values())):
             log.info(f"Dropping saved row: {f['name'][:60]}")
             skip.add(slug)
         else:
@@ -304,7 +324,7 @@ def fetch_rows(max_new: int) -> int:
                 continue
             row = parse_product(page, slug)
             if row is None or find_duplicate(row, other_keys) \
-                    or find_duplicate(row, [match_key(f) for f in mine.values()]):
+                    or latendo_duplicate(row, list(mine.values())):
                 skip.add(slug)                       # goods, or already carried (elsewhere or by Latendo)
                 skipped += 1
                 continue
@@ -328,7 +348,7 @@ def merge_rows() -> int:
     other_keys = [match_key(f) for f in others]
     rows: list[dict] = []
     for f in load_rows().values():
-        if not find_duplicate(f, other_keys + [match_key(r) for r in rows]):
+        if not find_duplicate(f, other_keys) and not latendo_duplicate(f, rows):
             rows.append(f)
     log.info(f"Merging {len(rows)} Latendo rows into {len(others)} from other sources.")
     h.write_outputs(others + rows, 0, "latendo")
