@@ -8,14 +8,19 @@ category filters, so this scraper never browses the shop: it reads the sitemap
 product pages, slowly. Standard library only; reuses the HLJ scraper's
 classifier, tagging and storage.
 
-Usage:
-    python latendo_scraper.py             # fetch up to MAX_NEW new products
-    python latendo_scraper.py --max 10    # fetch at most 10 (dev/test)
+Latendo's Cloudflare returns 403 to cloud IPs (GitHub Actions included) but
+serves this scraper from a home connection, so the work is split:
 
-Rows are written to ../public/figures.json with source="latendo". Latendo shows
-no JAN barcode, so duplicates of HLJ / Solaris rows are found by name instead
-(see same_figure); those, and goods, are remembered in latendo_skip.json.
-Pre-orders ("(PO)") are kept: the archive lists announced figures too.
+    python latendo_scraper.py --fetch           # at home (latendo_local.ps1, daily):
+                                                #   update latendo_rows.json + latendo_skip.json
+    python latendo_scraper.py --fetch --max 10  # fetch at most 10 (dev/test)
+    python latendo_scraper.py                   # in CI, no network: merge latendo_rows.json
+                                                #   into ../public/figures.json
+
+Rows carry source="latendo". Latendo shows no JAN barcode, so duplicates of HLJ /
+Solaris rows are found by name instead (see same_figure); those, and goods, are
+remembered in latendo_skip.json. Pre-orders ("(PO)") are kept: the archive lists
+announced figures too.
 """
 
 import argparse
@@ -37,6 +42,7 @@ MAX_NEW = 200                    # product pages fetched per run; the backlog cl
 DELAY = 3.0                      # seconds between requests
 MAX_FAILURES = 8                 # consecutive failures (or 429s) before ending the run
 SKIP_FILE = Path(__file__).parent / "latendo_skip.json"   # slugs known to be goods/duplicates
+ROWS_FILE = Path(__file__).parent / "latendo_rows.json"   # Latendo's rows, written by --fetch
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; miku-figures-archive; "
@@ -249,13 +255,25 @@ def parse_product(page: str, slug: str) -> dict | None:
 # MAIN
 # ──────────────────────────────────────────────
 
-def main(max_new: int) -> int:
+def load_rows() -> dict[str, dict]:
+    rows = json.loads(ROWS_FILE.read_text(encoding="utf-8")) if ROWS_FILE.exists() else []
+    return {f["handle"]: f for f in rows if f.get("handle")}
+
+
+def other_rows() -> list[dict]:
     saved = json.loads(h.FIGURES_FILE.read_text(encoding="utf-8")) if h.FIGURES_FILE.exists() else []
-    mine = {f["handle"]: f for f in saved if f.get("source") == "latendo" and f.get("handle")}
-    others = [f for f in saved if f.get("source") != "latendo"]
-    other_keys = [match_key(f) for f in others]
+    return [f for f in saved if f.get("source") != "latendo"]
+
+
+def fetch_rows(max_new: int) -> int:
+    """--fetch (run from a home connection): refresh latendo_rows.json and latendo_skip.json.
+
+    Does not touch figures.json, so its commits never collide with the CI bot's.
+    """
+    mine = load_rows()
+    other_keys = [match_key(f) for f in other_rows()]
     skip = set(json.loads(SKIP_FILE.read_text())) if SKIP_FILE.exists() else set()
-    log.info(f"Loaded {len(mine)} Latendo rows, {len(others)} from other sources, {len(skip)} skipped slugs.")
+    log.info(f"Loaded {len(mine)} Latendo rows, {len(other_keys)} from other sources, {len(skip)} skipped slugs.")
 
     # Another source may have picked up a figure since we saved it: keep theirs.
     for slug in [s for s, f in mine.items() if find_duplicate(f, other_keys)]:
@@ -267,36 +285,51 @@ def main(max_new: int) -> int:
     try:
         sitemap = fetch(SITEMAP_URL)
         if sitemap is None:
-            log.error("Could not fetch the Latendo sitemap; leaving Latendo rows as they are.")
-        else:
-            slugs = list(dict.fromkeys(SLUG_RE.findall(sitemap)))
-            todo = [s for s in slugs
-                    if s not in mine and s not in skip and h.classify(slug_name(s), None) is not None]
-            log.info(f"{len(slugs)} Miku product URLs; {len(todo)} to fetch (cap {max_new}).")
-            for i, slug in enumerate(todo[:max_new], 1):
-                time.sleep(DELAY)
-                page = fetch(f"{BASE}/shop/{slug}")
-                if page is None:
-                    continue
-                row = parse_product(page, slug)
-                if row is None or find_duplicate(row, other_keys):
-                    skip.add(slug)                   # goods, or already carried by another source
-                    skipped += 1
-                    continue
-                mine[slug] = row
-                new += 1
-                if i % 25 == 0:
-                    log.info(f"[{i}/{min(len(todo), max_new)}] {row['name'][:60]}")
+            log.error("Could not fetch the Latendo sitemap; nothing written.")
+            return 1
+        slugs = list(dict.fromkeys(SLUG_RE.findall(sitemap)))
+        todo = [s for s in slugs
+                if s not in mine and s not in skip and h.classify(slug_name(s), None) is not None]
+        log.info(f"{len(slugs)} Miku product URLs; {len(todo)} to fetch (cap {max_new}).")
+        for i, slug in enumerate(todo[:max_new], 1):
+            time.sleep(DELAY)
+            page = fetch(f"{BASE}/shop/{slug}")
+            if page is None:
+                continue
+            row = parse_product(page, slug)
+            if row is None or find_duplicate(row, other_keys):
+                skip.add(slug)                       # goods, or already carried by another source
+                skipped += 1
+                continue
+            mine[slug] = row
+            new += 1
+            if i % 25 == 0:
+                log.info(f"[{i}/{min(len(todo), max_new)}] {row['name'][:60]}")
     except Stop as e:
         log.warning(f"Ending the run early and keeping progress ({e}).")
 
+    rows = sorted(mine.values(), key=lambda f: f["handle"])
+    ROWS_FILE.write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding="utf-8")
     SKIP_FILE.write_text(json.dumps(sorted(skip)))
-    log.info(f"Done. New: {new} | Skipped (goods/duplicates): {skipped}")
-    h.write_outputs(others + list(mine.values()), new, "latendo")
+    log.info(f"Done. New: {new} | Skipped (goods/duplicates): {skipped} | Latendo rows: {len(rows)}")
+    return 0
+
+
+def merge_rows() -> int:
+    """Default (CI, no network): merge latendo_rows.json into figures.json."""
+    others = other_rows()
+    other_keys = [match_key(f) for f in others]
+    rows = [f for f in load_rows().values() if not find_duplicate(f, other_keys)]
+    log.info(f"Merging {len(rows)} Latendo rows into {len(others)} from other sources.")
+    h.write_outputs(others + rows, 0, "latendo")
     return 0
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Latendo -> Hatsune Miku Figure Scraper")
+    ap.add_argument("--fetch", action="store_true",
+                    help="Fetch from latendo.com and update latendo_rows.json (run from home; "
+                         "Latendo blocks cloud IPs). Without it: merge the rows into figures.json.")
     ap.add_argument("--max", type=int, default=MAX_NEW, help="Max product pages to fetch")
-    sys.exit(main(ap.parse_args().max))
+    args = ap.parse_args()
+    sys.exit(fetch_rows(args.max) if args.fetch else merge_rows())

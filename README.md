@@ -126,7 +126,7 @@ Each figure in `figures.json`:
 
 > **Second source:** `scraper/solaris_scraper.py` adds figures HLJ does not carry from Solaris Japan (a Shopify store; its `agents.md` allows read-only browsing). It is slow on purpose (3.5 s between requests, honours 429 `Retry-After`) and fetches at most 300 new products per run, so the backlog fills over a few daily runs. Rows carry `source` (`hlj` / `solaris`); a Solaris item whose JAN barcode HLJ already has is skipped. Solaris prices are USD (`price_usd`) and have no release date.
 
-> **Third source:** `scraper/latendo_scraper.py` adds figures from Latendo (Singapore, an Odoo store, prices in SGD). Latendo's robots.txt disallows shop search, pagination and category filters, so the scraper reads the sitemap and fetches only product pages whose URL mentions Miku (3 s apart, at most 200 per run). Pre-orders are kept. Latendo shows no JAN barcode, so rows HLJ or Solaris already carry are matched by name: the titles must share at least 75% of their words, with years, variant letters, catalogue codes and series (Snow / Racing / ...) agreeing exactly, and the same scale and product line. Matches and goods go into `latendo_skip.json`. A Latendo row is dropped later if another source picks the figure up.
+> **Third source:** `scraper/latendo_scraper.py` adds figures from Latendo (Singapore, an Odoo store, prices in SGD). Latendo's robots.txt disallows shop search, pagination and category filters, so the scraper reads the sitemap and fetches only product pages whose URL mentions Miku (3 s apart, at most 200 per run). Latendo's Cloudflare returns 403 to GitHub Actions' IPs, so fetching runs on a home PC: `scraper/latendo_local.ps1` (Windows Task Scheduler, daily, from a clone outside Google Drive) runs `latendo_scraper.py --fetch` and pushes only `scraper/latendo_rows.json` and `latendo_skip.json` to `main`; the scheduled CI run merges the rows into `figures.json` without touching the network. Pre-orders are kept. Latendo shows no JAN barcode, so rows HLJ or Solaris already carry are matched by name: the titles must share at least 75% of their words, with years, variant letters, catalogue codes and series (Snow / Racing / ...) agreeing exactly, and the same scale and product line. Matches and goods go into `latendo_skip.json`. A Latendo row is dropped later if another source picks the figure up.
 
 > **Why HLJ:** MyFigureCollection blocks automated clients (403 / security check, including headless browsers from GitHub runners), so it can't be scraped. HLJ serves plain HTML. Prices are stored as `price_jpy` and `price_sgd` (HLJ's SGD display price); the UI shows SGD. HLJ has no illustrator or owner counts, so those fields are mostly empty.
 
@@ -136,7 +136,7 @@ Each figure in `figures.json`:
 |---|---|---|---|
 | HobbyLink Japan | hlj.com | SGD (and JPY) | Search listings, then product pages |
 | Solaris Japan | solarisjapan.com | USD | Shopify search + product JSON; JAN duplicates skipped |
-| Latendo | latendo.com | SGD | Sitemap + product pages; name duplicates skipped |
+| Latendo | latendo.com | SGD | Sitemap + product pages, fetched from a home PC (blocks cloud IPs); name duplicates skipped |
 
 To add a vendor: write `scraper/<vendor>_scraper.py` that reuses `hlj_scraper`'s `classify` and `write_outputs`, add a step to `.github/workflows/daily_scrape.yml`, and add an entry to `VENDORS` in `src/App.jsx`.
 
