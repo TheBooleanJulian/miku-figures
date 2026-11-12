@@ -178,7 +178,8 @@ MERCH_RE = re.compile(
     r"tapestr|towel|t-shirt|\bt shirt|jersey|key ?chain|\bcase\b|code clip|\bplate\b|"
     r"costume set|\btote\b|sticker|poster|\bmug\b|\bcup\b|\bbags?\b|backpack|hoodie|sweatshirt|"
     r"parka|acrylic|badge|clear file|blanket|pouch|notebook|cushion|umbrella|wallet|"
-    r"smartphone|\bpins?\b|\bsocks?\b|pinback|\bbutton\b|postcard|decorative art|calendar|luggage|mirror|shikishi|ticket|rubber mat|puzzle|card holder|hanging scroll|amulet|otamatone|\[used item",
+    r"smartphone|\bpins?\b|\bsocks?\b|pinback|\bbutton\b|postcard|decorative art|calendar|luggage|mirror|shikishi|ticket|rubber mat|puzzle|card holder|hanging scroll|amulet|otamatone|\[used item|"
+    r"pillow|eye mask|massage|shawl|\bscarf\b(?!\))|binder|photo frame|\bcharms?\b",   # "(Scarf)" = a plush variant
     re.I,
 )
 # "Miku" as a name, not inside Mikuru (Haruhi) or Mikuro (Shiino); Mikudayo,
@@ -201,6 +202,10 @@ FRANCHISE_LABEL_RE = re.compile(
     r"(?:hatsune miku|miku hatsune)\s+gt project|"
     r"(?:happy\s*kuji\s*)+(?:hatsune miku|miku hatsune)|"
     r"piapro characters?|character vocal series\s*0?\d", re.I)
+# A name that merely starts with "Hatsune Miku" ("Hatsune Miku BiCute Bunnies Figure
+# Megurine Luka"): only used when another character is named, and Miku must then
+# appear again later in the name.
+LEADING_LABEL_RE = re.compile(r"^\s*(?:hatsune miku|miku hatsune)\b\s*[-:]?", re.I)
 # Project Sekai (PJSK) goods of other characters carry "feat. Hatsune Miku" or
 # "Hatsune Miku: Colorful Stage!" as a franchise label. For those, Miku must
 # appear once the label is stripped.
@@ -239,6 +244,7 @@ def classify(name: str, maker: str | None) -> str | None:
     if not MIKU_RE.search(name) or MERCH_RE.search(name) or OTHER_CHARACTER_RE.search(name.strip()):
         return None
     core = FRANCHISE_LABEL_RE.sub(" ", PJSK_LABEL_RE.sub(" ", name))
+    core = LEADING_LABEL_RE.sub(" ", core)  # "Hatsune Miku - Kaito Mochipiko Plush"
     if OTHER_CHAR_RE.search(core) and not MIKU_RE.search(core):
         return None                         # Rin/Len/Luka/... sold under a Miku label
     low = name.lower()

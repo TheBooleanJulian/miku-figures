@@ -275,11 +275,17 @@ def fetch_rows(max_new: int) -> int:
     skip = set(json.loads(SKIP_FILE.read_text())) if SKIP_FILE.exists() else set()
     log.info(f"Loaded {len(mine)} Latendo rows, {len(other_keys)} from other sources, {len(skip)} skipped slugs.")
 
-    # Another source may have picked up a figure since we saved it: keep theirs.
-    for slug in [s for s, f in mine.items() if find_duplicate(f, other_keys)]:
-        log.info(f"Now carried by another source, dropping: {mine[slug]['name'][:60]}")
-        del mine[slug]
-        skip.add(slug)
+    # Re-judge saved rows: classifier changes, another source picking a figure up
+    # (keep theirs), or Latendo listing the same figure twice (keep the first).
+    kept: dict[str, dict] = {}
+    for slug, f in mine.items():
+        if h.classify(f.get("name", ""), f.get("manufacturer")) is None \
+                or find_duplicate(f, other_keys) or find_duplicate(f, [match_key(k) for k in kept.values()]):
+            log.info(f"Dropping saved row: {f['name'][:60]}")
+            skip.add(slug)
+        else:
+            kept[slug] = f
+    mine = kept
 
     new = skipped = 0
     try:
@@ -297,8 +303,9 @@ def fetch_rows(max_new: int) -> int:
             if page is None:
                 continue
             row = parse_product(page, slug)
-            if row is None or find_duplicate(row, other_keys):
-                skip.add(slug)                       # goods, or already carried by another source
+            if row is None or find_duplicate(row, other_keys) \
+                    or find_duplicate(row, [match_key(f) for f in mine.values()]):
+                skip.add(slug)                       # goods, or already carried (elsewhere or by Latendo)
                 skipped += 1
                 continue
             mine[slug] = row
@@ -319,7 +326,10 @@ def merge_rows() -> int:
     """Default (CI, no network): merge latendo_rows.json into figures.json."""
     others = other_rows()
     other_keys = [match_key(f) for f in others]
-    rows = [f for f in load_rows().values() if not find_duplicate(f, other_keys)]
+    rows: list[dict] = []
+    for f in load_rows().values():
+        if not find_duplicate(f, other_keys + [match_key(r) for r in rows]):
+            rows.append(f)
     log.info(f"Merging {len(rows)} Latendo rows into {len(others)} from other sources.")
     h.write_outputs(others + rows, 0, "latendo")
     return 0
