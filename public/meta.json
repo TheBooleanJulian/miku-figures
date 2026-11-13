@@ -1,12 +1,12 @@
 {
-  "total_figures": 1354,
+  "total_figures": 1358,
   "new_this_run": 0,
   "by_type": {
     "Prize": 524,
     "Plush / Soft": 299,
     "Scale": 208,
     "Nendoroid": 154,
-    "Other": 99,
+    "Other": 103,
     "Figma": 37,
     "Pop Up Parade": 22,
     "Mini / Petite": 9,
@@ -31,12 +31,12 @@
     "2023": 76,
     "2024": 157,
     "2025": 136,
-    "2026": 145,
+    "2026": 149,
     "2027": 64,
     "2028": 1
   },
   "by_event": {
-    "Racing Miku": 110,
+    "Racing Miku": 114,
     "Snow Miku": 91,
     "Cinnamoroll": 88,
     "Anniversary / Birthday": 73,
@@ -70,8 +70,8 @@
   "by_source": {
     "hlj": 747,
     "solaris": 537,
-    "latendo": 70
+    "latendo": 74
   },
   "scrape_mode": "latendo",
-  "last_updated": "2026-11-12T08:03:40.873653+00:00"
+  "last_updated": "2026-11-13T00:08:55.647306+00:00"
 }
