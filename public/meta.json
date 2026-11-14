@@ -1,11 +1,11 @@
 {
-  "total_figures": 1358,
+  "total_figures": 1363,
   "new_this_run": 0,
   "by_type": {
-    "Prize": 524,
+    "Prize": 527,
     "Plush / Soft": 299,
-    "Scale": 208,
-    "Nendoroid": 154,
+    "Scale": 209,
+    "Nendoroid": 155,
     "Other": 103,
     "Figma": 37,
     "Pop Up Parade": 22,
@@ -40,7 +40,7 @@
     "Snow Miku": 91,
     "Cinnamoroll": 88,
     "Anniversary / Birthday": 73,
-    "Sakura Miku": 41,
+    "Sakura Miku": 42,
     "Magical Mirai": 38,
     "Symphony": 19,
     "Gundam": 19,
@@ -69,9 +69,9 @@
   },
   "by_source": {
     "hlj": 747,
-    "solaris": 537,
+    "solaris": 542,
     "latendo": 74
   },
   "scrape_mode": "latendo",
-  "last_updated": "2026-11-13T00:08:55.647306+00:00"
+  "last_updated": "2026-11-14T00:23:37.352154+00:00"
 }
