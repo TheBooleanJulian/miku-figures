@@ -16,6 +16,7 @@ const VENDORS = [
   { id: "hlj",     name: "HobbyLink Japan", site: "hlj.com",          url: "https://www.hlj.com",           currency: "SGD", note: "Search listings, then product pages" },
   { id: "solaris", name: "Solaris Japan",   site: "solarisjapan.com", url: "https://solarisjapan.com",      currency: "USD", note: "Figures HLJ lacks; JAN duplicates skipped" },
   { id: "latendo", name: "Latendo",         site: "latendo.com",      url: "https://www.latendo.com/shop",  currency: "SGD", note: "Sitemap + product pages; name duplicates skipped" },
+  { id: "ninnin",  name: "Nin-Nin-Game",    site: "nin-nin-game.com", url: "https://www.nin-nin-game.com/en/", currency: "USD", note: "Sitemap + product pages, incl. 2nd hand; JAN duplicates skipped" },
 ];
 const vendorOf = id => VENDORS.find(v => v.id === id);
 
@@ -71,7 +72,7 @@ function fmtSGD(n) {
 const USD_TO_SGD = 1.3;
 const priceSGD = f => f.price_sgd || (f.price_usd ? f.price_usd * USD_TO_SGD : null);
 
-// Price for display: SGD when the vendor gave one (HLJ, Latendo), else USD (Solaris).
+// Price for display: SGD when the vendor gave one (HLJ, Latendo), else USD (Solaris, Nin-Nin-Game).
 function fmtPrice(fig) {
   if (fig.price_sgd) return fmtSGD(fig.price_sgd);
   if (fig.price_usd) return "US" + new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(fig.price_usd);
