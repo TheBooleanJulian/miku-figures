@@ -1,4 +1,4 @@
-"""Offline checks for the tagging and Latendo matching/parsing rules.
+"""Offline checks for the tagging, Latendo matching/parsing and Nin-Nin-Game rules.
 
 Run from the scraper folder:  python -m unittest test_scrapers
 """
@@ -7,6 +7,7 @@ import unittest
 
 import hlj_scraper as h
 import latendo_scraper as L
+import ninnin_scraper as N
 
 
 def key(name, scale=None, typ=None):
@@ -31,6 +32,8 @@ class Classifier(unittest.TestCase):
         "Hatsune Miku Face Hugging Pillow",
         "Hatsune Miku Relax Life Plush Eye Mask",
         "Hatsune Miku Squinty Eyes Plush Card Binder",
+        "5th Hatsune Miku × GS Illustration Contest: KAITO (Chinese Style Ver.) - G.S.Collection (Limited + Bonus)",
+        "Hatsune Miku: Sparkling Clear Card & Gum Vol.2 (18 Pack Box)",
     ]
     MIKU = [
         "Piapro Characters Trading Minifigure Series MEIKO & Miku Hatsune",
@@ -139,6 +142,89 @@ class LatendoPage(unittest.TestCase):
     def test_slug_prefilter(self):
         self.assertIsNone(h.classify(L.slug_name("po-hatsune-miku-plushie-reusable-bag-182204"), None))
         self.assertIsNotNone(h.classify(L.slug_name("nendoroid-1777-hatsune-miku-maneki-miku-ver-346915"), None))
+
+
+ROBOTS = """
+User-agent: *
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+Disallow: /*?p=
+Disallow: /*manufacturers*
+Disallow: /*search_query=
+Disallow: /*n=
+Disallow: /*controller=search
+Allow: *.js*
+Sitemap: https://www.nin-nin-game.com/1_index_sitemap.xml
+"""
+
+# Trimmed from real product pages (2026-11-17)
+NG_PAGE = """
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Nendoroid 3145: Hatsune Miku - Katsushika Hokusai Collaboration Ver. [Good Smile Company]",
+        "image": ["https://media1.nin-nin-game.com/838178-large_default/nendoroid-3145.jpg"],
+        "sku": "4570232593367",
+        "gtin13": "4570232593367",
+        "brand": {"@type": "Brand", "name": "Good Smile Company"},
+        "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "48.24"}
+    }
+</script>
+<div class="rte product-page-tab" id="idTab1"><div class="product-page-attributes"><div class="product-page-attributes-item"><span>Brand/Manufacturer:</span> <a href="#">Good Smile Company</a></div><div class="product-page-attributes-item feature-item"> <span class="feature-title">Series:</span> <a href="#">Hatsune Miku</a></div></div><p><span style="font-size: 10pt;"><strong>Japanese Original Edition,&nbsp;<strong><strong>Nendoroid Figure</strong></strong></strong></span></p><div class="b-text-group"><p><span dir="auto">From the "<strong>Katsushika Hokusai x Hatsune Miku</strong>" project comes a <strong>Nendoroid</strong> of <strong>Hatsune Miku</strong> featuring a collaboration design by illustrator Rella! Includes:</span></p><p>・Interchangeable face parts.<br />・Optional parts include a "brush" and more.</p></div><p><strong><span style="font-size: 10pt;"><span style="text-decoration-line: underline;">Details</span>:</span></strong></p><p><span style="font-size: 10pt;"><strong>Maker:&nbsp;</strong>Good Smile Company</span><br /><span style="font-size: 10pt;"><strong>Material:&nbsp;</strong>PVC, ABS</span><br /><span style="font-size: 10pt;"><strong>Size</strong>: ~ (H) 10.0 cm</span><br /><span style="font-size: 10pt;"><strong>Release Date:&nbsp;</strong>2027/04</span></p><div id="product_reference"> <strong>Reference: </strong> <span class="editable">4570232593367</span></div>
+"""
+
+NG_USED = """
+<script type="application/ld+json">
+ { "@context": "https://schema.org/", "@type": "Product", "name": "Premium Chokonose Figure - Hatsune Miku x Cinnamoroll (Osumashi Ver.) (2nd Hand) [SEGA]", "image": [ "https://media2.nin-nin-game.com/484793-large_default/x.jpg" ], "gtin13": "4582733434322", "brand": { "@type": "Brand", "name": "Sega" }, "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "25.18" } }
+</script>
+<div class="rte product-page-tab" id="idTab1"><div class="product-page-attributes"><div class="product-page-attributes-item"><span>Brand/Manufacturer:</span> <a href="#">Sega</a></div><div class="product-page-attributes-item feature-item"> <span class="feature-title">Series:</span> <a href="#" style="margin-right: 6px;">Hatsune Miku</a> <a href="#">Vocaloid</a></div></div><p><span style="color: #000000; font-size: 10pt;"><strong>Japanese Original Edition, 2nd hand SEGA Prize Figure</strong></span></p><p>This delightful <strong>Chokonose figure</strong> features the beloved <strong>Hatsune Miku</strong> holding the adorable <strong>Cinnamoroll</strong> in her arms.</p><p><span style="text-decoration: underline; color: #000000; font-size: 10pt;"><strong>Details:</strong></span></p><p><span style="color: #000000; font-size: 10pt;"><strong>Maker:&nbsp;</strong>SEGA</span><br /><span style="color: #000000; font-size: 10pt;"><strong>Material:&nbsp;</strong>PVC / ABS</span><br /><span style="color: #000000; font-size: 10pt;"><strong>Size:&nbsp;</strong>~ 14 cm<strong><br /></strong><strong>Release Date:&nbsp;</strong>2024/11</span></p><div id="product_reference"> <strong>Reference: </strong> <span class="editable">4582733434322</span></div>
+"""
+
+
+class NinNinGame(unittest.TestCase):
+    def test_robots_wildcards(self):
+        rules = N.robots_rules(ROBOTS)
+        base = "https://www.nin-nin-game.com"
+        self.assertFalse(N.robots_allows(base + "/en/search?search_query=hatsune+miku", rules))
+        self.assertFalse(N.robots_allows(base + "/en/nendoroid?p=2", rules))
+        self.assertTrue(N.robots_allows(base + "/en/nendoroid/259088-nendoroid-3145-hatsune-miku-.html", rules))
+        self.assertTrue(N.robots_allows(base + "/1_en_0_sitemap.xml", rules))
+
+    def test_parse_new_figure(self):
+        row = N.parse_product(NG_PAGE, "nendoroid", "259088", "nendoroid-3145-hatsune-miku")
+        self.assertEqual(row["id"], "NG259088")
+        self.assertEqual(row["name"], "Nendoroid 3145: Hatsune Miku - Katsushika Hokusai Collaboration Ver.")
+        self.assertEqual((row["type"], row["manufacturer"], row["series"]),
+                         ("Nendoroid", "Good Smile Company", "Hatsune Miku"))
+        self.assertEqual((row["barcode"], row["price_usd"]), ("4570232593367", 48.24))
+        self.assertEqual((row["release_date"], row["year"]), ("2027-04", 2027))
+        self.assertEqual((row["dimensions"], row["material"]), ("(H) 10.0 cm", "PVC, ABS"))
+        self.assertIn("Katsushika Hokusai", row["description"])
+        self.assertNotIn("Japanese Original Edition", row["description"])
+        self.assertFalse(N.is_used(row))
+
+    def test_parse_second_hand_prize(self):
+        row = N.parse_product(NG_USED, "hatsune-miku", "156114",
+                              "premium-chokonose-figure-hatsune-miku-x-cinnamoroll-osumashi-ver-2nd-hand-sega-")
+        self.assertEqual(row["name"], "Premium Chokonose Figure - Hatsune Miku x Cinnamoroll (Osumashi Ver.)")
+        self.assertEqual((row["type"], row["release_date"], row["dimensions"]), ("Prize", "2024-11", "14 cm"))
+        self.assertEqual(row["series"], "Hatsune Miku, Vocaloid")
+        self.assertTrue(N.is_used(row))
+
+    def test_other_franchise_skipped(self):
+        other = NG_USED.replace('6px;">Hatsune Miku</a> <a href="#">Vocaloid', '6px;">The Quintessential Quintuplets') \
+                       .replace("Hatsune Miku x Cinnamoroll", "Miku Nakano")
+        self.assertIsNone(N.parse_product(other, "the-quintessential-quintuplets", "1", "miku-nakano"))
+
+    def test_url_prefilter(self):
+        self.assertFalse(N.wanted("acrylic-stands", "hatsune-miku-x-rascal-2026-hatsune-miku-acrylic-stand-caravan-"))
+        self.assertFalse(N.wanted("hatsune-miku", "hatsune-miku-face-towel-racing-miku-2025-caravan-"))
+        self.assertFalse(N.wanted("other-goods", "hatsune-miku-spring-miku-full-graphic-t-shirt-white-xl-goods-"))
+        self.assertFalse(N.wanted("plamatea", "hatsune-miku-plamatea-plastic-model-good-smile-company-"))
+        self.assertFalse(N.wanted("the-quintessential-quintuplets",
+                                  "luminasta-the-quintessential-quintuplets-miku-nakano-2nd-hand-sega-"))
+        self.assertTrue(N.wanted("nendoroid", "nendoroid-3145-hatsune-miku-katsushika-hokusai-collaboration-ver-good-smile-company-"))
+        self.assertTrue(N.wanted("hatsune-miku", "vocaloid-series-hatsune-miku-miku-hatsune-mebae-ver-max-factory-en"))
 
 
 if __name__ == "__main__":
