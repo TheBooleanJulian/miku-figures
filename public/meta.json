@@ -1,9 +1,9 @@
 {
-  "total_figures": 1363,
+  "total_figures": 1364,
   "new_this_run": 0,
   "by_type": {
     "Prize": 527,
-    "Plush / Soft": 299,
+    "Plush / Soft": 300,
     "Scale": 209,
     "Nendoroid": 155,
     "Other": 103,
@@ -32,11 +32,11 @@
     "2024": 157,
     "2025": 136,
     "2026": 149,
-    "2027": 64,
+    "2027": 65,
     "2028": 1
   },
   "by_event": {
-    "Racing Miku": 114,
+    "Racing Miku": 115,
     "Snow Miku": 91,
     "Cinnamoroll": 88,
     "Anniversary / Birthday": 73,
@@ -68,10 +68,10 @@
     "Tell Your World": 1
   },
   "by_source": {
-    "hlj": 747,
+    "hlj": 748,
     "solaris": 542,
     "latendo": 74
   },
   "scrape_mode": "latendo",
-  "last_updated": "2026-11-15T23:29:29.792714+00:00"
+  "last_updated": "2026-11-17T02:29:53.236150+00:00"
 }
