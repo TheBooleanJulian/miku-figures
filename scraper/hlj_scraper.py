@@ -179,7 +179,8 @@ MERCH_RE = re.compile(
     r"costume set|\btote\b|sticker|poster|\bmug\b|\bcup\b|\bbags?\b|backpack|hoodie|sweatshirt|"
     r"parka|acrylic|badge|clear file|blanket|pouch|notebook|cushion|umbrella|wallet|"
     r"smartphone|\bpins?\b|\bsocks?\b|pinback|\bbutton\b|postcard|decorative art|calendar|luggage|mirror|shikishi|ticket|rubber mat|puzzle|card holder|hanging scroll|amulet|otamatone|\[used item|"
-    r"pillow|eye mask|massage|shawl|\bscarf\b(?!\))|binder|photo frame|\bcharms?\b",   # "(Scarf)" = a plush variant
+    r"pillow|eye mask|massage|shawl|\bscarf\b(?!\))|binder|photo frame|\bcharms?\b|"   # "(Scarf)" = a plush variant
+    r"\bclear cards?\b|\bcards?\s*(?:&|and)\s*gum|\bcard collection|trading cards?",
     re.I,
 )
 # "Miku" as a name, not inside Mikuru (Haruhi) or Mikuro (Shiino); Mikudayo,
@@ -200,6 +201,7 @@ FRANCHISE_LABEL_RE = re.compile(
     r"(?:hatsune miku|miku hatsune)\s*-?\s*project diva\s*-?(?:\s*(?:f\s*2nd|f|x|arcade|future tone|"
     r"mega\s*39'?s|2nd|extend|dreamy theater))*|"
     r"(?:hatsune miku|miku hatsune)\s+gt project|"
+    r"(?:hatsune miku|miku hatsune)\s*[×x]\s*[\w. ]*?contest|"      # "5th Hatsune Miku × GS Illustration Contest: KAITO"
     r"(?:happy\s*kuji\s*)+(?:hatsune miku|miku hatsune)|"
     r"piapro characters?|character vocal series\s*0?\d", re.I)
 # A name that merely starts with "Hatsune Miku" ("Hatsune Miku BiCute Bunnies Figure

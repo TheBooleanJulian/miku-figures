@@ -32,6 +32,8 @@ class Classifier(unittest.TestCase):
         "Hatsune Miku Face Hugging Pillow",
         "Hatsune Miku Relax Life Plush Eye Mask",
         "Hatsune Miku Squinty Eyes Plush Card Binder",
+        "5th Hatsune Miku × GS Illustration Contest: KAITO (Chinese Style Ver.) - G.S.Collection (Limited + Bonus)",
+        "Hatsune Miku: Sparkling Clear Card & Gum Vol.2 (18 Pack Box)",
     ]
     MIKU = [
         "Piapro Characters Trading Minifigure Series MEIKO & Miku Hatsune",
