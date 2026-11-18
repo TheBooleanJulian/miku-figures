@@ -34,6 +34,13 @@ class Classifier(unittest.TestCase):
         "Hatsune Miku Squinty Eyes Plush Card Binder",
         "5th Hatsune Miku × GS Illustration Contest: KAITO (Chinese Style Ver.) - G.S.Collection (Limited + Bonus)",
         "Hatsune Miku: Sparkling Clear Card & Gum Vol.2 (18 Pack Box)",
+        "Hatsune Miku GT Project 1/43: Good Smile Hatsune Miku AMG 2019 (Reissue)",
+        "Vocaloid Hatsune Miku Itasha BMW Z4 2011 1/43 Racing 2011 Sepang Champion Ver.",
+        "Hatsune Miku x Hokusai: Folding Fan - 36 Views of Mount Fuji Series (Fine Wind Clear Morning)",
+        "Hatsune Miku x Koshu Inden: Kiss Lock Purse - Future",
+        "The Broken SEKAI and the Miku Who Can't Sing: Lying Down Plush - Mafuyu Asahina",
+        "Look Up: Hatsune Miku - Megurine Luka & KAITO (Limited + Bonus)",
+        "Hatsune Miku: KAITO - Snow Miku 2026 Ver. Snowman Plush Mascot",
     ]
     MIKU = [
         "Piapro Characters Trading Minifigure Series MEIKO & Miku Hatsune",
@@ -47,6 +54,11 @@ class Classifier(unittest.TestCase):
         "Hatsune Miku MIKU WITH YOU 2018 Ver.",
         "Hatsune Miku x Cinnamoroll Chibi Figure",
         "MC-22 Hatsune Miku x Cinnamoroll: Fluffy M Size 3E Hatsune Miku (Scarf)",
+        "Hatsune Miku Sweet Intertwining Magnetic Lay Down Plush Hatsune Miku",
+        "The Broken SEKAI and the Miku Who Can't Sing: Lying Down Plush - Hatsune Miku in a World with No One",
+        "Look Up: Hatsune Miku - Hatsune Miku & MEIKO (Limited + Bonus)",
+        "Nendoroid 3145: Hatsune Miku - Katsushika Hokusai Collaboration Ver.",
+        "Snow Miku: Fuwa Kororin M Size G - Snow Miku (2016 Ver.)",
     ]
 
     def test_other_characters_dropped(self):
