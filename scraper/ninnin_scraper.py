@@ -61,7 +61,8 @@ NON_FIGURE_CAT_RE = re.compile(
     r"apparel|fashion|footwear|bags|pouches|watches|headphones|smartphone|stationery|"
     r"book|music|ost|softs|games|playstation|psvita|psp|nintendo|saturn|kitchen|house-decor|"
     r"candy|tcg|cards|weiss|acrylic|keychain|badges|tapestr|dakimakura|other-goods|"
-    r"trading-goods|plamatea|moderoid|modeling-tools|frame-arms|gundam|hasegawa|plus18|binding")
+    r"trading-goods|plamatea|moderoid|modeling-tools|frame-arms|gundam|hasegawa|plus18|binding|"
+    r"motor-vehicles")
 USED_RE = re.compile(r"2nd-hand|second-hand|(?:^|-)used(?:-|$)|damaged", re.I)
 # "(2nd Hand)", "(Used)", "(Damaged Box)", "(Brand New)" condition notes in titles
 CONDITION_RE = re.compile(r"\s*[(\[]\s*(?:2nd hand|second hand|used[^)\]]*|damaged[^)\]]*|"

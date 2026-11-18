@@ -180,7 +180,11 @@ MERCH_RE = re.compile(
     r"parka|acrylic|badge|clear file|blanket|pouch|notebook|cushion|umbrella|wallet|"
     r"smartphone|\bpins?\b|\bsocks?\b|pinback|\bbutton\b|postcard|decorative art|calendar|luggage|mirror|shikishi|ticket|rubber mat|puzzle|card holder|hanging scroll|amulet|otamatone|\[used item|"
     r"pillow|eye mask|massage|shawl|\bscarf\b(?!\))|binder|photo frame|\bcharms?\b|"   # "(Scarf)" = a plush variant
-    r"\bclear cards?\b|\bcards?\s*(?:&|and)\s*gum|\bcard collection|trading cards?",
+    r"\bclear cards?\b|\bcards?\s*(?:&|and)\s*gum|\bcards? collection|trading cards?|playing cards|"
+    r"canvas art|art frame|painting|folding fan|desk mat|\bstraps?\b|purse|jacket|carabiner|"
+    r"photo holder|headband unit|barrette|hairband|choker|\bcap\b|bromides?|paper theater|"
+    r"seal wafer|thermos|narikiri|\bmagnets?\b|magnet collection|compilation|songs collection|"
+    r"\bamg\b|mercedes|\bbmw\b|minicar|die-?cast|itasha",   # GT Project race-car models
     re.I,
 )
 # "Miku" as a name, not inside Mikuru (Haruhi) or Mikuro (Shiino); Mikudayo,
@@ -202,6 +206,8 @@ FRANCHISE_LABEL_RE = re.compile(
     r"mega\s*39'?s|2nd|extend|dreamy theater))*|"
     r"(?:hatsune miku|miku hatsune)\s+gt project|"
     r"(?:hatsune miku|miku hatsune)\s*[×x]\s*[\w. ]*?contest|"      # "5th Hatsune Miku × GS Illustration Contest: KAITO"
+    r":\s*(?:hatsune miku|miku hatsune)\s+-\s|"                     # "Look Up: Hatsune Miku - Megurine Luka & KAITO"
+    r"\b(?:snow|sakura|racing) miku \d{4}\s*ver\b\.?|"               # "KAITO - Snow Miku 2026 Ver. Snowman Plush"
     r"(?:happy\s*kuji\s*)+(?:hatsune miku|miku hatsune)|"
     r"piapro characters?|character vocal series\s*0?\d", re.I)
 # A name that merely starts with "Hatsune Miku" ("Hatsune Miku BiCute Bunnies Figure
@@ -211,11 +217,11 @@ LEADING_LABEL_RE = re.compile(r"^\s*(?:hatsune miku|miku hatsune)\b\s*[-:]?", re
 # Project Sekai (PJSK) goods of other characters carry "feat. Hatsune Miku" or
 # "Hatsune Miku: Colorful Stage!" as a franchise label. For those, Miku must
 # appear once the label is stripped.
-PJSK_RE = re.compile(r"project sekai|colorful stage", re.I)
+PJSK_RE = re.compile(r"project sekai|colorful stage|miku who can'?\s?t sing", re.I)
 PJSK_LABEL_RE = re.compile(
     r"feat\.?\s*(?:hatsune miku|miku hatsune)|\([^)]*colorful stage[^)]*\)|"
     r"(?:hatsune miku|miku hatsune)\s*:?\s*colorful stage!?|"
-    r"the broken world and miku who can'?\s?t sing|miku who can'?\s?t sing", re.I)
+    r"the broken (?:world|sekai) and (?:the )?miku who can'?\s?t sing|miku who can'?\s?t sing", re.I)
 # Other characters who happen to be called Miku (Nakano Miku, Miku Maekawa, ...)
 NOT_VOCALOID_RE = re.compile(
     r"quintessential|nakano|maekawa|izayoi|miku ogawa|date a live|idolm@?ster|love live|"
