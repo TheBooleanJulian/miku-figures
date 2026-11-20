@@ -4,7 +4,7 @@
 
 # 初音ミク Figure Archive
 
-**A complete, daily-updated Hatsune Miku figure database — scraped from HobbyLink Japan, Solaris Japan, Nin-Nin-Game and Latendo, and browsable in the browser.**
+**A complete, daily-updated Hatsune Miku figure database — scraped from HobbyLink Japan, Solaris Japan, Nin-Nin-Game, Good Smile Company and Latendo, and browsable in the browser.**
 
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white)
@@ -18,11 +18,11 @@
 
 ## What it does
 
-Miku Figures is a searchable, filterable archive of the Hatsune Miku figures listed by four retailers (see [Vendors](#vendors)). Standard-library Python scrapers run daily via GitHub Actions at 3 AM SGT, enriching each figure with detail-page data and writing the results to `public/figures.json`. The React + Vite frontend reads that static JSON and lets collectors browse, filter, and sort the full catalogue without a backend server.
+Miku Figures is a searchable, filterable archive of the Hatsune Miku figures listed by four retailers and Good Smile Company's official catalogue (see [Vendors](#vendors)). Standard-library Python scrapers run daily via GitHub Actions at 3 AM SGT, enriching each figure with detail-page data and writing the results to `public/figures.json`. The React + Vite frontend reads that static JSON and lets collectors browse, filter, and sort the full catalogue without a backend server.
 
 ## Features
 
-- Figure catalogue scraped from HLJ, Solaris Japan, Nin-Nin-Game and Latendo, updated daily via GitHub Actions cron
+- Figure catalogue scraped from HLJ, Solaris Japan, Nin-Nin-Game, Good Smile Company and Latendo, updated daily via GitHub Actions cron
 - A *Vendors checked* panel showing each retailer, how many figures it contributes and its price currency
 - Incremental scraping mode — only fetches figures not already in the dataset, keeping runs fast
 - Filter by figure type, series/event, illustrator, manufacturer, year range, and max price (SGD); series and illustrator chips are built from the data
@@ -82,6 +82,7 @@ miku-figures/
 │   ├── solaris_scraper.py      ← Solaris Japan source
 │   ├── latendo_scraper.py      ← Latendo source
 │   ├── ninnin_scraper.py       ← Nin-Nin-Game source
+│   ├── gsc_scraper.py          ← Good Smile Company (official catalogue) source
 │   ├── test_scrapers.py        ← offline tests: python -m unittest test_scrapers
 │   └── requirements.txt
 ├── src/
@@ -131,6 +132,8 @@ Each figure in `figures.json`:
 
 > **Fourth source:** `scraper/ninnin_scraper.py` adds figures from Nin-Nin-Game (Japan, a PrestaShop store, prices in USD), whose back catalogue and second-hand stock cover older and discontinued figures. Its robots.txt disallows search (`/*search_query=`) and pagination (`/*?p=`), so the scraper reads the gzipped sitemap and fetches only product pages whose URL mentions Miku (3 s apart, at most 300 per run, new stock before second-hand). Every URL is checked against the live robots.txt first, with `*` wildcards (Python's `urllib.robotparser` ignores them). URLs in non-figure categories (apparel, games, acrylic stands, model kits, ...) are skipped before fetching. Product pages carry the JAN, so a product another source has is skipped by barcode, or by name when either side lacks one; a second-hand listing yields to the new listing of the same JAN. Goods and duplicates go into `ninnin_skip.json`. It runs on GitHub Actions; a 403 or 429 ends the run early and keeps progress.
 
+> **Fifth source:** `scraper/gsc_scraper.py` adds figures from Good Smile Company's own catalogue (goodsmile.com: Good Smile Company, Max Factory, FREEing, ...; retail prices in JPY, shown as ¥ in the app). The site has no robots.txt and no sitemap, and its terms of use do not address crawling (they prohibit improper access, interfering with the service and infringing its IP). The scraper reads `/en/search/list` for the keyword "miku" (the endpoint the search page's own *See more* button calls, 60 results per page, about 15 pages), then fetches only product pages whose titles pass the classifier (3 s apart, at most 300 per run). robots.txt is checked every run, so a rule added later is obeyed. Product pages carry each variant's JAN (original and rerelease), the tax-inclusive retail price and the original release month. Only facts and the image link are stored; GSC's description text is not copied. A product is skipped when any of its JANs is in another source's rows (or by name when barcodes are missing). Goods and duplicates go into `gsc_skip.json`.
+
 > **Why HLJ:** MyFigureCollection blocks automated clients (403 / security check, including headless browsers from GitHub runners), so it can't be scraped. HLJ serves plain HTML. Prices are stored as `price_jpy` and `price_sgd` (HLJ's SGD display price); the UI shows SGD. HLJ has no illustrator or owner counts, so those fields are mostly empty.
 
 ## Vendors
@@ -141,6 +144,7 @@ Each figure in `figures.json`:
 | Solaris Japan | solarisjapan.com | USD | Shopify search + product JSON; JAN duplicates skipped |
 | Latendo | latendo.com | SGD | Sitemap + product pages, fetched from a home PC (blocks cloud IPs); name duplicates skipped |
 | Nin-Nin-Game | nin-nin-game.com | USD | Sitemap + product pages (incl. second-hand); JAN duplicates skipped |
+| Good Smile Company | goodsmile.com | JPY | Official catalogue: search list + product pages; JAN duplicates skipped |
 
 To add a vendor: write `scraper/<vendor>_scraper.py` that reuses `hlj_scraper`'s `classify` and `write_outputs`, add a step to `.github/workflows/daily_scrape.yml`, and add an entry to `VENDORS` in `src/App.jsx`.
 
@@ -173,6 +177,7 @@ docker run -p 8080:80 miku-figures
 
 ## Changelog
 
+- **2026-11-20** — Added Good Smile Company's official catalogue as a fifth source (JPY prices shown as ¥); dropped race-car models, albums, Tamagotchi and more goods
 - **2026-11-17** — Added Nin-Nin-Game as a fourth vendor (sitemap + product pages, robots.txt checked with wildcards, second-hand listings for discontinued figures)
 - **2026-11-09** — Added Latendo as a third vendor; *Vendors checked* panel; restyled on Julian Unified UI with a light mode; expanded series/event and illustrator lists (word-bounded matching, no more "Cinderella" → Rella), tags re-computed on every run
 - **2026-08-09** — Updated to the latest Miku Figures logo in README, favicon, and app header
