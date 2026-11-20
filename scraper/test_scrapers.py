@@ -264,7 +264,30 @@ let variants = [{"id":310,"label":"Rerelease","name":"Nendoroid Hatsune Miku: Ha
 """
 
 
+# Trimmed from goodsmile.com/en/product/872 (discontinued: no variants, no release date)
+GS_OLD = """
+<script>dataLayer.push({"event":"view_item","ecommerce":{"currency":"JPY","items":[{"item_id":"872","item_name":"Racing Miku 2010","item_brand":"GOODSMILE RACING","price":8172,"item_category":"Figure","item_category2":"Scale Figure","item_category3":"1\\/8th Scale"}],"value":8172}});</script>
+<script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "Product", "productID": "872", "name": "Racing Miku 2010",
+  "image": "/gsc-webrevo-sdk-storage-prd/product/image/product/20101129/3030/12142/large/cb6b.jpg",
+  "gtin": "4560392859113" }
+</script>
+<dt class="b-outline-table__term"> <h3 class="c-title c-title--level6">Series</h3> </dt>
+<dd class="b-outline-table__desc"> <p class="c-text-body">Racing Miku</p> </dd>
+<dt class="b-outline-table__term"> <h3 class="c-title c-title--level6">Specifications</h3> </dt>
+<dd class="b-outline-table__desc"> <p class="c-text-body">Painted PVC 1/8th figure, approximately 200mm in height (including stand)</p> </dd>
+<script>let variantItems = []; let variantSelectElement = document.querySelector("select");</script>
+"""
+
+
 class GoodSmile(unittest.TestCase):
+    def test_parse_discontinued_product(self):
+        row = G.parse_product(GS_OLD, "872")
+        self.assertEqual((row["name"], row["manufacturer"], row["series"]), ("Racing Miku 2010", "GOODSMILE RACING", "Racing Miku"))
+        self.assertEqual((row["type"], row["scale"], row["dimensions"]), ("Scale", "1/8", "200mm"))
+        self.assertEqual((row["barcode"], row["price_jpy"], row["release_date"]), ("4560392859113", 8172, None))
+        self.assertIsNone(G.parse_product(GS_OLD.replace('"item_category2":"Scale Figure"', '"item_category2":"Cycle Wear"'), "872"))
+
     def test_parse_product(self):
         row = G.parse_product(GS_PAGE, "2903")
         self.assertEqual((row["id"], row["name"]), ("GS2903", "Nendoroid Hatsune Miku: Harvest Moon Ver."))

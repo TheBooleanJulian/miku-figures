@@ -69,6 +69,7 @@ ITEM_RE = re.compile(r'<a class="p-product-list__link" href="/en/product/(\d+)".
                      r'<h2 class="c-title c-title--level8">(.*?)</h2>', re.S)
 VARIANTS_RE = re.compile(r"let variants?\w*\s*=\s*(\[.*?\]);\s*(?:let|const|var|\n|<)", re.S)
 LD_RE = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
+VIEW_ITEM_RE = re.compile(r'"event":"view_item","ecommerce":\{"currency":"JPY","items":\[(\{.*?\})\]')
 SPEC_RE = re.compile(r'<dt class="b-outline-table__term">(.*?)</dt>\s*<dd class="b-outline-table__desc">(.*?)</dd>', re.S)
 AVAILABLE_RE = re.compile(r"Available:\s*(\d{1,2})/(\d{4})")
 GSC_SCALE_RE = re.compile(r"\b1/(\d+)(?:st|nd|rd|th)?\b")
@@ -77,7 +78,12 @@ MATERIAL_RE = re.compile(r"\bpainted\s+(.+?)\s+(?:non-scale|1/\d|scale|articulat
 # GSC categories that are plainly not figures
 NON_FIGURE_CAT_RE = re.compile(
     r"apparel|goods|accessor|stationer|tapestr|acrylic|book|music|\bcd\b|dvd|blu-?ray|game|card|"
-    r"plastic model|model kit|moderoid|plamatea|tableware|bag|towel|cushion|figure stand|display", re.I)
+    r"plastic model|model kit|moderoid|plamatea|tableware|bag|towel|cushion|figure stand|display|"
+    r"wear|car accessor|decal", re.I)
+# Racing goods in listing titles, skipped before fetching
+LIST_GOODS_RE = re.compile(
+    r"cycling|cycle (?:series|wear|jersey)|windbreaker|gilet|bodysuit|gloves|parasol|sunshade|"
+    r"decals?\b|seal set|bottle holder|speed clean|\bunit\b", re.I)
 
 
 class Stop(Exception):
@@ -159,25 +165,74 @@ def _clean(fragment: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", fragment))).strip()
 
 
+def _product_ld(page: str) -> dict:
+    for block in LD_RE.findall(page):
+        try:
+            ld = json.loads(block)
+        except ValueError:
+            continue
+        if isinstance(ld, dict) and ld.get("@type") == "Product":
+            return ld
+    return {}
+
+
+def _view_item(page: str) -> dict:
+    """The analytics "view_item" entry: name, brand (maker), JPY price and categories."""
+    m = VIEW_ITEM_RE.search(page)
+    if not m:
+        return {}
+    try:
+        return json.loads(m.group(1))
+    except ValueError:
+        return {}
+
+
 def parse_product(page: str, pid: str) -> dict | None:
-    """Row for a product page, or None when it is not a Miku figure."""
+    """Row for a product page, or None when it is not a Miku figure.
+
+    Products on sale carry a `variants` list (original + rereleases, each with JAN,
+    price and release date). Discontinued ones have an empty list; their name and
+    JAN come from the JSON-LD, maker/price/categories from the analytics entry,
+    and they have no release date.
+    """
     m = VARIANTS_RE.search(page)
     try:
         variants = json.loads(m.group(1)) if m else []
     except ValueError:
         variants = []
-    if not variants:
-        return None
-    # The original release, not a rerelease ("type": "resale")
-    base = next((v for v in variants if str(v.get("parentProductCode")) == pid), None) \
-        or next((v for v in variants if v.get("type") != "resale"), variants[-1])
+    ld = _product_ld(page)
+    specs = {_clean(dt).lower(): _clean(dd) for dt, dd in SPEC_RE.findall(page)}
 
-    name = html.unescape(base.get("name") or "").strip()
-    maker = (base.get("manufacturer") or "").strip() or None
-    categories = [c for c in (base.get("categories") or []) if isinstance(c, str)]
+    if variants:
+        # The original release, not a rerelease ("type": "resale")
+        base = next((v for v in variants if str(v.get("parentProductCode")) == pid), None) \
+            or next((v for v in variants if v.get("type") != "resale"), variants[-1])
+        name = html.unescape(base.get("name") or "").strip()
+        maker = (base.get("manufacturer") or "").strip() or None
+        categories = [c for c in (base.get("categories") or []) if isinstance(c, str)]
+        series = (base.get("work") or "").strip() or None
+        spec = base.get("spec") or specs.get("specifications") or ""
+        jans = [str(v.get("jan") or "").strip() for v in variants]
+        base_jan = str(base.get("jan") or "").strip()
+        price = base.get("retailPriceInTax")
+        variant_date = base.get("releaseDate") or ""
+    else:
+        item = _view_item(page)
+        name = html.unescape(item.get("item_name") or ld.get("name") or "").strip()
+        name = re.sub(r"^[^\[\]]{1,40}\[(.+)\]$", r"\1", name)   # "Rerelease [Nendoroid ...]"
+        maker = (item.get("item_brand") or specs.get("manufacturer") or "").strip() or None
+        categories = [item[k] for k in ("item_category", "item_category2", "item_category3")
+                      if isinstance(item.get(k), str)]
+        series = specs.get("series") or None
+        spec = specs.get("specifications") or ""
+        base_jan = str(ld.get("gtin13") or ld.get("gtin") or "").strip()
+        jans = [base_jan]
+        price = item.get("price")
+        variant_date = ""
+    jans = [j for j in dict.fromkeys(jans) if re.fullmatch(r"\d{8,14}", j)]
+
     if not name or any(NON_FIGURE_CAT_RE.search(c) for c in categories) or L.KIT_RE.search(name):
         return None
-    series = (base.get("work") or "").strip() or None
     if series and not re.search(r"miku|vocaloid|project sekai|colorful stage|piapro|project diva|"
                                 r"project mirai|magical mirai|racing", series, re.I) \
             and not h.VOCALOID_NAME_RE.search(name):
@@ -186,8 +241,6 @@ def parse_product(page: str, pid: str) -> dict | None:
     if typ is None:
         return None
 
-    specs = {_clean(dt).lower(): _clean(dd) for dt, dd in SPEC_RE.findall(page)}
-    spec = base.get("spec") or specs.get("specifications") or ""
     scale_m = GSC_SCALE_RE.search(name) or GSC_SCALE_RE.search(spec)
     low_cat = " ".join(categories).lower()
     if typ == "Other":
@@ -206,27 +259,15 @@ def parse_product(page: str, pid: str) -> dict | None:
     release = None
     if am := AVAILABLE_RE.search(specs.get("related information", "")):
         release = f"{am.group(2)}-{int(am.group(1)):02d}"
-    elif rd := re.match(r"(\d{4})-(\d{2})", base.get("releaseDate") or ""):
+    elif rd := re.match(r"(\d{4})-(\d{2})", variant_date):
         release = f"{rd.group(1)}-{rd.group(2)}"
 
-    image = None
-    for block in LD_RE.findall(page):
-        try:
-            ld = json.loads(block)
-        except ValueError:
-            continue
-        if isinstance(ld, dict) and ld.get("@type") == "Product":
-            image = ld.get("image")
-            break
+    image = ld.get("image")
     if isinstance(image, list):
         image = image[0] if image else None
     if image and image.startswith("/"):
         image = BASE + image
 
-    jans = [str(v.get("jan") or "").strip() for v in variants]
-    jans = [j for j in dict.fromkeys(jans) if re.fullmatch(r"\d{8,14}", j)]
-    base_jan = str(base.get("jan") or "").strip()
-    price = base.get("retailPriceInTax")
     height = HEIGHT_RE.search(spec)
     material = MATERIAL_RE.search(spec)
 
@@ -291,7 +332,8 @@ def main(max_new: int, page_limit: int, verbose: bool = False) -> int:
         load_robots()
         products = list_products(page_limit)
         todo = [(pid, title) for pid, title in products
-                if "GS" + pid not in mine and "GS" + pid not in skip and h.classify(title, None) is not None]
+                if "GS" + pid not in mine and "GS" + pid not in skip
+                and not LIST_GOODS_RE.search(title) and h.classify(title, None) is not None]
         todo.reverse()            # the list is newest first; the old catalogue is what other sources lack
         log.info(f"{len(products)} '{KEYWORD}' products; {len(todo)} to fetch (cap {max_new}).")
         for i, (pid, title) in enumerate(todo[:max_new], 1):
