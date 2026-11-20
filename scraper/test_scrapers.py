@@ -8,6 +8,7 @@ import unittest
 import hlj_scraper as h
 import latendo_scraper as L
 import ninnin_scraper as N
+import gsc_scraper as G
 
 
 def key(name, scale=None, typ=None):
@@ -240,6 +241,53 @@ class NinNinGame(unittest.TestCase):
                                   "luminasta-the-quintessential-quintuplets-miku-nakano-2nd-hand-sega-"))
         self.assertTrue(N.wanted("nendoroid", "nendoroid-3145-hatsune-miku-katsushika-hokusai-collaboration-ver-good-smile-company-"))
         self.assertTrue(N.wanted("hatsune-miku", "vocaloid-series-hatsune-miku-miku-hatsune-mebae-ver-max-factory-en"))
+
+
+# Trimmed from goodsmile.com/en/product/2903 (2026-11-20)
+GS_PAGE = """
+<script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "Product", "productID": "2903",
+  "name": "Rerelease [Nendoroid Hatsune Miku: &quot;Harvest Moon&quot; Ver.]", "brand": "Good Smile Company",
+  "category": "Nendoroid", "image": "/gsc-webrevo-sdk-storage-prd/product/image/2903/x.jpg" }
+</script>
+<dl>
+<dt class="b-outline-table__term"> <h3 class="c-title c-title--level6">Series</h3> </dt>
+<dd class="b-outline-table__desc"> <p class="c-text-body">Character Vocal Series 01: Hatsune Miku</p> </dd>
+<dt class="b-outline-table__term"> <h3 class="c-title c-title--level6">Specifications</h3> </dt>
+<dd class="b-outline-table__desc"> <p class="c-text-body">Painted ABS&amp;PVC non-scale articulated figure with stand included. Approximately 100mm in height.</p> </dd>
+<dt class="b-outline-table__term"> <h3 class="c-title c-title--level6">Related Information</h3> </dt>
+<dd class="b-outline-table__desc"> <p class="c-text-body">[Available: 11/2015][Rerelease:10/2024]</p> </dd>
+</dl>
+<script>
+let variants = [{"id":310,"label":"Rerelease","name":"Nendoroid Hatsune Miku: Harvest Moon Ver.","price":"\\uffe57,500","releaseDate":"2024-10-01T15:00:00.000000Z","type":"resale","work":"Character Vocal Series 01: Hatsune Miku","spec":"Painted ABS\\u0026PVC non-scale articulated figure with stand included. Approximately 100mm in height.","manufacturer":"Good Smile Company","categories":["Nendoroid"],"parentProductCode":"2903R1","jan":"4580590199996","retailPriceInTax":7500},{"id":5128,"label":"","name":"Nendoroid Hatsune Miku: Harvest Moon Ver.","releaseDate":"2015-11-30T15:00:00.000000Z","type":"normal","work":"Character Vocal Series 01: Hatsune Miku","spec":"Painted ABS\\u0026PVC non-scale articulated figure with stand included. Approximately 100mm in height.","manufacturer":"Good Smile Company","categories":["Nendoroid"],"parentProductCode":2903,"jan":"4580416940627","retailPriceInTax":4630}]; let variantSelect = null;
+</script>
+"""
+
+
+class GoodSmile(unittest.TestCase):
+    def test_parse_product(self):
+        row = G.parse_product(GS_PAGE, "2903")
+        self.assertEqual((row["id"], row["name"]), ("GS2903", "Nendoroid Hatsune Miku: Harvest Moon Ver."))
+        self.assertEqual((row["type"], row["manufacturer"], row["series"]),
+                         ("Nendoroid", "Good Smile Company", "Character Vocal Series 01: Hatsune Miku"))
+        self.assertEqual((row["release_date"], row["year"], row["price_jpy"]), ("2015-11", 2015, 4630))
+        self.assertEqual(row["barcode"], "4580416940627")
+        self.assertEqual(set(row["jans"]), {"4580416940627", "4580590199996"})
+        self.assertEqual((row["dimensions"], row["material"]), ("100mm", "ABS&PVC"))
+        self.assertEqual(row["image_url"], "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/2903/x.jpg")
+        self.assertEqual(row["description"], "")
+
+    def test_rerelease_jan_counts_as_duplicate(self):
+        row = G.parse_product(GS_PAGE, "2903")
+        others = N.Others([{"name": "Nendoroid Harvest Moon (Rerelease)", "barcode": "4580590199996",
+                            "scale": None, "type": "Nendoroid"}])
+        self.assertTrue(G.duplicate(row, others))
+        self.assertFalse(G.duplicate(row, N.Others([])))
+
+    def test_goods_and_kits_skipped(self):
+        self.assertIsNone(G.parse_product(GS_PAGE.replace('"categories":["Nendoroid"]', '"categories":["Goods"]'), "2903"))
+        self.assertIsNone(G.parse_product(GS_PAGE.replace("Nendoroid Hatsune Miku: Harvest Moon Ver.",
+                                                          "PLAMATEA Hatsune Miku"), "2903"))
 
 
 if __name__ == "__main__":

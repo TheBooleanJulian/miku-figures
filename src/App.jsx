@@ -17,6 +17,7 @@ const VENDORS = [
   { id: "solaris", name: "Solaris Japan",   site: "solarisjapan.com", url: "https://solarisjapan.com",      currency: "USD", note: "Figures HLJ lacks; JAN duplicates skipped" },
   { id: "latendo", name: "Latendo",         site: "latendo.com",      url: "https://www.latendo.com/shop",  currency: "SGD", note: "Sitemap + product pages; name duplicates skipped" },
   { id: "ninnin",  name: "Nin-Nin-Game",    site: "nin-nin-game.com", url: "https://www.nin-nin-game.com/en/", currency: "USD", note: "Sitemap + product pages, incl. 2nd hand; JAN duplicates skipped" },
+  { id: "gsc",     name: "Good Smile Company", site: "goodsmile.com", url: "https://www.goodsmile.com/en",  currency: "JPY", note: "Official catalogue; JAN duplicates skipped" },
 ];
 const vendorOf = id => VENDORS.find(v => v.id === id);
 
@@ -70,12 +71,15 @@ function fmtSGD(n) {
 
 // Approximate rate, used only to sort/filter USD-priced rows alongside SGD ones.
 const USD_TO_SGD = 1.3;
-const priceSGD = f => f.price_sgd || (f.price_usd ? f.price_usd * USD_TO_SGD : null);
+const JPY_TO_SGD = 0.0088;
+const priceSGD = f => f.price_sgd || (f.price_usd ? f.price_usd * USD_TO_SGD : f.price_jpy ? f.price_jpy * JPY_TO_SGD : null);
 
-// Price for display: SGD when the vendor gave one (HLJ, Latendo), else USD (Solaris, Nin-Nin-Game).
+// Price for display: SGD when the vendor gave one (HLJ, Latendo), else USD (Solaris,
+// Nin-Nin-Game), else JPY (Good Smile Company's retail price).
 function fmtPrice(fig) {
   if (fig.price_sgd) return fmtSGD(fig.price_sgd);
   if (fig.price_usd) return "US" + new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(fig.price_usd);
+  if (fig.price_jpy) return "¥" + new Intl.NumberFormat("en-US").format(fig.price_jpy);
   return null;
 }
 

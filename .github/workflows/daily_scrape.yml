@@ -101,6 +101,13 @@ jobs:
           PYTHONUNBUFFERED: "1"
         run: python scraper/ninnin_scraper.py
 
+      # ── 4c2. Good Smile Company (official catalogue: search list + product pages) ──
+      - name: Run Good Smile Company scraper
+        if: always()
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python scraper/gsc_scraper.py
+
       # ── 4d. Latendo: no network here. scraper/latendo_local.ps1 fetches at home
       #        and pushes scraper/latendo_rows.json; this merges it in. ──
       - name: Merge Latendo rows
@@ -113,7 +120,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet public/figures.json public/meta.json scraper/solaris_skip.json scraper/ninnin_skip.json \
+          git diff --quiet public/figures.json public/meta.json scraper/solaris_skip.json scraper/ninnin_skip.json scraper/gsc_skip.json \
             && echo "changed=false" >> $GITHUB_OUTPUT \
             || echo "changed=true" >> $GITHUB_OUTPUT
 
@@ -123,7 +130,7 @@ jobs:
         run: |
           git config user.name  "miku-scraper-bot[bot]"
           git config user.email "miku-scraper-bot@users.noreply.github.com"
-          git add public/figures.json public/meta.json scraper/solaris_skip.json scraper/ninnin_skip.json
+          git add public/figures.json public/meta.json scraper/solaris_skip.json scraper/ninnin_skip.json scraper/gsc_skip.json
           COUNT=$(python -c "import json; d=json.load(open('public/figures.json')); print(len(d))")
           git commit -m "🤖 scraper: update figure database (${COUNT} figures) [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           # A merge to main during the (long) scrape makes the push a non-fast-forward.
