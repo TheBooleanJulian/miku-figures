@@ -270,7 +270,7 @@ def duplicate(row: dict, others: N.Others) -> bool:
     return others.has(row)
 
 
-def main(max_new: int, page_limit: int) -> int:
+def main(max_new: int, page_limit: int, verbose: bool = False) -> int:
     saved = json.loads(h.FIGURES_FILE.read_text(encoding="utf-8")) if h.FIGURES_FILE.exists() else []
     others_rows = [f for f in saved if f.get("source") != "gsc"]
     others = N.Others(others_rows)
@@ -286,22 +286,28 @@ def main(max_new: int, page_limit: int) -> int:
             mine[f["id"]] = f
     log.info(f"Loaded {len(mine)} GSC rows, {len(others_rows)} from other sources, {len(skip)} skipped ids.")
 
-    new = skipped = 0
+    new = not_figure = dupes = 0
     try:
         load_robots()
         products = list_products(page_limit)
         todo = [(pid, title) for pid, title in products
                 if "GS" + pid not in mine and "GS" + pid not in skip and h.classify(title, None) is not None]
+        todo.reverse()            # the list is newest first; the old catalogue is what other sources lack
         log.info(f"{len(products)} '{KEYWORD}' products; {len(todo)} to fetch (cap {max_new}).")
-        for i, (pid, _title) in enumerate(todo[:max_new], 1):
+        for i, (pid, title) in enumerate(todo[:max_new], 1):
             time.sleep(DELAY)
             page = fetch(PRODUCT_URL.format(pid=pid))
             if page is None:
                 continue
             row = parse_product(page, pid)
-            if row is None or duplicate(row, others) or N.own_match(row, mine):
-                skip.add("GS" + pid)                 # goods, or already carried
-                skipped += 1
+            reason = "not a figure" if row is None else \
+                "duplicate" if duplicate(row, others) or N.own_match(row, mine) else None
+            if reason:                               # goods, or already carried
+                not_figure += reason == "not a figure"
+                dupes += reason == "duplicate"
+                if verbose:
+                    log.info(f"Skip GS{pid} ({reason}): {title[:70]}")
+                skip.add("GS" + pid)
                 continue
             mine[row["id"]] = row
             new += 1
@@ -311,7 +317,7 @@ def main(max_new: int, page_limit: int) -> int:
         log.warning(f"Ending the run early and keeping progress ({e}).")
 
     SKIP_FILE.write_text(json.dumps(sorted(skip)))
-    log.info(f"Done. New: {new} | Skipped (goods/duplicates): {skipped} | GSC rows: {len(mine)}")
+    log.info(f"Done. New: {new} | Not figures: {not_figure} | Duplicates: {dupes} | GSC rows: {len(mine)}")
     h.write_outputs(others_rows + list(mine.values()), new, "gsc")
     return 0
 
@@ -320,5 +326,6 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Good Smile Company -> Hatsune Miku Figure Scraper")
     ap.add_argument("--max", type=int, default=MAX_NEW, help="Max product pages to fetch")
     ap.add_argument("--pages", type=int, default=MAX_PAGES, help="Max list pages (testing)")
+    ap.add_argument("--verbose", action="store_true", help="Log each skipped product and why")
     args = ap.parse_args()
-    sys.exit(main(args.max, args.pages))
+    sys.exit(main(args.max, args.pages, args.verbose))
