@@ -314,6 +314,38 @@
     "source": "hlj"
   },
   {
+    "id": "GSC59775",
+    "name": "1/7 G.S. Collection Hatsune Miku: Rose Cage Ver. (HATSUNE MIKU: COLORFUL STAGE!) (Rerelease)",
+    "manufacturer": "Good Smile Company",
+    "release_date": "2027-07",
+    "year": 2027,
+    "type": "Scale",
+    "scale": "1/7",
+    "price_jpy": 29818,
+    "price_sgd": 288.2,
+    "image_url": "https://www.hlj.com/productimages/gsc/gsc59775_0.jpg",
+    "detail_url": "https://www.hlj.com/1-7-scale-g-s-collection-hatsune-miku-rose-cage-ver-hatsune-miku-colorful-stage-rerelease-gsc59775",
+    "events": [
+      "Project SEKAI"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Scale",
+      "Project SEKAI",
+      "Good Smile Company",
+      "Vocaloid"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4570232597754",
+    "mfc_owned_count": null,
+    "series": "Vocaloid",
+    "category": "Figures",
+    "item_type": "Completed Models",
+    "source": "hlj"
+  },
+  {
     "id": "LT462877",
     "name": "Racing Miku All Stars Figure Collection Vol. 1 [BOX]",
     "manufacturer": "Good Smile Company",
@@ -34580,6 +34612,80 @@
     "source": "hlj"
   },
   {
+    "id": "GS60102",
+    "name": "figma Snow Miku: Winter Delicacy ver.",
+    "manufacturer": "Max Factory",
+    "release_date": null,
+    "year": null,
+    "type": "Figma",
+    "scale": null,
+    "price_jpy": 13800,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/60102/Z62yU7MPadQeF4rqtKkwhzb1A8cCDR35.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/60102",
+    "events": [
+      "Snow Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Figma",
+      "Snow Miku",
+      "Max Factory",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": "140mm",
+    "material": "plastic",
+    "barcode": "4545784069639",
+    "jans": [
+      "4545784069639"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "figma Series, figma",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "60102"
+  },
+  {
+    "id": "GS5597",
+    "name": "figma Snow Miku: Magical Snow ver.",
+    "manufacturer": "Max Factory",
+    "release_date": null,
+    "year": null,
+    "type": "Figma",
+    "scale": null,
+    "price_jpy": 7944,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20181210/7888/56651/large/abba44383e8bd8a0ee80be9896c6bab1.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/5597",
+    "events": [
+      "Snow Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Figma",
+      "Snow Miku",
+      "Max Factory",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": "120mm",
+    "material": "ABS/PVC",
+    "barcode": "4545784065815",
+    "jans": [
+      "4545784065815"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "figma Series, figma",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "5597"
+  },
+  {
     "id": "LT188987",
     "name": "figma SP-161 Hatsune Miku GT Project Racing Miku 2023 Ver.",
     "manufacturer": "Good Smile Racing",
@@ -34612,6 +34718,41 @@
     "item_type": null,
     "source": "latendo",
     "handle": "figma-sp-161-hatsune-miku-gt-project-racing-miku-2023-ver-188987"
+  },
+  {
+    "id": "GS4256",
+    "name": "figma Racing Miku 2017 ver.",
+    "manufacturer": "GOODSMILE RACING",
+    "release_date": null,
+    "year": null,
+    "type": "Figma",
+    "scale": null,
+    "price_jpy": 8148,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20170623/6522/46035/large/e2297a88d0a5bb8b7fdd6ca6acc08113.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/4256",
+    "events": [
+      "Racing Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Figma",
+      "Racing Miku",
+      "GOODSMILE RACING",
+      "Hatsune Miku GT Project"
+    ],
+    "description": "",
+    "dimensions": "135mm",
+    "material": null,
+    "barcode": null,
+    "jans": [],
+    "mfc_owned_count": null,
+    "series": "Hatsune Miku GT Project",
+    "category": "MAX FACTORY",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "4256"
   },
   {
     "id": "LT130593",
@@ -35427,6 +35568,43 @@
     "handle": "vocaloid/14238-vocaloid-series-ex-ride-racing-miku-tt-zero-13-kai-figma-spride-07-"
   },
   {
+    "id": "GS616",
+    "name": "VOCALOID SEASON COLLECTION ~SNOW SONGS~ & Nendoroid Petite: Snow Miku Set",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": 2096,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20091229/2769/8741/large/fd94fec2b955eb8273a631fb88383abf.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/616",
+    "events": [
+      "Snow Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Snow Miku",
+      "Good Smile Company",
+      "VOCALOID SEASON COLLECTION ~SNOW SONGS~"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4582191966380",
+    "jans": [
+      "4582191966380"
+    ],
+    "mfc_owned_count": null,
+    "series": "VOCALOID SEASON COLLECTION ~SNOW SONGS~",
+    "category": "Nendoroid Series, Nendoroid Petite",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "616"
+  },
+  {
     "id": "NG11607",
     "name": "VOCALOID - Spride.06 Racing Miku TT Zero 13",
     "manufacturer": "Max Factory",
@@ -35524,6 +35702,40 @@
     "item_type": null,
     "source": "ninnin",
     "handle": "hatsune-miku/222467-trio-try-it-hatsune-miku-tirol-choco-milk-chocolate-ver-2nd-hand-furyu-"
+  },
+  {
+    "id": "GS2662",
+    "name": "Steiff x Hatsune Miku",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Plush / Soft",
+    "scale": null,
+    "price_jpy": 39722,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20150305/4876/32544/large/e092d38f8f94eb904ff4549042a25f50.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/2662",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Plush / Soft",
+      "Good Smile Company",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": "270mm",
+    "material": null,
+    "barcode": "4571368451729",
+    "jans": [
+      "4571368451729"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "Plushie",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "2662"
   },
   {
     "id": "SJ2051318939705",
@@ -36027,6 +36239,37 @@
     "handle": "hatsune-miku/18724-project-diva-hatsune-miku-nanoblock-en"
   },
   {
+    "id": "GS7871",
+    "name": "Pocket Maquette: Hatsune Miku 01",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Other",
+    "scale": null,
+    "price_jpy": 480,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20201005/10177/75307/large/96e040790c3c86a4b6ade3dfeefcdee3.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/7871",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Other",
+      "Good Smile Company"
+    ],
+    "description": "",
+    "dimensions": "50mm",
+    "material": "non-scale ABS",
+    "barcode": null,
+    "jans": [],
+    "mfc_owned_count": null,
+    "series": null,
+    "category": "16d Collection, Collectible/Trading/Capsule Toy",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "7871"
+  },
+  {
     "id": "LT187500",
     "name": "Plush Mascot Hatsune Miku 16th BD",
     "manufacturer": "Movic",
@@ -36455,6 +36698,43 @@
     "handle": "pop-up-parade-sakura-miku-hanami-outfit-ver-347439"
   },
   {
+    "id": "GS906",
+    "name": "Nendoroid Snow Miku: Snow Playtime Edition",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": 4191,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20110106/3064/12543/large/9dd70d655c2b32514a371347fe2d1675.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/906",
+    "events": [
+      "Snow Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Snow Miku",
+      "Good Smile Company",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": "100mm",
+    "material": "ABS&PVC",
+    "barcode": "4582191967455",
+    "jans": [
+      "4582191967455"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "Nendoroid Series, Nendoroid",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "906"
+  },
+  {
     "id": "NG35376",
     "name": "Nendoroid Snow Miku: Snow Parade Ver. Limited Edition",
     "manufacturer": "Good Smile Company",
@@ -36523,6 +36803,252 @@
     "handle": "nendoroid/36660-nendoroid-snow-miku-20-character-vocal-series-01-hatsune-miku"
   },
   {
+    "id": "GS2739",
+    "name": "Nendoroid Racing Miku: 2015 Ver.",
+    "manufacturer": "GOODSMILE RACING",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": 8148,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20150420/4962/33127/large/dd4876272f5acf4de089a6201495818c.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/2739",
+    "events": [
+      "Racing Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Racing Miku",
+      "GOODSMILE RACING",
+      "Racing Miku 2015"
+    ],
+    "description": "",
+    "dimensions": "100mm",
+    "material": "ABS & non-phthalate PVC",
+    "barcode": "4560392856488",
+    "jans": [
+      "4560392856488"
+    ],
+    "mfc_owned_count": null,
+    "series": "Racing Miku 2015",
+    "category": "Nendoroid Series, Nendoroid",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "2739"
+  },
+  {
+    "id": "GS2603",
+    "name": "Nendoroid Plus: Capsule Factory ~Snow Miku and Friends from the North~ SEASON 1",
+    "manufacturer": "Max Factory",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": 509,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20150107/4817/32020/large/bbbf054292360fdea7b3529494d1a499.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/2603",
+    "events": [
+      "Snow Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Snow Miku",
+      "Max Factory",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4545784080290",
+    "jans": [
+      "4545784080290"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "Nendoroid Series, Nendoroid Plus",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "2603"
+  },
+  {
+    "id": "GS748",
+    "name": "Nendoroid Petite: Racing Miku Set - 2010 ver.",
+    "manufacturer": "GOODSMILE RACING",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": 3850,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20100709/2903/10636/large/90d7e400aa38502a65d186c8e8cf1dd5.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/748",
+    "events": [
+      "Racing Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Racing Miku",
+      "GOODSMILE RACING"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": null,
+    "jans": [],
+    "mfc_owned_count": null,
+    "series": null,
+    "category": "Nendoroid Series, Nendoroid Petite",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "748"
+  },
+  {
+    "id": "GS1682",
+    "name": "Nendoroid Petite: Hatsune Miku Selection",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": 628,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20130304/3853/22881/large/738eba43b9c1e89ae11be4fed646e985.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/1682",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Good Smile Company",
+      "Character Vocal Series"
+    ],
+    "description": "",
+    "dimensions": "65mm",
+    "material": "ABS & PVC",
+    "barcode": "4582191964683",
+    "jans": [
+      "4582191964683"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series",
+    "category": "Nendoroid Series, Nendoroid Petite",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "1682"
+  },
+  {
+    "id": "GS3285",
+    "name": "Nendoroid Petite: Hatsune Miku Renewal",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": 916,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20160304/5533/37973/large/50300153f800c2f46681b794c40b93fb.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/3285",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Good Smile Company",
+      "Character Vocal Series"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": "ABS&PVC",
+    "barcode": "4571368446367",
+    "jans": [
+      "4571368446367"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series",
+    "category": "Nendoroid Series, Nendoroid Petite",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "3285"
+  },
+  {
+    "id": "GS1846",
+    "name": "Nendoroid Petite Mikudayo-",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": 628,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20130806/4020/25609/large/4dc0668bb9fc21cada2a35ed5d5a3021.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/1846",
+    "events": [
+      "Mikudayo"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Mikudayo",
+      "Good Smile Company",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": "65mm",
+    "material": "ABS&PVC",
+    "barcode": "4571368443304",
+    "jans": [
+      "4571368443304"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "Nendoroid Series, Nendoroid Petite",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "1846"
+  },
+  {
+    "id": "GS1637",
+    "name": "Nendoroid Petite Hatsune Miku: Good Smile Café Gift Set",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": 4290,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20121225/3808/22183/large/557b898d38b24443dd15563ebadbea1b.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/1637",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Good Smile Company"
+    ],
+    "description": "",
+    "dimensions": "65mm",
+    "material": "non-scale ABS&PVC",
+    "barcode": "4571368440327",
+    "jans": [
+      "4571368440327"
+    ],
+    "mfc_owned_count": null,
+    "series": null,
+    "category": "Nendoroid Series, Nendoroid Petite",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "1637"
+  },
+  {
     "id": "SJ7203498328107",
     "name": "Nendoroid More Piapro Characters Design Container Hatsune Miku Ver.",
     "manufacturer": "Good Smile Company",
@@ -36551,6 +37077,40 @@
     "item_type": "Figure",
     "source": "solaris",
     "handle": "nendoroid-more-piapro-characters-design-container-hatsune-miku-ver"
+  },
+  {
+    "id": "GS1446",
+    "name": "Nendoroid Miku Hatsune: Hachune Face Ver.",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": 3143,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20120720/3615/19600/large/f57fe0e80a9c41b919fb87db5df23f64.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/1446",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Good Smile Company",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": "100mm",
+    "material": "ABS&PVC",
+    "barcode": "4582191963440",
+    "jans": [
+      "4582191963440"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "Nendoroid Series, Nendoroid",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "1446"
   },
   {
     "id": "NG52028",
@@ -37059,6 +37619,43 @@
     "handle": "kantai-collection-kan-colle-mikuma-kantai-collection-kan-colle-ceylon-tea-party-sq"
   },
   {
+    "id": "GS9464",
+    "name": "Mikudayo- Coin Bank",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Other",
+    "scale": null,
+    "price_jpy": 5280,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20210910/11775/89799/large/f966f08d302da2f29cf7949cf3bf718c.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/9464",
+    "events": [
+      "Mikudayo"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Other",
+      "Mikudayo",
+      "Good Smile Company",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": "ABS",
+    "barcode": "4580590150218",
+    "jans": [
+      "4580590150218"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "Other",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "9464"
+  },
+  {
     "id": "SJ553155133497",
     "name": "Mikudayo Nendoroid #549 Snow",
     "manufacturer": "Good Smile Company",
@@ -37156,6 +37753,111 @@
     "item_type": "Figure",
     "source": "solaris",
     "handle": "vocaloid-mikudayo-nendoroid-299-good-smile-company"
+  },
+  {
+    "id": "GS509",
+    "name": "Miku Hatsune: Commercial ver.",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Scale",
+    "scale": "1/8",
+    "price_jpy": 4715,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20091023/2570/7512/large/983d9c6325fb5bb4e88198a0ca5361b4.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/509",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Scale",
+      "Good Smile Company",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": "PVC",
+    "barcode": "4582191965314",
+    "jans": [
+      "4582191965314"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "Figure, Scale Figure, 1/8th Scale",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "509"
+  },
+  {
+    "id": "GS1322",
+    "name": "Miku Hatsune : Cheerful Ver.",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Scale",
+    "scale": "1/8",
+    "price_jpy": 10476,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20120307/3485/17540/large/10a52cce9467a3610d213c5cff69783d.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/1322",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Scale",
+      "Good Smile Company",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": "220mm",
+    "material": "1/8th",
+    "barcode": "4582191965802",
+    "jans": [
+      "4582191965802"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "Figure, Scale Figure, 1/8th Scale",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "1322"
+  },
+  {
+    "id": "GS10721",
+    "name": "Mask Hook: Racing Miku 2022 Ver. 003",
+    "manufacturer": "SHINE",
+    "release_date": null,
+    "year": null,
+    "type": "Other",
+    "scale": null,
+    "price_jpy": 2420,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20220727/13036/102120/large/4f2f33d3ba01cc26534c9a98c884e916.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/10721",
+    "events": [
+      "Racing Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Other",
+      "Racing Miku",
+      "SHINE",
+      "Hatsune Miku GT Project"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4582319378736",
+    "jans": [
+      "4582319378736"
+    ],
+    "mfc_owned_count": null,
+    "series": "Hatsune Miku GT Project",
+    "category": "Other",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "10721"
   },
   {
     "id": "LT184117",
@@ -48472,6 +49174,43 @@
     "handle": "hatsune-miku-gt-project-racing-miku-2010ver-art-by-kentaro-yabuki-1-7"
   },
   {
+    "id": "GS5996",
+    "name": "Hatsune Miku GT Project 2019 Steiff Team Shirt Ver.",
+    "manufacturer": "GOODSMILE RACING",
+    "release_date": null,
+    "year": null,
+    "type": "Plush / Soft",
+    "scale": null,
+    "price_jpy": 11000,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20190423/8288/59828/large/bb16f54596a9d06e5d2878173a624201.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/5996",
+    "events": [
+      "Racing Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Plush / Soft",
+      "Racing Miku",
+      "GOODSMILE RACING",
+      "Hatsune Miku GT Project 2019"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4560392852060",
+    "jans": [
+      "4560392852060"
+    ],
+    "mfc_owned_count": null,
+    "series": "Hatsune Miku GT Project 2019",
+    "category": "Plushie",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "5996"
+  },
+  {
     "id": "NG26424",
     "name": "Hatsune Miku GT Project - Racing Miku 2018 Ver.",
     "manufacturer": "Good Smile Company",
@@ -53875,6 +54614,74 @@
     "handle": "gundam-45thxhatsune-miku-figure-zaku-costume-hatsune-miku-ver-347048"
   },
   {
+    "id": "GS1141074",
+    "name": "Good Smile Kuji Hatsune Miku 2026 Aquarium A Prize Nendoroid Hatsune Miku: Aquarium x Dress Ver.",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Nendoroid",
+    "scale": null,
+    "price_jpy": 880,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1141074/0wF6ES8bWXzMLTdyfZVuets2m3NDA4nc.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/1141074",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Nendoroid",
+      "Good Smile Company",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": "115mm",
+    "material": "plastic",
+    "barcode": "4580828675476",
+    "jans": [
+      "4580828675476"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "Other, Kuji",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "1141074"
+  },
+  {
+    "id": "GS62073",
+    "name": "Good Smile Kuji Hatsune Miku 2025 Autumn C Prize - Plushie Mascot",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": 880,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/62073/cL0gvjRpKCJZzE53FhTQ6kWwfPrD7nqU.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/62073",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "Good Smile Company",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4571697180161",
+    "jans": [
+      "4571697180161"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "Plushie",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "62073"
+  },
+  {
     "id": "NG13810",
     "name": "GearTribe Hatsune Miku GT Project 2014 Ver.",
     "manufacturer": "Good Smile Company",
@@ -54294,6 +55101,43 @@
     "handle": "desktop-army/52301-desktop-army-desktop-singer-snow-miku-series-3-pack-box-megahouse-"
   },
   {
+    "id": "GS55072",
+    "name": "Collectible Figure Hatsune Miku x Cinnamoroll",
+    "manufacturer": "Good Smile Company",
+    "release_date": null,
+    "year": null,
+    "type": "Other",
+    "scale": null,
+    "price_jpy": 2400,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/55072/wDZ80BJxtNecVS74zGuph65WRrgQAP9E.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/55072",
+    "events": [
+      "Cinnamoroll"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Other",
+      "Cinnamoroll",
+      "Good Smile Company",
+      "Hatsune Miku x Cinnamoroll"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": "plastic",
+    "barcode": "4580590190931",
+    "jans": [
+      "4580590190931"
+    ],
+    "mfc_owned_count": null,
+    "series": "Hatsune Miku x Cinnamoroll",
+    "category": "16d Collection, Collectible/Trading/Capsule Toy",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "55072"
+  },
+  {
     "id": "NG30137",
     "name": "Character Vocal Series 01: Hatsune Miku - Snow Miku: Snow Princess Ver. Limited Edition",
     "manufacturer": "Good Smile Company",
@@ -54486,6 +55330,77 @@
     "item_type": null,
     "source": "ninnin",
     "handle": "nendoroid/14663-character-vocal-series-racing-miku-2015-ver-nendoroid-517-"
+  },
+  {
+    "id": "GS1137041",
+    "name": "CERAMAX Hatsune Miku",
+    "manufacturer": "Max Factory",
+    "release_date": null,
+    "year": null,
+    "type": "Other",
+    "scale": null,
+    "price_jpy": 7800,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1137041/7siVK94CbBrxURmG5e8w0SdE6Fh2cZ3p.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/1137041",
+    "events": [],
+    "illustrator": null,
+    "tags": [
+      "Other",
+      "Max Factory",
+      "Character Vocal Series 01: Hatsune Miku"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4545784001110",
+    "jans": [
+      "4545784001110"
+    ],
+    "mfc_owned_count": null,
+    "series": "Character Vocal Series 01: Hatsune Miku",
+    "category": "MAX FACTORY",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "1137041"
+  },
+  {
+    "id": "GS1139166",
+    "name": "Blind Box Series: Racing Miku All Stars Figure Collection Vol. 1",
+    "manufacturer": "GOODSMILE RACING",
+    "release_date": null,
+    "year": null,
+    "type": "Other",
+    "scale": null,
+    "price_jpy": 2200,
+    "price_sgd": null,
+    "price_usd": null,
+    "image_url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139166/2nR4QgBMdujwUZb8i5xCqSYVhv01c6DH.jpg",
+    "detail_url": "https://www.goodsmile.com/en/product/1139166",
+    "events": [
+      "Racing Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Other",
+      "Racing Miku",
+      "GOODSMILE RACING",
+      "Hatsune Miku GT Project"
+    ],
+    "description": "",
+    "dimensions": "75mm",
+    "material": "plastic",
+    "barcode": "4570232593336",
+    "jans": [
+      "4570232593336"
+    ],
+    "mfc_owned_count": null,
+    "series": "Hatsune Miku GT Project",
+    "category": "16d Collection, Collectible/Trading/Capsule Toy",
+    "item_type": null,
+    "source": "gsc",
+    "handle": "1139166"
   },
   {
     "id": "SJ7524016488491",

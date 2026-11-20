@@ -45,6 +45,8 @@ class Classifier(unittest.TestCase):
         "Hatsune Miku : Magical Mirai 2023 - Official Album (Limited Edition)",
         "Tamagotchi: Piapro Characters - Hatsune Miku (Cyber Miku Ver.)",
         "Hatsune Miku x CuteRody Pullback Cars - Luke Magurine Peach",
+        "Mikudayo- Coin Bank",
+        "Mask Hook: Racing Miku 2022 Ver. 003",
     ]
     MIKU = [
         "Piapro Characters Trading Minifigure Series MEIKO & Miku Hatsune",
