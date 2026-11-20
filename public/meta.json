@@ -1,8 +1,8 @@
 {
-  "total_figures": 1762,
+  "total_figures": 1764,
   "new_this_run": 0,
   "by_type": {
-    "Prize": 715,
+    "Prize": 717,
     "Plush / Soft": 374,
     "Scale": 221,
     "Nendoroid": 204,
@@ -31,8 +31,8 @@
     "2023": 132,
     "2024": 245,
     "2025": 207,
-    "2026": 211,
-    "2027": 75,
+    "2026": 212,
+    "2027": 76,
     "2028": 1
   },
   "by_event": {
@@ -40,7 +40,7 @@
     "Racing Miku": 144,
     "Anniversary / Birthday": 97,
     "Cinnamoroll": 95,
-    "Sakura Miku": 55,
+    "Sakura Miku": 56,
     "Magical Mirai": 48,
     "Project DIVA": 29,
     "Gundam": 26,
@@ -68,11 +68,11 @@
     "Tell Your World": 1
   },
   "by_source": {
-    "hlj": 748,
+    "hlj": 749,
     "ninnin": 387,
     "solaris": 553,
-    "latendo": 74
+    "latendo": 75
   },
   "scrape_mode": "latendo",
-  "last_updated": "2026-11-19T01:33:52.292475+00:00"
+  "last_updated": "2026-11-20T01:16:50.687213+00:00"
 }
