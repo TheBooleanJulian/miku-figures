@@ -1,13 +1,13 @@
 {
-  "total_figures": 1757,
+  "total_figures": 1783,
   "new_this_run": 0,
   "by_type": {
-    "Prize": 717,
-    "Plush / Soft": 374,
-    "Scale": 221,
-    "Nendoroid": 202,
-    "Other": 150,
-    "Figma": 41,
+    "Prize": 718,
+    "Plush / Soft": 376,
+    "Scale": 224,
+    "Nendoroid": 213,
+    "Other": 156,
+    "Figma": 44,
     "Mini / Petite": 27,
     "Pop Up Parade": 22,
     "Bust": 3
@@ -32,19 +32,19 @@
     "2024": 245,
     "2025": 207,
     "2026": 212,
-    "2027": 76,
+    "2027": 77,
     "2028": 1
   },
   "by_event": {
-    "Snow Miku": 151,
-    "Racing Miku": 144,
+    "Snow Miku": 156,
+    "Racing Miku": 150,
     "Anniversary / Birthday": 97,
-    "Cinnamoroll": 95,
+    "Cinnamoroll": 96,
     "Sakura Miku": 56,
     "Magical Mirai": 47,
     "Project DIVA": 29,
     "Gundam": 26,
-    "Project SEKAI": 22,
+    "Project SEKAI": 23,
     "Symphony": 19,
     "Miku with You": 16,
     "Christmas": 16,
@@ -52,10 +52,10 @@
     "Rascal": 10,
     "Rody": 9,
     "Digital Stars": 9,
+    "Mikudayo": 7,
     "World is Mine": 5,
     "Sanrio": 5,
     "Append": 5,
-    "Mikudayo": 5,
     "Vampire": 4,
     "New Year": 4,
     "Halloween": 4,
@@ -68,11 +68,12 @@
     "Tell Your World": 1
   },
   "by_source": {
-    "hlj": 748,
+    "hlj": 749,
     "ninnin": 382,
+    "gsc": 25,
     "solaris": 552,
     "latendo": 75
   },
   "scrape_mode": "latendo",
-  "last_updated": "2026-11-20T02:29:32.948440+00:00"
+  "last_updated": "2026-11-20T03:46:40.704179+00:00"
 }
