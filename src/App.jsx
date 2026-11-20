@@ -18,6 +18,7 @@ const VENDORS = [
   { id: "latendo", name: "Latendo",         site: "latendo.com",      url: "https://www.latendo.com/shop",  currency: "SGD", note: "Sitemap + product pages; name duplicates skipped" },
   { id: "ninnin",  name: "Nin-Nin-Game",    site: "nin-nin-game.com", url: "https://www.nin-nin-game.com/en/", currency: "USD", note: "Sitemap + product pages, incl. 2nd hand; JAN duplicates skipped" },
   { id: "gsc",     name: "Good Smile Company", site: "goodsmile.com", url: "https://www.goodsmile.com/en",  currency: "JPY", note: "Official catalogue; JAN duplicates skipped" },
+  { id: "mfl",     name: "MyFigureList",    site: "myfigurelist.com", url: "https://myfigurelist.com",      currency: "JPY", note: "Figure database, lowest shop price; fills gaps, JAN duplicates skipped" },
 ];
 const vendorOf = id => VENDORS.find(v => v.id === id);
 
@@ -96,6 +97,29 @@ function sortFigures(list, mode) {
       default: return 0;
     }
   });
+}
+
+// "2026-11" for the current month; releases from this month on count as upcoming.
+const THIS_MONTH = new Date().toISOString().slice(0, 7);
+const isUpcoming = f => (f.release_date || "") >= THIS_MONTH;
+const PRICE_PRESETS = [50, 100, 200];
+
+function monthLabel(ym) {
+  if (!ym) return "Release date unknown";
+  const [y, m] = ym.split("-").map(Number);
+  return new Date(y, (m || 1) - 1, 1).toLocaleDateString("en-SG", { month: "long", year: "numeric" });
+}
+
+// Figures grouped by release month, newest month first (oldest first when `asc`),
+// unknown dates last. Order within a month is kept.
+function groupByMonth(list, asc) {
+  const m = new Map();
+  list.forEach(f => {
+    const k = (f.release_date || "").slice(0, 7);
+    if (!m.has(k)) m.set(k, []);
+    m.get(k).push(f);
+  });
+  return [...m.entries()].sort(([a], [b]) => (!a) - (!b) || (asc ? a.localeCompare(b) : b.localeCompare(a)));
 }
 
 // Count values across figures, most common first.
@@ -345,6 +369,56 @@ function VendorsPanel({ figures, meta }) {
   );
 }
 
+// Browse shortcuts shown above the results while no filter is set: the biggest
+// categories and themes with their counts, plus quick picks.
+function Item({ label, count, onClick, sub }) {
+  return (
+    <li>
+      <button className="explore__item" onClick={onClick}>
+        <span className="explore__label">{label}{sub && <span className="explore__sub">{sub}</span>}</span>
+        {count != null && <span className="chip__count">{count.toLocaleString()}</span>}
+      </button>
+    </li>
+  );
+}
+
+function ExplorePanel({ types, themes, upcomingCount, onType, onTheme, onPick, onHide }) {
+  return (
+    <section className="panel explore" aria-labelledby="explore-title">
+      <h2 id="explore-title" className="panel__title">
+        Explore
+        <button className="btn btn--sm btn--ghost" onClick={onHide}>Hide</button>
+      </h2>
+      <div className="explore__cols">
+        <div>
+          <div className="label explore__head">By category</div>
+          <ul>{types.map(([t, n]) => <Item key={t} label={t} count={n} onClick={() => onType(t)} />)}</ul>
+        </div>
+        <div>
+          <div className="label explore__head">By theme</div>
+          <ul>{themes.map(([t, n]) => <Item key={t} label={t} count={n} onClick={() => onTheme(t)} />)}</ul>
+        </div>
+        <div>
+          <div className="label explore__head">Browse</div>
+          <ul>
+            <Item label="Release calendar" sub="Upcoming, by month" count={upcomingCount} onClick={() => onPick("calendar")} />
+            <Item label="Newest" sub="Latest releases first" onClick={() => onPick("newest")} />
+            <Item label="Cheapest first" sub="Price low to high" onClick={() => onPick("cheapest")} />
+            <Item label="Under S$50" sub="Prizes, minis, plushes" onClick={() => onPick("under50")} />
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function readPref(key, fallback) {
+  try { return localStorage.getItem(key) ?? fallback; } catch { return fallback; }
+}
+function writePref(key, value) {
+  try { localStorage.setItem(key, value); } catch { /* storage blocked: keep in memory only */ }
+}
+
 /* ──────────────────────────────────────────────────────────────────────
    MAIN APP
 ────────────────────────────────────────────────────────────────────── */
@@ -364,8 +438,10 @@ export default function MikuFigureArchive() {
   const [yearFrom, setYearFrom]             = useState(YEAR_MIN);
   const [yearTo, setYearTo]                 = useState(YEAR_MAX);
   const [priceMax, setPriceMax]             = useState("");
+  const [upcoming, setUpcoming]             = useState(false);
   const [sortBy, setSortBy]                 = useState("date-desc");
   const [viewMode, setViewMode]             = useState("grid");
+  const [exploreOpen, setExploreOpen]       = useState(() => readPref("explore", "open") === "open");
   const [selected, setSelected]             = useState(null);
   const [filtersOpen, setFiltersOpen]       = useState(false);   // narrow screens only
 
@@ -396,6 +472,7 @@ export default function MikuFigureArchive() {
   const typeCounts = useMemo(() => Object.fromEntries(countBy(figures, f => f.type)), [figures]);
   const eventList  = useMemo(() => countBy(figures, f => f.events), [figures]);
   const illList    = useMemo(() => countBy(figures, f => f.illustrator), [figures]);
+  const upcomingCount = useMemo(() => figures.filter(isUpcoming).length, [figures]);
 
   /* ── Filtered + sorted list ── */
   const filtered = useMemo(() => {
@@ -411,23 +488,38 @@ export default function MikuFigureArchive() {
     if (eventFilters.length)  list = list.filter(f => eventFilters.some(ev => f.events?.includes(ev)));
     if (illustratorFilters.length) list = list.filter(f => illustratorFilters.includes(f.illustrator));
     list = list.filter(f => !f.year || (f.year >= yearFrom && f.year <= yearTo));   // unknown year: never hide
+    if (upcoming) list = list.filter(isUpcoming);
     if (priceMax !== "") {
       const max = parseInt(priceMax);
       list = list.filter(f => !priceSGD(f) || priceSGD(f) <= max);
     }
     return sortFigures(list, sortBy);
-  }, [figures, search, typeFilter, makerFilter, eventFilters, illustratorFilters, yearFrom, yearTo, priceMax, sortBy]);
+  }, [figures, search, typeFilter, makerFilter, eventFilters, illustratorFilters, yearFrom, yearTo, upcoming, priceMax, sortBy]);
+
+  const months = useMemo(() => viewMode === "calendar" ? groupByMonth(filtered, sortBy === "date-asc") : [],
+    [viewMode, filtered, sortBy]);
 
   const toggleEvent = useCallback(ev => setEventFilters(p => p.includes(ev) ? p.filter(x => x !== ev) : [...p, ev]), []);
   const toggleIll   = useCallback(il => setIllFilters(p => p.includes(il) ? p.filter(x => x !== il) : [...p, il]), []);
 
   const clearAll = useCallback(() => {
     setSearch(""); setTypeFilter("All"); setEventFilters([]); setIllFilters([]);
-    setMakerFilter("All"); setYearFrom(YEAR_MIN); setYearTo(YEAR_MAX); setPriceMax("");
+    setMakerFilter("All"); setYearFrom(YEAR_MIN); setYearTo(YEAR_MAX); setPriceMax(""); setUpcoming(false);
   }, []);
 
   const hasFilters = search || typeFilter !== "All" || eventFilters.length || illustratorFilters.length ||
-    makerFilter !== "All" || yearFrom > YEAR_MIN || yearTo < YEAR_MAX || priceMax !== "";
+    makerFilter !== "All" || yearFrom > YEAR_MIN || yearTo < YEAR_MAX || priceMax !== "" || upcoming;
+
+  const setExplore = useCallback(open => { setExploreOpen(open); writePref("explore", open ? "open" : "hidden"); }, []);
+  const explorePick = useCallback(pick => {
+    if (pick === "calendar") { setUpcoming(true); setSortBy("date-asc"); setViewMode("calendar"); }
+    if (pick === "newest")   setSortBy("date-desc");
+    if (pick === "cheapest") setSortBy("price-asc");
+    if (pick === "under50")  { setPriceMax("50"); setSortBy("price-asc"); }
+  }, []);
+  const exploreTypes  = useMemo(() => TYPE_ORDER.filter(t => typeCounts[t]).map(t => [t, typeCounts[t]])
+    .sort((a, b) => b[1] - a[1]).slice(0, 6), [typeCounts]);
+  const exploreThemes = useMemo(() => eventList.slice(0, 6), [eventList]);
 
   /* ── LOADING STATE ── */
   if (loading) return (
@@ -449,7 +541,7 @@ export default function MikuFigureArchive() {
               <div>
                 <div className="label">初音ミク · Hatsune Miku</div>
                 <h1 className="brand__title">Miku Figures Archive</h1>
-                <div className="brand__sub">The complete catalogue, scraped daily from {VENDORS.length} vendors</div>
+                <div className="brand__sub">The complete catalogue, scraped daily from {VENDORS.length} sources</div>
               </div>
             </div>
             <div className="head-actions">
@@ -540,11 +632,22 @@ export default function MikuFigureArchive() {
               <input className="input input--mono" type="number" value={yearTo} min={yearFrom} max={YEAR_MAX}
                 onChange={e => setYearTo(+e.target.value)} aria-label="To year" />
             </div>
+            <div className="filter__chips filter__extra">
+              <button className="chip" aria-pressed={upcoming} onClick={() => setUpcoming(u => !u)}>
+                Upcoming only<span className="chip__count">{upcomingCount}</span>
+              </button>
+            </div>
           </FilterSection>
 
           <FilterSection title="Max price (SGD)">
             <input className="input input--mono" type="number" placeholder="e.g. 150" value={priceMax}
               onChange={e => setPriceMax(e.target.value)} aria-label="Maximum price in SGD" />
+            <div className="filter__chips filter__extra">
+              {PRICE_PRESETS.map(p => (
+                <button key={p} className="chip" aria-pressed={priceMax === String(p)}
+                  onClick={() => setPriceMax(priceMax === String(p) ? "" : String(p))}>Under S${p}</button>
+              ))}
+            </div>
           </FilterSection>
 
           {meta?.by_type && (
@@ -581,14 +684,24 @@ export default function MikuFigureArchive() {
               {SORT_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
             </select>
             <div className="segmented" role="group" aria-label="View">
-              {[["grid", "Grid"], ["list", "List"]].map(([mode, label]) => (
+              {[["grid", "Grid"], ["list", "List"], ["calendar", "Calendar"]].map(([mode, label]) => (
                 <button key={mode} className="btn" aria-pressed={viewMode === mode} onClick={() => setViewMode(mode)}>{label}</button>
               ))}
             </div>
           </div>
 
+          {!hasFilters && (exploreOpen ? (
+            <ExplorePanel types={exploreTypes} themes={exploreThemes} upcomingCount={upcomingCount}
+              onType={setTypeFilter} onTheme={toggleEvent} onPick={explorePick} onHide={() => setExplore(false)} />
+          ) : (
+            <button className="btn btn--sm btn--ghost explore__show" onClick={() => setExplore(true)}>Show explore</button>
+          ))}
+
           <div className="resultline">
             <span><strong className="mono">{filtered.length}</strong> of <span className="mono">{figures.length}</span> figures</span>
+            {upcoming && (
+              <button className="chip" aria-pressed="true" onClick={() => setUpcoming(false)}>Upcoming ×</button>
+            )}
             {eventFilters.map(tag => (
               <button key={tag} className="chip" aria-pressed="true" onClick={() => toggleEvent(tag)}>{tag} ×</button>
             ))}
@@ -605,6 +718,20 @@ export default function MikuFigureArchive() {
           ) : viewMode === "grid" ? (
             <div className="grid">
               {filtered.map(fig => <FigureCard key={fig.id} fig={fig} onOpen={setSelected} />)}
+            </div>
+          ) : viewMode === "calendar" ? (
+            <div className="calendar">
+              {months.map(([ym, figs]) => (
+                <section key={ym || "unknown"} className="calendar__month" aria-label={monthLabel(ym)}>
+                  <h3 className="calendar__head">
+                    <span>{monthLabel(ym)}</span>
+                    <span className="chip__count">{figs.length}</span>
+                  </h3>
+                  <div className="grid">
+                    {figs.map(fig => <FigureCard key={fig.id} fig={fig} onOpen={setSelected} />)}
+                  </div>
+                </section>
+              ))}
             </div>
           ) : (
             <div className="list">

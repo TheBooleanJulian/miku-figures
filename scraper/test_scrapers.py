@@ -9,6 +9,7 @@ import hlj_scraper as h
 import latendo_scraper as L
 import ninnin_scraper as N
 import gsc_scraper as G
+import mfl_scraper as M
 
 
 def key(name, scale=None, typ=None):
@@ -282,6 +283,39 @@ GS_OLD = """
 """
 
 
+def _mfl_page(product, character=("Miku Hatsune", "13/Miku-Hatsune"), title="Vocaloid - Hatsune Miku – Taito | MyFigureList"):
+    import json as _j
+    crumbs = [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://myfigurelist.com/"},
+              {"@type": "ListItem", "position": 2, "name": "VOCALOID", "item": "https://myfigurelist.com/series/35/VOCALOID"}]
+    if character:
+        crumbs.append({"@type": "ListItem", "position": 3, "name": character[0],
+                       "item": "https://myfigurelist.com/character/" + character[1]})
+    crumbs.append({"@type": "ListItem", "position": len(crumbs) + 1, "name": "x", "item": "https://myfigurelist.com/figure/1/x"})
+    blocks = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": crumbs}]
+    if product:
+        blocks.insert(0, dict({"@context": "https://schema.org", "@type": "Product"}, **product))
+    scripts = "".join(f'<script type="application/ld+json">{_j.dumps(b)}</script>' for b in blocks)
+    return (f'<html><head><title>{title}</title>'
+            '<meta property="og:image" content="https://cdn.myfigurelist.com/figure-images/og.jpg">'
+            f'{scripts}</head><body></body></html>')
+
+
+MFL_PRODUCT = {
+    "name": "Character Vocal Series 01. Hatsune Miku Love is War ver. (Regular Edition) 1/8 Complete Figure",
+    "url": "https://myfigurelist.com/figure/7065/Character-Vocal-Series-01-Hatsune-Miku-Love-is-War",
+    "image": ["https://cdn.myfigurelist.com/figure-images/a.jpg", "https://cdn.myfigurelist.com/figure-images/b.jpg"],
+    "description": "From the popular song 'Love is War,' comes a stunning figure.",
+    "brand": {"@type": "Brand", "name": "Good Smile Company"},
+    "sku": "7065", "productID": "mfl:7065", "category": "Scale Figure", "material": ["PVC"],
+    "height": {"@type": "QuantitativeValue", "value": 28, "unitCode": "CMT"},
+    "additionalProperty": [{"@type": "PropertyValue", "name": "Sculptor", "value": "Sakurako Iwanaga"},
+                           {"@type": "PropertyValue", "name": "Scale", "value": "1/8"}],
+    "gtin13": "4582191965673", "releaseDate": "2012-01-01",
+    "offers": {"@type": "AggregateOffer", "lowPrice": 6700, "highPrice": 24538, "priceCurrency": "JPY", "offerCount": 5,
+               "offers": [{"@type": "Offer", "price": 7543, "priceCurrency": "JPY"}]},
+}
+
+
 class GoodSmile(unittest.TestCase):
     def test_parse_discontinued_product(self):
         row = G.parse_product(GS_OLD, "872")
@@ -313,6 +347,64 @@ class GoodSmile(unittest.TestCase):
         self.assertIsNone(G.parse_product(GS_PAGE.replace('"categories":["Nendoroid"]', '"categories":["Goods"]'), "2903"))
         self.assertIsNone(G.parse_product(GS_PAGE.replace("Nendoroid Hatsune Miku: Harvest Moon Ver.",
                                                           "PLAMATEA Hatsune Miku"), "2903"))
+
+
+class MyFigureList(unittest.TestCase):
+    def test_parse_figure(self):
+        row = M.parse_product(_mfl_page(MFL_PRODUCT), "7065")
+        self.assertEqual((row["id"], row["source"], row["manufacturer"]), ("MF7065", "mfl", "Good Smile Company"))
+        self.assertEqual((row["type"], row["scale"], row["dimensions"], row["material"]), ("Scale", "1/8", "28cm", "PVC"))
+        self.assertEqual((row["barcode"], row["price_jpy"], row["release_date"], row["year"]),
+                         ("4582191965673", 6700, "2012-01", 2012))
+        self.assertEqual((row["series"], row["image_url"]), ("VOCALOID", "https://cdn.myfigurelist.com/figure-images/a.jpg"))
+        self.assertEqual(row["detail_url"], MFL_PRODUCT["url"])
+        self.assertEqual(row["description"], "")
+
+    def test_page_without_product_block(self):
+        row = M.parse_product(_mfl_page(None, title="Vocaloid - Hatsune Miku - Noodle Stopper Figure – FuRyu | MyFigureList"), "120620")
+        self.assertEqual((row["name"], row["manufacturer"], row["type"]),
+                         ("Vocaloid - Hatsune Miku - Noodle Stopper Figure", "FuRyu", "Prize"))
+        self.assertEqual((row["barcode"], row["price_jpy"], row["release_date"]), (None, None, None))
+        self.assertEqual(row["image_url"], "https://cdn.myfigurelist.com/figure-images/og.jpg")
+
+    def test_other_characters_skipped(self):
+        sekai = dict(MFL_PRODUCT, name="Project Sekai: Colorful Stage! feat. Hatsune Miku - Tenma Tsukasa - SPM Figure")
+        self.assertIsNone(M.parse_product(_mfl_page(sekai, character=("Tsukasa Tenma", "12343/Tsukasa-Tenma")), "1"))
+        self.assertIsNone(M.parse_product(_mfl_page(dict(MFL_PRODUCT, name="Miku Swimsuit Ver. 1/7"),
+                                                    character=("Miku Nakano", "99/Miku-Nakano")), "2"))
+        # A wrong breadcrumb doesn't reject a name that clearly is Miku
+        petite = dict(MFL_PRODUCT, name="Nendoroid Petite - Racing Miku Set 2011 Ver.")
+        self.assertIsNotNone(M.parse_product(_mfl_page(petite, character=("Rin Kagamine", "7/Rin-Kagamine")), "5"))
+        collab = dict(MFL_PRODUCT, name="Character Vocal Series 01 Hatsune Miku Snow Miku x Kuromi 1/7 Complete Figure")
+        self.assertIsNotNone(M.parse_product(_mfl_page(collab, character=("Kuromi", "8/Kuromi")), "6"))
+        # Another character in Miku's outfit
+        sonico = dict(MFL_PRODUCT, name="SoniComi (Super Sonico) - Sonico - Hatsune Miku Costume ver")
+        self.assertIsNone(M.parse_product(_mfl_page(sonico, character=("Sonico", "9/Sonico")), "7"))
+
+    def test_goods_rejected(self):
+        for name in ["Vocaloid - Hatsune Miku - USB",
+                     "Kidou Senshi Gundam Seed Freedom - Piapro Characters - ZGMF/A-262B Strike Freedom Gundam Type II - Hatsune Miku"]:
+            self.assertIsNone(M.parse_product(_mfl_page(dict(MFL_PRODUCT, name=name)), "9"), name)
+
+    def test_maker_missing_from_title(self):
+        row = M.parse_product(_mfl_page(None, title="Vocaloid - Hatsune Miku - 1/8 - Ver.4 | MyFigureList"), "8")
+        self.assertEqual((row["name"], row["manufacturer"]), ("Vocaloid - Hatsune Miku - 1/8 - Ver.4", None))
+        self.assertIsNotNone(M.parse_product(_mfl_page(dict(MFL_PRODUCT, name="Snow Miku 2026 Nendoroid"),
+                                                       character=("Snow Miku", "50/Snow-Miku")), "3"))
+        self.assertIsNotNone(M.parse_product(_mfl_page(MFL_PRODUCT, character=None), "4"))
+
+    def test_slug_prefilter(self):
+        self.assertTrue(M.wanted("Vocaloid-Hatsune-Miku-Nendoroid-1538-Symphony-5th-Anniversary-Ver"))
+        self.assertFalse(M.wanted("Project-Sekai-Colorful-Stage!-feat-Hatsune-Miku-Tenma-Tsukasa-DesktopDecorate-Collections"))
+        self.assertFalse(M.wanted("The-Quintessential-Quintuplets-SS-Miku-Nakano-Date-Style-Ver-1-6-Complete-Figure"))
+        self.assertFalse(M.wanted("Suzumiya-Haruhi-no-Yuuutsu-Asahina-Mikuru"))
+
+    def test_rerelease_jan_counts_as_duplicate(self):
+        row = M.parse_product(_mfl_page(MFL_PRODUCT), "7065")
+        others = M.OtherRows([{"name": "Nendoroid Harvest Moon", "barcode": "1111111111111",
+                               "jans": ["1111111111111", "4582191965673"], "scale": None, "type": "Nendoroid"}])
+        self.assertTrue(M.duplicate(row, others))
+        self.assertFalse(M.duplicate(row, M.OtherRows([])))
 
 
 if __name__ == "__main__":
