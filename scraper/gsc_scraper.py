@@ -79,7 +79,7 @@ MATERIAL_RE = re.compile(r"\bpainted\s+(.+?)\s+(?:non-scale|1/\d|scale|articulat
 NON_FIGURE_CAT_RE = re.compile(
     r"apparel|goods|accessor|stationer|tapestr|acrylic|book|music|\bcd\b|dvd|blu-?ray|game|card|"
     r"plastic model|model kit|moderoid|plamatea|tableware|bag|towel|cushion|figure stand|display|"
-    r"wear|car accessor|decal", re.I)
+    r"wear|car accessor|decal|miniature car", re.I)
 # Racing goods in listing titles, skipped before fetching
 LIST_GOODS_RE = re.compile(
     r"cycling|cycle (?:series|wear|jersey)|windbreaker|gilet|bodysuit|gloves|parasol|sunshade|"
