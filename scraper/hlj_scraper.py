@@ -184,7 +184,8 @@ MERCH_RE = re.compile(
     r"canvas art|art frame|painting|folding fan|desk mat|\bstraps?\b|purse|jacket|carabiner|"
     r"photo holder|headband unit|barrette|hairband|choker|\bcap\b|bromides?|paper theater|"
     r"seal wafer|thermos|narikiri|\bmagnets?\b|magnet collection|compilation|songs collection|"
-    r"\bamg\b|mercedes|\bbmw\b|minicar|die-?cast|itasha",   # GT Project race-car models
+    r"\bamg\b|mercedes|\bbmw\b|minicar|die-?cast|itasha|pull-?back|"   # race-car / toy-car models
+    r"\balbum\b|tamagotchi",
     re.I,
 )
 # "Miku" as a name, not inside Mikuru (Haruhi) or Mikuro (Shiino); Mikudayo,
