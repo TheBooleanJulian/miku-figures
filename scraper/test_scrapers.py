@@ -41,6 +41,9 @@ class Classifier(unittest.TestCase):
         "The Broken SEKAI and the Miku Who Can't Sing: Lying Down Plush - Mafuyu Asahina",
         "Look Up: Hatsune Miku - Megurine Luka & KAITO (Limited + Bonus)",
         "Hatsune Miku: KAITO - Snow Miku 2026 Ver. Snowman Plush Mascot",
+        "Hatsune Miku : Magical Mirai 2023 - Official Album (Limited Edition)",
+        "Tamagotchi: Piapro Characters - Hatsune Miku (Cyber Miku Ver.)",
+        "Hatsune Miku x CuteRody Pullback Cars - Luke Magurine Peach",
     ]
     MIKU = [
         "Piapro Characters Trading Minifigure Series MEIKO & Miku Hatsune",
