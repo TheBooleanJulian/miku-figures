@@ -1,15 +1,15 @@
 {
-  "total_figures": 1783,
+  "total_figures": 1795,
   "new_this_run": 0,
   "by_type": {
     "Prize": 718,
     "Plush / Soft": 376,
     "Scale": 224,
-    "Nendoroid": 213,
-    "Other": 156,
+    "Nendoroid": 219,
+    "Other": 160,
     "Figma": 44,
     "Mini / Petite": 27,
-    "Pop Up Parade": 22,
+    "Pop Up Parade": 24,
     "Bust": 3
   },
   "by_year": {
@@ -29,14 +29,14 @@
     "2021": 49,
     "2022": 57,
     "2023": 128,
-    "2024": 245,
+    "2024": 246,
     "2025": 207,
     "2026": 212,
     "2027": 77,
     "2028": 1
   },
   "by_event": {
-    "Snow Miku": 156,
+    "Snow Miku": 158,
     "Racing Miku": 150,
     "Anniversary / Birthday": 97,
     "Cinnamoroll": 96,
@@ -52,7 +52,7 @@
     "Rascal": 10,
     "Rody": 9,
     "Digital Stars": 9,
-    "Mikudayo": 7,
+    "Mikudayo": 8,
     "World is Mine": 5,
     "Sanrio": 5,
     "Append": 5,
@@ -70,10 +70,10 @@
   "by_source": {
     "hlj": 749,
     "ninnin": 382,
-    "gsc": 25,
+    "gsc": 37,
     "solaris": 552,
     "latendo": 75
   },
   "scrape_mode": "latendo",
-  "last_updated": "2026-11-20T03:46:40.704179+00:00"
+  "last_updated": "2026-11-20T04:11:13.084626+00:00"
 }
