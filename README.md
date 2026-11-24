@@ -23,7 +23,7 @@ Miku Figures is a searchable, filterable archive of the Hatsune Miku figures lis
 ## Features
 
 - Figure catalogue scraped from HLJ, Solaris Japan, Nin-Nin-Game, Good Smile Company, Latendo and MyFigureList, updated daily via GitHub Actions cron
-- A *Vendors checked* panel showing each retailer, how many figures it contributes and its price currency
+- An *About this archive* section at the foot of the page listing each source, how many figures it contributes and its price currency
 - Incremental scraping mode — only fetches figures not already in the dataset, keeping runs fast
 - Filter by figure type, series/event, illustrator, manufacturer, year range, and max price (SGD); series and illustrator chips are built from the data
 - Dark and light themes (Julian Unified UI), following the OS setting until you pick one
@@ -183,6 +183,7 @@ docker run -p 8080:80 miku-figures
 
 ## Changelog
 
+- **2026-11-24** — Tidier home page: slim header with a plain-language summary; sources table moved to a collapsed *About this archive* footer; simpler filters (friendlier labels, price presets, long theme/artist lists shortened, breakdown bars removed)
 - **2026-11-20** — Added MyFigureList as a sixth source (figure database; sitemaps + JSON-LD); *Explore* panel, release-calendar view, *Upcoming only* filter and price presets
 - **2026-11-20** — Added Good Smile Company's official catalogue as a fifth source (JPY prices shown as ¥); dropped race-car models, albums, Tamagotchi and more goods
 - **2026-11-17** — Added Nin-Nin-Game as a fourth vendor (sitemap + product pages, robots.txt checked with wildcards, second-hand listings for discontinued figures)
