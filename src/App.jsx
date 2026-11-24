@@ -102,7 +102,7 @@ function sortFigures(list, mode) {
 // "2026-11" for the current month; releases from this month on count as upcoming.
 const THIS_MONTH = new Date().toISOString().slice(0, 7);
 const isUpcoming = f => (f.release_date || "") >= THIS_MONTH;
-const PRICE_PRESETS = [50, 100, 200];
+const PRICE_PRESETS = [50, 100, 200, 500];
 
 function monthLabel(ym) {
   if (!ym) return "Release date unknown";
@@ -310,8 +310,8 @@ function DetailModal({ fig, onClose }) {
   );
 }
 
-function FilterSection({ title, children }) {
-  const [open, setOpen] = useState(true);
+function FilterSection({ title, children, defaultOpen = true }) {
+  const [open, setOpen] = useState(defaultOpen);
   return (
     <section className="filter">
       <button className="filter__head label" onClick={() => setOpen(o => !o)} aria-expanded={open}>
@@ -323,29 +323,42 @@ function FilterSection({ title, children }) {
   );
 }
 
-function ChipFilter({ entries, selected, onToggle }) {
+// Long lists show the biggest `limit` entries (plus anything selected) until expanded.
+function ChipFilter({ entries, selected, onToggle, limit = Infinity }) {
+  const [all, setAll] = useState(false);
+  const shown = all ? entries : entries.filter(([v], i) => i < limit || selected.includes(v));
   return (
     <div className="filter__chips">
-      {entries.map(([value, count]) => (
+      {shown.map(([value, count]) => (
         <button key={value} className="chip" aria-pressed={selected.includes(value)} onClick={() => onToggle(value)}>
           {value}<span className="chip__count">{count}</span>
         </button>
       ))}
+      {entries.length > limit && (
+        <button className="chip chip--more" onClick={() => setAll(a => !a)}>
+          {all ? "Show fewer" : `+${entries.length - shown.length} more`}
+        </button>
+      )}
     </div>
   );
 }
 
+// Footer: where the data comes from, collapsed so shoppers aren't greeted by a data table.
 function VendorsPanel({ figures, meta }) {
   const counts = Object.fromEntries(countBy(figures, f => f.source));
   return (
-    <section className="panel panel--bracket vendors" aria-labelledby="vendors-title">
-      <h2 id="vendors-title" className="panel__title">
-        Vendors checked
-        <a href={SCRAPE_WORKFLOW_URL} target="_blank" rel="noopener noreferrer">Scrape logs ↗</a>
-      </h2>
+    <details className="panel about">
+      <summary className="about__summary">
+        <span className="label">About this archive</span>
+        <span className="muted">Collected daily from {VENDORS.length} shops and databases</span>
+      </summary>
+      <p className="about__text">
+        Prices and links come from the shops below and are refreshed every morning.
+        Click any figure to see where it's sold.
+      </p>
       <table className="table vendors__table">
         <thead>
-          <tr><th>Vendor</th><th className="num">Figures</th><th>Prices</th><th className="vendors__note">How</th></tr>
+          <tr><th>Source</th><th className="num">Figures</th><th>Prices in</th><th className="vendors__note">Notes</th></tr>
         </thead>
         <tbody>
           {VENDORS.map(v => (
@@ -362,10 +375,11 @@ function VendorsPanel({ figures, meta }) {
         </tbody>
       </table>
       <p className="vendors__foot">
-        Checked every day at <span className="mono-sm">03:00 SGT</span> by GitHub Actions
-        {meta?.last_updated && <> · last run <span className="mono-sm">{new Date(meta.last_updated).toLocaleString("en-SG", { dateStyle: "medium", timeStyle: "short", hour12: false })}</span></>}.
+        Checked every day at <span className="mono-sm">03:00 SGT</span>
+        {meta?.last_updated && <> · last run <span className="mono-sm">{new Date(meta.last_updated).toLocaleString("en-SG", { dateStyle: "medium", timeStyle: "short", hour12: false })}</span></>}
+        {" · "}<a href={SCRAPE_WORKFLOW_URL} target="_blank" rel="noopener noreferrer">Update log ↗</a>
       </p>
-    </section>
+    </details>
   );
 }
 
@@ -539,45 +553,25 @@ export default function MikuFigureArchive() {
             <div className="brand">
               <img src="/logo.png" alt="" className="brand__logo" />
               <div>
-                <div className="label">初音ミク · Hatsune Miku</div>
-                <h1 className="brand__title">Miku Figures Archive</h1>
-                <div className="brand__sub">The complete catalogue, scraped daily from {VENDORS.length} sources</div>
+                <h1 className="brand__title">Miku Figures</h1>
+                <div className="brand__sub">
+                  {figures.length.toLocaleString()} Hatsune Miku figures, plushes and prizes
+                  {meta?.last_updated && <> · updated {new Date(meta.last_updated).toLocaleDateString("en-SG", { dateStyle: "medium" })}</>}
+                </div>
               </div>
             </div>
-            <div className="head-actions">
-              <ThemeToggle />
-              {/* Opens the workflow page; click "Run workflow" there */}
-              <a className="btn" href={SCRAPE_WORKFLOW_URL} target="_blank" rel="noopener noreferrer">Start scrape ↗</a>
-            </div>
+            <ThemeToggle />
           </div>
 
           {usingDemo && (
             <div className="alert alert--warning" role="status">
               <span className="alert__icon" aria-hidden="true">!</span>
               <div>
-                <div className="alert__title">Demo data</div>
-                <div className="alert__body"><span className="mono-sm">figures.json</span> was not found. Run the scraper to load real figures.</div>
+                <div className="alert__title">Showing sample figures</div>
+                <div className="alert__body">The figure list couldn't be loaded. Try refreshing in a minute.</div>
               </div>
             </div>
           )}
-
-          <div className="overview">
-            <div className="stats">
-              <div className="panel">
-                <div className="panel__title">Total figures</div>
-                <div className="stat">{figures.length.toLocaleString()}</div>
-              </div>
-              <div className="panel">
-                <div className="panel__title">Shown</div>
-                <div className="stat">{filtered.length.toLocaleString()}</div>
-              </div>
-              <div className="panel">
-                <div className="panel__title">Last updated</div>
-                <div className="stat stat--sm">{meta?.last_updated ? new Date(meta.last_updated).toLocaleDateString("en-SG") : "Demo"}</div>
-              </div>
-            </div>
-            <VendorsPanel figures={figures} meta={meta} />
-          </div>
         </div>
         <div className="hairline signal" />
       </header>
@@ -593,7 +587,7 @@ export default function MikuFigureArchive() {
             </div>
           )}
 
-          <FilterSection title="Figure type">
+          <FilterSection title="Type">
             <div className="typelist">
               {["All", ...TYPE_ORDER].map(t => {
                 const count = t === "All" ? figures.length : (typeCounts[t] || 0);
@@ -607,42 +601,13 @@ export default function MikuFigureArchive() {
           </FilterSection>
 
           {eventList.length > 0 && (
-            <FilterSection title="Series / event">
-              <ChipFilter entries={eventList} selected={eventFilters} onToggle={toggleEvent} />
+            <FilterSection title="Theme">
+              <ChipFilter entries={eventList} selected={eventFilters} onToggle={toggleEvent} limit={10} />
             </FilterSection>
           )}
 
-          {illList.length > 0 && (
-            <FilterSection title="Illustrator / artist">
-              <ChipFilter entries={illList} selected={illustratorFilters} onToggle={toggleIll} />
-            </FilterSection>
-          )}
-
-          <FilterSection title="Manufacturer">
-            <select className="input" value={makerFilter} onChange={e => setMakerFilter(e.target.value)} aria-label="Manufacturer">
-              {allMakers.map(m => <option key={m} value={m}>{m}</option>)}
-            </select>
-          </FilterSection>
-
-          <FilterSection title="Release year">
-            <div className="filter__range">
-              <input className="input input--mono" type="number" value={yearFrom} min={YEAR_MIN} max={yearTo}
-                onChange={e => setYearFrom(+e.target.value)} aria-label="From year" />
-              <span className="muted">–</span>
-              <input className="input input--mono" type="number" value={yearTo} min={yearFrom} max={YEAR_MAX}
-                onChange={e => setYearTo(+e.target.value)} aria-label="To year" />
-            </div>
-            <div className="filter__chips filter__extra">
-              <button className="chip" aria-pressed={upcoming} onClick={() => setUpcoming(u => !u)}>
-                Upcoming only<span className="chip__count">{upcomingCount}</span>
-              </button>
-            </div>
-          </FilterSection>
-
-          <FilterSection title="Max price (SGD)">
-            <input className="input input--mono" type="number" placeholder="e.g. 150" value={priceMax}
-              onChange={e => setPriceMax(e.target.value)} aria-label="Maximum price in SGD" />
-            <div className="filter__chips filter__extra">
+          <FilterSection title="Price">
+            <div className="filter__chips">
               {PRICE_PRESETS.map(p => (
                 <button key={p} className="chip" aria-pressed={priceMax === String(p)}
                   onClick={() => setPriceMax(priceMax === String(p) ? "" : String(p))}>Under S${p}</button>
@@ -650,18 +615,30 @@ export default function MikuFigureArchive() {
             </div>
           </FilterSection>
 
-          {meta?.by_type && (
-            <FilterSection title="Collection breakdown">
-              <div className="bars">
-                {Object.entries(meta.by_type).slice(0, 7).map(([type, count]) => (
-                  <div key={type}>
-                    <div className="bar__meta mono-sm"><span>{type}</span><span>{count}</span></div>
-                    <div className="bar__track">
-                      <div className="bar__fill" style={{ width: `${Math.round((count / figures.length) * 100)}%` }} />
-                    </div>
-                  </div>
-                ))}
-              </div>
+          <FilterSection title="Release">
+            <div className="filter__chips">
+              <button className="chip" aria-pressed={upcoming} onClick={() => setUpcoming(u => !u)}>
+                Upcoming<span className="chip__count">{upcomingCount}</span>
+              </button>
+            </div>
+            <div className="filter__range filter__extra">
+              <input className="input input--mono" type="number" value={yearFrom} min={YEAR_MIN} max={yearTo}
+                onChange={e => setYearFrom(+e.target.value)} aria-label="From year" />
+              <span className="muted">to</span>
+              <input className="input input--mono" type="number" value={yearTo} min={yearFrom} max={YEAR_MAX}
+                onChange={e => setYearTo(+e.target.value)} aria-label="To year" />
+            </div>
+          </FilterSection>
+
+          <FilterSection title="Maker">
+            <select className="input" value={makerFilter} onChange={e => setMakerFilter(e.target.value)} aria-label="Maker">
+              {allMakers.map(m => <option key={m} value={m}>{m === "All" ? "Any maker" : m}</option>)}
+            </select>
+          </FilterSection>
+
+          {illList.length > 0 && (
+            <FilterSection title="Artist" defaultOpen={illustratorFilters.length > 0}>
+              <ChipFilter entries={illList} selected={illustratorFilters} onToggle={toggleIll} limit={8} />
             </FilterSection>
           )}
         </aside>
@@ -741,7 +718,11 @@ export default function MikuFigureArchive() {
         </main>
       </div>
 
-      {selected && <DetailModal fig={selected} onClose={() => setSelected(null)} />}
+      <footer className="app-foot">
+        <VendorsPanel figures={figures} meta={meta} />
+      </footer>
+
+      {selected &&<DetailModal fig={selected} onClose={() => setSelected(null)} />}
     </>
   );
 }
