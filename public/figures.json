@@ -2353,6 +2353,40 @@
     "handle": "re-ment/257239-hatsune-miku-sparkling-night-sky-story-4-pack-box-reissue-re-ment-"
   },
   {
+    "id": "NG270775",
+    "name": "Hatsune Miku: Sakura Miku - nazoQ Noodle Stopper Blind Box Figure Collection (6 Pack Box)",
+    "manufacturer": "FuRyu",
+    "release_date": "2027-01",
+    "year": 2027,
+    "type": "Prize",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 43.3,
+    "image_url": "https://media2.nin-nin-game.com/874728-large_default/hatsune-miku-sakura-miku-nazoq-noodle-stopper-blind-box-figure-collection-6-pack-box-furyu-.jpg",
+    "detail_url": "https://www.nin-nin-game.com/en/chibi-minifigures/270775-hatsune-miku-sakura-miku-nazoq-noodle-stopper-blind-box-figure-collection-6-pack-box-furyu-.html",
+    "events": [
+      "Sakura Miku"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Prize",
+      "Sakura Miku",
+      "FuRyu",
+      "Hatsune Miku"
+    ],
+    "description": "From FuRyu's new collectible toy brand nazoQ , the beloved Sakura Miku makes her debut in an adorable Noodle Stopper Figure Collection , featuring original illustrations by artist Kunoo and a delightful assortment of outfits and poses. The nazoQ brand introduces a new collectible experience through its blind-box format, keeping each figure a mystery until the moment of unboxing. Combining the excitement of discovering a surprise character with impressive sculpting quality in a palm-sized format, the collection offers a unique experience for collectors. For its very first release, nazoQ brings ",
+    "dimensions": "(H) 9 cm",
+    "material": "Plastic",
+    "barcode": "4580736408012",
+    "mfc_owned_count": null,
+    "series": "Hatsune Miku",
+    "category": "chibi-minifigures",
+    "item_type": null,
+    "source": "ninnin",
+    "handle": "chibi-minifigures/270775-hatsune-miku-sakura-miku-nazoq-noodle-stopper-blind-box-figure-collection-6-pack-box-furyu-"
+  },
+  {
     "id": "NG252157",
     "name": "Hatsune Miku: Piapro Characters Getting Dressed Vol.2 - PeriHapi Blind Box (8 Pack Box)",
     "manufacturer": "Takara-Tomy",
@@ -74078,6 +74112,39 @@
     "item_type": "Figure",
     "source": "solaris",
     "handle": "vocaloid-hatsune-miku-good-smile-kuji-good-smile-kuji-hatsune-miku-2012-winter-ver-nendoroid-280-santa-ver"
+  },
+  {
+    "id": "SJ435452996",
+    "name": "Hatsune Miku Glass Project DIVA",
+    "manufacturer": "Cospa",
+    "release_date": null,
+    "year": null,
+    "type": "Other",
+    "scale": null,
+    "price_jpy": null,
+    "price_sgd": null,
+    "price_usd": 0.0,
+    "image_url": "https://cdn.shopify.com/s/files/1/0318/2649/products/51ASJJNrRVL.jpeg?v=1571441890",
+    "detail_url": "https://solarisjapan.com/products/vocaloid-hatsune-miku-glass-project-diva-cospa",
+    "events": [
+      "Project DIVA"
+    ],
+    "illustrator": null,
+    "tags": [
+      "Other",
+      "Project DIVA",
+      "Cospa"
+    ],
+    "description": "",
+    "dimensions": null,
+    "material": null,
+    "barcode": "4531894360445",
+    "mfc_owned_count": null,
+    "series": null,
+    "category": null,
+    "item_type": "Merchandise",
+    "source": "solaris",
+    "handle": "vocaloid-hatsune-miku-glass-project-diva-cospa"
   },
   {
     "id": "NG54204",

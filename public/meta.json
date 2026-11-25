@@ -1,9 +1,9 @@
 {
-  "total_figures": 2637,
-  "new_this_run": 82,
+  "total_figures": 2639,
+  "new_this_run": 0,
   "by_type": {
-    "Prize": 993,
-    "Other": 471,
+    "Prize": 994,
+    "Other": 472,
     "Scale": 398,
     "Plush / Soft": 378,
     "Nendoroid": 280,
@@ -33,16 +33,16 @@
     "2024": 296,
     "2025": 273,
     "2026": 257,
-    "2027": 84,
+    "2027": 85,
     "2028": 1
   },
   "by_event": {
     "Snow Miku": 167,
-    "Project DIVA": 163,
+    "Project DIVA": 164,
     "Racing Miku": 152,
     "Anniversary / Birthday": 116,
     "Cinnamoroll": 96,
-    "Sakura Miku": 65,
+    "Sakura Miku": 66,
     "Magical Mirai": 50,
     "Project SEKAI": 31,
     "Christmas": 26,
@@ -70,12 +70,12 @@
   },
   "by_source": {
     "hlj": 749,
-    "ninnin": 381,
+    "ninnin": 382,
     "latendo": 75,
     "gsc": 37,
-    "solaris": 555,
+    "solaris": 556,
     "mfl": 840
   },
   "scrape_mode": "mfl",
-  "last_updated": "2026-11-24T04:31:50.371945+00:00"
+  "last_updated": "2026-11-25T03:13:04.912707+00:00"
 }
