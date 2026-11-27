@@ -1,12 +1,12 @@
 {
-  "total_figures": 2639,
+  "total_figures": 2641,
   "new_this_run": 0,
   "by_type": {
-    "Prize": 994,
+    "Prize": 995,
     "Other": 472,
     "Scale": 398,
     "Plush / Soft": 378,
-    "Nendoroid": 280,
+    "Nendoroid": 281,
     "Figma": 53,
     "Mini / Petite": 28,
     "Pop Up Parade": 27,
@@ -32,7 +32,7 @@
     "2023": 163,
     "2024": 296,
     "2025": 273,
-    "2026": 257,
+    "2026": 258,
     "2027": 85,
     "2028": 1
   },
@@ -70,12 +70,12 @@
   },
   "by_source": {
     "hlj": 749,
-    "ninnin": 382,
+    "ninnin": 383,
     "latendo": 75,
     "gsc": 37,
-    "solaris": 556,
-    "mfl": 840
+    "solaris": 558,
+    "mfl": 839
   },
   "scrape_mode": "mfl",
-  "last_updated": "2026-11-26T02:17:10.695565+00:00"
+  "last_updated": "2026-11-27T02:16:40.291727+00:00"
 }
